@@ -568,13 +568,21 @@ function initAccountUI() {
     renderAccountUI();
   });
 
+  // Show a sensible default immediately, then refine it once the async
+  // session check settles -- if the Supabase library itself fails to load
+  // (network hiccup, ad-blocker, offline), the panel should still show the
+  // sign-in form rather than silently staying blank.
+  renderAccountUI();
   if (cloud.isConfigured()) {
-    cloud.getSession().then((session) => {
-      if (session) handleSession(session);
-      else renderAccountUI();
-    });
-  } else {
-    renderAccountUI();
+    cloud
+      .getSession()
+      .then((session) => {
+        if (session) handleSession(session);
+      })
+      .catch((e) => {
+        console.error("Could not check Supabase session", e);
+        el("account-message").textContent = "Could not reach the sync service — check your connection.";
+      });
   }
 }
 

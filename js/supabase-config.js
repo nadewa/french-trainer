@@ -5,5 +5,5 @@
 // The anon key below is meant to be public once filled in -- it's not a
 // secret. What actually protects each user's data is Row Level Security
 // (see data/schema.sql), not secrecy of this key.
-export const SUPABASE_URL = "YOUR_SUPABASE_URL";
-export const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+export const SUPABASE_URL = "https://vxkalodtxxeaqtyafwcm.supabase.co";
+export const SUPABASE_ANON_KEY = "sb_publishable_wEqBa2nmfT4bjsdsRtjDOg_lNVqjMy3";
