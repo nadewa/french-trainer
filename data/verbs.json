@@ -1,0 +1,8932 @@
+[
+ {
+  "infinitive": "être",
+  "display_infinitive": "être",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "suis",
+   "es",
+   "est",
+   "sommes",
+   "êtes",
+   "sont"
+  ],
+  "imparfait": [
+   "étais",
+   "étais",
+   "était",
+   "étions",
+   "étiez",
+   "étaient"
+  ],
+  "futur_simple": [
+   "serai",
+   "seras",
+   "sera",
+   "serons",
+   "serez",
+   "seront"
+  ],
+  "passe_simple": [
+   "fus",
+   "fus",
+   "fut",
+   "fûmes",
+   "fûtes",
+   "furent"
+  ],
+  "conditionnel_present": [
+   "serais",
+   "serais",
+   "serait",
+   "serions",
+   "seriez",
+   "seraient"
+  ],
+  "subjonctif_present": [
+   "sois",
+   "sois",
+   "soit",
+   "soyons",
+   "soyez",
+   "soient"
+  ],
+  "subjonctif_imparfait": [
+   "fusse",
+   "fusses",
+   "fût",
+   "fussions",
+   "fussiez",
+   "fussent"
+  ],
+  "imperatif": [
+   null,
+   "sois",
+   null,
+   "soyons",
+   "soyez",
+   null
+  ],
+  "participe_passe": "été",
+  "participe_present": "étant",
+  "passe_compose": [
+   "ai été",
+   "as été",
+   "a été",
+   "avons été",
+   "avez été",
+   "ont été"
+  ],
+  "frequency_rank_basis": 2270864,
+  "true_frequency": 13070570,
+  "gloss": [
+   "be",
+   "being",
+   "existence"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "avoir",
+  "display_infinitive": "avoir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "ai",
+   "as",
+   "a",
+   "avons",
+   "avez",
+   "ont"
+  ],
+  "imparfait": [
+   "avais",
+   "avais",
+   "avait",
+   "avions",
+   "aviez",
+   "avaient"
+  ],
+  "futur_simple": [
+   "aurai",
+   "auras",
+   "aura",
+   "aurons",
+   "aurez",
+   "auront"
+  ],
+  "passe_simple": [
+   "eus",
+   "eus",
+   "eut",
+   "eûmes",
+   "eûtes",
+   "eurent"
+  ],
+  "conditionnel_present": [
+   "aurais",
+   "aurais",
+   "aurait",
+   "aurions",
+   "auriez",
+   "auraient"
+  ],
+  "subjonctif_present": [
+   "aie",
+   "aies",
+   "ait",
+   "ayons",
+   "ayez",
+   "aient"
+  ],
+  "subjonctif_imparfait": [
+   "eusse",
+   "eusses",
+   "eût",
+   "eussions",
+   "eussiez",
+   "eussent"
+  ],
+  "imperatif": [
+   null,
+   "aie",
+   null,
+   "ayons",
+   "ayez",
+   null
+  ],
+  "participe_passe": "eu",
+  "participe_present": "ayant",
+  "passe_compose": [
+   "ai eu",
+   "as eu",
+   "a eu",
+   "avons eu",
+   "avez eu",
+   "ont eu"
+  ],
+  "frequency_rank_basis": 1580931,
+  "true_frequency": 10006838,
+  "gloss": [
+   "have",
+   "own",
+   "possess"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "aller",
+  "display_infinitive": "aller",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "vais",
+   "vas",
+   "va",
+   "allons",
+   "allez",
+   "vont"
+  ],
+  "imparfait": [
+   "allais",
+   "allais",
+   "allait",
+   "allions",
+   "alliez",
+   "allaient"
+  ],
+  "futur_simple": [
+   "irai",
+   "iras",
+   "ira",
+   "irons",
+   "irez",
+   "iront"
+  ],
+  "passe_simple": [
+   "allai",
+   "allas",
+   "alla",
+   "allâmes",
+   "allâtes",
+   "allèrent"
+  ],
+  "conditionnel_present": [
+   "irais",
+   "irais",
+   "irait",
+   "irions",
+   "iriez",
+   "iraient"
+  ],
+  "subjonctif_present": [
+   "aille",
+   "ailles",
+   "aille",
+   "allions",
+   "alliez",
+   "aillent"
+  ],
+  "subjonctif_imparfait": [
+   "allasse",
+   "allasses",
+   "allât",
+   "allassions",
+   "allassiez",
+   "allassent"
+  ],
+  "imperatif": [
+   null,
+   "va",
+   null,
+   "allons",
+   "allez",
+   null
+  ],
+  "participe_passe": "allé",
+  "participe_present": "allant",
+  "passe_compose": [
+   "suis allé",
+   "es allé",
+   "est allé",
+   "sommes allé",
+   "êtes allé",
+   "sont allé"
+  ],
+  "frequency_rank_basis": 666833,
+  "true_frequency": 2840766,
+  "gloss": [
+   "go"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "vouloir",
+  "display_infinitive": "vouloir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "veux",
+   "veux",
+   "veut",
+   "voulons",
+   "voulez",
+   "veulent"
+  ],
+  "imparfait": [
+   "voulais",
+   "voulais",
+   "voulait",
+   "voulions",
+   "vouliez",
+   "voulaient"
+  ],
+  "futur_simple": [
+   "voudrai",
+   "voudras",
+   "voudra",
+   "voudrons",
+   "voudrez",
+   "voudront"
+  ],
+  "passe_simple": [
+   "voulus",
+   "voulus",
+   "voulut",
+   "voulûmes",
+   "voulûtes",
+   "voulurent"
+  ],
+  "conditionnel_present": [
+   "voudrais",
+   "voudrais",
+   "voudrait",
+   "voudrions",
+   "voudriez",
+   "voudraient"
+  ],
+  "subjonctif_present": [
+   "veuille",
+   "veuilles",
+   "veuille",
+   "voulions",
+   "vouliez",
+   "veuillent"
+  ],
+  "subjonctif_imparfait": [
+   "voulusse",
+   "voulusses",
+   "voulût",
+   "voulussions",
+   "voulussiez",
+   "voulussent"
+  ],
+  "imperatif": [
+   null,
+   "veuille",
+   null,
+   "veuillons",
+   "veuillez",
+   null
+  ],
+  "participe_passe": "voulu",
+  "participe_present": "voulant",
+  "passe_compose": [
+   "ai voulu",
+   "as voulu",
+   "a voulu",
+   "avons voulu",
+   "avez voulu",
+   "ont voulu"
+  ],
+  "frequency_rank_basis": 416300,
+  "true_frequency": 1546852,
+  "gloss": [
+   "will",
+   "be willing to",
+   "want",
+   "wish"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "faire",
+  "display_infinitive": "faire",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "fais",
+   "fais",
+   "fait",
+   "faisons",
+   "faites",
+   "font"
+  ],
+  "imparfait": [
+   "faisais",
+   "faisais",
+   "faisait",
+   "faisions",
+   "faisiez",
+   "faisaient"
+  ],
+  "futur_simple": [
+   "ferai",
+   "feras",
+   "fera",
+   "ferons",
+   "ferez",
+   "feront"
+  ],
+  "passe_simple": [
+   "fis",
+   "fis",
+   "fit",
+   "fîmes",
+   "fîtes",
+   "firent"
+  ],
+  "conditionnel_present": [
+   "ferais",
+   "ferais",
+   "ferait",
+   "ferions",
+   "feriez",
+   "feraient"
+  ],
+  "subjonctif_present": [
+   "fasse",
+   "fasses",
+   "fasse",
+   "fassions",
+   "fassiez",
+   "fassent"
+  ],
+  "subjonctif_imparfait": [
+   "fisse",
+   "fisses",
+   "fît",
+   "fissions",
+   "fissiez",
+   "fissent"
+  ],
+  "imperatif": [
+   null,
+   "fais",
+   null,
+   "faisons",
+   "faites",
+   null
+  ],
+  "participe_passe": "fait",
+  "participe_present": "faisant",
+  "passe_compose": [
+   "ai fait",
+   "as fait",
+   "a fait",
+   "avons fait",
+   "avez fait",
+   "ont fait"
+  ],
+  "frequency_rank_basis": 352104,
+  "true_frequency": 2914860,
+  "gloss": [
+   "do",
+   "make"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "pouvoir",
+  "display_infinitive": "pouvoir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "puis",
+   "peux",
+   "peut",
+   "pouvons",
+   "pouvez",
+   "peuvent"
+  ],
+  "imparfait": [
+   "pouvais",
+   "pouvais",
+   "pouvait",
+   "pouvions",
+   "pouviez",
+   "pouvaient"
+  ],
+  "futur_simple": [
+   "pourrai",
+   "pourras",
+   "pourra",
+   "pourrons",
+   "pourrez",
+   "pourront"
+  ],
+  "passe_simple": [
+   "pus",
+   "pus",
+   "put",
+   "pûmes",
+   "pûtes",
+   "purent"
+  ],
+  "conditionnel_present": [
+   "pourrais",
+   "pourrais",
+   "pourrait",
+   "pourrions",
+   "pourriez",
+   "pourraient"
+  ],
+  "subjonctif_present": [
+   "puisse",
+   "puisses",
+   "puisse",
+   "puissions",
+   "puissiez",
+   "puissent"
+  ],
+  "subjonctif_imparfait": [
+   "pusse",
+   "pusses",
+   "pût",
+   "pussions",
+   "pussiez",
+   "pussent"
+  ],
+  "imperatif": null,
+  "participe_passe": "pu",
+  "participe_present": "pouvant",
+  "passe_compose": [
+   "ai pu",
+   "as pu",
+   "a pu",
+   "avons pu",
+   "avez pu",
+   "ont pu"
+  ],
+  "frequency_rank_basis": 315044,
+  "true_frequency": 1854211,
+  "gloss": [
+   "power",
+   "be able to",
+   "can",
+   "may"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "savoir",
+  "display_infinitive": "savoir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "sais",
+   "sais",
+   "sait",
+   "savons",
+   "savez",
+   "savent"
+  ],
+  "imparfait": [
+   "savais",
+   "savais",
+   "savait",
+   "savions",
+   "saviez",
+   "savaient"
+  ],
+  "futur_simple": [
+   "saurai",
+   "sauras",
+   "saura",
+   "saurons",
+   "saurez",
+   "sauront"
+  ],
+  "passe_simple": [
+   "sus",
+   "sus",
+   "sut",
+   "sûmes",
+   "sûtes",
+   "surent"
+  ],
+  "conditionnel_present": [
+   "saurais",
+   "saurais",
+   "saurait",
+   "saurions",
+   "sauriez",
+   "sauraient"
+  ],
+  "subjonctif_present": [
+   "sache",
+   "saches",
+   "sache",
+   "sachions",
+   "sachiez",
+   "sachent"
+  ],
+  "subjonctif_imparfait": [
+   "susse",
+   "susses",
+   "sût",
+   "sussions",
+   "sussiez",
+   "sussent"
+  ],
+  "imperatif": [
+   null,
+   "sache",
+   null,
+   "sachons",
+   "sachez",
+   null
+  ],
+  "participe_passe": "su",
+  "participe_present": "sachant",
+  "passe_compose": [
+   "ai su",
+   "as su",
+   "a su",
+   "avons su",
+   "avez su",
+   "ont su"
+  ],
+  "frequency_rank_basis": 309037,
+  "true_frequency": 1521198,
+  "gloss": [
+   "know",
+   "know how to",
+   "knowledge"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "devoir",
+  "display_infinitive": "devoir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "dois",
+   "dois",
+   "doit",
+   "devons",
+   "devez",
+   "doivent"
+  ],
+  "imparfait": [
+   "devais",
+   "devais",
+   "devait",
+   "devions",
+   "deviez",
+   "devaient"
+  ],
+  "futur_simple": [
+   "devrai",
+   "devras",
+   "devra",
+   "devrons",
+   "devrez",
+   "devront"
+  ],
+  "passe_simple": [
+   "dus",
+   "dus",
+   "dut",
+   "dûmes",
+   "dûtes",
+   "durent"
+  ],
+  "conditionnel_present": [
+   "devrais",
+   "devrais",
+   "devrait",
+   "devrions",
+   "devriez",
+   "devraient"
+  ],
+  "subjonctif_present": [
+   "doive",
+   "doives",
+   "doive",
+   "devions",
+   "deviez",
+   "doivent"
+  ],
+  "subjonctif_imparfait": [
+   "dusse",
+   "dusses",
+   "dût",
+   "dussions",
+   "dussiez",
+   "dussent"
+  ],
+  "imperatif": [
+   null,
+   "dois",
+   null,
+   "devons",
+   "devez",
+   null
+  ],
+  "participe_passe": "dû",
+  "participe_present": "devant",
+  "passe_compose": [
+   "ai dû",
+   "as dû",
+   "a dû",
+   "avons dû",
+   "avez dû",
+   "ont dû"
+  ],
+  "frequency_rank_basis": 211984,
+  "true_frequency": 1070288,
+  "gloss": [
+   "have to",
+   "must",
+   "owe",
+   "duty",
+   "homework"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "dire",
+  "display_infinitive": "dire",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "dis",
+   "dis",
+   "dit",
+   "disons",
+   "dites",
+   "disent"
+  ],
+  "imparfait": [
+   "disais",
+   "disais",
+   "disait",
+   "disions",
+   "disiez",
+   "disaient"
+  ],
+  "futur_simple": [
+   "dirai",
+   "diras",
+   "dira",
+   "dirons",
+   "direz",
+   "diront"
+  ],
+  "passe_simple": [
+   "dis",
+   "dis",
+   "dit",
+   "dîmes",
+   "dîtes",
+   "dirent"
+  ],
+  "conditionnel_present": [
+   "dirais",
+   "dirais",
+   "dirait",
+   "dirions",
+   "diriez",
+   "diraient"
+  ],
+  "subjonctif_present": [
+   "dise",
+   "dises",
+   "dise",
+   "disions",
+   "disiez",
+   "disent"
+  ],
+  "subjonctif_imparfait": [
+   "disse",
+   "disses",
+   "dît",
+   "dissions",
+   "dissiez",
+   "dissent"
+  ],
+  "imperatif": [
+   null,
+   "dis",
+   null,
+   "disons",
+   "dites",
+   null
+  ],
+  "participe_passe": "dit",
+  "participe_present": "disant",
+  "passe_compose": [
+   "ai dit",
+   "as dit",
+   "a dit",
+   "avons dit",
+   "avez dit",
+   "ont dit"
+  ],
+  "frequency_rank_basis": 186014,
+  "true_frequency": 1823716,
+  "gloss": [
+   "say",
+   "state",
+   "tell"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "penser",
+  "display_infinitive": "penser",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "pense",
+   "penses",
+   "pense",
+   "pensons",
+   "pensez",
+   "pensent"
+  ],
+  "imparfait": [
+   "pensais",
+   "pensais",
+   "pensait",
+   "pensions",
+   "pensiez",
+   "pensaient"
+  ],
+  "futur_simple": [
+   "penserai",
+   "penseras",
+   "pensera",
+   "penserons",
+   "penserez",
+   "penseront"
+  ],
+  "passe_simple": [
+   "pensai",
+   "pensas",
+   "pensa",
+   "pensâmes",
+   "pensâtes",
+   "pensèrent"
+  ],
+  "conditionnel_present": [
+   "penserais",
+   "penserais",
+   "penserait",
+   "penserions",
+   "penseriez",
+   "penseraient"
+  ],
+  "subjonctif_present": [
+   "pense",
+   "penses",
+   "pense",
+   "pensions",
+   "pensiez",
+   "pensent"
+  ],
+  "subjonctif_imparfait": [
+   "pensasse",
+   "pensasses",
+   "pensât",
+   "pensassions",
+   "pensassiez",
+   "pensassent"
+  ],
+  "imperatif": [
+   null,
+   "pense",
+   null,
+   "pensons",
+   "pensez",
+   null
+  ],
+  "participe_passe": "pensé",
+  "participe_present": "pensant",
+  "passe_compose": [
+   "ai pensé",
+   "as pensé",
+   "a pensé",
+   "avons pensé",
+   "avez pensé",
+   "ont pensé"
+  ],
+  "frequency_rank_basis": 175417,
+  "true_frequency": 547860,
+  "gloss": [
+   "think"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "voir",
+  "display_infinitive": "voir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "vois",
+   "vois",
+   "voit",
+   "voyons",
+   "voyez",
+   "voient"
+  ],
+  "imparfait": [
+   "voyais",
+   "voyais",
+   "voyait",
+   "voyions",
+   "voyiez",
+   "voyaient"
+  ],
+  "futur_simple": [
+   "verrai",
+   "verras",
+   "verra",
+   "verrons",
+   "verrez",
+   "verront"
+  ],
+  "passe_simple": [
+   "vis",
+   "vis",
+   "vit",
+   "vîmes",
+   "vîtes",
+   "virent"
+  ],
+  "conditionnel_present": [
+   "verrais",
+   "verrais",
+   "verrait",
+   "verrions",
+   "verriez",
+   "verraient"
+  ],
+  "subjonctif_present": [
+   "voie",
+   "voies",
+   "voie",
+   "voyions",
+   "voyiez",
+   "voient"
+  ],
+  "subjonctif_imparfait": [
+   "visse",
+   "visses",
+   "vît",
+   "vissions",
+   "vissiez",
+   "vissent"
+  ],
+  "imperatif": [
+   null,
+   "vois",
+   null,
+   "voyons",
+   "voyez",
+   null
+  ],
+  "participe_passe": "vu",
+  "participe_present": "voyant",
+  "passe_compose": [
+   "ai vu",
+   "as vu",
+   "a vu",
+   "avons vu",
+   "avez vu",
+   "ont vu"
+  ],
+  "frequency_rank_basis": 154630,
+  "true_frequency": 898537,
+  "gloss": [
+   "see",
+   "witness"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "venir",
+  "display_infinitive": "venir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "viens",
+   "viens",
+   "vient",
+   "venons",
+   "venez",
+   "viennent"
+  ],
+  "imparfait": [
+   "venais",
+   "venais",
+   "venait",
+   "venions",
+   "veniez",
+   "venaient"
+  ],
+  "futur_simple": [
+   "viendrai",
+   "viendras",
+   "viendra",
+   "viendrons",
+   "viendrez",
+   "viendront"
+  ],
+  "passe_simple": [
+   "vins",
+   "vins",
+   "vint",
+   "vînmes",
+   "vîntes",
+   "vinrent"
+  ],
+  "conditionnel_present": [
+   "viendrais",
+   "viendrais",
+   "viendrait",
+   "viendrions",
+   "viendriez",
+   "viendraient"
+  ],
+  "subjonctif_present": [
+   "vienne",
+   "viennes",
+   "vienne",
+   "venions",
+   "veniez",
+   "viennent"
+  ],
+  "subjonctif_imparfait": [
+   "vinsse",
+   "vinsses",
+   "vînt",
+   "vinssions",
+   "vinssiez",
+   "vinssent"
+  ],
+  "imperatif": [
+   null,
+   "viens",
+   null,
+   "venons",
+   "venez",
+   null
+  ],
+  "participe_passe": "venu",
+  "participe_present": "venant",
+  "passe_compose": [
+   "suis venu",
+   "es venu",
+   "est venu",
+   "sommes venu",
+   "êtes venu",
+   "sont venu"
+  ],
+  "frequency_rank_basis": 134724,
+  "true_frequency": 641608,
+  "gloss": [
+   "come",
+   "happen"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "attendre",
+  "display_infinitive": "attendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "attends",
+   "attends",
+   "attend",
+   "attendons",
+   "attendez",
+   "attendent"
+  ],
+  "imparfait": [
+   "attendais",
+   "attendais",
+   "attendait",
+   "attendions",
+   "attendiez",
+   "attendaient"
+  ],
+  "futur_simple": [
+   "attendrai",
+   "attendras",
+   "attendra",
+   "attendrons",
+   "attendrez",
+   "attendront"
+  ],
+  "passe_simple": [
+   "attendis",
+   "attendis",
+   "attendit",
+   "attendîmes",
+   "attendîtes",
+   "attendirent"
+  ],
+  "conditionnel_present": [
+   "attendrais",
+   "attendrais",
+   "attendrait",
+   "attendrions",
+   "attendriez",
+   "attendraient"
+  ],
+  "subjonctif_present": [
+   "attende",
+   "attendes",
+   "attende",
+   "attendions",
+   "attendiez",
+   "attendent"
+  ],
+  "subjonctif_imparfait": [
+   "attendisse",
+   "attendisses",
+   "attendît",
+   "attendissions",
+   "attendissiez",
+   "attendissent"
+  ],
+  "imperatif": [
+   null,
+   "attends",
+   null,
+   "attendons",
+   "attendez",
+   null
+  ],
+  "participe_passe": "attendu",
+  "participe_present": "attendant",
+  "passe_compose": [
+   "ai attendu",
+   "as attendu",
+   "a attendu",
+   "avons attendu",
+   "avez attendu",
+   "ont attendu"
+  ],
+  "frequency_rank_basis": 117830,
+  "true_frequency": 369472,
+  "gloss": [
+   "await",
+   "expect",
+   "wait for",
+   "wait"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "croire",
+  "display_infinitive": "croire",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "crois",
+   "crois",
+   "croit",
+   "croyons",
+   "croyez",
+   "croient"
+  ],
+  "imparfait": [
+   "croyais",
+   "croyais",
+   "croyait",
+   "croyions",
+   "croyiez",
+   "croyaient"
+  ],
+  "futur_simple": [
+   "croirai",
+   "croiras",
+   "croira",
+   "croirons",
+   "croirez",
+   "croiront"
+  ],
+  "passe_simple": [
+   "crus",
+   "crus",
+   "crut",
+   "crûmes",
+   "crûtes",
+   "crurent"
+  ],
+  "conditionnel_present": [
+   "croirais",
+   "croirais",
+   "croirait",
+   "croirions",
+   "croiriez",
+   "croiraient"
+  ],
+  "subjonctif_present": [
+   "croie",
+   "croies",
+   "croie",
+   "croyions",
+   "croyiez",
+   "croient"
+  ],
+  "subjonctif_imparfait": [
+   "crusse",
+   "crusses",
+   "crût",
+   "crussions",
+   "crussiez",
+   "crussent"
+  ],
+  "imperatif": [
+   null,
+   "crois",
+   null,
+   "croyons",
+   "croyez",
+   null
+  ],
+  "participe_passe": "cru",
+  "participe_present": "croyant",
+  "passe_compose": [
+   "ai cru",
+   "as cru",
+   "a cru",
+   "avons cru",
+   "avez cru",
+   "ont cru"
+  ],
+  "frequency_rank_basis": 96503,
+  "true_frequency": 456017,
+  "gloss": [
+   "believe",
+   "think",
+   "trust"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "parler",
+  "display_infinitive": "parler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "parle",
+   "parles",
+   "parle",
+   "parlons",
+   "parlez",
+   "parlent"
+  ],
+  "imparfait": [
+   "parlais",
+   "parlais",
+   "parlait",
+   "parlions",
+   "parliez",
+   "parlaient"
+  ],
+  "futur_simple": [
+   "parlerai",
+   "parleras",
+   "parlera",
+   "parlerons",
+   "parlerez",
+   "parleront"
+  ],
+  "passe_simple": [
+   "parlai",
+   "parlas",
+   "parla",
+   "parlâmes",
+   "parlâtes",
+   "parlèrent"
+  ],
+  "conditionnel_present": [
+   "parlerais",
+   "parlerais",
+   "parlerait",
+   "parlerions",
+   "parleriez",
+   "parleraient"
+  ],
+  "subjonctif_present": [
+   "parle",
+   "parles",
+   "parle",
+   "parlions",
+   "parliez",
+   "parlent"
+  ],
+  "subjonctif_imparfait": [
+   "parlasse",
+   "parlasses",
+   "parlât",
+   "parlassions",
+   "parlassiez",
+   "parlassent"
+  ],
+  "imperatif": [
+   null,
+   "parle",
+   null,
+   "parlons",
+   "parlez",
+   null
+  ],
+  "participe_passe": "parlé",
+  "participe_present": "parlant",
+  "passe_compose": [
+   "ai parlé",
+   "as parlé",
+   "a parlé",
+   "avons parlé",
+   "avez parlé",
+   "ont parlé"
+  ],
+  "frequency_rank_basis": 92492,
+  "true_frequency": 532382,
+  "gloss": [
+   "speak",
+   "talk"
+  ],
+  "gloss_source": "freedict"
+ },
+ {
+  "infinitive": "prendre",
+  "display_infinitive": "prendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "prends",
+   "prends",
+   "prend",
+   "prenons",
+   "prenez",
+   "prennent"
+  ],
+  "imparfait": [
+   "prenais",
+   "prenais",
+   "prenait",
+   "prenions",
+   "preniez",
+   "prenaient"
+  ],
+  "futur_simple": [
+   "prendrai",
+   "prendras",
+   "prendra",
+   "prendrons",
+   "prendrez",
+   "prendront"
+  ],
+  "passe_simple": [
+   "pris",
+   "pris",
+   "prit",
+   "prîmes",
+   "prîtes",
+   "prirent"
+  ],
+  "conditionnel_present": [
+   "prendrais",
+   "prendrais",
+   "prendrait",
+   "prendrions",
+   "prendriez",
+   "prendraient"
+  ],
+  "subjonctif_present": [
+   "prenne",
+   "prennes",
+   "prenne",
+   "prenions",
+   "preniez",
+   "prennent"
+  ],
+  "subjonctif_imparfait": [
+   "prisse",
+   "prisses",
+   "prît",
+   "prissions",
+   "prissiez",
+   "prissent"
+  ],
+  "imperatif": [
+   null,
+   "prends",
+   null,
+   "prenons",
+   "prenez",
+   null
+  ],
+  "participe_passe": "pris",
+  "participe_present": "prenant",
+  "passe_compose": [
+   "ai pris",
+   "as pris",
+   "a pris",
+   "avons pris",
+   "avez pris",
+   "ont pris"
+  ],
+  "frequency_rank_basis": 90381,
+  "true_frequency": 569799,
+  "gloss": [
+   "take"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "regarder",
+  "display_infinitive": "regarder",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "regarde",
+   "regardes",
+   "regarde",
+   "regardons",
+   "regardez",
+   "regardent"
+  ],
+  "imparfait": [
+   "regardais",
+   "regardais",
+   "regardait",
+   "regardions",
+   "regardiez",
+   "regardaient"
+  ],
+  "futur_simple": [
+   "regarderai",
+   "regarderas",
+   "regardera",
+   "regarderons",
+   "regarderez",
+   "regarderont"
+  ],
+  "passe_simple": [
+   "regardai",
+   "regardas",
+   "regarda",
+   "regardâmes",
+   "regardâtes",
+   "regardèrent"
+  ],
+  "conditionnel_present": [
+   "regarderais",
+   "regarderais",
+   "regarderait",
+   "regarderions",
+   "regarderiez",
+   "regarderaient"
+  ],
+  "subjonctif_present": [
+   "regarde",
+   "regardes",
+   "regarde",
+   "regardions",
+   "regardiez",
+   "regardent"
+  ],
+  "subjonctif_imparfait": [
+   "regardasse",
+   "regardasses",
+   "regardât",
+   "regardassions",
+   "regardassiez",
+   "regardassent"
+  ],
+  "imperatif": [
+   null,
+   "regarde",
+   null,
+   "regardons",
+   "regardez",
+   null
+  ],
+  "participe_passe": "regardé",
+  "participe_present": "regardant",
+  "passe_compose": [
+   "ai regardé",
+   "as regardé",
+   "a regardé",
+   "avons regardé",
+   "avez regardé",
+   "ont regardé"
+  ],
+  "frequency_rank_basis": 82229,
+  "true_frequency": 289011,
+  "gloss": [
+   "watch",
+   "look at",
+   "concern"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "aimer",
+  "display_infinitive": "aimer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "aime",
+   "aimes",
+   "aime",
+   "aimons",
+   "aimez",
+   "aiment"
+  ],
+  "imparfait": [
+   "aimais",
+   "aimais",
+   "aimait",
+   "aimions",
+   "aimiez",
+   "aimaient"
+  ],
+  "futur_simple": [
+   "aimerai",
+   "aimeras",
+   "aimera",
+   "aimerons",
+   "aimerez",
+   "aimeront"
+  ],
+  "passe_simple": [
+   "aimai",
+   "aimas",
+   "aima",
+   "aimâmes",
+   "aimâtes",
+   "aimèrent"
+  ],
+  "conditionnel_present": [
+   "aimerais",
+   "aimerais",
+   "aimerait",
+   "aimerions",
+   "aimeriez",
+   "aimeraient"
+  ],
+  "subjonctif_present": [
+   "aime",
+   "aimes",
+   "aime",
+   "aimions",
+   "aimiez",
+   "aiment"
+  ],
+  "subjonctif_imparfait": [
+   "aimasse",
+   "aimasses",
+   "aimât",
+   "aimassions",
+   "aimassiez",
+   "aimassent"
+  ],
+  "imperatif": [
+   null,
+   "aime",
+   null,
+   "aimons",
+   "aimez",
+   null
+  ],
+  "participe_passe": "aimé",
+  "participe_present": "aimant",
+  "passe_compose": [
+   "ai aimé",
+   "as aimé",
+   "a aimé",
+   "avons aimé",
+   "avez aimé",
+   "ont aimé"
+  ],
+  "frequency_rank_basis": 70761,
+  "true_frequency": 480440,
+  "gloss": [
+   "appreciate",
+   "enjoy",
+   "like",
+   "love"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "trouver",
+  "display_infinitive": "trouver",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "trouve",
+   "trouves",
+   "trouve",
+   "trouvons",
+   "trouvez",
+   "trouvent"
+  ],
+  "imparfait": [
+   "trouvais",
+   "trouvais",
+   "trouvait",
+   "trouvions",
+   "trouviez",
+   "trouvaient"
+  ],
+  "futur_simple": [
+   "trouverai",
+   "trouveras",
+   "trouvera",
+   "trouverons",
+   "trouverez",
+   "trouveront"
+  ],
+  "passe_simple": [
+   "trouvai",
+   "trouvas",
+   "trouva",
+   "trouvâmes",
+   "trouvâtes",
+   "trouvèrent"
+  ],
+  "conditionnel_present": [
+   "trouverais",
+   "trouverais",
+   "trouverait",
+   "trouverions",
+   "trouveriez",
+   "trouveraient"
+  ],
+  "subjonctif_present": [
+   "trouve",
+   "trouves",
+   "trouve",
+   "trouvions",
+   "trouviez",
+   "trouvent"
+  ],
+  "subjonctif_imparfait": [
+   "trouvasse",
+   "trouvasses",
+   "trouvât",
+   "trouvassions",
+   "trouvassiez",
+   "trouvassent"
+  ],
+  "imperatif": [
+   null,
+   "trouve",
+   null,
+   "trouvons",
+   "trouvez",
+   null
+  ],
+  "participe_passe": "trouvé",
+  "participe_present": "trouvant",
+  "passe_compose": [
+   "ai trouvé",
+   "as trouvé",
+   "a trouvé",
+   "avons trouvé",
+   "avez trouvé",
+   "ont trouvé"
+  ],
+  "frequency_rank_basis": 66054,
+  "true_frequency": 308737,
+  "gloss": [
+   "be",
+   "find",
+   "like"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "laisser",
+  "display_infinitive": "laisser",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "laisse",
+   "laisses",
+   "laisse",
+   "laissons",
+   "laissez",
+   "laissent"
+  ],
+  "imparfait": [
+   "laissais",
+   "laissais",
+   "laissait",
+   "laissions",
+   "laissiez",
+   "laissaient"
+  ],
+  "futur_simple": [
+   "laisserai",
+   "laisseras",
+   "laissera",
+   "laisserons",
+   "laisserez",
+   "laisseront"
+  ],
+  "passe_simple": [
+   "laissai",
+   "laissas",
+   "laissa",
+   "laissâmes",
+   "laissâtes",
+   "laissèrent"
+  ],
+  "conditionnel_present": [
+   "laisserais",
+   "laisserais",
+   "laisserait",
+   "laisserions",
+   "laisseriez",
+   "laisseraient"
+  ],
+  "subjonctif_present": [
+   "laisse",
+   "laisses",
+   "laisse",
+   "laissions",
+   "laissiez",
+   "laissent"
+  ],
+  "subjonctif_imparfait": [
+   "laissasse",
+   "laissasses",
+   "laissât",
+   "laissassions",
+   "laissassiez",
+   "laissassent"
+  ],
+  "imperatif": [
+   null,
+   "laisse",
+   null,
+   "laissons",
+   "laissez",
+   null
+  ],
+  "participe_passe": "laissé",
+  "participe_present": "laissant",
+  "passe_compose": [
+   "ai laissé",
+   "as laissé",
+   "a laissé",
+   "avons laissé",
+   "avez laissé",
+   "ont laissé"
+  ],
+  "frequency_rank_basis": 64003,
+  "true_frequency": 269294,
+  "gloss": [
+   "allow",
+   "leave",
+   "let",
+   "release"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "connaître",
+  "display_infinitive": "connaître",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "connais",
+   "connais",
+   "connaît",
+   "connaissons",
+   "connaissez",
+   "connaissent"
+  ],
+  "imparfait": [
+   "connaissais",
+   "connaissais",
+   "connaissait",
+   "connaissions",
+   "connaissiez",
+   "connaissaient"
+  ],
+  "futur_simple": [
+   "connaîtrai",
+   "connaîtras",
+   "connaîtra",
+   "connaîtrons",
+   "connaîtrez",
+   "connaîtront"
+  ],
+  "passe_simple": [
+   "connus",
+   "connus",
+   "connut",
+   "connûmes",
+   "connûtes",
+   "connurent"
+  ],
+  "conditionnel_present": [
+   "connaîtrais",
+   "connaîtrais",
+   "connaîtrait",
+   "connaîtrions",
+   "connaîtriez",
+   "connaîtraient"
+  ],
+  "subjonctif_present": [
+   "connaisse",
+   "connaisses",
+   "connaisse",
+   "connaissions",
+   "connaissiez",
+   "connaissent"
+  ],
+  "subjonctif_imparfait": [
+   "connusse",
+   "connusses",
+   "connût",
+   "connussions",
+   "connussiez",
+   "connussent"
+  ],
+  "imperatif": [
+   null,
+   "connais",
+   null,
+   "connaissons",
+   "connaissez",
+   null
+  ],
+  "participe_passe": "connu",
+  "participe_present": "connaissant",
+  "passe_compose": [
+   "ai connu",
+   "as connu",
+   "a connu",
+   "avons connu",
+   "avez connu",
+   "ont connu"
+  ],
+  "frequency_rank_basis": 62728,
+  "true_frequency": 244436,
+  "gloss": [
+   "know"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "arrêter",
+  "display_infinitive": "arrêter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "arrête",
+   "arrêtes",
+   "arrête",
+   "arrêtons",
+   "arrêtez",
+   "arrêtent"
+  ],
+  "imparfait": [
+   "arrêtais",
+   "arrêtais",
+   "arrêtait",
+   "arrêtions",
+   "arrêtiez",
+   "arrêtaient"
+  ],
+  "futur_simple": [
+   "arrêterai",
+   "arrêteras",
+   "arrêtera",
+   "arrêterons",
+   "arrêterez",
+   "arrêteront"
+  ],
+  "passe_simple": [
+   "arrêtai",
+   "arrêtas",
+   "arrêta",
+   "arrêtâmes",
+   "arrêtâtes",
+   "arrêtèrent"
+  ],
+  "conditionnel_present": [
+   "arrêterais",
+   "arrêterais",
+   "arrêterait",
+   "arrêterions",
+   "arrêteriez",
+   "arrêteraient"
+  ],
+  "subjonctif_present": [
+   "arrête",
+   "arrêtes",
+   "arrête",
+   "arrêtions",
+   "arrêtiez",
+   "arrêtent"
+  ],
+  "subjonctif_imparfait": [
+   "arrêtasse",
+   "arrêtasses",
+   "arrêtât",
+   "arrêtassions",
+   "arrêtassiez",
+   "arrêtassent"
+  ],
+  "imperatif": [
+   null,
+   "arrête",
+   null,
+   "arrêtons",
+   "arrêtez",
+   null
+  ],
+  "participe_passe": "arrêté",
+  "participe_present": "arrêtant",
+  "passe_compose": [
+   "ai arrêté",
+   "as arrêté",
+   "a arrêté",
+   "avons arrêté",
+   "avez arrêté",
+   "ont arrêté"
+  ],
+  "frequency_rank_basis": 60676,
+  "true_frequency": 272724,
+  "gloss": [
+   "abate",
+   "apprehend",
+   "arrest",
+   "bar",
+   "detain"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "rester",
+  "display_infinitive": "rester",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "reste",
+   "restes",
+   "reste",
+   "restons",
+   "restez",
+   "restent"
+  ],
+  "imparfait": [
+   "restais",
+   "restais",
+   "restait",
+   "restions",
+   "restiez",
+   "restaient"
+  ],
+  "futur_simple": [
+   "resterai",
+   "resteras",
+   "restera",
+   "resterons",
+   "resterez",
+   "resteront"
+  ],
+  "passe_simple": [
+   "restai",
+   "restas",
+   "resta",
+   "restâmes",
+   "restâtes",
+   "restèrent"
+  ],
+  "conditionnel_present": [
+   "resterais",
+   "resterais",
+   "resterait",
+   "resterions",
+   "resteriez",
+   "resteraient"
+  ],
+  "subjonctif_present": [
+   "reste",
+   "restes",
+   "reste",
+   "restions",
+   "restiez",
+   "restent"
+  ],
+  "subjonctif_imparfait": [
+   "restasse",
+   "restasses",
+   "restât",
+   "restassions",
+   "restassiez",
+   "restassent"
+  ],
+  "imperatif": [
+   null,
+   "reste",
+   null,
+   "restons",
+   "restez",
+   null
+  ],
+  "participe_passe": "resté",
+  "participe_present": "restant",
+  "passe_compose": [
+   "suis resté",
+   "es resté",
+   "est resté",
+   "sommes resté",
+   "êtes resté",
+   "sont resté"
+  ],
+  "frequency_rank_basis": 59712,
+  "true_frequency": 336294,
+  "gloss": [
+   "abide",
+   "keep",
+   "remain",
+   "rest",
+   "stay over"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "appeler",
+  "display_infinitive": "appeler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "appelle",
+   "appelles",
+   "appelle",
+   "appelons",
+   "appelez",
+   "appellent"
+  ],
+  "imparfait": [
+   "appelais",
+   "appelais",
+   "appelait",
+   "appelions",
+   "appeliez",
+   "appelaient"
+  ],
+  "futur_simple": [
+   "appellerai",
+   "appelleras",
+   "appellera",
+   "appellerons",
+   "appellerez",
+   "appelleront"
+  ],
+  "passe_simple": [
+   "appelai",
+   "appelas",
+   "appela",
+   "appelâmes",
+   "appelâtes",
+   "appelèrent"
+  ],
+  "conditionnel_present": [
+   "appellerais",
+   "appellerais",
+   "appellerait",
+   "appellerions",
+   "appelleriez",
+   "appelleraient"
+  ],
+  "subjonctif_present": [
+   "appelle",
+   "appelles",
+   "appelle",
+   "appelions",
+   "appeliez",
+   "appellent"
+  ],
+  "subjonctif_imparfait": [
+   "appelasse",
+   "appelasses",
+   "appelât",
+   "appelassions",
+   "appelassiez",
+   "appelassent"
+  ],
+  "imperatif": [
+   null,
+   "appelle",
+   null,
+   "appelons",
+   "appelez",
+   null
+  ],
+  "participe_passe": "appelé",
+  "participe_present": "appelant",
+  "passe_compose": [
+   "ai appelé",
+   "as appelé",
+   "a appelé",
+   "avons appelé",
+   "avez appelé",
+   "ont appelé"
+  ],
+  "frequency_rank_basis": 49526,
+  "true_frequency": 268490,
+  "gloss": [
+   "call",
+   "summon"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "sortir",
+  "display_infinitive": "sortir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "sors",
+   "sors",
+   "sort",
+   "sortons",
+   "sortez",
+   "sortent"
+  ],
+  "imparfait": [
+   "sortais",
+   "sortais",
+   "sortait",
+   "sortions",
+   "sortiez",
+   "sortaient"
+  ],
+  "futur_simple": [
+   "sortirai",
+   "sortiras",
+   "sortira",
+   "sortirons",
+   "sortirez",
+   "sortiront"
+  ],
+  "passe_simple": [
+   "sortis",
+   "sortis",
+   "sortit",
+   "sortîmes",
+   "sortîtes",
+   "sortirent"
+  ],
+  "conditionnel_present": [
+   "sortirais",
+   "sortirais",
+   "sortirait",
+   "sortirions",
+   "sortiriez",
+   "sortiraient"
+  ],
+  "subjonctif_present": [
+   "sorte",
+   "sortes",
+   "sorte",
+   "sortions",
+   "sortiez",
+   "sortent"
+  ],
+  "subjonctif_imparfait": [
+   "sortisse",
+   "sortisses",
+   "sortît",
+   "sortissions",
+   "sortissiez",
+   "sortissent"
+  ],
+  "imperatif": [
+   null,
+   "sors",
+   null,
+   "sortons",
+   "sortez",
+   null
+  ],
+  "participe_passe": "sorti",
+  "participe_present": "sortant",
+  "passe_compose": [
+   "ai sorti",
+   "as sorti",
+   "a sorti",
+   "avons sorti",
+   "avez sorti",
+   "ont sorti"
+  ],
+  "frequency_rank_basis": 49487,
+  "true_frequency": 303428,
+  "gloss": [
+   "bring out",
+   "come out",
+   "go out",
+   "take out"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "passer",
+  "display_infinitive": "passer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "passe",
+   "passes",
+   "passe",
+   "passons",
+   "passez",
+   "passent"
+  ],
+  "imparfait": [
+   "passais",
+   "passais",
+   "passait",
+   "passions",
+   "passiez",
+   "passaient"
+  ],
+  "futur_simple": [
+   "passerai",
+   "passeras",
+   "passera",
+   "passerons",
+   "passerez",
+   "passeront"
+  ],
+  "passe_simple": [
+   "passai",
+   "passas",
+   "passa",
+   "passâmes",
+   "passâtes",
+   "passèrent"
+  ],
+  "conditionnel_present": [
+   "passerais",
+   "passerais",
+   "passerait",
+   "passerions",
+   "passeriez",
+   "passeraient"
+  ],
+  "subjonctif_present": [
+   "passe",
+   "passes",
+   "passe",
+   "passions",
+   "passiez",
+   "passent"
+  ],
+  "subjonctif_imparfait": [
+   "passasse",
+   "passasses",
+   "passât",
+   "passassions",
+   "passassiez",
+   "passassent"
+  ],
+  "imperatif": [
+   null,
+   "passe",
+   null,
+   "passons",
+   "passez",
+   null
+  ],
+  "participe_passe": "passé",
+  "participe_present": "passant",
+  "passe_compose": [
+   "ai passé",
+   "as passé",
+   "a passé",
+   "avons passé",
+   "avez passé",
+   "ont passé"
+  ],
+  "frequency_rank_basis": 47667,
+  "true_frequency": 325901,
+  "gloss": [
+   "go",
+   "pass",
+   "put on",
+   "transfer"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "falloir",
+  "display_infinitive": "falloir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   null,
+   null,
+   "faut",
+   null,
+   null,
+   null
+  ],
+  "imparfait": [
+   null,
+   null,
+   "fallait",
+   null,
+   null,
+   null
+  ],
+  "futur_simple": [
+   null,
+   null,
+   "faudra",
+   null,
+   null,
+   null
+  ],
+  "passe_simple": [
+   null,
+   null,
+   "fallut",
+   null,
+   null,
+   null
+  ],
+  "conditionnel_present": [
+   null,
+   null,
+   "faudrait",
+   null,
+   null,
+   null
+  ],
+  "subjonctif_present": [
+   null,
+   null,
+   "faille",
+   null,
+   null,
+   null
+  ],
+  "subjonctif_imparfait": [
+   null,
+   null,
+   "fallût",
+   null,
+   null,
+   null
+  ],
+  "imperatif": null,
+  "participe_passe": "fallu",
+  "participe_present": null,
+  "passe_compose": [
+   "ai fallu",
+   "as fallu",
+   "a fallu",
+   "avons fallu",
+   "avez fallu",
+   "ont fallu"
+  ],
+  "frequency_rank_basis": 47356,
+  "true_frequency": 391810,
+  "gloss": [
+   "We need something",
+   "You have to",
+   "It is necessary that"
+  ],
+  "gloss_source": "freedict"
+ },
+ {
+  "infinitive": "partir",
+  "display_infinitive": "partir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "pars",
+   "pars",
+   "part",
+   "partons",
+   "partez",
+   "partent"
+  ],
+  "imparfait": [
+   "partais",
+   "partais",
+   "partait",
+   "partions",
+   "partiez",
+   "partaient"
+  ],
+  "futur_simple": [
+   "partirai",
+   "partiras",
+   "partira",
+   "partirons",
+   "partirez",
+   "partiront"
+  ],
+  "passe_simple": [
+   "partis",
+   "partis",
+   "partit",
+   "partîmes",
+   "partîtes",
+   "partirent"
+  ],
+  "conditionnel_present": [
+   "partirais",
+   "partirais",
+   "partirait",
+   "partirions",
+   "partiriez",
+   "partiraient"
+  ],
+  "subjonctif_present": [
+   "parte",
+   "partes",
+   "parte",
+   "partions",
+   "partiez",
+   "partent"
+  ],
+  "subjonctif_imparfait": [
+   "partisse",
+   "partisses",
+   "partît",
+   "partissions",
+   "partissiez",
+   "partissent"
+  ],
+  "imperatif": [
+   null,
+   "pars",
+   null,
+   "partons",
+   "partez",
+   null
+  ],
+  "participe_passe": "parti",
+  "participe_present": "partant",
+  "passe_compose": [
+   "suis parti",
+   "es parti",
+   "est parti",
+   "sommes parti",
+   "êtes parti",
+   "sont parti"
+  ],
+  "frequency_rank_basis": 47243,
+  "true_frequency": 354243,
+  "gloss": [
+   "absent onself from",
+   "absent onself",
+   "depart",
+   "discharge",
+   "drive away"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "arriver",
+  "display_infinitive": "arriver",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "arrive",
+   "arrives",
+   "arrive",
+   "arrivons",
+   "arrivez",
+   "arrivent"
+  ],
+  "imparfait": [
+   "arrivais",
+   "arrivais",
+   "arrivait",
+   "arrivions",
+   "arriviez",
+   "arrivaient"
+  ],
+  "futur_simple": [
+   "arriverai",
+   "arriveras",
+   "arrivera",
+   "arriverons",
+   "arriverez",
+   "arriveront"
+  ],
+  "passe_simple": [
+   "arrivai",
+   "arrivas",
+   "arriva",
+   "arrivâmes",
+   "arrivâtes",
+   "arrivèrent"
+  ],
+  "conditionnel_present": [
+   "arriverais",
+   "arriverais",
+   "arriverait",
+   "arriverions",
+   "arriveriez",
+   "arriveraient"
+  ],
+  "subjonctif_present": [
+   "arrive",
+   "arrives",
+   "arrive",
+   "arrivions",
+   "arriviez",
+   "arrivent"
+  ],
+  "subjonctif_imparfait": [
+   "arrivasse",
+   "arrivasses",
+   "arrivât",
+   "arrivassions",
+   "arrivassiez",
+   "arrivassent"
+  ],
+  "imperatif": [
+   null,
+   "arrive",
+   null,
+   "arrivons",
+   "arrivez",
+   null
+  ],
+  "participe_passe": "arrivé",
+  "participe_present": "arrivant",
+  "passe_compose": [
+   "suis arrivé",
+   "es arrivé",
+   "est arrivé",
+   "sommes arrivé",
+   "êtes arrivé",
+   "sont arrivé"
+  ],
+  "frequency_rank_basis": 44944,
+  "true_frequency": 288818,
+  "gloss": [
+   "arrive",
+   "come about",
+   "come",
+   "end up",
+   "get to"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "essayer",
+  "display_infinitive": "essayer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "essaye",
+   "essayes",
+   "essaye",
+   "essayons",
+   "essayez",
+   "essayent"
+  ],
+  "imparfait": [
+   "essayais",
+   "essayais",
+   "essayait",
+   "essayions",
+   "essayiez",
+   "essayaient"
+  ],
+  "futur_simple": [
+   "essayerai",
+   "essayeras",
+   "essayera",
+   "essayerons",
+   "essayerez",
+   "essayeront"
+  ],
+  "passe_simple": [
+   "essayai",
+   "essayas",
+   "essaya",
+   "essayâmes",
+   "essayâtes",
+   "essayèrent"
+  ],
+  "conditionnel_present": [
+   "essayerais",
+   "essayerais",
+   "essayerait",
+   "essayerions",
+   "essayeriez",
+   "essayeraient"
+  ],
+  "subjonctif_present": [
+   "essaye",
+   "essayes",
+   "essaye",
+   "essayions",
+   "essayiez",
+   "essayent"
+  ],
+  "subjonctif_imparfait": [
+   "essayasse",
+   "essayasses",
+   "essayât",
+   "essayassions",
+   "essayassiez",
+   "essayassent"
+  ],
+  "imperatif": [
+   null,
+   "essaye",
+   null,
+   "essayons",
+   "essayez",
+   null
+  ],
+  "participe_passe": "essayé",
+  "participe_present": "essayant",
+  "passe_compose": [
+   "ai essayé",
+   "as essayé",
+   "a essayé",
+   "avons essayé",
+   "avez essayé",
+   "ont essayé"
+  ],
+  "frequency_rank_basis": 44571,
+  "true_frequency": 129125,
+  "gloss": [
+   "assay",
+   "attempt",
+   "pilot",
+   "prove",
+   "sample"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "écouter",
+  "display_infinitive": "écouter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "écoute",
+   "écoutes",
+   "écoute",
+   "écoutons",
+   "écoutez",
+   "écoutent"
+  ],
+  "imparfait": [
+   "écoutais",
+   "écoutais",
+   "écoutait",
+   "écoutions",
+   "écoutiez",
+   "écoutaient"
+  ],
+  "futur_simple": [
+   "écouterai",
+   "écouteras",
+   "écoutera",
+   "écouterons",
+   "écouterez",
+   "écouteront"
+  ],
+  "passe_simple": [
+   "écoutai",
+   "écoutas",
+   "écouta",
+   "écoutâmes",
+   "écoutâtes",
+   "écoutèrent"
+  ],
+  "conditionnel_present": [
+   "écouterais",
+   "écouterais",
+   "écouterait",
+   "écouterions",
+   "écouteriez",
+   "écouteraient"
+  ],
+  "subjonctif_present": [
+   "écoute",
+   "écoutes",
+   "écoute",
+   "écoutions",
+   "écoutiez",
+   "écoutent"
+  ],
+  "subjonctif_imparfait": [
+   "écoutasse",
+   "écoutasses",
+   "écoutât",
+   "écoutassions",
+   "écoutassiez",
+   "écoutassent"
+  ],
+  "imperatif": [
+   null,
+   "écoute",
+   null,
+   "écoutons",
+   "écoutez",
+   null
+  ],
+  "participe_passe": "écouté",
+  "participe_present": "écoutant",
+  "passe_compose": [
+   "ai écouté",
+   "as écouté",
+   "a écouté",
+   "avons écouté",
+   "avez écouté",
+   "ont écouté"
+  ],
+  "frequency_rank_basis": 44140,
+  "true_frequency": 162857,
+  "gloss": [
+   "listen to",
+   "listen"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "demander",
+  "display_infinitive": "demander",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "demande",
+   "demandes",
+   "demande",
+   "demandons",
+   "demandez",
+   "demandent"
+  ],
+  "imparfait": [
+   "demandais",
+   "demandais",
+   "demandait",
+   "demandions",
+   "demandiez",
+   "demandaient"
+  ],
+  "futur_simple": [
+   "demanderai",
+   "demanderas",
+   "demandera",
+   "demanderons",
+   "demanderez",
+   "demanderont"
+  ],
+  "passe_simple": [
+   "demandai",
+   "demandas",
+   "demanda",
+   "demandâmes",
+   "demandâtes",
+   "demandèrent"
+  ],
+  "conditionnel_present": [
+   "demanderais",
+   "demanderais",
+   "demanderait",
+   "demanderions",
+   "demanderiez",
+   "demanderaient"
+  ],
+  "subjonctif_present": [
+   "demande",
+   "demandes",
+   "demande",
+   "demandions",
+   "demandiez",
+   "demandent"
+  ],
+  "subjonctif_imparfait": [
+   "demandasse",
+   "demandasses",
+   "demandât",
+   "demandassions",
+   "demandassiez",
+   "demandassent"
+  ],
+  "imperatif": [
+   null,
+   "demande",
+   null,
+   "demandons",
+   "demandez",
+   null
+  ],
+  "participe_passe": "demandé",
+  "participe_present": "demandant",
+  "passe_compose": [
+   "ai demandé",
+   "as demandé",
+   "a demandé",
+   "avons demandé",
+   "avez demandé",
+   "ont demandé"
+  ],
+  "frequency_rank_basis": 41888,
+  "true_frequency": 226054,
+  "gloss": [
+   "ask for",
+   "ask",
+   "demand",
+   "inquire",
+   "request"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "tenir",
+  "display_infinitive": "tenir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "tiens",
+   "tiens",
+   "tient",
+   "tenons",
+   "tenez",
+   "tiennent"
+  ],
+  "imparfait": [
+   "tenais",
+   "tenais",
+   "tenait",
+   "tenions",
+   "teniez",
+   "tenaient"
+  ],
+  "futur_simple": [
+   "tiendrai",
+   "tiendras",
+   "tiendra",
+   "tiendrons",
+   "tiendrez",
+   "tiendront"
+  ],
+  "passe_simple": [
+   "tins",
+   "tins",
+   "tint",
+   "tînmes",
+   "tîntes",
+   "tinrent"
+  ],
+  "conditionnel_present": [
+   "tiendrais",
+   "tiendrais",
+   "tiendrait",
+   "tiendrions",
+   "tiendriez",
+   "tiendraient"
+  ],
+  "subjonctif_present": [
+   "tienne",
+   "tiennes",
+   "tienne",
+   "tenions",
+   "teniez",
+   "tiennent"
+  ],
+  "subjonctif_imparfait": [
+   "tinsse",
+   "tinsses",
+   "tînt",
+   "tinssions",
+   "tinssiez",
+   "tinssent"
+  ],
+  "imperatif": [
+   null,
+   "tiens",
+   null,
+   "tenons",
+   "tenez",
+   null
+  ],
+  "participe_passe": "tenu",
+  "participe_present": "tenant",
+  "passe_compose": [
+   "ai tenu",
+   "as tenu",
+   "a tenu",
+   "avons tenu",
+   "avez tenu",
+   "ont tenu"
+  ],
+  "frequency_rank_basis": 41007,
+  "true_frequency": 185895,
+  "gloss": [
+   "hang onto",
+   "have",
+   "hold",
+   "keep",
+   "maintain"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "revenir",
+  "display_infinitive": "revenir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "reviens",
+   "reviens",
+   "revient",
+   "revenons",
+   "revenez",
+   "reviennent"
+  ],
+  "imparfait": [
+   "revenais",
+   "revenais",
+   "revenait",
+   "revenions",
+   "reveniez",
+   "revenaient"
+  ],
+  "futur_simple": [
+   "reviendrai",
+   "reviendras",
+   "reviendra",
+   "reviendrons",
+   "reviendrez",
+   "reviendront"
+  ],
+  "passe_simple": [
+   "revins",
+   "revins",
+   "revint",
+   "revînmes",
+   "revîntes",
+   "revinrent"
+  ],
+  "conditionnel_present": [
+   "reviendrais",
+   "reviendrais",
+   "reviendrait",
+   "reviendrions",
+   "reviendriez",
+   "reviendraient"
+  ],
+  "subjonctif_present": [
+   "revienne",
+   "reviennes",
+   "revienne",
+   "revenions",
+   "reveniez",
+   "reviennent"
+  ],
+  "subjonctif_imparfait": [
+   "revinsse",
+   "revinsses",
+   "revînt",
+   "revinssions",
+   "revinssiez",
+   "revinssent"
+  ],
+  "imperatif": [
+   null,
+   "reviens",
+   null,
+   "revenons",
+   "revenez",
+   null
+  ],
+  "participe_passe": "revenu",
+  "participe_present": "revenant",
+  "passe_compose": [
+   "suis revenu",
+   "es revenu",
+   "est revenu",
+   "sommes revenu",
+   "êtes revenu",
+   "sont revenu"
+  ],
+  "frequency_rank_basis": 38948,
+  "true_frequency": 155381,
+  "gloss": [
+   "come back",
+   "return"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "donner",
+  "display_infinitive": "donner",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "donne",
+   "donnes",
+   "donne",
+   "donnons",
+   "donnez",
+   "donnent"
+  ],
+  "imparfait": [
+   "donnais",
+   "donnais",
+   "donnait",
+   "donnions",
+   "donniez",
+   "donnaient"
+  ],
+  "futur_simple": [
+   "donnerai",
+   "donneras",
+   "donnera",
+   "donnerons",
+   "donnerez",
+   "donneront"
+  ],
+  "passe_simple": [
+   "donnai",
+   "donnas",
+   "donna",
+   "donnâmes",
+   "donnâtes",
+   "donnèrent"
+  ],
+  "conditionnel_present": [
+   "donnerais",
+   "donnerais",
+   "donnerait",
+   "donnerions",
+   "donneriez",
+   "donneraient"
+  ],
+  "subjonctif_present": [
+   "donne",
+   "donnes",
+   "donne",
+   "donnions",
+   "donniez",
+   "donnent"
+  ],
+  "subjonctif_imparfait": [
+   "donnasse",
+   "donnasses",
+   "donnât",
+   "donnassions",
+   "donnassiez",
+   "donnassent"
+  ],
+  "imperatif": [
+   null,
+   "donne",
+   null,
+   "donnons",
+   "donnez",
+   null
+  ],
+  "participe_passe": "donné",
+  "participe_present": "donnant",
+  "passe_compose": [
+   "ai donné",
+   "as donné",
+   "a donné",
+   "avons donné",
+   "avez donné",
+   "ont donné"
+  ],
+  "frequency_rank_basis": 38676,
+  "true_frequency": 223348,
+  "gloss": [
+   "donate",
+   "give"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "mettre",
+  "display_infinitive": "mettre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "mets",
+   "mets",
+   "met",
+   "mettons",
+   "mettez",
+   "mettent"
+  ],
+  "imparfait": [
+   "mettais",
+   "mettais",
+   "mettait",
+   "mettions",
+   "mettiez",
+   "mettaient"
+  ],
+  "futur_simple": [
+   "mettrai",
+   "mettras",
+   "mettra",
+   "mettrons",
+   "mettrez",
+   "mettront"
+  ],
+  "passe_simple": [
+   "mis",
+   "mis",
+   "mit",
+   "mîmes",
+   "mîtes",
+   "mirent"
+  ],
+  "conditionnel_present": [
+   "mettrais",
+   "mettrais",
+   "mettrait",
+   "mettrions",
+   "mettriez",
+   "mettraient"
+  ],
+  "subjonctif_present": [
+   "mette",
+   "mettes",
+   "mette",
+   "mettions",
+   "mettiez",
+   "mettent"
+  ],
+  "subjonctif_imparfait": [
+   "misse",
+   "misses",
+   "mît",
+   "missions",
+   "missiez",
+   "missent"
+  ],
+  "imperatif": [
+   null,
+   "mets",
+   null,
+   "mettons",
+   "mettez",
+   null
+  ],
+  "participe_passe": "mis",
+  "participe_present": "mettant",
+  "passe_compose": [
+   "ai mis",
+   "as mis",
+   "a mis",
+   "avons mis",
+   "avez mis",
+   "ont mis"
+  ],
+  "frequency_rank_basis": 34551,
+  "true_frequency": 283792,
+  "gloss": [
+   "begin",
+   "put on",
+   "put",
+   "wear"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "chercher",
+  "display_infinitive": "chercher",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "cherche",
+   "cherches",
+   "cherche",
+   "cherchons",
+   "cherchez",
+   "cherchent"
+  ],
+  "imparfait": [
+   "cherchais",
+   "cherchais",
+   "cherchait",
+   "cherchions",
+   "cherchiez",
+   "cherchaient"
+  ],
+  "futur_simple": [
+   "chercherai",
+   "chercheras",
+   "cherchera",
+   "chercherons",
+   "chercherez",
+   "chercheront"
+  ],
+  "passe_simple": [
+   "cherchai",
+   "cherchas",
+   "chercha",
+   "cherchâmes",
+   "cherchâtes",
+   "cherchèrent"
+  ],
+  "conditionnel_present": [
+   "chercherais",
+   "chercherais",
+   "chercherait",
+   "chercherions",
+   "chercheriez",
+   "chercheraient"
+  ],
+  "subjonctif_present": [
+   "cherche",
+   "cherches",
+   "cherche",
+   "cherchions",
+   "cherchiez",
+   "cherchent"
+  ],
+  "subjonctif_imparfait": [
+   "cherchasse",
+   "cherchasses",
+   "cherchât",
+   "cherchassions",
+   "cherchassiez",
+   "cherchassent"
+  ],
+  "imperatif": [
+   null,
+   "cherche",
+   null,
+   "cherchons",
+   "cherchez",
+   null
+  ],
+  "participe_passe": "cherché",
+  "participe_present": "cherchant",
+  "passe_compose": [
+   "ai cherché",
+   "as cherché",
+   "a cherché",
+   "avons cherché",
+   "avez cherché",
+   "ont cherché"
+  ],
+  "frequency_rank_basis": 34290,
+  "true_frequency": 189366,
+  "gloss": [
+   "be after",
+   "go after",
+   "look for",
+   "pick up",
+   "search for"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "comprendre",
+  "display_infinitive": "comprendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "comprends",
+   "comprends",
+   "comprend",
+   "comprenons",
+   "comprenez",
+   "comprennent"
+  ],
+  "imparfait": [
+   "comprenais",
+   "comprenais",
+   "comprenait",
+   "comprenions",
+   "compreniez",
+   "comprenaient"
+  ],
+  "futur_simple": [
+   "comprendrai",
+   "comprendras",
+   "comprendra",
+   "comprendrons",
+   "comprendrez",
+   "comprendront"
+  ],
+  "passe_simple": [
+   "compris",
+   "compris",
+   "comprit",
+   "comprîmes",
+   "comprîtes",
+   "comprirent"
+  ],
+  "conditionnel_present": [
+   "comprendrais",
+   "comprendrais",
+   "comprendrait",
+   "comprendrions",
+   "comprendriez",
+   "comprendraient"
+  ],
+  "subjonctif_present": [
+   "comprenne",
+   "comprennes",
+   "comprenne",
+   "comprenions",
+   "compreniez",
+   "comprennent"
+  ],
+  "subjonctif_imparfait": [
+   "comprisse",
+   "comprisses",
+   "comprît",
+   "comprissions",
+   "comprissiez",
+   "comprissent"
+  ],
+  "imperatif": [
+   null,
+   "comprends",
+   null,
+   "comprenons",
+   "comprenez",
+   null
+  ],
+  "participe_passe": "compris",
+  "participe_present": "comprenant",
+  "passe_compose": [
+   "ai compris",
+   "as compris",
+   "a compris",
+   "avons compris",
+   "avez compris",
+   "ont compris"
+  ],
+  "frequency_rank_basis": 32271,
+  "true_frequency": 291811,
+  "gloss": [
+   "include",
+   "understand"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "travailler",
+  "display_infinitive": "travailler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "travaille",
+   "travailles",
+   "travaille",
+   "travaillons",
+   "travaillez",
+   "travaillent"
+  ],
+  "imparfait": [
+   "travaillais",
+   "travaillais",
+   "travaillait",
+   "travaillions",
+   "travailliez",
+   "travaillaient"
+  ],
+  "futur_simple": [
+   "travaillerai",
+   "travailleras",
+   "travaillera",
+   "travaillerons",
+   "travaillerez",
+   "travailleront"
+  ],
+  "passe_simple": [
+   "travaillai",
+   "travaillas",
+   "travailla",
+   "travaillâmes",
+   "travaillâtes",
+   "travaillèrent"
+  ],
+  "conditionnel_present": [
+   "travaillerais",
+   "travaillerais",
+   "travaillerait",
+   "travaillerions",
+   "travailleriez",
+   "travailleraient"
+  ],
+  "subjonctif_present": [
+   "travaille",
+   "travailles",
+   "travaille",
+   "travaillions",
+   "travailliez",
+   "travaillent"
+  ],
+  "subjonctif_imparfait": [
+   "travaillasse",
+   "travaillasses",
+   "travaillât",
+   "travaillassions",
+   "travaillassiez",
+   "travaillassent"
+  ],
+  "imperatif": [
+   null,
+   "travaille",
+   null,
+   "travaillons",
+   "travaillez",
+   null
+  ],
+  "participe_passe": "travaillé",
+  "participe_present": "travaillant",
+  "passe_compose": [
+   "ai travaillé",
+   "as travaillé",
+   "a travaillé",
+   "avons travaillé",
+   "avez travaillé",
+   "ont travaillé"
+  ],
+  "frequency_rank_basis": 29603,
+  "true_frequency": 143631,
+  "gloss": [
+   "labour",
+   "work"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "entrer",
+  "display_infinitive": "entrer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "entre",
+   "entres",
+   "entre",
+   "entrons",
+   "entrez",
+   "entrent"
+  ],
+  "imparfait": [
+   "entrais",
+   "entrais",
+   "entrait",
+   "entrions",
+   "entriez",
+   "entraient"
+  ],
+  "futur_simple": [
+   "entrerai",
+   "entreras",
+   "entrera",
+   "entrerons",
+   "entrerez",
+   "entreront"
+  ],
+  "passe_simple": [
+   "entrai",
+   "entras",
+   "entra",
+   "entrâmes",
+   "entrâtes",
+   "entrèrent"
+  ],
+  "conditionnel_present": [
+   "entrerais",
+   "entrerais",
+   "entrerait",
+   "entrerions",
+   "entreriez",
+   "entreraient"
+  ],
+  "subjonctif_present": [
+   "entre",
+   "entres",
+   "entre",
+   "entrions",
+   "entriez",
+   "entrent"
+  ],
+  "subjonctif_imparfait": [
+   "entrasse",
+   "entrasses",
+   "entrât",
+   "entrassions",
+   "entrassiez",
+   "entrassent"
+  ],
+  "imperatif": [
+   null,
+   "entre",
+   null,
+   "entrons",
+   "entrez",
+   null
+  ],
+  "participe_passe": "entré",
+  "participe_present": "entrant",
+  "passe_compose": [
+   "suis entré",
+   "es entré",
+   "est entré",
+   "sommes entré",
+   "êtes entré",
+   "sont entré"
+  ],
+  "frequency_rank_basis": 29481,
+  "true_frequency": 230616,
+  "gloss": [
+   "come into",
+   "enter",
+   "go in",
+   "penetrate",
+   "pierce"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "oublier",
+  "display_infinitive": "oublier",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "oublie",
+   "oublies",
+   "oublie",
+   "oublions",
+   "oubliez",
+   "oublient"
+  ],
+  "imparfait": [
+   "oubliais",
+   "oubliais",
+   "oubliait",
+   "oubliions",
+   "oubliiez",
+   "oubliaient"
+  ],
+  "futur_simple": [
+   "oublierai",
+   "oublieras",
+   "oubliera",
+   "oublierons",
+   "oublierez",
+   "oublieront"
+  ],
+  "passe_simple": [
+   "oubliai",
+   "oublias",
+   "oublia",
+   "oubliâmes",
+   "oubliâtes",
+   "oublièrent"
+  ],
+  "conditionnel_present": [
+   "oublierais",
+   "oublierais",
+   "oublierait",
+   "oublierions",
+   "oublieriez",
+   "oublieraient"
+  ],
+  "subjonctif_present": [
+   "oublie",
+   "oublies",
+   "oublie",
+   "oubliions",
+   "oubliiez",
+   "oublient"
+  ],
+  "subjonctif_imparfait": [
+   "oubliasse",
+   "oubliasses",
+   "oubliât",
+   "oubliassions",
+   "oubliassiez",
+   "oubliassent"
+  ],
+  "imperatif": [
+   null,
+   "oublie",
+   null,
+   "oublions",
+   "oubliez",
+   null
+  ],
+  "participe_passe": "oublié",
+  "participe_present": "oubliant",
+  "passe_compose": [
+   "ai oublié",
+   "as oublié",
+   "a oublié",
+   "avons oublié",
+   "avez oublié",
+   "ont oublié"
+  ],
+  "frequency_rank_basis": 27782,
+  "true_frequency": 92680,
+  "gloss": [
+   "forget"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "continuer",
+  "display_infinitive": "continuer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "continue",
+   "continues",
+   "continue",
+   "continuons",
+   "continuez",
+   "continuent"
+  ],
+  "imparfait": [
+   "continuais",
+   "continuais",
+   "continuait",
+   "continuions",
+   "continuiez",
+   "continuaient"
+  ],
+  "futur_simple": [
+   "continuerai",
+   "continueras",
+   "continuera",
+   "continuerons",
+   "continuerez",
+   "continueront"
+  ],
+  "passe_simple": [
+   "continuai",
+   "continuas",
+   "continua",
+   "continuâmes",
+   "continuâtes",
+   "continuèrent"
+  ],
+  "conditionnel_present": [
+   "continuerais",
+   "continuerais",
+   "continuerait",
+   "continuerions",
+   "continueriez",
+   "continueraient"
+  ],
+  "subjonctif_present": [
+   "continue",
+   "continues",
+   "continue",
+   "continuions",
+   "continuiez",
+   "continuent"
+  ],
+  "subjonctif_imparfait": [
+   "continuasse",
+   "continuasses",
+   "continuât",
+   "continuassions",
+   "continuassiez",
+   "continuassent"
+  ],
+  "imperatif": [
+   null,
+   "continue",
+   null,
+   "continuons",
+   "continuez",
+   null
+  ],
+  "participe_passe": "continué",
+  "participe_present": "continuant",
+  "passe_compose": [
+   "ai continué",
+   "as continué",
+   "a continué",
+   "avons continué",
+   "avez continué",
+   "ont continué"
+  ],
+  "frequency_rank_basis": 25197,
+  "true_frequency": 96410,
+  "gloss": [
+   "continue",
+   "endure",
+   "go on",
+   "keep on",
+   "keep"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "vivre",
+  "display_infinitive": "vivre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "vis",
+   "vis",
+   "vit",
+   "vivons",
+   "vivez",
+   "vivent"
+  ],
+  "imparfait": [
+   "vivais",
+   "vivais",
+   "vivait",
+   "vivions",
+   "viviez",
+   "vivaient"
+  ],
+  "futur_simple": [
+   "vivrai",
+   "vivras",
+   "vivra",
+   "vivrons",
+   "vivrez",
+   "vivront"
+  ],
+  "passe_simple": [
+   "vécus",
+   "vécus",
+   "vécut",
+   "vécûmes",
+   "vécûtes",
+   "vécurent"
+  ],
+  "conditionnel_present": [
+   "vivrais",
+   "vivrais",
+   "vivrait",
+   "vivrions",
+   "vivriez",
+   "vivraient"
+  ],
+  "subjonctif_present": [
+   "vive",
+   "vives",
+   "vive",
+   "vivions",
+   "viviez",
+   "vivent"
+  ],
+  "subjonctif_imparfait": [
+   "vécusse",
+   "vécusses",
+   "vécût",
+   "vécussions",
+   "vécussiez",
+   "vécussent"
+  ],
+  "imperatif": [
+   null,
+   "vis",
+   null,
+   "vivons",
+   "vivez",
+   null
+  ],
+  "participe_passe": "vécu",
+  "participe_present": "vivant",
+  "passe_compose": [
+   "ai vécu",
+   "as vécu",
+   "a vécu",
+   "avons vécu",
+   "avez vécu",
+   "ont vécu"
+  ],
+  "frequency_rank_basis": 25053,
+  "true_frequency": 150484,
+  "gloss": [
+   "alive",
+   "live"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "jouer",
+  "display_infinitive": "jouer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "joue",
+   "joues",
+   "joue",
+   "jouons",
+   "jouez",
+   "jouent"
+  ],
+  "imparfait": [
+   "jouais",
+   "jouais",
+   "jouait",
+   "jouions",
+   "jouiez",
+   "jouaient"
+  ],
+  "futur_simple": [
+   "jouerai",
+   "joueras",
+   "jouera",
+   "jouerons",
+   "jouerez",
+   "joueront"
+  ],
+  "passe_simple": [
+   "jouai",
+   "jouas",
+   "joua",
+   "jouâmes",
+   "jouâtes",
+   "jouèrent"
+  ],
+  "conditionnel_present": [
+   "jouerais",
+   "jouerais",
+   "jouerait",
+   "jouerions",
+   "joueriez",
+   "joueraient"
+  ],
+  "subjonctif_present": [
+   "joue",
+   "joues",
+   "joue",
+   "jouions",
+   "jouiez",
+   "jouent"
+  ],
+  "subjonctif_imparfait": [
+   "jouasse",
+   "jouasses",
+   "jouât",
+   "jouassions",
+   "jouassiez",
+   "jouassent"
+  ],
+  "imperatif": [
+   null,
+   "joue",
+   null,
+   "jouons",
+   "jouez",
+   null
+  ],
+  "participe_passe": "joué",
+  "participe_present": "jouant",
+  "passe_compose": [
+   "ai joué",
+   "as joué",
+   "a joué",
+   "avons joué",
+   "avez joué",
+   "ont joué"
+  ],
+  "frequency_rank_basis": 24935,
+  "true_frequency": 147804,
+  "gloss": [
+   "act",
+   "enact",
+   "perform",
+   "play"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "sentir",
+  "display_infinitive": "sentir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "sens",
+   "sens",
+   "sent",
+   "sentons",
+   "sentez",
+   "sentent"
+  ],
+  "imparfait": [
+   "sentais",
+   "sentais",
+   "sentait",
+   "sentions",
+   "sentiez",
+   "sentaient"
+  ],
+  "futur_simple": [
+   "sentirai",
+   "sentiras",
+   "sentira",
+   "sentirons",
+   "sentirez",
+   "sentiront"
+  ],
+  "passe_simple": [
+   "sentis",
+   "sentis",
+   "sentit",
+   "sentîmes",
+   "sentîtes",
+   "sentirent"
+  ],
+  "conditionnel_present": [
+   "sentirais",
+   "sentirais",
+   "sentirait",
+   "sentirions",
+   "sentiriez",
+   "sentiraient"
+  ],
+  "subjonctif_present": [
+   "sente",
+   "sentes",
+   "sente",
+   "sentions",
+   "sentiez",
+   "sentent"
+  ],
+  "subjonctif_imparfait": [
+   "sentisse",
+   "sentisses",
+   "sentît",
+   "sentissions",
+   "sentissiez",
+   "sentissent"
+  ],
+  "imperatif": [
+   null,
+   "sens",
+   null,
+   "sentons",
+   "sentez",
+   null
+  ],
+  "participe_passe": "senti",
+  "participe_present": "sentant",
+  "passe_compose": [
+   "ai senti",
+   "as senti",
+   "a senti",
+   "avons senti",
+   "avez senti",
+   "ont senti"
+  ],
+  "frequency_rank_basis": 24599,
+  "true_frequency": 193300,
+  "gloss": [
+   "feel",
+   "finger",
+   "give off an odour",
+   "grope",
+   "reek"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "rentrer",
+  "display_infinitive": "rentrer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "rentre",
+   "rentres",
+   "rentre",
+   "rentrons",
+   "rentrez",
+   "rentrent"
+  ],
+  "imparfait": [
+   "rentrais",
+   "rentrais",
+   "rentrait",
+   "rentrions",
+   "rentriez",
+   "rentraient"
+  ],
+  "futur_simple": [
+   "rentrerai",
+   "rentreras",
+   "rentrera",
+   "rentrerons",
+   "rentrerez",
+   "rentreront"
+  ],
+  "passe_simple": [
+   "rentrai",
+   "rentras",
+   "rentra",
+   "rentrâmes",
+   "rentrâtes",
+   "rentrèrent"
+  ],
+  "conditionnel_present": [
+   "rentrerais",
+   "rentrerais",
+   "rentrerait",
+   "rentrerions",
+   "rentreriez",
+   "rentreraient"
+  ],
+  "subjonctif_present": [
+   "rentre",
+   "rentres",
+   "rentre",
+   "rentrions",
+   "rentriez",
+   "rentrent"
+  ],
+  "subjonctif_imparfait": [
+   "rentrasse",
+   "rentrasses",
+   "rentrât",
+   "rentrassions",
+   "rentrassiez",
+   "rentrassent"
+  ],
+  "imperatif": [
+   null,
+   "rentre",
+   null,
+   "rentrons",
+   "rentrez",
+   null
+  ],
+  "participe_passe": "rentré",
+  "participe_present": "rentrant",
+  "passe_compose": [
+   "ai rentré",
+   "as rentré",
+   "a rentré",
+   "avons rentré",
+   "avez rentré",
+   "ont rentré"
+  ],
+  "frequency_rank_basis": 23833,
+  "true_frequency": 122611,
+  "gloss": [
+   "gather in",
+   "re-enter"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "aider",
+  "display_infinitive": "aider",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "aide",
+   "aides",
+   "aide",
+   "aidons",
+   "aidez",
+   "aident"
+  ],
+  "imparfait": [
+   "aidais",
+   "aidais",
+   "aidait",
+   "aidions",
+   "aidiez",
+   "aidaient"
+  ],
+  "futur_simple": [
+   "aiderai",
+   "aideras",
+   "aidera",
+   "aiderons",
+   "aiderez",
+   "aideront"
+  ],
+  "passe_simple": [
+   "aidai",
+   "aidas",
+   "aida",
+   "aidâmes",
+   "aidâtes",
+   "aidèrent"
+  ],
+  "conditionnel_present": [
+   "aiderais",
+   "aiderais",
+   "aiderait",
+   "aiderions",
+   "aideriez",
+   "aideraient"
+  ],
+  "subjonctif_present": [
+   "aide",
+   "aides",
+   "aide",
+   "aidions",
+   "aidiez",
+   "aident"
+  ],
+  "subjonctif_imparfait": [
+   "aidasse",
+   "aidasses",
+   "aidât",
+   "aidassions",
+   "aidassiez",
+   "aidassent"
+  ],
+  "imperatif": [
+   null,
+   "aide",
+   null,
+   "aidons",
+   "aidez",
+   null
+  ],
+  "participe_passe": "aidé",
+  "participe_present": "aidant",
+  "passe_compose": [
+   "ai aidé",
+   "as aidé",
+   "a aidé",
+   "avons aidé",
+   "avez aidé",
+   "ont aidé"
+  ],
+  "frequency_rank_basis": 22517,
+  "true_frequency": 281656,
+  "gloss": [
+   "accommodate",
+   "advance",
+   "aid",
+   "assist",
+   "attend to"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "tuer",
+  "display_infinitive": "tuer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "tue",
+   "tues",
+   "tue",
+   "tuons",
+   "tuez",
+   "tuent"
+  ],
+  "imparfait": [
+   "tuais",
+   "tuais",
+   "tuait",
+   "tuions",
+   "tuiez",
+   "tuaient"
+  ],
+  "futur_simple": [
+   "tuerai",
+   "tueras",
+   "tuera",
+   "tuerons",
+   "tuerez",
+   "tueront"
+  ],
+  "passe_simple": [
+   "tuai",
+   "tuas",
+   "tua",
+   "tuâmes",
+   "tuâtes",
+   "tuèrent"
+  ],
+  "conditionnel_present": [
+   "tuerais",
+   "tuerais",
+   "tuerait",
+   "tuerions",
+   "tueriez",
+   "tueraient"
+  ],
+  "subjonctif_present": [
+   "tue",
+   "tues",
+   "tue",
+   "tuions",
+   "tuiez",
+   "tuent"
+  ],
+  "subjonctif_imparfait": [
+   "tuasse",
+   "tuasses",
+   "tuât",
+   "tuassions",
+   "tuassiez",
+   "tuassent"
+  ],
+  "imperatif": [
+   null,
+   "tue",
+   null,
+   "tuons",
+   "tuez",
+   null
+  ],
+  "participe_passe": "tué",
+  "participe_present": "tuant",
+  "passe_compose": [
+   "ai tué",
+   "as tué",
+   "a tué",
+   "avons tué",
+   "avez tué",
+   "ont tué"
+  ],
+  "frequency_rank_basis": 22292,
+  "true_frequency": 184895,
+  "gloss": [
+   "kill",
+   "liquidate",
+   "slay"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "commencer",
+  "display_infinitive": "commencer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "commence",
+   "commences",
+   "commence",
+   "commençons",
+   "commencez",
+   "commencent"
+  ],
+  "imparfait": [
+   "commençais",
+   "commençais",
+   "commençait",
+   "commencions",
+   "commenciez",
+   "commençaient"
+  ],
+  "futur_simple": [
+   "commencerai",
+   "commenceras",
+   "commencera",
+   "commencerons",
+   "commencerez",
+   "commenceront"
+  ],
+  "passe_simple": [
+   "commençai",
+   "commenças",
+   "commença",
+   "commençâmes",
+   "commençâtes",
+   "commencèrent"
+  ],
+  "conditionnel_present": [
+   "commencerais",
+   "commencerais",
+   "commencerait",
+   "commencerions",
+   "commenceriez",
+   "commenceraient"
+  ],
+  "subjonctif_present": [
+   "commence",
+   "commences",
+   "commence",
+   "commencions",
+   "commenciez",
+   "commencent"
+  ],
+  "subjonctif_imparfait": [
+   "commençasse",
+   "commençasses",
+   "commençât",
+   "commençassions",
+   "commençassiez",
+   "commençassent"
+  ],
+  "imperatif": [
+   null,
+   "commence",
+   null,
+   "commençons",
+   "commencez",
+   null
+  ],
+  "participe_passe": "commencé",
+  "participe_present": "commençant",
+  "passe_compose": [
+   "ai commencé",
+   "as commencé",
+   "a commencé",
+   "avons commencé",
+   "avez commencé",
+   "ont commencé"
+  ],
+  "frequency_rank_basis": 22276,
+  "true_frequency": 118651,
+  "gloss": [
+   "begin",
+   "commence",
+   "start"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "espérer",
+  "display_infinitive": "espérer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "espère",
+   "espères",
+   "espère",
+   "espérons",
+   "espérez",
+   "espèrent"
+  ],
+  "imparfait": [
+   "espérais",
+   "espérais",
+   "espérait",
+   "espérions",
+   "espériez",
+   "espéraient"
+  ],
+  "futur_simple": [
+   "espérerai",
+   "espéreras",
+   "espérera",
+   "espérerons",
+   "espérerez",
+   "espéreront"
+  ],
+  "passe_simple": [
+   "espérai",
+   "espéras",
+   "espéra",
+   "espérâmes",
+   "espérâtes",
+   "espérèrent"
+  ],
+  "conditionnel_present": [
+   "espérerais",
+   "espérerais",
+   "espérerait",
+   "espérerions",
+   "espéreriez",
+   "espéreraient"
+  ],
+  "subjonctif_present": [
+   "espère",
+   "espères",
+   "espère",
+   "espérions",
+   "espériez",
+   "espèrent"
+  ],
+  "subjonctif_imparfait": [
+   "espérasse",
+   "espérasses",
+   "espérât",
+   "espérassions",
+   "espérassiez",
+   "espérassent"
+  ],
+  "imperatif": [
+   null,
+   "espère",
+   null,
+   "espérons",
+   "espérez",
+   null
+  ],
+  "participe_passe": "espéré",
+  "participe_present": "espérant",
+  "passe_compose": [
+   "ai espéré",
+   "as espéré",
+   "a espéré",
+   "avons espéré",
+   "avez espéré",
+   "ont espéré"
+  ],
+  "frequency_rank_basis": 21996,
+  "true_frequency": 102765,
+  "gloss": [
+   "hope"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "porter",
+  "display_infinitive": "porter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "porte",
+   "portes",
+   "porte",
+   "portons",
+   "portez",
+   "portent"
+  ],
+  "imparfait": [
+   "portais",
+   "portais",
+   "portait",
+   "portions",
+   "portiez",
+   "portaient"
+  ],
+  "futur_simple": [
+   "porterai",
+   "porteras",
+   "portera",
+   "porterons",
+   "porterez",
+   "porteront"
+  ],
+  "passe_simple": [
+   "portai",
+   "portas",
+   "porta",
+   "portâmes",
+   "portâtes",
+   "portèrent"
+  ],
+  "conditionnel_present": [
+   "porterais",
+   "porterais",
+   "porterait",
+   "porterions",
+   "porteriez",
+   "porteraient"
+  ],
+  "subjonctif_present": [
+   "porte",
+   "portes",
+   "porte",
+   "portions",
+   "portiez",
+   "portent"
+  ],
+  "subjonctif_imparfait": [
+   "portasse",
+   "portasses",
+   "portât",
+   "portassions",
+   "portassiez",
+   "portassent"
+  ],
+  "imperatif": [
+   null,
+   "porte",
+   null,
+   "portons",
+   "portez",
+   null
+  ],
+  "participe_passe": "porté",
+  "participe_present": "portant",
+  "passe_compose": [
+   "ai porté",
+   "as porté",
+   "a porté",
+   "avons porté",
+   "avez porté",
+   "ont porté"
+  ],
+  "frequency_rank_basis": 21487,
+  "true_frequency": 186402,
+  "gloss": [
+   "bear",
+   "carry",
+   "support"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "entendre",
+  "display_infinitive": "entendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "entends",
+   "entends",
+   "entend",
+   "entendons",
+   "entendez",
+   "entendent"
+  ],
+  "imparfait": [
+   "entendais",
+   "entendais",
+   "entendait",
+   "entendions",
+   "entendiez",
+   "entendaient"
+  ],
+  "futur_simple": [
+   "entendrai",
+   "entendras",
+   "entendra",
+   "entendrons",
+   "entendrez",
+   "entendront"
+  ],
+  "passe_simple": [
+   "entendis",
+   "entendis",
+   "entendit",
+   "entendîmes",
+   "entendîtes",
+   "entendirent"
+  ],
+  "conditionnel_present": [
+   "entendrais",
+   "entendrais",
+   "entendrait",
+   "entendrions",
+   "entendriez",
+   "entendraient"
+  ],
+  "subjonctif_present": [
+   "entende",
+   "entendes",
+   "entende",
+   "entendions",
+   "entendiez",
+   "entendent"
+  ],
+  "subjonctif_imparfait": [
+   "entendisse",
+   "entendisses",
+   "entendît",
+   "entendissions",
+   "entendissiez",
+   "entendissent"
+  ],
+  "imperatif": [
+   null,
+   "entends",
+   null,
+   "entendons",
+   "entendez",
+   null
+  ],
+  "participe_passe": "entendu",
+  "participe_present": "entendant",
+  "passe_compose": [
+   "ai entendu",
+   "as entendu",
+   "a entendu",
+   "avons entendu",
+   "avez entendu",
+   "ont entendu"
+  ],
+  "frequency_rank_basis": 21064,
+  "true_frequency": 123934,
+  "gloss": [
+   "hear"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "garder",
+  "display_infinitive": "garder",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "garde",
+   "gardes",
+   "garde",
+   "gardons",
+   "gardez",
+   "gardent"
+  ],
+  "imparfait": [
+   "gardais",
+   "gardais",
+   "gardait",
+   "gardions",
+   "gardiez",
+   "gardaient"
+  ],
+  "futur_simple": [
+   "garderai",
+   "garderas",
+   "gardera",
+   "garderons",
+   "garderez",
+   "garderont"
+  ],
+  "passe_simple": [
+   "gardai",
+   "gardas",
+   "garda",
+   "gardâmes",
+   "gardâtes",
+   "gardèrent"
+  ],
+  "conditionnel_present": [
+   "garderais",
+   "garderais",
+   "garderait",
+   "garderions",
+   "garderiez",
+   "garderaient"
+  ],
+  "subjonctif_present": [
+   "garde",
+   "gardes",
+   "garde",
+   "gardions",
+   "gardiez",
+   "gardent"
+  ],
+  "subjonctif_imparfait": [
+   "gardasse",
+   "gardasses",
+   "gardât",
+   "gardassions",
+   "gardassiez",
+   "gardassent"
+  ],
+  "imperatif": [
+   null,
+   "garde",
+   null,
+   "gardons",
+   "gardez",
+   null
+  ],
+  "participe_passe": "gardé",
+  "participe_present": "gardant",
+  "passe_compose": [
+   "ai gardé",
+   "as gardé",
+   "a gardé",
+   "avons gardé",
+   "avez gardé",
+   "ont gardé"
+  ],
+  "frequency_rank_basis": 19745,
+  "true_frequency": 140135,
+  "gloss": [
+   "guard",
+   "keep",
+   "maintain",
+   "preserve",
+   "safeguard"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "ouvrir",
+  "display_infinitive": "ouvrir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "ouvre",
+   "ouvres",
+   "ouvre",
+   "ouvrons",
+   "ouvrez",
+   "ouvrent"
+  ],
+  "imparfait": [
+   "ouvrais",
+   "ouvrais",
+   "ouvrait",
+   "ouvrions",
+   "ouvriez",
+   "ouvraient"
+  ],
+  "futur_simple": [
+   "ouvrirai",
+   "ouvriras",
+   "ouvrira",
+   "ouvrirons",
+   "ouvrirez",
+   "ouvriront"
+  ],
+  "passe_simple": [
+   "ouvris",
+   "ouvris",
+   "ouvrit",
+   "ouvrîmes",
+   "ouvrîtes",
+   "ouvrirent"
+  ],
+  "conditionnel_present": [
+   "ouvrirais",
+   "ouvrirais",
+   "ouvrirait",
+   "ouvririons",
+   "ouvririez",
+   "ouvriraient"
+  ],
+  "subjonctif_present": [
+   "ouvre",
+   "ouvres",
+   "ouvre",
+   "ouvrions",
+   "ouvriez",
+   "ouvrent"
+  ],
+  "subjonctif_imparfait": [
+   "ouvrisse",
+   "ouvrisses",
+   "ouvrît",
+   "ouvrissions",
+   "ouvrissiez",
+   "ouvrissent"
+  ],
+  "imperatif": [
+   null,
+   "ouvre",
+   null,
+   "ouvrons",
+   "ouvrez",
+   null
+  ],
+  "participe_passe": "ouvert",
+  "participe_present": "ouvrant",
+  "passe_compose": [
+   "ai ouvert",
+   "as ouvert",
+   "a ouvert",
+   "avons ouvert",
+   "avez ouvert",
+   "ont ouvert"
+  ],
+  "frequency_rank_basis": 19603,
+  "true_frequency": 77893,
+  "gloss": [
+   "clear",
+   "open up",
+   "open",
+   "switch on",
+   "turn on"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "rendre",
+  "display_infinitive": "rendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "rends",
+   "rends",
+   "rend",
+   "rendons",
+   "rendez",
+   "rendent"
+  ],
+  "imparfait": [
+   "rendais",
+   "rendais",
+   "rendait",
+   "rendions",
+   "rendiez",
+   "rendaient"
+  ],
+  "futur_simple": [
+   "rendrai",
+   "rendras",
+   "rendra",
+   "rendrons",
+   "rendrez",
+   "rendront"
+  ],
+  "passe_simple": [
+   "rendis",
+   "rendis",
+   "rendit",
+   "rendîmes",
+   "rendîtes",
+   "rendirent"
+  ],
+  "conditionnel_present": [
+   "rendrais",
+   "rendrais",
+   "rendrait",
+   "rendrions",
+   "rendriez",
+   "rendraient"
+  ],
+  "subjonctif_present": [
+   "rende",
+   "rendes",
+   "rende",
+   "rendions",
+   "rendiez",
+   "rendent"
+  ],
+  "subjonctif_imparfait": [
+   "rendisse",
+   "rendisses",
+   "rendît",
+   "rendissions",
+   "rendissiez",
+   "rendissent"
+  ],
+  "imperatif": [
+   null,
+   "rends",
+   null,
+   "rendons",
+   "rendez",
+   null
+  ],
+  "participe_passe": "rendu",
+  "participe_present": "rendant",
+  "passe_compose": [
+   "ai rendu",
+   "as rendu",
+   "a rendu",
+   "avons rendu",
+   "avez rendu",
+   "ont rendu"
+  ],
+  "frequency_rank_basis": 19094,
+  "true_frequency": 120394,
+  "gloss": [
+   "return"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "sembler",
+  "display_infinitive": "sembler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "semble",
+   "sembles",
+   "semble",
+   "semblons",
+   "semblez",
+   "semblent"
+  ],
+  "imparfait": [
+   "semblais",
+   "semblais",
+   "semblait",
+   "semblions",
+   "sembliez",
+   "semblaient"
+  ],
+  "futur_simple": [
+   "semblerai",
+   "sembleras",
+   "semblera",
+   "semblerons",
+   "semblerez",
+   "sembleront"
+  ],
+  "passe_simple": [
+   "semblai",
+   "semblas",
+   "sembla",
+   "semblâmes",
+   "semblâtes",
+   "semblèrent"
+  ],
+  "conditionnel_present": [
+   "semblerais",
+   "semblerais",
+   "semblerait",
+   "semblerions",
+   "sembleriez",
+   "sembleraient"
+  ],
+  "subjonctif_present": [
+   "semble",
+   "sembles",
+   "semble",
+   "semblions",
+   "sembliez",
+   "semblent"
+  ],
+  "subjonctif_imparfait": [
+   "semblasse",
+   "semblasses",
+   "semblât",
+   "semblassions",
+   "semblassiez",
+   "semblassent"
+  ],
+  "imperatif": [
+   null,
+   "semble",
+   null,
+   "semblons",
+   "semblez",
+   null
+  ],
+  "participe_passe": "semblé",
+  "participe_present": "semblant",
+  "passe_compose": [
+   "ai semblé",
+   "as semblé",
+   "a semblé",
+   "avons semblé",
+   "avez semblé",
+   "ont semblé"
+  ],
+  "frequency_rank_basis": 18709,
+  "true_frequency": 88779,
+  "gloss": [
+   "act",
+   "appear",
+   "look like",
+   "look",
+   "seem"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "envoyer",
+  "display_infinitive": "envoyer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "envoie",
+   "envoies",
+   "envoie",
+   "envoyons",
+   "envoyez",
+   "envoient"
+  ],
+  "imparfait": [
+   "envoyais",
+   "envoyais",
+   "envoyait",
+   "envoyions",
+   "envoyiez",
+   "envoyaient"
+  ],
+  "futur_simple": [
+   "enverrai",
+   "enverras",
+   "enverra",
+   "enverrons",
+   "enverrez",
+   "enverront"
+  ],
+  "passe_simple": [
+   "envoyai",
+   "envoyas",
+   "envoya",
+   "envoyâmes",
+   "envoyâtes",
+   "envoyèrent"
+  ],
+  "conditionnel_present": [
+   "enverrais",
+   "enverrais",
+   "enverrait",
+   "enverrions",
+   "enverriez",
+   "enverraient"
+  ],
+  "subjonctif_present": [
+   "envoie",
+   "envoies",
+   "envoie",
+   "envoyions",
+   "envoyiez",
+   "envoient"
+  ],
+  "subjonctif_imparfait": [
+   "envoyasse",
+   "envoyasses",
+   "envoyât",
+   "envoyassions",
+   "envoyassiez",
+   "envoyassent"
+  ],
+  "imperatif": [
+   null,
+   "envoie",
+   null,
+   "envoyons",
+   "envoyez",
+   null
+  ],
+  "participe_passe": "envoyé",
+  "participe_present": "envoyant",
+  "passe_compose": [
+   "ai envoyé",
+   "as envoyé",
+   "a envoyé",
+   "avons envoyé",
+   "avez envoyé",
+   "ont envoyé"
+  ],
+  "frequency_rank_basis": 16688,
+  "true_frequency": 76776,
+  "gloss": [
+   "send"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "tirer",
+  "display_infinitive": "tirer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "tire",
+   "tires",
+   "tire",
+   "tirons",
+   "tirez",
+   "tirent"
+  ],
+  "imparfait": [
+   "tirais",
+   "tirais",
+   "tirait",
+   "tirions",
+   "tiriez",
+   "tiraient"
+  ],
+  "futur_simple": [
+   "tirerai",
+   "tireras",
+   "tirera",
+   "tirerons",
+   "tirerez",
+   "tireront"
+  ],
+  "passe_simple": [
+   "tirai",
+   "tiras",
+   "tira",
+   "tirâmes",
+   "tirâtes",
+   "tirèrent"
+  ],
+  "conditionnel_present": [
+   "tirerais",
+   "tirerais",
+   "tirerait",
+   "tirerions",
+   "tireriez",
+   "tireraient"
+  ],
+  "subjonctif_present": [
+   "tire",
+   "tires",
+   "tire",
+   "tirions",
+   "tiriez",
+   "tirent"
+  ],
+  "subjonctif_imparfait": [
+   "tirasse",
+   "tirasses",
+   "tirât",
+   "tirassions",
+   "tirassiez",
+   "tirassent"
+  ],
+  "imperatif": [
+   null,
+   "tire",
+   null,
+   "tirons",
+   "tirez",
+   null
+  ],
+  "participe_passe": "tiré",
+  "participe_present": "tirant",
+  "passe_compose": [
+   "ai tiré",
+   "as tiré",
+   "a tiré",
+   "avons tiré",
+   "avez tiré",
+   "ont tiré"
+  ],
+  "frequency_rank_basis": 16620,
+  "true_frequency": 80996,
+  "gloss": [
+   "drag",
+   "draw",
+   "extract",
+   "fire",
+   "pull"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "ignorer",
+  "display_infinitive": "ignorer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "ignore",
+   "ignores",
+   "ignore",
+   "ignorons",
+   "ignorez",
+   "ignorent"
+  ],
+  "imparfait": [
+   "ignorais",
+   "ignorais",
+   "ignorait",
+   "ignorions",
+   "ignoriez",
+   "ignoraient"
+  ],
+  "futur_simple": [
+   "ignorerai",
+   "ignoreras",
+   "ignorera",
+   "ignorerons",
+   "ignorerez",
+   "ignoreront"
+  ],
+  "passe_simple": [
+   "ignorai",
+   "ignoras",
+   "ignora",
+   "ignorâmes",
+   "ignorâtes",
+   "ignorèrent"
+  ],
+  "conditionnel_present": [
+   "ignorerais",
+   "ignorerais",
+   "ignorerait",
+   "ignorerions",
+   "ignoreriez",
+   "ignoreraient"
+  ],
+  "subjonctif_present": [
+   "ignore",
+   "ignores",
+   "ignore",
+   "ignorions",
+   "ignoriez",
+   "ignorent"
+  ],
+  "subjonctif_imparfait": [
+   "ignorasse",
+   "ignorasses",
+   "ignorât",
+   "ignorassions",
+   "ignorassiez",
+   "ignorassent"
+  ],
+  "imperatif": [
+   null,
+   "ignore",
+   null,
+   "ignorons",
+   "ignorez",
+   null
+  ],
+  "participe_passe": "ignoré",
+  "participe_present": "ignorant",
+  "passe_compose": [
+   "ai ignoré",
+   "as ignoré",
+   "a ignoré",
+   "avons ignoré",
+   "avez ignoré",
+   "ont ignoré"
+  ],
+  "frequency_rank_basis": 16037,
+  "true_frequency": 52970,
+  "gloss": [
+   "disregard",
+   "ignorant",
+   "ignore",
+   "know",
+   "leave out of account"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "mourir",
+  "display_infinitive": "mourir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "meurs",
+   "meurs",
+   "meurt",
+   "mourons",
+   "mourez",
+   "meurent"
+  ],
+  "imparfait": [
+   "mourais",
+   "mourais",
+   "mourait",
+   "mourions",
+   "mouriez",
+   "mouraient"
+  ],
+  "futur_simple": [
+   "mourrai",
+   "mourras",
+   "mourra",
+   "mourrons",
+   "mourrez",
+   "mourront"
+  ],
+  "passe_simple": [
+   "mourus",
+   "mourus",
+   "mourut",
+   "mourûmes",
+   "mourûtes",
+   "moururent"
+  ],
+  "conditionnel_present": [
+   "mourrais",
+   "mourrais",
+   "mourrait",
+   "mourrions",
+   "mourriez",
+   "mourraient"
+  ],
+  "subjonctif_present": [
+   "meure",
+   "meures",
+   "meure",
+   "mourions",
+   "mouriez",
+   "meurent"
+  ],
+  "subjonctif_imparfait": [
+   "mourusse",
+   "mourusses",
+   "mourût",
+   "mourussions",
+   "mourussiez",
+   "mourussent"
+  ],
+  "imperatif": [
+   null,
+   "meurs",
+   null,
+   "mourons",
+   "mourez",
+   null
+  ],
+  "participe_passe": "mort",
+  "participe_present": "mourant",
+  "passe_compose": [
+   "suis mort",
+   "es mort",
+   "est mort",
+   "sommes mort",
+   "êtes mort",
+   "sont mort"
+  ],
+  "frequency_rank_basis": 15928,
+  "true_frequency": 123959,
+  "gloss": [
+   "die",
+   "expire",
+   "pass away"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "inquiéter",
+  "display_infinitive": "inquiéter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "inquiète",
+   "inquiètes",
+   "inquiète",
+   "inquiétons",
+   "inquiétez",
+   "inquiètent"
+  ],
+  "imparfait": [
+   "inquiétais",
+   "inquiétais",
+   "inquiétait",
+   "inquiétions",
+   "inquiétiez",
+   "inquiétaient"
+  ],
+  "futur_simple": [
+   "inquiéterai",
+   "inquiéteras",
+   "inquiétera",
+   "inquiéterons",
+   "inquiéterez",
+   "inquiéteront"
+  ],
+  "passe_simple": [
+   "inquiétai",
+   "inquiétas",
+   "inquiéta",
+   "inquiétâmes",
+   "inquiétâtes",
+   "inquiétèrent"
+  ],
+  "conditionnel_present": [
+   "inquiéterais",
+   "inquiéterais",
+   "inquiéterait",
+   "inquiéterions",
+   "inquiéteriez",
+   "inquiéteraient"
+  ],
+  "subjonctif_present": [
+   "inquiète",
+   "inquiètes",
+   "inquiète",
+   "inquiétions",
+   "inquiétiez",
+   "inquiètent"
+  ],
+  "subjonctif_imparfait": [
+   "inquiétasse",
+   "inquiétasses",
+   "inquiétât",
+   "inquiétassions",
+   "inquiétassiez",
+   "inquiétassent"
+  ],
+  "imperatif": [
+   null,
+   "inquiète",
+   null,
+   "inquiétons",
+   "inquiétez",
+   null
+  ],
+  "participe_passe": "inquiété",
+  "participe_present": "inquiétant",
+  "passe_compose": [
+   "ai inquiété",
+   "as inquiété",
+   "a inquiété",
+   "avons inquiété",
+   "avez inquiété",
+   "ont inquiété"
+  ],
+  "frequency_rank_basis": 15918,
+  "true_frequency": 79664,
+  "gloss": [
+   "fret",
+   "worry"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "suivre",
+  "display_infinitive": "suivre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "suis",
+   "suis",
+   "suit",
+   "suivons",
+   "suivez",
+   "suivent"
+  ],
+  "imparfait": [
+   "suivais",
+   "suivais",
+   "suivait",
+   "suivions",
+   "suiviez",
+   "suivaient"
+  ],
+  "futur_simple": [
+   "suivrai",
+   "suivras",
+   "suivra",
+   "suivrons",
+   "suivrez",
+   "suivront"
+  ],
+  "passe_simple": [
+   "suivis",
+   "suivis",
+   "suivit",
+   "suivîmes",
+   "suivîtes",
+   "suivirent"
+  ],
+  "conditionnel_present": [
+   "suivrais",
+   "suivrais",
+   "suivrait",
+   "suivrions",
+   "suivriez",
+   "suivraient"
+  ],
+  "subjonctif_present": [
+   "suive",
+   "suives",
+   "suive",
+   "suivions",
+   "suiviez",
+   "suivent"
+  ],
+  "subjonctif_imparfait": [
+   "suivisse",
+   "suivisses",
+   "suivît",
+   "suivissions",
+   "suivissiez",
+   "suivissent"
+  ],
+  "imperatif": [
+   null,
+   "suis",
+   null,
+   "suivons",
+   "suivez",
+   null
+  ],
+  "participe_passe": "suivi",
+  "participe_present": "suivant",
+  "passe_compose": [
+   "ai suivi",
+   "as suivi",
+   "a suivi",
+   "avons suivi",
+   "avez suivi",
+   "ont suivi"
+  ],
+  "frequency_rank_basis": 15904,
+  "true_frequency": 1364166,
+  "gloss": [
+   "come after",
+   "follow",
+   "trail"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "bouger",
+  "display_infinitive": "bouger",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "bouge",
+   "bouges",
+   "bouge",
+   "bougeons",
+   "bougez",
+   "bougent"
+  ],
+  "imparfait": [
+   "bougeais",
+   "bougeais",
+   "bougeait",
+   "bougions",
+   "bougiez",
+   "bougeaient"
+  ],
+  "futur_simple": [
+   "bougerai",
+   "bougeras",
+   "bougera",
+   "bougerons",
+   "bougerez",
+   "bougeront"
+  ],
+  "passe_simple": [
+   "bougeai",
+   "bougeas",
+   "bougea",
+   "bougeâmes",
+   "bougeâtes",
+   "bougèrent"
+  ],
+  "conditionnel_present": [
+   "bougerais",
+   "bougerais",
+   "bougerait",
+   "bougerions",
+   "bougeriez",
+   "bougeraient"
+  ],
+  "subjonctif_present": [
+   "bouge",
+   "bouges",
+   "bouge",
+   "bougions",
+   "bougiez",
+   "bougent"
+  ],
+  "subjonctif_imparfait": [
+   "bougeasse",
+   "bougeasses",
+   "bougeât",
+   "bougeassions",
+   "bougeassiez",
+   "bougeassent"
+  ],
+  "imperatif": [
+   null,
+   "bouge",
+   null,
+   "bougeons",
+   "bougez",
+   null
+  ],
+  "participe_passe": "bougé",
+  "participe_present": "bougeant",
+  "passe_compose": [
+   "ai bougé",
+   "as bougé",
+   "a bougé",
+   "avons bougé",
+   "avez bougé",
+   "ont bougé"
+  ],
+  "frequency_rank_basis": 15615,
+  "true_frequency": 65467,
+  "gloss": [
+   "budge",
+   "move"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "retourner",
+  "display_infinitive": "retourner",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "retourne",
+   "retournes",
+   "retourne",
+   "retournons",
+   "retournez",
+   "retournent"
+  ],
+  "imparfait": [
+   "retournais",
+   "retournais",
+   "retournait",
+   "retournions",
+   "retourniez",
+   "retournaient"
+  ],
+  "futur_simple": [
+   "retournerai",
+   "retourneras",
+   "retournera",
+   "retournerons",
+   "retournerez",
+   "retourneront"
+  ],
+  "passe_simple": [
+   "retournai",
+   "retournas",
+   "retourna",
+   "retournâmes",
+   "retournâtes",
+   "retournèrent"
+  ],
+  "conditionnel_present": [
+   "retournerais",
+   "retournerais",
+   "retournerait",
+   "retournerions",
+   "retourneriez",
+   "retourneraient"
+  ],
+  "subjonctif_present": [
+   "retourne",
+   "retournes",
+   "retourne",
+   "retournions",
+   "retourniez",
+   "retournent"
+  ],
+  "subjonctif_imparfait": [
+   "retournasse",
+   "retournasses",
+   "retournât",
+   "retournassions",
+   "retournassiez",
+   "retournassent"
+  ],
+  "imperatif": [
+   null,
+   "retourne",
+   null,
+   "retournons",
+   "retournez",
+   null
+  ],
+  "participe_passe": "retourné",
+  "participe_present": "retournant",
+  "passe_compose": [
+   "ai retourné",
+   "as retourné",
+   "a retourné",
+   "avons retourné",
+   "avez retourné",
+   "ont retourné"
+  ],
+  "frequency_rank_basis": 14777,
+  "true_frequency": 73543,
+  "gloss": [
+   "return",
+   "go back",
+   "turn over"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "souvenir",
+  "display_infinitive": "se souvenir",
+  "pronominal": true,
+  "reflexive_pronouns": [
+   "me",
+   "te",
+   "se",
+   "nous",
+   "vous",
+   "se"
+  ],
+  "aux": "etre",
+  "present": [
+   "souviens",
+   "souviens",
+   "souvient",
+   "souvenons",
+   "souvenez",
+   "souviennent"
+  ],
+  "imparfait": [
+   "souvenais",
+   "souvenais",
+   "souvenait",
+   "souvenions",
+   "souveniez",
+   "souvenaient"
+  ],
+  "futur_simple": [
+   "souviendrai",
+   "souviendras",
+   "souviendra",
+   "souviendrons",
+   "souviendrez",
+   "souviendront"
+  ],
+  "passe_simple": [
+   "souvins",
+   "souvins",
+   "souvint",
+   "souvînmes",
+   "souvîntes",
+   "souvinrent"
+  ],
+  "conditionnel_present": [
+   "souviendrais",
+   "souviendrais",
+   "souviendrait",
+   "souviendrions",
+   "souviendriez",
+   "souviendraient"
+  ],
+  "subjonctif_present": [
+   "souvienne",
+   "souviennes",
+   "souvienne",
+   "souvenions",
+   "souveniez",
+   "souviennent"
+  ],
+  "subjonctif_imparfait": [
+   "souvinsse",
+   "souvinsses",
+   "souvînt",
+   "souvinssions",
+   "souvinssiez",
+   "souvinssent"
+  ],
+  "imperatif": [
+   null,
+   "souviens",
+   null,
+   "souvenons",
+   "souvenez",
+   null
+  ],
+  "participe_passe": "souvenu",
+  "participe_present": "souvenant",
+  "passe_compose": [
+   "me suis souvenu",
+   "t'es souvenu",
+   "s'est souvenu",
+   "nous sommes souvenu",
+   "vous êtes souvenu",
+   "se sont souvenu"
+  ],
+  "frequency_rank_basis": 14743,
+  "true_frequency": 98373,
+  "gloss": [
+   "remember",
+   "remind"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "marcher",
+  "display_infinitive": "marcher",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "marche",
+   "marches",
+   "marche",
+   "marchons",
+   "marchez",
+   "marchent"
+  ],
+  "imparfait": [
+   "marchais",
+   "marchais",
+   "marchait",
+   "marchions",
+   "marchiez",
+   "marchaient"
+  ],
+  "futur_simple": [
+   "marcherai",
+   "marcheras",
+   "marchera",
+   "marcherons",
+   "marcherez",
+   "marcheront"
+  ],
+  "passe_simple": [
+   "marchai",
+   "marchas",
+   "marcha",
+   "marchâmes",
+   "marchâtes",
+   "marchèrent"
+  ],
+  "conditionnel_present": [
+   "marcherais",
+   "marcherais",
+   "marcherait",
+   "marcherions",
+   "marcheriez",
+   "marcheraient"
+  ],
+  "subjonctif_present": [
+   "marche",
+   "marches",
+   "marche",
+   "marchions",
+   "marchiez",
+   "marchent"
+  ],
+  "subjonctif_imparfait": [
+   "marchasse",
+   "marchasses",
+   "marchât",
+   "marchassions",
+   "marchassiez",
+   "marchassent"
+  ],
+  "imperatif": [
+   null,
+   "marche",
+   null,
+   "marchons",
+   "marchez",
+   null
+  ],
+  "participe_passe": "marché",
+  "participe_present": "marchant",
+  "passe_compose": [
+   "ai marché",
+   "as marché",
+   "a marché",
+   "avons marché",
+   "avez marché",
+   "ont marché"
+  ],
+  "frequency_rank_basis": 14687,
+  "true_frequency": 111808,
+  "gloss": [
+   "ambulate",
+   "follow",
+   "march",
+   "run",
+   "step"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "finir",
+  "display_infinitive": "finir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "finis",
+   "finis",
+   "finit",
+   "finissons",
+   "finissez",
+   "finissent"
+  ],
+  "imparfait": [
+   "finissais",
+   "finissais",
+   "finissait",
+   "finissions",
+   "finissiez",
+   "finissaient"
+  ],
+  "futur_simple": [
+   "finirai",
+   "finiras",
+   "finira",
+   "finirons",
+   "finirez",
+   "finiront"
+  ],
+  "passe_simple": [
+   "finis",
+   "finis",
+   "finit",
+   "finîmes",
+   "finîtes",
+   "finirent"
+  ],
+  "conditionnel_present": [
+   "finirais",
+   "finirais",
+   "finirait",
+   "finirions",
+   "finiriez",
+   "finiraient"
+  ],
+  "subjonctif_present": [
+   "finisse",
+   "finisses",
+   "finisse",
+   "finissions",
+   "finissiez",
+   "finissent"
+  ],
+  "subjonctif_imparfait": [
+   "finisse",
+   "finisses",
+   "finît",
+   "finissions",
+   "finissiez",
+   "finissent"
+  ],
+  "imperatif": [
+   null,
+   "finis",
+   null,
+   "finissons",
+   "finissez",
+   null
+  ],
+  "participe_passe": "fini",
+  "participe_present": "finissant",
+  "passe_compose": [
+   "ai fini",
+   "as fini",
+   "a fini",
+   "avons fini",
+   "avez fini",
+   "ont fini"
+  ],
+  "frequency_rank_basis": 14132,
+  "true_frequency": 70365,
+  "gloss": [
+   "come to an end",
+   "conclude",
+   "end up",
+   "expire",
+   "finish"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "changer",
+  "display_infinitive": "changer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "change",
+   "changes",
+   "change",
+   "changeons",
+   "changez",
+   "changent"
+  ],
+  "imparfait": [
+   "changeais",
+   "changeais",
+   "changeait",
+   "changions",
+   "changiez",
+   "changeaient"
+  ],
+  "futur_simple": [
+   "changerai",
+   "changeras",
+   "changera",
+   "changerons",
+   "changerez",
+   "changeront"
+  ],
+  "passe_simple": [
+   "changeai",
+   "changeas",
+   "changea",
+   "changeâmes",
+   "changeâtes",
+   "changèrent"
+  ],
+  "conditionnel_present": [
+   "changerais",
+   "changerais",
+   "changerait",
+   "changerions",
+   "changeriez",
+   "changeraient"
+  ],
+  "subjonctif_present": [
+   "change",
+   "changes",
+   "change",
+   "changions",
+   "changiez",
+   "changent"
+  ],
+  "subjonctif_imparfait": [
+   "changeasse",
+   "changeasses",
+   "changeât",
+   "changeassions",
+   "changeassiez",
+   "changeassent"
+  ],
+  "imperatif": [
+   null,
+   "change",
+   null,
+   "changeons",
+   "changez",
+   null
+  ],
+  "participe_passe": "changé",
+  "participe_present": "changeant",
+  "passe_compose": [
+   "ai changé",
+   "as changé",
+   "a changé",
+   "avons changé",
+   "avez changé",
+   "ont changé"
+  ],
+  "frequency_rank_basis": 13834,
+  "true_frequency": 98574,
+  "gloss": [
+   "alter",
+   "amend",
+   "change",
+   "convert",
+   "shift"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "perdre",
+  "display_infinitive": "perdre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "perds",
+   "perds",
+   "perd",
+   "perdons",
+   "perdez",
+   "perdent"
+  ],
+  "imparfait": [
+   "perdais",
+   "perdais",
+   "perdait",
+   "perdions",
+   "perdiez",
+   "perdaient"
+  ],
+  "futur_simple": [
+   "perdrai",
+   "perdras",
+   "perdra",
+   "perdrons",
+   "perdrez",
+   "perdront"
+  ],
+  "passe_simple": [
+   "perdis",
+   "perdis",
+   "perdit",
+   "perdîmes",
+   "perdîtes",
+   "perdirent"
+  ],
+  "conditionnel_present": [
+   "perdrais",
+   "perdrais",
+   "perdrait",
+   "perdrions",
+   "perdriez",
+   "perdraient"
+  ],
+  "subjonctif_present": [
+   "perde",
+   "perdes",
+   "perde",
+   "perdions",
+   "perdiez",
+   "perdent"
+  ],
+  "subjonctif_imparfait": [
+   "perdisse",
+   "perdisses",
+   "perdît",
+   "perdissions",
+   "perdissiez",
+   "perdissent"
+  ],
+  "imperatif": [
+   null,
+   "perds",
+   null,
+   "perdons",
+   "perdez",
+   null
+  ],
+  "participe_passe": "perdu",
+  "participe_present": "perdant",
+  "passe_compose": [
+   "ai perdu",
+   "as perdu",
+   "a perdu",
+   "avons perdu",
+   "avez perdu",
+   "ont perdu"
+  ],
+  "frequency_rank_basis": 13729,
+  "true_frequency": 89632,
+  "gloss": [
+   "lose",
+   "lost"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "répondre",
+  "display_infinitive": "répondre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "réponds",
+   "réponds",
+   "répond",
+   "répondons",
+   "répondez",
+   "répondent"
+  ],
+  "imparfait": [
+   "répondais",
+   "répondais",
+   "répondait",
+   "répondions",
+   "répondiez",
+   "répondaient"
+  ],
+  "futur_simple": [
+   "répondrai",
+   "répondras",
+   "répondra",
+   "répondrons",
+   "répondrez",
+   "répondront"
+  ],
+  "passe_simple": [
+   "répondis",
+   "répondis",
+   "répondit",
+   "répondîmes",
+   "répondîtes",
+   "répondirent"
+  ],
+  "conditionnel_present": [
+   "répondrais",
+   "répondrais",
+   "répondrait",
+   "répondrions",
+   "répondriez",
+   "répondraient"
+  ],
+  "subjonctif_present": [
+   "réponde",
+   "répondes",
+   "réponde",
+   "répondions",
+   "répondiez",
+   "répondent"
+  ],
+  "subjonctif_imparfait": [
+   "répondisse",
+   "répondisses",
+   "répondît",
+   "répondissions",
+   "répondissiez",
+   "répondissent"
+  ],
+  "imperatif": [
+   null,
+   "réponds",
+   null,
+   "répondons",
+   "répondez",
+   null
+  ],
+  "participe_passe": "répondu",
+  "participe_present": "répondant",
+  "passe_compose": [
+   "ai répondu",
+   "as répondu",
+   "a répondu",
+   "avons répondu",
+   "avez répondu",
+   "ont répondu"
+  ],
+  "frequency_rank_basis": 13344,
+  "true_frequency": 59611,
+  "gloss": [
+   "answer",
+   "reply",
+   "respond"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "manger",
+  "display_infinitive": "manger",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "mange",
+   "manges",
+   "mange",
+   "mangeons",
+   "mangez",
+   "mangent"
+  ],
+  "imparfait": [
+   "mangeais",
+   "mangeais",
+   "mangeait",
+   "mangions",
+   "mangiez",
+   "mangeaient"
+  ],
+  "futur_simple": [
+   "mangerai",
+   "mangeras",
+   "mangera",
+   "mangerons",
+   "mangerez",
+   "mangeront"
+  ],
+  "passe_simple": [
+   "mangeai",
+   "mangeas",
+   "mangea",
+   "mangeâmes",
+   "mangeâtes",
+   "mangèrent"
+  ],
+  "conditionnel_present": [
+   "mangerais",
+   "mangerais",
+   "mangerait",
+   "mangerions",
+   "mangeriez",
+   "mangeraient"
+  ],
+  "subjonctif_present": [
+   "mange",
+   "manges",
+   "mange",
+   "mangions",
+   "mangiez",
+   "mangent"
+  ],
+  "subjonctif_imparfait": [
+   "mangeasse",
+   "mangeasses",
+   "mangeât",
+   "mangeassions",
+   "mangeassiez",
+   "mangeassent"
+  ],
+  "imperatif": [
+   null,
+   "mange",
+   null,
+   "mangeons",
+   "mangez",
+   null
+  ],
+  "participe_passe": "mangé",
+  "participe_present": "mangeant",
+  "passe_compose": [
+   "ai mangé",
+   "as mangé",
+   "a mangé",
+   "avons mangé",
+   "avez mangé",
+   "ont mangé"
+  ],
+  "frequency_rank_basis": 13328,
+  "true_frequency": 107550,
+  "gloss": [
+   "eat"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "occuper",
+  "display_infinitive": "occuper",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "occupe",
+   "occupes",
+   "occupe",
+   "occupons",
+   "occupez",
+   "occupent"
+  ],
+  "imparfait": [
+   "occupais",
+   "occupais",
+   "occupait",
+   "occupions",
+   "occupiez",
+   "occupaient"
+  ],
+  "futur_simple": [
+   "occuperai",
+   "occuperas",
+   "occupera",
+   "occuperons",
+   "occuperez",
+   "occuperont"
+  ],
+  "passe_simple": [
+   "occupai",
+   "occupas",
+   "occupa",
+   "occupâmes",
+   "occupâtes",
+   "occupèrent"
+  ],
+  "conditionnel_present": [
+   "occuperais",
+   "occuperais",
+   "occuperait",
+   "occuperions",
+   "occuperiez",
+   "occuperaient"
+  ],
+  "subjonctif_present": [
+   "occupe",
+   "occupes",
+   "occupe",
+   "occupions",
+   "occupiez",
+   "occupent"
+  ],
+  "subjonctif_imparfait": [
+   "occupasse",
+   "occupasses",
+   "occupât",
+   "occupassions",
+   "occupassiez",
+   "occupassent"
+  ],
+  "imperatif": [
+   null,
+   "occupe",
+   null,
+   "occupons",
+   "occupez",
+   null
+  ],
+  "participe_passe": "occupé",
+  "participe_present": "occupant",
+  "passe_compose": [
+   "ai occupé",
+   "as occupé",
+   "a occupé",
+   "avons occupé",
+   "avez occupé",
+   "ont occupé"
+  ],
+  "frequency_rank_basis": 13297,
+  "true_frequency": 92336,
+  "gloss": [
+   "engage",
+   "figure out",
+   "fill",
+   "hold",
+   "inhabit"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "boire",
+  "display_infinitive": "boire",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "bois",
+   "bois",
+   "boit",
+   "buvons",
+   "buvez",
+   "boivent"
+  ],
+  "imparfait": [
+   "buvais",
+   "buvais",
+   "buvait",
+   "buvions",
+   "buviez",
+   "buvaient"
+  ],
+  "futur_simple": [
+   "boirai",
+   "boiras",
+   "boira",
+   "boirons",
+   "boirez",
+   "boiront"
+  ],
+  "passe_simple": [
+   "bus",
+   "bus",
+   "but",
+   "bûmes",
+   "bûtes",
+   "burent"
+  ],
+  "conditionnel_present": [
+   "boirais",
+   "boirais",
+   "boirait",
+   "boirions",
+   "boiriez",
+   "boiraient"
+  ],
+  "subjonctif_present": [
+   "boive",
+   "boives",
+   "boive",
+   "buvions",
+   "buviez",
+   "boivent"
+  ],
+  "subjonctif_imparfait": [
+   "busse",
+   "busses",
+   "bût",
+   "bussions",
+   "bussiez",
+   "bussent"
+  ],
+  "imperatif": [
+   null,
+   "bois",
+   null,
+   "buvons",
+   "buvez",
+   null
+  ],
+  "participe_passe": "bu",
+  "participe_present": "buvant",
+  "passe_compose": [
+   "ai bu",
+   "as bu",
+   "a bu",
+   "avons bu",
+   "avez bu",
+   "ont bu"
+  ],
+  "frequency_rank_basis": 12820,
+  "true_frequency": 141384,
+  "gloss": [
+   "drink"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "utiliser",
+  "display_infinitive": "utiliser",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "utilise",
+   "utilises",
+   "utilise",
+   "utilisons",
+   "utilisez",
+   "utilisent"
+  ],
+  "imparfait": [
+   "utilisais",
+   "utilisais",
+   "utilisait",
+   "utilisions",
+   "utilisiez",
+   "utilisaient"
+  ],
+  "futur_simple": [
+   "utiliserai",
+   "utiliseras",
+   "utilisera",
+   "utiliserons",
+   "utiliserez",
+   "utiliseront"
+  ],
+  "passe_simple": [
+   "utilisai",
+   "utilisas",
+   "utilisa",
+   "utilisâmes",
+   "utilisâtes",
+   "utilisèrent"
+  ],
+  "conditionnel_present": [
+   "utiliserais",
+   "utiliserais",
+   "utiliserait",
+   "utiliserions",
+   "utiliseriez",
+   "utiliseraient"
+  ],
+  "subjonctif_present": [
+   "utilise",
+   "utilises",
+   "utilise",
+   "utilisions",
+   "utilisiez",
+   "utilisent"
+  ],
+  "subjonctif_imparfait": [
+   "utilisasse",
+   "utilisasses",
+   "utilisât",
+   "utilisassions",
+   "utilisassiez",
+   "utilisassent"
+  ],
+  "imperatif": [
+   null,
+   "utilise",
+   null,
+   "utilisons",
+   "utilisez",
+   null
+  ],
+  "participe_passe": "utilisé",
+  "participe_present": "utilisant",
+  "passe_compose": [
+   "ai utilisé",
+   "as utilisé",
+   "a utilisé",
+   "avons utilisé",
+   "avez utilisé",
+   "ont utilisé"
+  ],
+  "frequency_rank_basis": 12699,
+  "true_frequency": 70951,
+  "gloss": [
+   "use",
+   "utilise",
+   "utilize"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "imaginer",
+  "display_infinitive": "imaginer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "imagine",
+   "imagines",
+   "imagine",
+   "imaginons",
+   "imaginez",
+   "imaginent"
+  ],
+  "imparfait": [
+   "imaginais",
+   "imaginais",
+   "imaginait",
+   "imaginions",
+   "imaginiez",
+   "imaginaient"
+  ],
+  "futur_simple": [
+   "imaginerai",
+   "imagineras",
+   "imaginera",
+   "imaginerons",
+   "imaginerez",
+   "imagineront"
+  ],
+  "passe_simple": [
+   "imaginai",
+   "imaginas",
+   "imagina",
+   "imaginâmes",
+   "imaginâtes",
+   "imaginèrent"
+  ],
+  "conditionnel_present": [
+   "imaginerais",
+   "imaginerais",
+   "imaginerait",
+   "imaginerions",
+   "imagineriez",
+   "imagineraient"
+  ],
+  "subjonctif_present": [
+   "imagine",
+   "imagines",
+   "imagine",
+   "imaginions",
+   "imaginiez",
+   "imaginent"
+  ],
+  "subjonctif_imparfait": [
+   "imaginasse",
+   "imaginasses",
+   "imaginât",
+   "imaginassions",
+   "imaginassiez",
+   "imaginassent"
+  ],
+  "imperatif": [
+   null,
+   "imagine",
+   null,
+   "imaginons",
+   "imaginez",
+   null
+  ],
+  "participe_passe": "imaginé",
+  "participe_present": "imaginant",
+  "passe_compose": [
+   "ai imaginé",
+   "as imaginé",
+   "a imaginé",
+   "avons imaginé",
+   "avez imaginé",
+   "ont imaginé"
+  ],
+  "frequency_rank_basis": 12697,
+  "true_frequency": 60734,
+  "gloss": [
+   "conceive",
+   "fancy",
+   "imagine",
+   "picture",
+   "visualize"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "dormir",
+  "display_infinitive": "dormir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "dors",
+   "dors",
+   "dort",
+   "dormons",
+   "dormez",
+   "dorment"
+  ],
+  "imparfait": [
+   "dormais",
+   "dormais",
+   "dormait",
+   "dormions",
+   "dormiez",
+   "dormaient"
+  ],
+  "futur_simple": [
+   "dormirai",
+   "dormiras",
+   "dormira",
+   "dormirons",
+   "dormirez",
+   "dormiront"
+  ],
+  "passe_simple": [
+   "dormis",
+   "dormis",
+   "dormit",
+   "dormîmes",
+   "dormîtes",
+   "dormirent"
+  ],
+  "conditionnel_present": [
+   "dormirais",
+   "dormirais",
+   "dormirait",
+   "dormirions",
+   "dormiriez",
+   "dormiraient"
+  ],
+  "subjonctif_present": [
+   "dorme",
+   "dormes",
+   "dorme",
+   "dormions",
+   "dormiez",
+   "dorment"
+  ],
+  "subjonctif_imparfait": [
+   "dormisse",
+   "dormisses",
+   "dormît",
+   "dormissions",
+   "dormissiez",
+   "dormissent"
+  ],
+  "imperatif": [
+   null,
+   "dors",
+   null,
+   "dormons",
+   "dormez",
+   null
+  ],
+  "participe_passe": "dormi",
+  "participe_present": "dormant",
+  "passe_compose": [
+   "ai dormi",
+   "as dormi",
+   "a dormi",
+   "avons dormi",
+   "avez dormi",
+   "ont dormi"
+  ],
+  "frequency_rank_basis": 12415,
+  "true_frequency": 76910,
+  "gloss": [
+   "be asleep",
+   "sleep"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "manquer",
+  "display_infinitive": "manquer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "manque",
+   "manques",
+   "manque",
+   "manquons",
+   "manquez",
+   "manquent"
+  ],
+  "imparfait": [
+   "manquais",
+   "manquais",
+   "manquait",
+   "manquions",
+   "manquiez",
+   "manquaient"
+  ],
+  "futur_simple": [
+   "manquerai",
+   "manqueras",
+   "manquera",
+   "manquerons",
+   "manquerez",
+   "manqueront"
+  ],
+  "passe_simple": [
+   "manquai",
+   "manquas",
+   "manqua",
+   "manquâmes",
+   "manquâtes",
+   "manquèrent"
+  ],
+  "conditionnel_present": [
+   "manquerais",
+   "manquerais",
+   "manquerait",
+   "manquerions",
+   "manqueriez",
+   "manqueraient"
+  ],
+  "subjonctif_present": [
+   "manque",
+   "manques",
+   "manque",
+   "manquions",
+   "manquiez",
+   "manquent"
+  ],
+  "subjonctif_imparfait": [
+   "manquasse",
+   "manquasses",
+   "manquât",
+   "manquassions",
+   "manquassiez",
+   "manquassent"
+  ],
+  "imperatif": [
+   null,
+   "manque",
+   null,
+   "manquons",
+   "manquez",
+   null
+  ],
+  "participe_passe": "manqué",
+  "participe_present": "manquant",
+  "passe_compose": [
+   "ai manqué",
+   "as manqué",
+   "a manqué",
+   "avons manqué",
+   "avez manqué",
+   "ont manqué"
+  ],
+  "frequency_rank_basis": 12404,
+  "true_frequency": 71518,
+  "gloss": [
+   "lack",
+   "miss"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "monter",
+  "display_infinitive": "monter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "monte",
+   "montes",
+   "monte",
+   "montons",
+   "montez",
+   "montent"
+  ],
+  "imparfait": [
+   "montais",
+   "montais",
+   "montait",
+   "montions",
+   "montiez",
+   "montaient"
+  ],
+  "futur_simple": [
+   "monterai",
+   "monteras",
+   "montera",
+   "monterons",
+   "monterez",
+   "monteront"
+  ],
+  "passe_simple": [
+   "montai",
+   "montas",
+   "monta",
+   "montâmes",
+   "montâtes",
+   "montèrent"
+  ],
+  "conditionnel_present": [
+   "monterais",
+   "monterais",
+   "monterait",
+   "monterions",
+   "monteriez",
+   "monteraient"
+  ],
+  "subjonctif_present": [
+   "monte",
+   "montes",
+   "monte",
+   "montions",
+   "montiez",
+   "montent"
+  ],
+  "subjonctif_imparfait": [
+   "montasse",
+   "montasses",
+   "montât",
+   "montassions",
+   "montassiez",
+   "montassent"
+  ],
+  "imperatif": [
+   null,
+   "monte",
+   null,
+   "montons",
+   "montez",
+   null
+  ],
+  "participe_passe": "monté",
+  "participe_present": "montant",
+  "passe_compose": [
+   "ai monté",
+   "as monté",
+   "a monté",
+   "avons monté",
+   "avez monté",
+   "ont monté"
+  ],
+  "frequency_rank_basis": 12319,
+  "true_frequency": 63957,
+  "gloss": [
+   "ascend",
+   "assemble",
+   "board",
+   "bolt",
+   "bring up"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "compter",
+  "display_infinitive": "compter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "compte",
+   "comptes",
+   "compte",
+   "comptons",
+   "comptez",
+   "comptent"
+  ],
+  "imparfait": [
+   "comptais",
+   "comptais",
+   "comptait",
+   "comptions",
+   "comptiez",
+   "comptaient"
+  ],
+  "futur_simple": [
+   "compterai",
+   "compteras",
+   "comptera",
+   "compterons",
+   "compterez",
+   "compteront"
+  ],
+  "passe_simple": [
+   "comptai",
+   "comptas",
+   "compta",
+   "comptâmes",
+   "comptâtes",
+   "comptèrent"
+  ],
+  "conditionnel_present": [
+   "compterais",
+   "compterais",
+   "compterait",
+   "compterions",
+   "compteriez",
+   "compteraient"
+  ],
+  "subjonctif_present": [
+   "compte",
+   "comptes",
+   "compte",
+   "comptions",
+   "comptiez",
+   "comptent"
+  ],
+  "subjonctif_imparfait": [
+   "comptasse",
+   "comptasses",
+   "comptât",
+   "comptassions",
+   "comptassiez",
+   "comptassent"
+  ],
+  "imperatif": [
+   null,
+   "compte",
+   null,
+   "comptons",
+   "comptez",
+   null
+  ],
+  "participe_passe": "compté",
+  "participe_present": "comptant",
+  "passe_compose": [
+   "ai compté",
+   "as compté",
+   "a compté",
+   "avons compté",
+   "avez compté",
+   "ont compté"
+  ],
+  "frequency_rank_basis": 12152,
+  "true_frequency": 116123,
+  "gloss": [
+   "account",
+   "add up",
+   "calculate",
+   "count",
+   "figure"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "rappeler",
+  "display_infinitive": "rappeler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "rappelle",
+   "rappelles",
+   "rappelle",
+   "rappelons",
+   "rappelez",
+   "rappellent"
+  ],
+  "imparfait": [
+   "rappelais",
+   "rappelais",
+   "rappelait",
+   "rappelions",
+   "rappeliez",
+   "rappelaient"
+  ],
+  "futur_simple": [
+   "rappellerai",
+   "rappelleras",
+   "rappellera",
+   "rappellerons",
+   "rappellerez",
+   "rappelleront"
+  ],
+  "passe_simple": [
+   "rappelai",
+   "rappelas",
+   "rappela",
+   "rappelâmes",
+   "rappelâtes",
+   "rappelèrent"
+  ],
+  "conditionnel_present": [
+   "rappellerais",
+   "rappellerais",
+   "rappellerait",
+   "rappellerions",
+   "rappelleriez",
+   "rappelleraient"
+  ],
+  "subjonctif_present": [
+   "rappelle",
+   "rappelles",
+   "rappelle",
+   "rappelions",
+   "rappeliez",
+   "rappellent"
+  ],
+  "subjonctif_imparfait": [
+   "rappelasse",
+   "rappelasses",
+   "rappelât",
+   "rappelassions",
+   "rappelassiez",
+   "rappelassent"
+  ],
+  "imperatif": [
+   null,
+   "rappelle",
+   null,
+   "rappelons",
+   "rappelez",
+   null
+  ],
+  "participe_passe": "rappelé",
+  "participe_present": "rappelant",
+  "passe_compose": [
+   "ai rappelé",
+   "as rappelé",
+   "a rappelé",
+   "avons rappelé",
+   "avez rappelé",
+   "ont rappelé"
+  ],
+  "frequency_rank_basis": 12149,
+  "true_frequency": 73486,
+  "gloss": [
+   "call",
+   "recall",
+   "remember",
+   "remind"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "devenir",
+  "display_infinitive": "devenir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "etre",
+  "present": [
+   "deviens",
+   "deviens",
+   "devient",
+   "devenons",
+   "devenez",
+   "deviennent"
+  ],
+  "imparfait": [
+   "devenais",
+   "devenais",
+   "devenait",
+   "devenions",
+   "deveniez",
+   "devenaient"
+  ],
+  "futur_simple": [
+   "deviendrai",
+   "deviendras",
+   "deviendra",
+   "deviendrons",
+   "deviendrez",
+   "deviendront"
+  ],
+  "passe_simple": [
+   "devins",
+   "devins",
+   "devint",
+   "devînmes",
+   "devîntes",
+   "devinrent"
+  ],
+  "conditionnel_present": [
+   "deviendrais",
+   "deviendrais",
+   "deviendrait",
+   "deviendrions",
+   "deviendriez",
+   "deviendraient"
+  ],
+  "subjonctif_present": [
+   "devienne",
+   "deviennes",
+   "devienne",
+   "devenions",
+   "deveniez",
+   "deviennent"
+  ],
+  "subjonctif_imparfait": [
+   "devinsse",
+   "devinsses",
+   "devînt",
+   "devinssions",
+   "devinssiez",
+   "devinssent"
+  ],
+  "imperatif": [
+   null,
+   "deviens",
+   null,
+   "devenons",
+   "devenez",
+   null
+  ],
+  "participe_passe": "devenu",
+  "participe_present": "devenant",
+  "passe_compose": [
+   "suis devenu",
+   "es devenu",
+   "est devenu",
+   "sommes devenu",
+   "êtes devenu",
+   "sont devenu"
+  ],
+  "frequency_rank_basis": 12052,
+  "true_frequency": 93859,
+  "gloss": [
+   "arise",
+   "become",
+   "get",
+   "grow"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "toucher",
+  "display_infinitive": "toucher",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "touche",
+   "touches",
+   "touche",
+   "touchons",
+   "touchez",
+   "touchent"
+  ],
+  "imparfait": [
+   "touchais",
+   "touchais",
+   "touchait",
+   "touchions",
+   "touchiez",
+   "touchaient"
+  ],
+  "futur_simple": [
+   "toucherai",
+   "toucheras",
+   "touchera",
+   "toucherons",
+   "toucherez",
+   "toucheront"
+  ],
+  "passe_simple": [
+   "touchai",
+   "touchas",
+   "toucha",
+   "touchâmes",
+   "touchâtes",
+   "touchèrent"
+  ],
+  "conditionnel_present": [
+   "toucherais",
+   "toucherais",
+   "toucherait",
+   "toucherions",
+   "toucheriez",
+   "toucheraient"
+  ],
+  "subjonctif_present": [
+   "touche",
+   "touches",
+   "touche",
+   "touchions",
+   "touchiez",
+   "touchent"
+  ],
+  "subjonctif_imparfait": [
+   "touchasse",
+   "touchasses",
+   "touchât",
+   "touchassions",
+   "touchassiez",
+   "touchassent"
+  ],
+  "imperatif": [
+   null,
+   "touche",
+   null,
+   "touchons",
+   "touchez",
+   null
+  ],
+  "participe_passe": "touché",
+  "participe_present": "touchant",
+  "passe_compose": [
+   "ai touché",
+   "as touché",
+   "a touché",
+   "avons touché",
+   "avez touché",
+   "ont touché"
+  ],
+  "frequency_rank_basis": 11479,
+  "true_frequency": 58052,
+  "gloss": [
+   "feeling",
+   "feel",
+   "touch",
+   "abut",
+   "adjoin"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "relater",
+  "display_infinitive": "relater",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "relate",
+   "relates",
+   "relate",
+   "relatons",
+   "relatez",
+   "relatent"
+  ],
+  "imparfait": [
+   "relatais",
+   "relatais",
+   "relatait",
+   "relations",
+   "relatiez",
+   "relataient"
+  ],
+  "futur_simple": [
+   "relaterai",
+   "relateras",
+   "relatera",
+   "relaterons",
+   "relaterez",
+   "relateront"
+  ],
+  "passe_simple": [
+   "relatai",
+   "relatas",
+   "relata",
+   "relatâmes",
+   "relatâtes",
+   "relatèrent"
+  ],
+  "conditionnel_present": [
+   "relaterais",
+   "relaterais",
+   "relaterait",
+   "relaterions",
+   "relateriez",
+   "relateraient"
+  ],
+  "subjonctif_present": [
+   "relate",
+   "relates",
+   "relate",
+   "relations",
+   "relatiez",
+   "relatent"
+  ],
+  "subjonctif_imparfait": [
+   "relatasse",
+   "relatasses",
+   "relatât",
+   "relatassions",
+   "relatassiez",
+   "relatassent"
+  ],
+  "imperatif": [
+   null,
+   "relate",
+   null,
+   "relatons",
+   "relatez",
+   null
+  ],
+  "participe_passe": "relaté",
+  "participe_present": "relatant",
+  "passe_compose": [
+   "ai relaté",
+   "as relaté",
+   "a relaté",
+   "avons relaté",
+   "avez relaté",
+   "ont relaté"
+  ],
+  "frequency_rank_basis": 11355,
+  "true_frequency": 11538,
+  "gloss": [
+   "account",
+   "relate"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "permettre",
+  "display_infinitive": "permettre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "permets",
+   "permets",
+   "permet",
+   "permettons",
+   "permettez",
+   "permettent"
+  ],
+  "imparfait": [
+   "permettais",
+   "permettais",
+   "permettait",
+   "permettions",
+   "permettiez",
+   "permettaient"
+  ],
+  "futur_simple": [
+   "permettrai",
+   "permettras",
+   "permettra",
+   "permettrons",
+   "permettrez",
+   "permettront"
+  ],
+  "passe_simple": [
+   "permis",
+   "permis",
+   "permit",
+   "permîmes",
+   "permîtes",
+   "permirent"
+  ],
+  "conditionnel_present": [
+   "permettrais",
+   "permettrais",
+   "permettrait",
+   "permettrions",
+   "permettriez",
+   "permettraient"
+  ],
+  "subjonctif_present": [
+   "permette",
+   "permettes",
+   "permette",
+   "permettions",
+   "permettiez",
+   "permettent"
+  ],
+  "subjonctif_imparfait": [
+   "permisse",
+   "permisses",
+   "permît",
+   "permissions",
+   "permissiez",
+   "permissent"
+  ],
+  "imperatif": [
+   null,
+   "permets",
+   null,
+   "permettons",
+   "permettez",
+   null
+  ],
+  "participe_passe": "permis",
+  "participe_present": "permettant",
+  "passe_compose": [
+   "ai permis",
+   "as permis",
+   "a permis",
+   "avons permis",
+   "avez permis",
+   "ont permis"
+  ],
+  "frequency_rank_basis": 11078,
+  "true_frequency": 51016,
+  "gloss": [
+   "accord",
+   "admit",
+   "allow",
+   "let",
+   "permit"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "retrouver",
+  "display_infinitive": "retrouver",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "retrouve",
+   "retrouves",
+   "retrouve",
+   "retrouvons",
+   "retrouvez",
+   "retrouvent"
+  ],
+  "imparfait": [
+   "retrouvais",
+   "retrouvais",
+   "retrouvait",
+   "retrouvions",
+   "retrouviez",
+   "retrouvaient"
+  ],
+  "futur_simple": [
+   "retrouverai",
+   "retrouveras",
+   "retrouvera",
+   "retrouverons",
+   "retrouverez",
+   "retrouveront"
+  ],
+  "passe_simple": [
+   "retrouvai",
+   "retrouvas",
+   "retrouva",
+   "retrouvâmes",
+   "retrouvâtes",
+   "retrouvèrent"
+  ],
+  "conditionnel_present": [
+   "retrouverais",
+   "retrouverais",
+   "retrouverait",
+   "retrouverions",
+   "retrouveriez",
+   "retrouveraient"
+  ],
+  "subjonctif_present": [
+   "retrouve",
+   "retrouves",
+   "retrouve",
+   "retrouvions",
+   "retrouviez",
+   "retrouvent"
+  ],
+  "subjonctif_imparfait": [
+   "retrouvasse",
+   "retrouvasses",
+   "retrouvât",
+   "retrouvassions",
+   "retrouvassiez",
+   "retrouvassent"
+  ],
+  "imperatif": [
+   null,
+   "retrouve",
+   null,
+   "retrouvons",
+   "retrouvez",
+   null
+  ],
+  "participe_passe": "retrouvé",
+  "participe_present": "retrouvant",
+  "passe_compose": [
+   "ai retrouvé",
+   "as retrouvé",
+   "a retrouvé",
+   "avons retrouvé",
+   "avez retrouvé",
+   "ont retrouvé"
+  ],
+  "frequency_rank_basis": 11041,
+  "true_frequency": 65508,
+  "gloss": [
+   "recover",
+   "rediscover",
+   "refind"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "apprendre",
+  "display_infinitive": "apprendre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "apprends",
+   "apprends",
+   "apprend",
+   "apprenons",
+   "apprenez",
+   "apprennent"
+  ],
+  "imparfait": [
+   "apprenais",
+   "apprenais",
+   "apprenait",
+   "apprenions",
+   "appreniez",
+   "apprenaient"
+  ],
+  "futur_simple": [
+   "apprendrai",
+   "apprendras",
+   "apprendra",
+   "apprendrons",
+   "apprendrez",
+   "apprendront"
+  ],
+  "passe_simple": [
+   "appris",
+   "appris",
+   "apprit",
+   "apprîmes",
+   "apprîtes",
+   "apprirent"
+  ],
+  "conditionnel_present": [
+   "apprendrais",
+   "apprendrais",
+   "apprendrait",
+   "apprendrions",
+   "apprendriez",
+   "apprendraient"
+  ],
+  "subjonctif_present": [
+   "apprenne",
+   "apprennes",
+   "apprenne",
+   "apprenions",
+   "appreniez",
+   "apprennent"
+  ],
+  "subjonctif_imparfait": [
+   "apprisse",
+   "apprisses",
+   "apprît",
+   "apprissions",
+   "apprissiez",
+   "apprissent"
+  ],
+  "imperatif": [
+   null,
+   "apprends",
+   null,
+   "apprenons",
+   "apprenez",
+   null
+  ],
+  "participe_passe": "appris",
+  "participe_present": "apprenant",
+  "passe_compose": [
+   "ai appris",
+   "as appris",
+   "a appris",
+   "avons appris",
+   "avez appris",
+   "ont appris"
+  ],
+  "frequency_rank_basis": 11001,
+  "true_frequency": 106778,
+  "gloss": [
+   "come to know",
+   "figure out",
+   "instruct",
+   "learn",
+   "teach"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "quitter",
+  "display_infinitive": "quitter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "quitte",
+   "quittes",
+   "quitte",
+   "quittons",
+   "quittez",
+   "quittent"
+  ],
+  "imparfait": [
+   "quittais",
+   "quittais",
+   "quittait",
+   "quittions",
+   "quittiez",
+   "quittaient"
+  ],
+  "futur_simple": [
+   "quitterai",
+   "quitteras",
+   "quittera",
+   "quitterons",
+   "quitterez",
+   "quitteront"
+  ],
+  "passe_simple": [
+   "quittai",
+   "quittas",
+   "quitta",
+   "quittâmes",
+   "quittâtes",
+   "quittèrent"
+  ],
+  "conditionnel_present": [
+   "quitterais",
+   "quitterais",
+   "quitterait",
+   "quitterions",
+   "quitteriez",
+   "quitteraient"
+  ],
+  "subjonctif_present": [
+   "quitte",
+   "quittes",
+   "quitte",
+   "quittions",
+   "quittiez",
+   "quittent"
+  ],
+  "subjonctif_imparfait": [
+   "quittasse",
+   "quittasses",
+   "quittât",
+   "quittassions",
+   "quittassiez",
+   "quittassent"
+  ],
+  "imperatif": [
+   null,
+   "quitte",
+   null,
+   "quittons",
+   "quittez",
+   null
+  ],
+  "participe_passe": "quitté",
+  "participe_present": "quittant",
+  "passe_compose": [
+   "ai quitté",
+   "as quitté",
+   "a quitté",
+   "avons quitté",
+   "avez quitté",
+   "ont quitté"
+  ],
+  "frequency_rank_basis": 10647,
+  "true_frequency": 58802,
+  "gloss": [
+   "abandon",
+   "desert",
+   "forsake",
+   "leave",
+   "quit"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "montrer",
+  "display_infinitive": "montrer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "montre",
+   "montres",
+   "montre",
+   "montrons",
+   "montrez",
+   "montrent"
+  ],
+  "imparfait": [
+   "montrais",
+   "montrais",
+   "montrait",
+   "montrions",
+   "montriez",
+   "montraient"
+  ],
+  "futur_simple": [
+   "montrerai",
+   "montreras",
+   "montrera",
+   "montrerons",
+   "montrerez",
+   "montreront"
+  ],
+  "passe_simple": [
+   "montrai",
+   "montras",
+   "montra",
+   "montrâmes",
+   "montrâtes",
+   "montrèrent"
+  ],
+  "conditionnel_present": [
+   "montrerais",
+   "montrerais",
+   "montrerait",
+   "montrerions",
+   "montreriez",
+   "montreraient"
+  ],
+  "subjonctif_present": [
+   "montre",
+   "montres",
+   "montre",
+   "montrions",
+   "montriez",
+   "montrent"
+  ],
+  "subjonctif_imparfait": [
+   "montrasse",
+   "montrasses",
+   "montrât",
+   "montrassions",
+   "montrassiez",
+   "montrassent"
+  ],
+  "imperatif": [
+   null,
+   "montre",
+   null,
+   "montrons",
+   "montrez",
+   null
+  ],
+  "participe_passe": "montré",
+  "participe_present": "montrant",
+  "passe_compose": [
+   "ai montré",
+   "as montré",
+   "a montré",
+   "avons montré",
+   "avez montré",
+   "ont montré"
+  ],
+  "frequency_rank_basis": 10566,
+  "true_frequency": 90613,
+  "gloss": [
+   "demonstrate",
+   "display",
+   "indicate",
+   "manifest",
+   "point out"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "poser",
+  "display_infinitive": "poser",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "pose",
+   "poses",
+   "pose",
+   "posons",
+   "posez",
+   "posent"
+  ],
+  "imparfait": [
+   "posais",
+   "posais",
+   "posait",
+   "posions",
+   "posiez",
+   "posaient"
+  ],
+  "futur_simple": [
+   "poserai",
+   "poseras",
+   "posera",
+   "poserons",
+   "poserez",
+   "poseront"
+  ],
+  "passe_simple": [
+   "posai",
+   "posas",
+   "posa",
+   "posâmes",
+   "posâtes",
+   "posèrent"
+  ],
+  "conditionnel_present": [
+   "poserais",
+   "poserais",
+   "poserait",
+   "poserions",
+   "poseriez",
+   "poseraient"
+  ],
+  "subjonctif_present": [
+   "pose",
+   "poses",
+   "pose",
+   "posions",
+   "posiez",
+   "posent"
+  ],
+  "subjonctif_imparfait": [
+   "posasse",
+   "posasses",
+   "posât",
+   "posassions",
+   "posassiez",
+   "posassent"
+  ],
+  "imperatif": [
+   null,
+   "pose",
+   null,
+   "posons",
+   "posez",
+   null
+  ],
+  "participe_passe": "posé",
+  "participe_present": "posant",
+  "passe_compose": [
+   "ai posé",
+   "as posé",
+   "a posé",
+   "avons posé",
+   "avez posé",
+   "ont posé"
+  ],
+  "frequency_rank_basis": 10228,
+  "true_frequency": 60956,
+  "gloss": [
+   "ask",
+   "lay down",
+   "lay",
+   "locate",
+   "place"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "emmener",
+  "display_infinitive": "emmener",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "emmène",
+   "emmènes",
+   "emmène",
+   "emmenons",
+   "emmenez",
+   "emmènent"
+  ],
+  "imparfait": [
+   "emmenais",
+   "emmenais",
+   "emmenait",
+   "emmenions",
+   "emmeniez",
+   "emmenaient"
+  ],
+  "futur_simple": [
+   "emmènerai",
+   "emmèneras",
+   "emmènera",
+   "emmènerons",
+   "emmènerez",
+   "emmèneront"
+  ],
+  "passe_simple": [
+   "emmenai",
+   "emmenas",
+   "emmena",
+   "emmenâmes",
+   "emmenâtes",
+   "emmenèrent"
+  ],
+  "conditionnel_present": [
+   "emmènerais",
+   "emmènerais",
+   "emmènerait",
+   "emmènerions",
+   "emmèneriez",
+   "emmèneraient"
+  ],
+  "subjonctif_present": [
+   "emmène",
+   "emmènes",
+   "emmène",
+   "emmenions",
+   "emmeniez",
+   "emmènent"
+  ],
+  "subjonctif_imparfait": [
+   "emmenasse",
+   "emmenasses",
+   "emmenât",
+   "emmenassions",
+   "emmenassiez",
+   "emmenassent"
+  ],
+  "imperatif": [
+   null,
+   "emmène",
+   null,
+   "emmenons",
+   "emmenez",
+   null
+  ],
+  "participe_passe": "emmené",
+  "participe_present": "emmenant",
+  "passe_compose": [
+   "ai emmené",
+   "as emmené",
+   "a emmené",
+   "avons emmené",
+   "avez emmené",
+   "ont emmené"
+  ],
+  "frequency_rank_basis": 9914,
+  "true_frequency": 53342,
+  "gloss": [
+   "bring from",
+   "convene",
+   "take along",
+   "take away",
+   "take someone somewhere"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "reculer",
+  "display_infinitive": "reculer",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "recule",
+   "recules",
+   "recule",
+   "reculons",
+   "reculez",
+   "reculent"
+  ],
+  "imparfait": [
+   "reculais",
+   "reculais",
+   "reculait",
+   "reculions",
+   "reculiez",
+   "reculaient"
+  ],
+  "futur_simple": [
+   "reculerai",
+   "reculeras",
+   "reculera",
+   "reculerons",
+   "reculerez",
+   "reculeront"
+  ],
+  "passe_simple": [
+   "reculai",
+   "reculas",
+   "recula",
+   "reculâmes",
+   "reculâtes",
+   "reculèrent"
+  ],
+  "conditionnel_present": [
+   "reculerais",
+   "reculerais",
+   "reculerait",
+   "reculerions",
+   "reculeriez",
+   "reculeraient"
+  ],
+  "subjonctif_present": [
+   "recule",
+   "recules",
+   "recule",
+   "reculions",
+   "reculiez",
+   "reculent"
+  ],
+  "subjonctif_imparfait": [
+   "reculasse",
+   "reculasses",
+   "reculât",
+   "reculassions",
+   "reculassiez",
+   "reculassent"
+  ],
+  "imperatif": [
+   null,
+   "recule",
+   null,
+   "reculons",
+   "reculez",
+   null
+  ],
+  "participe_passe": "reculé",
+  "participe_present": "reculant",
+  "passe_compose": [
+   "ai reculé",
+   "as reculé",
+   "a reculé",
+   "avons reculé",
+   "avez reculé",
+   "ont reculé"
+  ],
+  "frequency_rank_basis": 9824,
+  "true_frequency": 18984,
+  "gloss": [
+   "accommodate",
+   "adjourn",
+   "assign",
+   "back up",
+   "cede"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "jeter",
+  "display_infinitive": "jeter",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "jette",
+   "jettes",
+   "jette",
+   "jetons",
+   "jetez",
+   "jettent"
+  ],
+  "imparfait": [
+   "jetais",
+   "jetais",
+   "jetait",
+   "jetions",
+   "jetiez",
+   "jetaient"
+  ],
+  "futur_simple": [
+   "jetterai",
+   "jetteras",
+   "jettera",
+   "jetterons",
+   "jetterez",
+   "jetteront"
+  ],
+  "passe_simple": [
+   "jetai",
+   "jetas",
+   "jeta",
+   "jetâmes",
+   "jetâtes",
+   "jetèrent"
+  ],
+  "conditionnel_present": [
+   "jetterais",
+   "jetterais",
+   "jetterait",
+   "jetterions",
+   "jetteriez",
+   "jetteraient"
+  ],
+  "subjonctif_present": [
+   "jette",
+   "jettes",
+   "jette",
+   "jetions",
+   "jetiez",
+   "jettent"
+  ],
+  "subjonctif_imparfait": [
+   "jetasse",
+   "jetasses",
+   "jetât",
+   "jetassions",
+   "jetassiez",
+   "jetassent"
+  ],
+  "imperatif": [
+   null,
+   "jette",
+   null,
+   "jetons",
+   "jetez",
+   null
+  ],
+  "participe_passe": "jeté",
+  "participe_present": "jetant",
+  "passe_compose": [
+   "ai jeté",
+   "as jeté",
+   "a jeté",
+   "avons jeté",
+   "avez jeté",
+   "ont jeté"
+  ],
+  "frequency_rank_basis": 9786,
+  "true_frequency": 44208,
+  "gloss": [
+   "cast",
+   "pitch",
+   "spit up",
+   "spit",
+   "throw"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "allier",
+  "display_infinitive": "allier",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "allie",
+   "allies",
+   "allie",
+   "allions",
+   "alliez",
+   "allient"
+  ],
+  "imparfait": [
+   "alliais",
+   "alliais",
+   "alliait",
+   "alliions",
+   "alliiez",
+   "alliaient"
+  ],
+  "futur_simple": [
+   "allierai",
+   "allieras",
+   "alliera",
+   "allierons",
+   "allierez",
+   "allieront"
+  ],
+  "passe_simple": [
+   "alliai",
+   "allias",
+   "allia",
+   "alliâmes",
+   "alliâtes",
+   "allièrent"
+  ],
+  "conditionnel_present": [
+   "allierais",
+   "allierais",
+   "allierait",
+   "allierions",
+   "allieriez",
+   "allieraient"
+  ],
+  "subjonctif_present": [
+   "allie",
+   "allies",
+   "allie",
+   "alliions",
+   "alliiez",
+   "allient"
+  ],
+  "subjonctif_imparfait": [
+   "alliasse",
+   "alliasses",
+   "alliât",
+   "alliassions",
+   "alliassiez",
+   "alliassent"
+  ],
+  "imperatif": [
+   null,
+   "allie",
+   null,
+   "allions",
+   "alliez",
+   null
+  ],
+  "participe_passe": "allié",
+  "participe_present": "alliant",
+  "passe_compose": [
+   "ai allié",
+   "as allié",
+   "a allié",
+   "avons allié",
+   "avez allié",
+   "ont allié"
+  ],
+  "frequency_rank_basis": 9638,
+  "true_frequency": 11160,
+  "gloss": [
+   "ally",
+   "combine",
+   "join"
+  ],
+  "gloss_source": "model-override"
+ },
+ {
+  "infinitive": "excuser",
+  "display_infinitive": "excuser",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "excuse",
+   "excuses",
+   "excuse",
+   "excusons",
+   "excusez",
+   "excusent"
+  ],
+  "imparfait": [
+   "excusais",
+   "excusais",
+   "excusait",
+   "excusions",
+   "excusiez",
+   "excusaient"
+  ],
+  "futur_simple": [
+   "excuserai",
+   "excuseras",
+   "excusera",
+   "excuserons",
+   "excuserez",
+   "excuseront"
+  ],
+  "passe_simple": [
+   "excusai",
+   "excusas",
+   "excusa",
+   "excusâmes",
+   "excusâtes",
+   "excusèrent"
+  ],
+  "conditionnel_present": [
+   "excuserais",
+   "excuserais",
+   "excuserait",
+   "excuserions",
+   "excuseriez",
+   "excuseraient"
+  ],
+  "subjonctif_present": [
+   "excuse",
+   "excuses",
+   "excuse",
+   "excusions",
+   "excusiez",
+   "excusent"
+  ],
+  "subjonctif_imparfait": [
+   "excusasse",
+   "excusasses",
+   "excusât",
+   "excusassions",
+   "excusassiez",
+   "excusassent"
+  ],
+  "imperatif": [
+   null,
+   "excuse",
+   null,
+   "excusons",
+   "excusez",
+   null
+  ],
+  "participe_passe": "excusé",
+  "participe_present": "excusant",
+  "passe_compose": [
+   "ai excusé",
+   "as excusé",
+   "a excusé",
+   "avons excusé",
+   "avez excusé",
+   "ont excusé"
+  ],
+  "frequency_rank_basis": 9506,
+  "true_frequency": 64174,
+  "gloss": [
+   "excuse",
+   "forgive",
+   "justify",
+   "make excuses",
+   "pardon"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "revoir",
+  "display_infinitive": "revoir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "revois",
+   "revois",
+   "revoit",
+   "revoyons",
+   "revoyez",
+   "revoient"
+  ],
+  "imparfait": [
+   "revoyais",
+   "revoyais",
+   "revoyait",
+   "revoyions",
+   "revoyiez",
+   "revoyaient"
+  ],
+  "futur_simple": [
+   "reverrai",
+   "reverras",
+   "reverra",
+   "reverrons",
+   "reverrez",
+   "reverront"
+  ],
+  "passe_simple": [
+   "revis",
+   "revis",
+   "revit",
+   "revîmes",
+   "revîtes",
+   "revirent"
+  ],
+  "conditionnel_present": [
+   "reverrais",
+   "reverrais",
+   "reverrait",
+   "reverrions",
+   "reverriez",
+   "reverraient"
+  ],
+  "subjonctif_present": [
+   "revoie",
+   "revoies",
+   "revoie",
+   "revoyions",
+   "revoyiez",
+   "revoient"
+  ],
+  "subjonctif_imparfait": [
+   "revisse",
+   "revisses",
+   "revît",
+   "revissions",
+   "revissiez",
+   "revissent"
+  ],
+  "imperatif": [
+   null,
+   "revois",
+   null,
+   "revoyons",
+   "revoyez",
+   null
+  ],
+  "participe_passe": "revu",
+  "participe_present": "revoyant",
+  "passe_compose": [
+   "ai revu",
+   "as revu",
+   "a revu",
+   "avons revu",
+   "avez revu",
+   "ont revu"
+  ],
+  "frequency_rank_basis": 9428,
+  "true_frequency": 102141,
+  "gloss": [
+   "review",
+   "revise"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "ressembler",
+  "display_infinitive": "ressembler",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "ressemble",
+   "ressembles",
+   "ressemble",
+   "ressemblons",
+   "ressemblez",
+   "ressemblent"
+  ],
+  "imparfait": [
+   "ressemblais",
+   "ressemblais",
+   "ressemblait",
+   "ressemblions",
+   "ressembliez",
+   "ressemblaient"
+  ],
+  "futur_simple": [
+   "ressemblerai",
+   "ressembleras",
+   "ressemblera",
+   "ressemblerons",
+   "ressemblerez",
+   "ressembleront"
+  ],
+  "passe_simple": [
+   "ressemblai",
+   "ressemblas",
+   "ressembla",
+   "ressemblâmes",
+   "ressemblâtes",
+   "ressemblèrent"
+  ],
+  "conditionnel_present": [
+   "ressemblerais",
+   "ressemblerais",
+   "ressemblerait",
+   "ressemblerions",
+   "ressembleriez",
+   "ressembleraient"
+  ],
+  "subjonctif_present": [
+   "ressemble",
+   "ressembles",
+   "ressemble",
+   "ressemblions",
+   "ressembliez",
+   "ressemblent"
+  ],
+  "subjonctif_imparfait": [
+   "ressemblasse",
+   "ressemblasses",
+   "ressemblât",
+   "ressemblassions",
+   "ressemblassiez",
+   "ressemblassent"
+  ],
+  "imperatif": [
+   null,
+   "ressemble",
+   null,
+   "ressemblons",
+   "ressemblez",
+   null
+  ],
+  "participe_passe": "ressemblé",
+  "participe_present": "ressemblant",
+  "passe_compose": [
+   "ai ressemblé",
+   "as ressemblé",
+   "a ressemblé",
+   "avons ressemblé",
+   "avez ressemblé",
+   "ont ressemblé"
+  ],
+  "frequency_rank_basis": 9243,
+  "true_frequency": 55213,
+  "gloss": [
+   "resemble"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "lire",
+  "display_infinitive": "lire",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "lis",
+   "lis",
+   "lit",
+   "lisons",
+   "lisez",
+   "lisent"
+  ],
+  "imparfait": [
+   "lisais",
+   "lisais",
+   "lisait",
+   "lisions",
+   "lisiez",
+   "lisaient"
+  ],
+  "futur_simple": [
+   "lirai",
+   "liras",
+   "lira",
+   "lirons",
+   "lirez",
+   "liront"
+  ],
+  "passe_simple": [
+   "lus",
+   "lus",
+   "lut",
+   "lûmes",
+   "lûtes",
+   "lurent"
+  ],
+  "conditionnel_present": [
+   "lirais",
+   "lirais",
+   "lirait",
+   "lirions",
+   "liriez",
+   "liraient"
+  ],
+  "subjonctif_present": [
+   "lise",
+   "lises",
+   "lise",
+   "lisions",
+   "lisiez",
+   "lisent"
+  ],
+  "subjonctif_imparfait": [
+   "lusse",
+   "lusses",
+   "lût",
+   "lussions",
+   "lussiez",
+   "lussent"
+  ],
+  "imperatif": [
+   null,
+   "lis",
+   null,
+   "lisons",
+   "lisez",
+   null
+  ],
+  "participe_passe": "lu",
+  "participe_present": "lisant",
+  "passe_compose": [
+   "ai lu",
+   "as lu",
+   "a lu",
+   "avons lu",
+   "avez lu",
+   "ont lu"
+  ],
+  "frequency_rank_basis": 9106,
+  "true_frequency": 98761,
+  "gloss": [
+   "read"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "dégager",
+  "display_infinitive": "dégager",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "dégage",
+   "dégages",
+   "dégage",
+   "dégageons",
+   "dégagez",
+   "dégagent"
+  ],
+  "imparfait": [
+   "dégageais",
+   "dégageais",
+   "dégageait",
+   "dégagions",
+   "dégagiez",
+   "dégageaient"
+  ],
+  "futur_simple": [
+   "dégagerai",
+   "dégageras",
+   "dégagera",
+   "dégagerons",
+   "dégagerez",
+   "dégageront"
+  ],
+  "passe_simple": [
+   "dégageai",
+   "dégageas",
+   "dégagea",
+   "dégageâmes",
+   "dégageâtes",
+   "dégagèrent"
+  ],
+  "conditionnel_present": [
+   "dégagerais",
+   "dégagerais",
+   "dégagerait",
+   "dégagerions",
+   "dégageriez",
+   "dégageraient"
+  ],
+  "subjonctif_present": [
+   "dégage",
+   "dégages",
+   "dégage",
+   "dégagions",
+   "dégagiez",
+   "dégagent"
+  ],
+  "subjonctif_imparfait": [
+   "dégageasse",
+   "dégageasses",
+   "dégageât",
+   "dégageassions",
+   "dégageassiez",
+   "dégageassent"
+  ],
+  "imperatif": [
+   null,
+   "dégage",
+   null,
+   "dégageons",
+   "dégagez",
+   null
+  ],
+  "participe_passe": "dégagé",
+  "participe_present": "dégageant",
+  "passe_compose": [
+   "ai dégagé",
+   "as dégagé",
+   "a dégagé",
+   "avons dégagé",
+   "avez dégagé",
+   "ont dégagé"
+  ],
+  "frequency_rank_basis": 9064,
+  "true_frequency": 29006,
+  "gloss": [
+   "disengage",
+   "free",
+   "fuck off",
+   "isolate",
+   "piss off"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "servir",
+  "display_infinitive": "servir",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "sers",
+   "sers",
+   "sert",
+   "servons",
+   "servez",
+   "servent"
+  ],
+  "imparfait": [
+   "servais",
+   "servais",
+   "servait",
+   "servions",
+   "serviez",
+   "servaient"
+  ],
+  "futur_simple": [
+   "servirai",
+   "serviras",
+   "servira",
+   "servirons",
+   "servirez",
+   "serviront"
+  ],
+  "passe_simple": [
+   "servis",
+   "servis",
+   "servit",
+   "servîmes",
+   "servîtes",
+   "servirent"
+  ],
+  "conditionnel_present": [
+   "servirais",
+   "servirais",
+   "servirait",
+   "servirions",
+   "serviriez",
+   "serviraient"
+  ],
+  "subjonctif_present": [
+   "serve",
+   "serves",
+   "serve",
+   "servions",
+   "serviez",
+   "servent"
+  ],
+  "subjonctif_imparfait": [
+   "servisse",
+   "servisses",
+   "servît",
+   "servissions",
+   "servissiez",
+   "servissent"
+  ],
+  "imperatif": [
+   null,
+   "sers",
+   null,
+   "servons",
+   "servez",
+   null
+  ],
+  "participe_passe": "servi",
+  "participe_present": "servant",
+  "passe_compose": [
+   "ai servi",
+   "as servi",
+   "a servi",
+   "avons servi",
+   "avez servi",
+   "ont servi"
+  ],
+  "frequency_rank_basis": 8967,
+  "true_frequency": 63046,
+  "gloss": [
+   "serve"
+  ],
+  "gloss_source": "wiktionary"
+ },
+ {
+  "infinitive": "battre",
+  "display_infinitive": "battre",
+  "pronominal": false,
+  "reflexive_pronouns": null,
+  "aux": "avoir",
+  "present": [
+   "bats",
+   "bats",
+   "bat",
+   "battons",
+   "battez",
+   "battent"
+  ],
+  "imparfait": [
+   "battais",
+   "battais",
+   "battait",
+   "battions",
+   "battiez",
+   "battaient"
+  ],
+  "futur_simple": [
+   "battrai",
+   "battras",
+   "battra",
+   "battrons",
+   "battrez",
+   "battront"
+  ],
+  "passe_simple": [
+   "battis",
+   "battis",
+   "battit",
+   "battîmes",
+   "battîtes",
+   "battirent"
+  ],
+  "conditionnel_present": [
+   "battrais",
+   "battrais",
+   "battrait",
+   "battrions",
+   "battriez",
+   "battraient"
+  ],
+  "subjonctif_present": [
+   "batte",
+   "battes",
+   "batte",
+   "battions",
+   "battiez",
+   "battent"
+  ],
+  "subjonctif_imparfait": [
+   "battisse",
+   "battisses",
+   "battît",
+   "battissions",
+   "battissiez",
+   "battissent"
+  ],
+  "imperatif": [
+   null,
+   "bats",
+   null,
+   "battons",
+   "battez",
+   null
+  ],
+  "participe_passe": "battu",
+  "participe_present": "battant",
+  "passe_compose": [
+   "ai battu",
+   "as battu",
+   "a battu",
+   "avons battu",
+   "avez battu",
+   "ont battu"
+  ],
+  "frequency_rank_basis": 8938,
+  "true_frequency": 61071,
+  "gloss": [
+   "applaud",
+   "bang",
+   "beat",
+   "break",
+   "clap"
+  ],
+  "gloss_source": "wiktionary"
+ }
+]

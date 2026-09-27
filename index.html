@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>French Reactivation Trainer</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>Français</h1>
+  <div class="stats">
+    <span title="Cards due for review">Due: <b id="stat-due">0</b></span>
+    <span title="New cards left today">New left: <b id="stat-new">0</b></span>
+    <span title="This session">Session: <b id="stat-session">0/0</b></span>
+    <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
+  </div>
+</header>
+
+<section id="settings-panel" class="settings-panel hidden">
+  <label>
+    Direction mix
+    <input type="range" id="dir-weight" min="0" max="100" step="5" />
+    <span id="dir-weight-label"></span>
+  </label>
+  <label>
+    New cards per day
+    <input type="number" id="new-per-day" min="0" max="200" />
+  </label>
+  <p class="note">Progress is stored only in this browser (localStorage). No account, no server.</p>
+</section>
+
+<main>
+  <div id="card" class="card">
+    <div id="prompt" class="prompt"></div>
+    <div id="hint" class="hint"></div>
+    <input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your answer…" />
+    <button id="submit-btn">Check</button>
+    <div id="feedback" class="feedback hidden"></div>
+    <div id="self-confirm" class="self-confirm hidden">
+      <p>Did you actually know this one?</p>
+      <button id="knew-it">I knew it</button>
+      <button id="didnt-know">I didn't</button>
+    </div>
+  </div>
+
+  <div id="done" class="card hidden">
+    <p>No cards due right now — nice work.</p>
+    <p>Come back later, or lower/raise "new cards per day" in settings to pull in more.</p>
+    <button id="restart-btn">Check again</button>
+  </div>
+</main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
