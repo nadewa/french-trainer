@@ -75,6 +75,7 @@ let conjFormPool = [];
 let queue = [];
 let current = null;
 let currentDirection = null; // "en2fr" | "fr2en" | null (conj items)
+let currentSentenceFr = null; // full French example sentence, when the card is in sentence mode
 let sessionStats = { correct: 0, total: 0 };
 let pendingSelfConfirm = null;
 let focusLessonIndex = null; // set via the lesson picker to study one lesson directly
@@ -276,7 +277,12 @@ function speakFrench(text, { slow = false } = {}) {
 // The French form for a card, independent of which direction it's being
 // quizzed in -- always safe to offer for listening once an answer has been
 // graded (and, for fr2en vocab, even before -- it's already shown as text).
+// In sentence mode, the full sentence is read instead of just the bare
+// word/form -- it gives the TTS engine real rhythm/prosody to work with
+// instead of a flat, clipped single word, and it's simply more useful to
+// hear in context.
 function audioTextFor(item) {
+  if (currentSentenceFr) return currentSentenceFr;
   return item.type === "vocab" ? item.word : item.expected;
 }
 
@@ -440,7 +446,7 @@ function sentencePromptFor(item, targetWord) {
   const found = findWholeWord(ex.fr, targetWord);
   if (!found) return null;
   const blanked = ex.fr.slice(0, found.index) + "___" + ex.fr.slice(found.index + found.match.length);
-  return { blanked, english: ex.en };
+  return { blanked, english: ex.en, fr: ex.fr };
 }
 
 function promptTextFor(item, direction) {
@@ -453,6 +459,7 @@ function promptTextFor(item, direction) {
           hint: "Type the missing French word.",
           context: sentence.english,
           sentenceMode: true,
+          fullSentenceFr: sentence.fr,
         };
       }
       return { prompt: item.gloss.slice(0, 3).join(" / "), hint: "Type the French word.", context: "" };
@@ -471,6 +478,7 @@ function promptTextFor(item, direction) {
       hint: `(${item.displayInfinitive} — ${item.tenseLabel})`,
       context: sentence.english,
       sentenceMode: true,
+      fullSentenceFr: sentence.fr,
     };
   }
   const context = `${EN_PRONOUNS[item.personIdx]} ${englishPhraseFor(item)}`;
@@ -526,7 +534,8 @@ function nextCard() {
   current = queue.shift();
   currentDirection = current.type === "vocab" ? pickDirection() : null;
 
-  const { prompt, hint, context, sentenceMode } = promptTextFor(current, currentDirection);
+  const { prompt, hint, context, sentenceMode, fullSentenceFr } = promptTextFor(current, currentDirection);
+  currentSentenceFr = fullSentenceFr || null;
   el("prompt").textContent = prompt;
   el("prompt").classList.toggle("sentence", !!sentenceMode);
   el("hint").textContent = hint;
