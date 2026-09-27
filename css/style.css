@@ -20,6 +20,18 @@
   --orange: #ff9600;
   --orange-dark: #e08600;
   --orange-bg: #ffefc7;
+  --purple: #ce82ff;
+  --purple-dark: #a35ce0;
+  --purple-bg: #f1e0ff;
+  --teal: #00c2b3;
+  --teal-dark: #009e92;
+  --teal-bg: #c8faf5;
+  --pink: #ff5ca8;
+  --pink-dark: #e0398a;
+  --pink-bg: #ffe0ef;
+  --yellow: #ffc800;
+  --yellow-dark: #e0af00;
+  --yellow-bg: #fff2c2;
   --gray: #e5e5e5;
   --gray-dark: #afafaf;
 
@@ -50,6 +62,15 @@
     --blue-bg: #1f2450;
     --red-bg: #3c1c1c;
     --orange-bg: #402c10;
+    --purple-bg: #2e2040;
+    --teal-bg: #0f332f;
+    --pink-bg: #3a1e2c;
+    --yellow-bg: #3a2f0a;
+
+    --purple: #d99bff;
+    --teal: #2fe0d1;
+    --pink: #ff7fbb;
+    --yellow: #ffd633;
 
     --gray: #2e3038;
     --gray-dark: #4d515c;
@@ -568,42 +589,54 @@ button:disabled { opacity: 0.5; cursor: default; }
 }
 
 .category-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   margin-top: 10px;
 }
 
-.category-row {
+.category-block {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  background: var(--bg);
+  text-align: center;
+  gap: 4px;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--fg);
+  transition: transform 0.1s ease;
 }
 
-.category-row .category-row-label {
-  font-size: 0.85rem;
-  text-align: left;
-  font-weight: 600;
+.category-block:active {
+  transform: scale(0.96);
 }
 
-.category-row .category-row-name {
+.category-block-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.category-block-name {
   font-weight: 800;
+  font-size: 0.85rem;
 }
 
-.category-row .category-row-count {
+.category-block-count {
+  font-size: 0.75rem;
   color: var(--fg-soft);
 }
 
-.category-row button {
-  font-size: 0.8rem;
-  padding: 7px 11px;
-  flex-shrink: 0;
-}
+.category-block.category-green { background: var(--green-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--green) 35%, transparent); }
+.category-block.category-blue { background: var(--blue-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--blue) 35%, transparent); }
+.category-block.category-red { background: var(--red-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--red) 35%, transparent); }
+.category-block.category-orange { background: var(--orange-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--orange) 35%, transparent); }
+.category-block.category-purple { background: var(--purple-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--purple) 35%, transparent); }
+.category-block.category-teal { background: var(--teal-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--teal) 35%, transparent); }
+.category-block.category-pink { background: var(--pink-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--pink) 35%, transparent); }
+.category-block.category-yellow { background: var(--yellow-bg); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--yellow) 35%, transparent); }
 
 .focus-banner {
   max-width: 480px;

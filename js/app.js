@@ -204,15 +204,48 @@ function renderStats() {
   el("stat-hearts").textContent = String(computeHearts());
 }
 
-// Browser built-in text-to-speech (no server, no API key, no cost). Silently
-// does nothing on a browser without SpeechSynthesis support.
+// Browser built-in text-to-speech (no server, no API key, no cost). Voice
+// quality/availability is entirely up to the device's OS -- we can only pick
+// the best of what's installed, not add a better one. Silently does nothing
+// on a browser without SpeechSynthesis support.
+//
+// The voice list loads asynchronously (sometimes only after "voiceschanged"
+// fires, which can be well after page load, especially on mobile), so it's
+// cached and refreshed rather than read fresh on every call.
+let cachedVoices = [];
+if ("speechSynthesis" in window) {
+  const loadVoices = () => {
+    cachedVoices = window.speechSynthesis.getVoices();
+  };
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+function bestFrenchVoice() {
+  const frVoices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("fr"));
+  if (!frVoices.length) return null;
+  // On-device ("local") voices are almost always the higher-quality,
+  // more natural-sounding ones -- the flat/"robotic" voice users sometimes
+  // hear is typically a low-quality fallback voice, or (on some phones) a
+  // remote/network voice that can also fail silently when offline.
+  return frVoices.find((v) => v.localService) || frVoices[0];
+}
+
 function speakFrench(text, { slow = false } = {}) {
   if (!("speechSynthesis" in window) || !text) return;
+  const synth = window.speechSynthesis;
   const utter = new SpeechSynthesisUtterance(text);
   utter.lang = "fr-FR";
+  const voice = bestFrenchVoice();
+  if (voice) utter.voice = voice;
   utter.rate = slow ? 0.6 : 0.95;
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utter);
+  // Safari (particularly iOS) can silently drop a speak() call made right
+  // after cancel() -- only cancel when something is actually queued/playing,
+  // and nudge resume() in case the engine got left in a paused state (a
+  // known iOS quirk after the tab was backgrounded).
+  if (synth.speaking || synth.pending) synth.cancel();
+  synth.resume();
+  synth.speak(utter);
 }
 
 // The French form for a card, independent of which direction it's being
@@ -885,20 +918,15 @@ function renderCategoryList() {
   const list = el("category-list");
   list.innerHTML = "";
   categoryGroups.forEach((group) => {
-    const row = document.createElement("div");
-    row.className = "category-row";
-
-    const label = document.createElement("div");
-    label.className = "category-row-label";
-    label.innerHTML = `<span class="category-row-name">${group.name}</span> — <span class="category-row-count">${group.count} words</span>`;
-
-    const btn = document.createElement("button");
-    btn.textContent = "Study";
-    btn.onclick = () => studyCategoryDirectly(group.name, group.itemIds);
-
-    row.appendChild(label);
-    row.appendChild(btn);
-    list.appendChild(row);
+    const block = document.createElement("button");
+    block.className = `category-block category-${group.color}`;
+    block.innerHTML = `
+      <span class="category-block-icon">${group.icon}</span>
+      <span class="category-block-name">${group.name}</span>
+      <span class="category-block-count">${group.count} words</span>
+    `;
+    block.onclick = () => studyCategoryDirectly(group.name, group.itemIds);
+    list.appendChild(block);
   });
 }
 

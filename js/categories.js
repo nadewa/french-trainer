@@ -8,6 +8,8 @@
 export const CATEGORIES = [
   {
     name: "House & Home",
+    icon: "🏠",
+    color: "purple",
     keywords: ["house", "home", "room", "door", "window", "roof", "kitchen", "bedroom",
       "bathroom", "garden", "wall", "floor", "ceiling", "key", "furniture", "table",
       "chair", "bed", "lamp", "curtain", "mirror", "shelf", "stairs", "garage", "yard",
@@ -15,6 +17,8 @@ export const CATEGORIES = [
   },
   {
     name: "Family & People",
+    icon: "👪",
+    color: "pink",
     keywords: ["mother", "father", "parent", "brother", "sister", "son", "daughter",
       "child", "children", "baby", "husband", "wife", "grandmother", "grandfather",
       "uncle", "aunt", "cousin", "family", "friend", "man", "woman", "boy", "girl",
@@ -22,6 +26,8 @@ export const CATEGORIES = [
   },
   {
     name: "Food & Drink",
+    icon: "🍽️",
+    color: "orange",
     keywords: ["food", "eat", "drink", "bread", "cheese", "meat", "fish", "chicken",
       "egg", "milk", "water", "wine", "coffee", "tea", "fruit", "apple", "vegetable",
       "potato", "rice", "sugar", "salt", "butter", "soup", "cake", "cook", "meal",
@@ -29,12 +35,16 @@ export const CATEGORIES = [
   },
   {
     name: "Animals",
+    icon: "🐾",
+    color: "green",
     keywords: ["dog", "cat", "horse", "cow", "pig", "bird", "fish", "sheep", "goat",
       "chicken", "duck", "mouse", "rabbit", "lion", "tiger", "bear", "wolf", "fox",
       "animal", "insect", "bee", "fly", "butterfly", "snake"],
   },
   {
     name: "Body & Health",
+    icon: "💪",
+    color: "red",
     keywords: ["head", "hand", "arm", "leg", "foot", "eye", "ear", "nose", "mouth",
       "hair", "face", "back", "heart", "body", "blood", "bone", "skin", "tooth",
       "teeth", "finger", "knee", "shoulder", "stomach", "health", "sick", "ill",
@@ -42,16 +52,22 @@ export const CATEGORIES = [
   },
   {
     name: "Clothing",
+    icon: "👕",
+    color: "blue",
     keywords: ["shirt", "dress", "pants", "shoe", "shoes", "coat", "hat", "jacket",
       "skirt", "sock", "socks", "glove", "clothing", "clothes", "scarf", "belt"],
   },
   {
     name: "Colors",
+    icon: "🎨",
+    color: "teal",
     keywords: ["red", "blue", "green", "yellow", "black", "white", "gray", "grey",
       "brown", "pink", "purple", "orange", "color"],
   },
   {
     name: "Time & Calendar",
+    icon: "📅",
+    color: "yellow",
     keywords: ["day", "week", "month", "year", "hour", "minute", "second", "morning",
       "evening", "night", "today", "tomorrow", "yesterday", "monday", "tuesday",
       "wednesday", "thursday", "friday", "saturday", "sunday", "january", "february",
@@ -61,6 +77,8 @@ export const CATEGORIES = [
   },
   {
     name: "Weather & Nature",
+    icon: "🌦️",
+    color: "blue",
     keywords: ["weather", "rain", "snow", "sun", "wind", "cloud", "storm", "sky",
       "tree", "forest", "mountain", "river", "lake", "sea", "ocean", "beach", "stone",
       "rock", "flower", "grass", "leaf", "earth", "world", "nature", "cold", "hot",
@@ -68,18 +86,24 @@ export const CATEGORIES = [
   },
   {
     name: "Travel & Places",
+    icon: "🧳",
+    color: "teal",
     keywords: ["city", "town", "street", "road", "country", "village", "travel",
       "train", "car", "bus", "plane", "airport", "station", "ticket", "map", "hotel",
       "bridge", "border"],
   },
   {
     name: "Work & School",
+    icon: "💼",
+    color: "purple",
     keywords: ["work", "job", "school", "teacher", "student", "book", "class",
       "office", "company", "business", "money", "pay", "salary", "meeting", "project",
       "computer", "paper", "pen", "pencil", "exam", "university", "lesson"],
   },
   {
     name: "Emotions & Feelings",
+    icon: "😊",
+    color: "pink",
     keywords: ["happy", "sad", "angry", "afraid", "fear", "love", "hate", "joy",
       "worry", "proud", "ashamed", "surprised", "tired", "bored", "excited",
       "nervous", "calm", "feeling"],
@@ -91,11 +115,13 @@ function wordsOf(text) {
 }
 
 // Groups the vocab items in `bank` by category. Returns an array of
-// { name, itemIds: Set<string>, count }, sorted by size, categories with no
-// matches omitted.
+// { name, icon, color, itemIds: Set<string>, count }, sorted by size,
+// categories with no matches omitted.
 export function buildCategoryGroups(bank) {
   const groups = CATEGORIES.map((cat) => ({
     name: cat.name,
+    icon: cat.icon,
+    color: cat.color,
     keywords: new Set(cat.keywords),
     itemIds: new Set(),
   }));
@@ -117,7 +143,7 @@ export function buildCategoryGroups(bank) {
   }
 
   return groups
-    .map(({ name, itemIds }) => ({ name, itemIds, count: itemIds.size }))
+    .map(({ name, icon, color, itemIds }) => ({ name, icon, color, itemIds, count: itemIds.size }))
     .filter((g) => g.count > 0)
     .sort((a, b) => b.count - a.count);
 }
