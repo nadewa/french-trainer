@@ -41,6 +41,13 @@ function closeThreshold(len) {
   return 3;
 }
 
+// English glosses are sometimes phrased as an infinitive ("to blame", "to us")
+// -- typing the bare form ("blame", "us") is the same answer, not a typo, so it
+// should count as exact rather than falling through to fuzzy/self-confirm.
+function stripTo(s) {
+  return s.replace(/^to\s+/, "");
+}
+
 // Compare a typed answer against one or more acceptable target strings.
 // Returns the best (closest) result across all targets.
 export function checkAnswer(typed, targets) {
@@ -52,12 +59,16 @@ export function checkAnswer(typed, targets) {
   for (const target of list) {
     if (!target) continue;
     const rawTarget = target.trim().toLowerCase();
-    if (rawTyped === rawTarget) {
+    if (
+      rawTyped === rawTarget ||
+      rawTyped === stripTo(rawTarget) ||
+      stripTo(rawTyped) === rawTarget
+    ) {
       return { verdict: "exact", distance: 0, target };
     }
     const nTyped = normalize(typed);
     const nTarget = normalize(target);
-    if (nTyped === nTarget) {
+    if (nTyped === nTarget || nTyped === stripTo(nTarget) || stripTo(nTyped) === nTarget) {
       // identical once accents are stripped -- still not exact, must self-confirm
       if (0 < best.distance) best = { verdict: "close", distance: 0.5, target };
       continue;
