@@ -216,6 +216,7 @@ let cachedVoices = [];
 if ("speechSynthesis" in window) {
   const loadVoices = () => {
     cachedVoices = window.speechSynthesis.getVoices();
+    describeVoices();
   };
   loadVoices();
   window.speechSynthesis.onvoiceschanged = loadVoices;
@@ -229,6 +230,30 @@ function bestFrenchVoice() {
   // hear is typically a low-quality fallback voice, or (on some phones) a
   // remote/network voice that can also fail silently when offline.
   return frVoices.find((v) => v.localService) || frVoices[0];
+}
+
+// Surfaces exactly which voice(s) the browser reports, in Settings, so a
+// "still sounds robotic" report can be diagnosed instead of guessed at --
+// e.g. distinguishing "no French voice detected at all" from "a French
+// voice is used, but it's not the one the OS's Accessibility settings
+// suggest should be available to web pages."
+function describeVoices() {
+  const debugEl = document.getElementById("voice-debug");
+  if (!debugEl) return;
+  if (!("speechSynthesis" in window)) {
+    debugEl.textContent = "Voices: this browser doesn't support text-to-speech.";
+    return;
+  }
+  const frVoices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("fr"));
+  if (!frVoices.length) {
+    debugEl.textContent = "Voices: no French voice reported by this browser yet.";
+    return;
+  }
+  const chosen = bestFrenchVoice();
+  const list = frVoices
+    .map((v) => `${v.name} (${v.lang}, ${v.localService ? "on-device" : "remote"})`)
+    .join("; ");
+  debugEl.textContent = `Voices: using "${chosen.name}". All French voices reported: ${list}`;
 }
 
 function speakFrench(text, { slow = false } = {}) {
@@ -1166,6 +1191,10 @@ async function boot() {
     el("category-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    if ("speechSynthesis" in window) {
+      cachedVoices = window.speechSynthesis.getVoices();
+    }
+    describeVoices();
   });
   el("restart-btn").addEventListener("click", () => {
     queue = buildQueue(bank);
