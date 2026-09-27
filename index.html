@@ -111,14 +111,17 @@
 <main>
   <div id="card" class="card">
     <div id="context" class="context hidden"></div>
-    <div id="prompt" class="prompt"></div>
+    <div class="prompt-row">
+      <div id="prompt" class="prompt"></div>
+      <button id="prompt-speak-btn" class="icon-btn speak-btn hidden" aria-label="Listen">🔊</button>
+      <button id="prompt-speak-slow-btn" class="icon-btn speak-btn hidden" aria-label="Listen slowly">🐢</button>
+    </div>
     <div id="hint" class="hint"></div>
     <input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your answer…" />
     <button id="submit-btn">Check</button>
     <div id="choices" class="choices hidden"></div>
-    <div id="feedback" class="feedback hidden"></div>
     <div id="self-confirm" class="self-confirm hidden">
-      <p>Did you actually know this one?</p>
+      <p>Close — correct answer: <b id="self-confirm-answer"></b>. Did you actually know this?</p>
       <button id="knew-it">I knew it</button>
       <button id="didnt-know">I didn't</button>
     </div>
@@ -150,11 +153,115 @@
   </div>
 
   <div id="cooking-panel" class="cooking-panel">
-    <div id="cooking-emoji" class="cooking-emoji">🥕🔪</div>
+    <svg id="cooking-scene" class="cooking-scene" data-stage="0" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bird cooking animation">
+      <rect x="0" y="120" width="200" height="8" fill="var(--counter-shadow, #c9a570)" opacity="0.5" />
+      <rect x="0" y="112" width="200" height="12" rx="3" fill="var(--counter, #dcb98a)" />
+
+      <g id="cook-bird">
+        <line x1="48" y1="112" x2="46" y2="122" stroke="#ff9600" stroke-width="3" stroke-linecap="round" />
+        <line x1="62" y1="112" x2="64" y2="122" stroke="#ff9600" stroke-width="3" stroke-linecap="round" />
+        <path d="M36 88 L26 82 L38 96 Z" fill="#1f2baa" />
+        <ellipse cx="55" cy="90" rx="20" ry="24" fill="#2e3fe0" />
+        <ellipse cx="59" cy="97" rx="12" ry="16" fill="#f4f7ff" />
+        <path id="cook-wing" d="M48 82 Q66 76 61 102 Q52 99 48 82 Z" fill="#1f2baa" />
+        <circle cx="60" cy="56" r="16" fill="#2e3fe0" />
+        <path d="M54 42 L60 30 L64 43 Z" fill="#1f2baa" />
+        <polygon points="74,56 90,52 90,61" fill="#ff9600" />
+        <circle id="cook-eye" cx="66" cy="52" r="2.6" fill="#222" />
+        <g id="cook-eye-x" class="mishap-only">
+          <line x1="63" y1="49" x2="69" y2="55" stroke="#222" stroke-width="1.6" stroke-linecap="round" />
+          <line x1="69" y1="49" x2="63" y2="55" stroke="#222" stroke-width="1.6" stroke-linecap="round" />
+        </g>
+      </g>
+
+      <g class="prop" data-for="0">
+        <rect x="112" y="112" width="54" height="7" rx="2" fill="#b98a53" />
+        <g transform="translate(122,96)">
+          <path d="M0 0 Q6 -4 10 2 Q6 10 0 16 Q-3 8 0 0 Z" fill="#ff9600" />
+          <path d="M2 -1 L-2 -6 M5 -2 L4 -8 M8 0 L10 -6" stroke="#4baa00" stroke-width="1.6" stroke-linecap="round" />
+        </g>
+        <g id="cook-knife">
+          <rect x="147" y="112" width="6" height="10" rx="1.5" fill="#6b4a2f" />
+          <polygon points="146,98 154,98 153,112 147,112" fill="#c9ced6" />
+        </g>
+      </g>
+
+      <g class="prop" data-for="1">
+        <path d="M120 104 A30 14 0 0 0 180 104 Z" fill="#e7e9ee" stroke="#c7cad2" stroke-width="1.5" />
+        <circle class="bob-1" cx="134" cy="100" r="6" fill="#ff9600" />
+        <circle class="bob-2" cx="150" cy="97" r="6" fill="#e64d4d" />
+        <circle class="bob-3" cx="166" cy="100" r="6" fill="#58cc02" />
+      </g>
+
+      <g class="prop" data-for="2">
+        <path d="M124 108 L176 108 L170 128 L130 128 Z" fill="#5a5f6b" />
+        <ellipse cx="122" cy="110" rx="4" ry="6" fill="none" stroke="#5a5f6b" stroke-width="3" />
+        <ellipse cx="178" cy="110" rx="4" ry="6" fill="none" stroke="#5a5f6b" stroke-width="3" />
+        <circle class="bubble bubble-1" cx="138" cy="106" r="3" fill="#fff" opacity="0.8" />
+        <circle class="bubble bubble-2" cx="150" cy="106" r="3.4" fill="#fff" opacity="0.8" />
+        <circle class="bubble bubble-3" cx="162" cy="106" r="3" fill="#fff" opacity="0.8" />
+        <path class="steam steam-1" d="M138 100 Q134 90 138 82" fill="none" stroke="#c7cad2" stroke-width="2.5" stroke-linecap="round" />
+        <path class="steam steam-2" d="M150 100 Q146 88 150 78" fill="none" stroke="#c7cad2" stroke-width="2.5" stroke-linecap="round" />
+        <path class="steam steam-3" d="M162 100 Q158 90 162 82" fill="none" stroke="#c7cad2" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+
+      <g class="prop" data-for="3">
+        <circle cx="150" cy="104" r="22" fill="#e8b872" stroke="#c9924a" stroke-width="2" />
+        <path class="lattice-pulse" d="M132 96 L168 112 M132 112 L168 96 M150 82 L150 126" stroke="#c9924a" stroke-width="2" />
+      </g>
+
+      <g class="prop" data-for="4">
+        <circle cx="150" cy="104" r="22" fill="#e8b872" stroke="#c9924a" stroke-width="2" />
+        <path d="M132 96 L168 112 M132 112 L168 96 M150 82 L150 126" stroke="#c9924a" stroke-width="2" />
+        <g class="sparkle sparkle-1" transform="translate(122,84)"><path d="M0-6L1.5-1.5 6 0 1.5 1.5 0 6 -1.5 1.5 -6 0 -1.5-1.5Z" fill="#ffc800"/></g>
+        <g class="sparkle sparkle-2" transform="translate(178,90)"><path d="M0-6L1.5-1.5 6 0 1.5 1.5 0 6 -1.5 1.5 -6 0 -1.5-1.5Z" fill="#ffc800"/></g>
+        <g class="sparkle sparkle-3" transform="translate(150,74)"><path d="M0-6L1.5-1.5 6 0 1.5 1.5 0 6 -1.5 1.5 -6 0 -1.5-1.5Z" fill="#ffc800"/></g>
+      </g>
+
+      <g class="prop" data-for="celebrate">
+        <circle cx="150" cy="98" r="24" fill="#e8b872" stroke="#c9924a" stroke-width="2" />
+        <path d="M130 89 L170 107 M130 107 L170 89 M150 74 L150 122" stroke="#c9924a" stroke-width="2" />
+        <g class="friend-bird" transform="translate(20,100) scale(0.55)">
+          <ellipse cx="0" cy="0" rx="18" ry="20" fill="#6c78ff" />
+          <circle cx="8" cy="-20" r="12" fill="#6c78ff" />
+          <polygon points="18,-20 32,-24 32,-16" fill="#ff9600" />
+        </g>
+        <g class="friend-bird friend-bird-2" transform="translate(185,102) scale(0.5)">
+          <ellipse cx="0" cy="0" rx="18" ry="20" fill="#58cc02" />
+          <circle cx="-8" cy="-20" r="12" fill="#58cc02" />
+          <polygon points="-18,-20 -32,-24 -32,-16" fill="#ff9600" />
+        </g>
+        <rect class="confetti c1" x="60" y="10" width="6" height="6" fill="#ff4b4b" />
+        <rect class="confetti c2" x="90" y="4" width="6" height="6" fill="#1cb0f6" />
+        <rect class="confetti c3" x="120" y="12" width="6" height="6" fill="#ffc800" />
+        <rect class="confetti c4" x="150" y="2" width="6" height="6" fill="#58cc02" />
+        <rect class="confetti c5" x="170" y="10" width="6" height="6" fill="#ff9600" />
+      </g>
+
+      <g class="prop" data-for="mishap">
+        <g transform="translate(148,116) rotate(32)">
+          <path d="M-26 -8 L26 -8 L20 12 L-20 12 Z" fill="#5a5f6b" />
+        </g>
+        <path class="spill" d="M130 122 Q145 130 165 122" fill="none" stroke="#8a95c9" stroke-width="4" stroke-linecap="round" />
+        <g class="crash-burst" stroke="#e64d4d" stroke-width="2" stroke-linecap="round">
+          <line x1="150" y1="96" x2="150" y2="86" />
+          <line x1="162" y1="100" x2="170" y2="93" />
+          <line x1="138" y1="100" x2="130" y2="93" />
+        </g>
+      </g>
+    </svg>
     <div id="cooking-caption" class="cooking-caption">Chopping vegetables…</div>
     <div id="cooking-dots" class="cooking-dots"></div>
   </div>
 </main>
+
+<div id="completion-banner" class="completion-banner hidden">
+  <div class="completion-content">
+    <div id="completion-message" class="completion-message"></div>
+    <button id="banner-speak-btn" class="icon-btn speak-btn hidden" aria-label="Listen">🔊</button>
+  </div>
+  <button id="continue-btn">Continue</button>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script type="module" src="js/app.js"></script>

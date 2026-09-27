@@ -192,6 +192,24 @@ function renderStats() {
   el("stat-hearts").textContent = String(computeHearts());
 }
 
+// Browser built-in text-to-speech (no server, no API key, no cost). Silently
+// does nothing on a browser without SpeechSynthesis support.
+function speakFrench(text, { slow = false } = {}) {
+  if (!("speechSynthesis" in window) || !text) return;
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = "fr-FR";
+  utter.rate = slow ? 0.6 : 0.95;
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utter);
+}
+
+// The French form for a card, independent of which direction it's being
+// quizzed in -- always safe to offer for listening once an answer has been
+// graded (and, for fr2en vocab, even before -- it's already shown as text).
+function audioTextFor(item) {
+  return item.type === "vocab" ? item.word : item.expected;
+}
+
 function promptTextFor(item, direction) {
   if (item.type === "vocab") {
     if (direction === "en2fr") {
@@ -199,13 +217,14 @@ function promptTextFor(item, direction) {
     }
     return { prompt: item.word, hint: "Type the English meaning.", context: "" };
   }
-  // conjugation -- show the verb's example sentence (if we have one) as a quick
-  // meaning reminder. It's usually in a different tense than the one being
-  // drilled here (most are written in the present), so it's a context hint,
-  // not a tense-matched translation.
+  // conjugation -- show the verb's example sentence ONLY when its tense
+  // matches the one being drilled (every authored example is written in the
+  // présent). Showing a présent-tense example above a passé composé/imparfait/
+  // futur/subjonctif drill looked like a translation prompt for the wrong
+  // tense and was genuinely misleading, not just imprecise.
   const glossHint = item.gloss.slice(0, 2).join("/");
   const examples = examplesData[`verb:${item.infinitive}`];
-  const context = examples && examples.length ? examples[0].en : "";
+  const context = item.tenseKey === "present" && examples && examples.length ? examples[0].en : "";
   return {
     prompt: `${item.pronounLabel} ___`,
     hint: `(${item.displayInfinitive} — ${glossHint} — ${item.tenseLabel})`,
@@ -215,8 +234,7 @@ function promptTextFor(item, direction) {
 
 function nextCard() {
   pendingSelfConfirm = null;
-  el("feedback").className = "feedback hidden";
-  el("feedback").textContent = "";
+  hideCompletionBanner();
   el("self-confirm").classList.add("hidden");
   el("answer").value = "";
   el("answer").disabled = false;
@@ -265,6 +283,17 @@ function nextCard() {
   el("context").textContent = context;
   el("context").classList.toggle("hidden", !context);
 
+  // Only offer pre-answer audio when the French form is already shown as
+  // text (fr2en vocab) -- for en2fr vocab and all conj items, the French
+  // form IS the answer, so playing it early would just give it away.
+  const canPreAnswerAudio = current.type === "vocab" && currentDirection === "fr2en";
+  el("prompt-speak-btn").classList.toggle("hidden", !canPreAnswerAudio);
+  el("prompt-speak-slow-btn").classList.toggle("hidden", !canPreAnswerAudio);
+  if (canPreAnswerAudio) {
+    el("prompt-speak-btn").onclick = () => speakFrench(current.word);
+    el("prompt-speak-slow-btn").onclick = () => speakFrench(current.word, { slow: true });
+  }
+
   if (state.settings.answerMode === "choice") {
     el("answer").classList.add("hidden");
     el("submit-btn").classList.add("hidden");
@@ -300,15 +329,13 @@ function submitChoice(selectedIndex, correctIndex, correctText, box) {
   if (selectedIndex === correctIndex) {
     sessionStats.correct += 1;
     buttons[selectedIndex].classList.add("correct");
-    showFeedback("exact", correctText);
     gradeAndSchedule(5);
-    setTimeout(nextCard, 500);
+    showCompletionBanner("exact", correctText);
   } else {
     buttons[selectedIndex].classList.add("incorrect");
     buttons[correctIndex].classList.add("correct");
-    showFeedback("wrong", correctText);
     gradeAndSchedule(1);
-    setTimeout(nextCard, 1400);
+    showCompletionBanner("wrong", correctText);
   }
 }
 
@@ -378,12 +405,12 @@ function gradeAndSchedule(quality) {
 // pie the bird shares with its friends, then starts over. Purely decorative
 // -- comboStreak resets on reload, only state.piesBaked (the celebration
 // count) persists.
-const COOK_STAGES = [
-  { emoji: "🥕🔪", caption: "Chopping vegetables…" },
-  { emoji: "🧅🍅", caption: "Prepping the mirepoix…" },
-  { emoji: "🍲", caption: "Simmering on the stove…" },
-  { emoji: "🥧", caption: "Assembling the pie…" },
-  { emoji: "🥧✨", caption: "Decorating beautifully…" },
+const COOK_CAPTIONS = [
+  "Chopping vegetables…",
+  "Prepping the mirepoix…",
+  "Simmering on the stove…",
+  "Assembling the pie…",
+  "Decorating beautifully…",
 ];
 let comboStreak = 0;
 let cookingMishap = false;
@@ -406,24 +433,21 @@ function updateCooking(quality) {
 }
 
 function renderCookingPanel(justCelebrated) {
-  const emojiEl = el("cooking-emoji");
+  const sceneEl = el("cooking-scene");
   const captionEl = el("cooking-caption");
   const dotsEl = el("cooking-dots");
 
   if (justCelebrated) {
-    emojiEl.textContent = "🥧🎉🐦🐦🐦";
+    sceneEl.dataset.stage = "celebrate";
     captionEl.textContent = `Pie shared with friends! (${state.piesBaked} baked so far)`;
   } else if (cookingMishap) {
-    emojiEl.textContent = "🔥💨";
+    sceneEl.dataset.stage = "mishap";
     captionEl.textContent = "Oops, dropped the pan — starting over.";
   } else {
-    const stage = COOK_STAGES[Math.min(comboStreak, COOK_STAGES.length - 1)];
-    emojiEl.textContent = stage.emoji;
-    captionEl.textContent = stage.caption;
+    const stageIdx = Math.min(comboStreak, COOK_CAPTIONS.length - 1);
+    sceneEl.dataset.stage = String(stageIdx);
+    captionEl.textContent = COOK_CAPTIONS[stageIdx];
   }
-  emojiEl.classList.remove("pop");
-  void emojiEl.offsetWidth; // restart the CSS animation
-  emojiEl.classList.add("pop");
 
   dotsEl.innerHTML = "";
   for (let i = 0; i < 5; i++) {
@@ -433,19 +457,29 @@ function renderCookingPanel(justCelebrated) {
   }
 }
 
-function showFeedback(verdict, correctText) {
-  const fb = el("feedback");
-  fb.classList.remove("hidden");
-  if (verdict === "exact") {
-    fb.className = "feedback correct";
-    fb.textContent = "Correct.";
-  } else if (verdict === "wrong") {
-    fb.className = "feedback wrong";
-    fb.textContent = `Not quite. Correct answer: ${correctText}`;
-  } else {
-    fb.className = "feedback close";
-    fb.textContent = `Close — correct answer: ${correctText}`;
-  }
+// Bottom sliding banner + explicit Continue button, replacing the old
+// auto-advance-after-a-timeout pattern -- the user reads at their own pace
+// and can hear the French form (whichever direction they were quizzed in)
+// before moving on.
+function showCompletionBanner(verdict, correctText) {
+  const banner = el("completion-banner");
+  const msg = el("completion-message");
+  banner.classList.toggle("wrong", verdict === "wrong");
+  msg.textContent = verdict === "exact" ? "Correct!" : `Correct answer: ${correctText}`;
+
+  const audioText = audioTextFor(current);
+  const speakBtn = el("banner-speak-btn");
+  speakBtn.classList.toggle("hidden", !audioText);
+  if (audioText) speakBtn.onclick = () => speakFrench(audioText);
+
+  banner.classList.remove("hidden");
+  requestAnimationFrame(() => banner.classList.add("show"));
+}
+
+function hideCompletionBanner() {
+  const banner = el("completion-banner");
+  banner.classList.remove("show");
+  setTimeout(() => banner.classList.add("hidden"), 250);
 }
 
 function submitAnswer() {
@@ -462,17 +496,15 @@ function submitAnswer() {
 
   if (result.verdict === "exact") {
     sessionStats.correct += 1;
-    showFeedback("exact", result.target);
     gradeAndSchedule(5);
-    setTimeout(nextCard, 500);
+    showCompletionBanner("exact", result.target);
   } else if (result.verdict === "close") {
-    showFeedback("close", result.target);
     pendingSelfConfirm = result.target;
+    el("self-confirm-answer").textContent = result.target;
     el("self-confirm").classList.remove("hidden");
   } else {
-    showFeedback("wrong", result.target);
     gradeAndSchedule(1);
-    setTimeout(nextCard, 1400);
+    showCompletionBanner("wrong", result.target);
   }
 }
 
@@ -480,7 +512,7 @@ function confirmSelf(knewIt) {
   sessionStats.correct += knewIt ? 1 : 0;
   el("self-confirm").classList.add("hidden");
   gradeAndSchedule(knewIt ? 4 : 2);
-  nextCard();
+  showCompletionBanner(knewIt ? "exact" : "wrong", pendingSelfConfirm);
 }
 
 function conceptLabel(concept) {
@@ -850,8 +882,14 @@ async function boot() {
   el("answer").addEventListener("keydown", (e) => {
     if (e.key === "Enter") submitAnswer();
   });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && el("completion-banner").classList.contains("show")) {
+      nextCard();
+    }
+  });
   el("knew-it").addEventListener("click", () => confirmSelf(true));
   el("didnt-know").addEventListener("click", () => confirmSelf(false));
+  el("continue-btn").addEventListener("click", () => nextCard());
   el("settings-toggle").addEventListener("click", () => {
     el("settings-panel").classList.toggle("hidden");
     el("lesson-picker").classList.add("hidden");

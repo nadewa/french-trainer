@@ -32,9 +32,19 @@ and conjugation tables came from, what was manually verified, and known gaps.
   conjugation only, or both.
 - **Answer mode**: typed (accent/typo-tolerant, the default) or multiple
   choice — pick per your preference in Settings.
-- **Cooking companion**: the bird mascot cooks through five stages toward a
-  pie for five correct answers in a row (streak resets on a miss); purely a
-  fun session combo, doesn't affect scheduling.
+- **Cooking companion**: an animated inline-SVG bird (idle bob + wing flap)
+  cooks through five stages toward a pie for five correct answers in a row
+  (chopping → prepping → simmering → assembling → decorating), with a shake
+  + "dropped the pan" mishap on a miss and a confetti celebration with two
+  friend birds every 5-streak. Purely a fun session combo, doesn't affect
+  scheduling.
+- **Audio**: 🔊/🐢 buttons use the browser's built-in text-to-speech
+  (no server, no API key) to read French aloud — before answering when the
+  French form is already shown as text, and after every answer in the
+  completion banner.
+- **Completion banner**: after each answer, a bottom banner (green/red)
+  shows the result and a Continue button — you advance at your own pace
+  instead of an auto-timeout.
 - **Progress tracking**: the 📊 panel shows a daily streak, today's and
   all-time accuracy, and a 14-day review history.
 - **Two quiz types**: plain vocabulary (English ↔ French) and verb conjugation
