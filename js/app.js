@@ -160,6 +160,23 @@ function computeStreak() {
   return streak;
 }
 
+// Gems and hearts are purely decorative flavor on top of the real SRS/stats
+// data -- gems = all-time correct answers (a number that only grows), hearts
+// = a playful "mistakes today" counter that never actually blocks practice.
+function computeTotals() {
+  const log = state.dailyLog;
+  return Object.values(log).reduce(
+    (acc, d) => ({ correct: acc.correct + d.correct, total: acc.total + d.total }),
+    { correct: 0, total: 0 }
+  );
+}
+
+function computeHearts() {
+  const today = state.dailyLog[todayStr()] || { correct: 0, total: 0 };
+  const wrongToday = today.total - today.correct;
+  return Math.max(0, 5 - wrongToday);
+}
+
 function renderStats() {
   const now = Date.now();
   const dueCount = Object.values(state.cards).filter((c) => isDue(c, now)).length;
@@ -168,6 +185,8 @@ function renderStats() {
   el("stat-new").textContent = String(newLeft);
   el("stat-session").textContent = `${sessionStats.correct}/${sessionStats.total}`;
   el("stat-streak").textContent = String(computeStreak());
+  el("stat-gems").textContent = String(computeTotals().correct);
+  el("stat-hearts").textContent = String(computeHearts());
 }
 
 function promptTextFor(item, direction) {
@@ -389,7 +408,55 @@ function conceptPreview(concepts) {
     .join(", ");
 }
 
-function renderLessonPicker() {
+const POS_CLASSES = ["pos-left", "pos-center", "pos-right"];
+
+// The "current" lesson for path purposes: the most recent unlocked one if it
+// still has unintroduced items, otherwise the next one waiting to unlock.
+function currentPathIndex() {
+  for (let i = state.unlockedLessons - 1; i >= 0; i--) {
+    const hasUnseen = bank.some((item) => item.lessonIndex === i && !state.cards[item.id]);
+    if (hasUnseen) return i;
+  }
+  return Math.min(state.unlockedLessons, lessonsGrouped.length - 1);
+}
+
+function renderPath() {
+  const path = el("path");
+  path.innerHTML = "";
+  const current = currentPathIndex();
+  const start = Math.max(0, current - 3);
+  const end = Math.min(lessonsGrouped.length - 1, current + 5);
+
+  for (let i = start; i <= end; i++) {
+    const concepts = lessonsGrouped[i];
+    const wrap = document.createElement("div");
+    wrap.className = `path-node-wrap ${POS_CLASSES[i % 3]}`;
+
+    const node = document.createElement("button");
+    node.className = "path-node";
+    let nodeState = "locked";
+    if (i < current) nodeState = "done";
+    else if (i === current) nodeState = "current";
+    node.classList.add(nodeState);
+    node.textContent = nodeState === "done" ? "✓" : nodeState === "locked" ? "🔒" : "★";
+    node.onclick = () => studyLessonDirectly(i);
+    if (nodeState === "current") {
+      const bubble = document.createElement("span");
+      bubble.className = "start-bubble";
+      bubble.textContent = "START";
+      node.appendChild(bubble);
+    }
+    const label = document.createElement("span");
+    label.className = "path-node-label";
+    label.textContent = `${i + 1}. ${conceptPreview(concepts)}`;
+    node.appendChild(label);
+
+    wrap.appendChild(node);
+    path.appendChild(wrap);
+  }
+}
+
+function renderLessonList() {
   const list = el("lesson-list");
   list.innerHTML = "";
   lessonsGrouped.forEach((concepts, index) => {
@@ -414,10 +481,7 @@ function renderLessonPicker() {
 function renderStatsView() {
   const log = state.dailyLog;
   const days = Object.keys(log).sort();
-  const totals = days.reduce(
-    (acc, d) => ({ correct: acc.correct + log[d].correct, total: acc.total + log[d].total }),
-    { correct: 0, total: 0 }
-  );
+  const totals = computeTotals();
   const overallAccuracy = totals.total ? Math.round((totals.correct / totals.total) * 100) : 0;
   const today = log[todayStr()] || { correct: 0, total: 0 };
   const todayAccuracy = today.total ? Math.round((today.correct / today.total) * 100) : 0;
@@ -637,7 +701,7 @@ async function boot() {
     showLessonIntro(state.unlockedLessons);
   });
   el("lessons-toggle").addEventListener("click", () => {
-    renderLessonPicker();
+    renderPath();
     el("lesson-picker").classList.toggle("hidden");
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
@@ -645,6 +709,12 @@ async function boot() {
   });
   el("close-picker-btn").addEventListener("click", () => {
     el("lesson-picker").classList.add("hidden");
+  });
+  el("browse-toggle-btn").addEventListener("click", () => {
+    const list = el("lesson-list");
+    const showing = list.classList.toggle("hidden") === false;
+    el("browse-toggle-btn").textContent = showing ? "Hide full list ▴" : "Browse all 500 lessons ▾";
+    if (showing) renderLessonList();
   });
   el("stats-toggle").addEventListener("click", () => {
     renderStatsView();

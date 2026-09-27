@@ -8,16 +8,20 @@
 </head>
 <body>
 <header class="topbar">
-  <h1>Français</h1>
+  <h1><span title="Arctic Tern">🐦</span> Français</h1>
   <div class="stats">
-    <span title="Cards due for review">Due: <b id="stat-due">0</b></span>
-    <span title="New cards left today">New left: <b id="stat-new">0</b></span>
-    <span title="This session">Session: <b id="stat-session">0/0</b></span>
-    <span title="Consecutive days with a review">🔥 <b id="stat-streak">0</b></span>
+    <span class="stat-pill streak" title="Consecutive days with a review">🔥 <b id="stat-streak">0</b></span>
+    <span class="stat-pill gems" title="Total correct answers, all time">💎 <b id="stat-gems">0</b></span>
+    <span class="stat-pill hearts" title="Wrong answers left before you'd lose a heart today (just for fun — never blocks practice)">❤️ <b id="stat-hearts">5</b></span>
     <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
     <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
     <button id="account-toggle" class="icon-btn" aria-label="Account">👤</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
+  </div>
+  <div class="stats-secondary">
+    <span>Due: <b id="stat-due">0</b></span>
+    <span>New left: <b id="stat-new">0</b></span>
+    <span>Session: <b id="stat-session">0/0</b></span>
   </div>
 </header>
 
@@ -75,8 +79,12 @@
     <h2>Lessons</h2>
     <button id="close-picker-btn" class="icon-btn" aria-label="Close">✕</button>
   </div>
-  <p class="note">Pick any lesson to study it directly, whether or not it's normally unlocked yet.</p>
-  <div id="lesson-list"></div>
+  <p class="note">Tap any circle to study that lesson directly, whether or not it's unlocked yet.</p>
+  <div class="path-wrap">
+    <div id="path" class="path"></div>
+  </div>
+  <button id="browse-toggle-btn" class="browse-toggle">Browse all 500 lessons ▾</button>
+  <div id="lesson-list" class="hidden"></div>
 </section>
 
 <section id="stats-view" class="settings-panel hidden">
@@ -109,6 +117,7 @@
   </div>
 
   <div id="lesson-intro" class="card lesson-intro hidden">
+    <div class="mascot" title="Arctic Tern">🐦</div>
     <h2 id="lesson-title"></h2>
     <p class="lesson-subtitle">Today we're learning:</p>
     <ul id="lesson-concepts"></ul>

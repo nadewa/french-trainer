@@ -23,6 +23,11 @@ and conjugation tables came from, what was manually verified, and known gaps.
   automatically once per calendar day once everything in the current one has
   been introduced at least once. Use the 📖 Lessons picker to jump straight
   to any lesson (locked or not) and study it directly instead of waiting.
+  The picker shows a winding lesson path (done/current/locked nodes) for
+  nearby lessons, with a "browse all 500" fallback list for jumping further.
+- **Gamified stats**: a streak flame, an all-time "gems" count (total correct
+  answers), and a daily "hearts" counter (purely decorative — wrong answers
+  never lock you out of practicing) in the header.
 - **Practice filter**: in Settings, restrict review to vocabulary only, verb
   conjugation only, or both.
 - **Progress tracking**: the 📊 panel shows a daily streak, today's and
