@@ -1,6 +1,7 @@
 import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
-import { buildItemBank } from "./items.js";
+import { buildItemBank, buildIntroRanks } from "./items.js";
+import { buildConcepts, groupByLesson } from "./lessons.js";
 
 const STATE_KEY = "ft_state_v1";
 const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15 };
@@ -31,6 +32,9 @@ function saveState(state) {
 
 const state = loadState();
 let itemsById = new Map();
+let bank = [];
+let lessonsGrouped = [];
+let examplesData = {};
 let queue = [];
 let current = null;
 let currentDirection = null; // "en2fr" | "fr2en" | null (conj items)
@@ -39,6 +43,9 @@ let pendingSelfConfirm = null;
 
 const el = (id) => document.getElementById(id);
 
+// Items belonging to a lesson the user hasn't started yet are never eligible as
+// "new" cards, regardless of the daily new-card cap -- the lesson intro screen
+// is the only door that opens them.
 function buildQueue(allItems) {
   const now = Date.now();
   const due = [];
@@ -47,7 +54,7 @@ function buildQueue(allItems) {
   for (const item of allItems) {
     const card = state.cards[item.id];
     if (!card) {
-      unseen.push(item);
+      if (item.lessonIndex < state.unlockedLessons) unseen.push(item);
     } else if (isDue(card, now)) {
       due.push({ item, card });
     }
@@ -61,6 +68,18 @@ function buildQueue(allItems) {
 
   const combined = due.map((d) => d.item).concat(freshBatch);
   return combined;
+}
+
+// The next lesson should only be offered once every item already unlocked has
+// been introduced at least once -- otherwise hitting the daily new-card cap
+// partway through a lesson (a verb alone brings ~28 conjugation-drill items)
+// would look identical to having finished it.
+function hasUnintroducedUnlockedItems() {
+  return bank.some((item) => !state.cards[item.id] && item.lessonIndex < state.unlockedLessons);
+}
+
+function hasNextLesson() {
+  return !hasUnintroducedUnlockedItems() && state.unlockedLessons < lessonsGrouped.length;
 }
 
 function pickDirection() {
@@ -101,15 +120,20 @@ function nextCard() {
   el("submit-btn").disabled = false;
 
   if (queue.length === 0) {
-    queue = buildQueue(Array.from(itemsById.values()));
+    queue = buildQueue(bank);
   }
   if (queue.length === 0) {
     el("card").classList.add("hidden");
+    el("lesson-intro").classList.add("hidden");
     el("done").classList.remove("hidden");
+    el("done-next-lesson").classList.toggle("hidden", !hasNextLesson());
+    el("done-nothing").classList.toggle("hidden", hasNextLesson());
+    if (hasNextLesson()) el("next-lesson-num").textContent = String(state.unlockedLessons + 1);
     renderStats();
     return;
   }
   el("card").classList.remove("hidden");
+  el("lesson-intro").classList.add("hidden");
   el("done").classList.add("hidden");
 
   current = queue.shift();
@@ -187,6 +211,53 @@ function confirmSelf(knewIt) {
   nextCard();
 }
 
+function conceptLabel(concept) {
+  if (concept.kind === "verb") {
+    return `${concept.displayInfinitive} — ${concept.gloss.slice(0, 3).join(", ")}`;
+  }
+  return `${concept.word} — ${concept.gloss.slice(0, 3).join(", ")}`;
+}
+
+function showLessonIntro(index) {
+  const concepts = lessonsGrouped[index] || [];
+
+  el("card").classList.add("hidden");
+  el("done").classList.add("hidden");
+  el("lesson-intro").classList.remove("hidden");
+
+  el("lesson-title").textContent = `Lesson ${index + 1}`;
+
+  const list = el("lesson-concepts");
+  list.innerHTML = "";
+  for (const c of concepts) {
+    const li = document.createElement("li");
+    li.textContent = conceptLabel(c);
+    list.appendChild(li);
+  }
+
+  const examplesBox = el("lesson-examples");
+  examplesBox.innerHTML = "";
+  for (const c of concepts) {
+    const examples = examplesData[c.key];
+    if (!examples || !examples.length) continue;
+    for (const ex of examples) {
+      const p = document.createElement("p");
+      p.className = "example";
+      p.innerHTML = `<span class="fr">${ex.fr}</span><br><span class="en">${ex.en}</span>`;
+      examplesBox.appendChild(p);
+    }
+  }
+
+  el("start-lesson-btn").onclick = () => startLesson(index);
+}
+
+function startLesson(index) {
+  state.unlockedLessons = Math.max(state.unlockedLessons, index + 1);
+  saveState(state);
+  queue = buildQueue(bank);
+  nextCard();
+}
+
 function initSettingsUI() {
   const slider = el("dir-weight");
   const sliderLabel = el("dir-weight-label");
@@ -210,17 +281,34 @@ function initSettingsUI() {
   });
 }
 
+function migrateUnlockedLessons() {
+  if (state.unlockedLessons !== undefined) return;
+  let maxLesson = -1;
+  for (const item of bank) {
+    if (state.cards[item.id]) maxLesson = Math.max(maxLesson, item.lessonIndex);
+  }
+  state.unlockedLessons = maxLesson + 1; // 0 for a genuinely fresh install
+  saveState(state);
+}
+
 async function boot() {
-  const [vocab, verbs] = await Promise.all([
+  const [vocab, verbs, examples] = await Promise.all([
     fetch("data/vocab.json").then((r) => r.json()),
     fetch("data/verbs.json").then((r) => r.json()),
+    fetch("data/examples.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
   ]);
-  const bank = buildItemBank(vocab, verbs);
+  examplesData = examples;
+
+  bank = buildItemBank(vocab, verbs);
   itemsById = new Map(bank.map((i) => [i.id, i]));
 
+  const introRank = buildIntroRanks(vocab, verbs);
+  const concepts = buildConcepts(vocab, verbs, introRank);
+  lessonsGrouped = groupByLesson(concepts);
+
+  migrateUnlockedLessons();
+
   initSettingsUI();
-  queue = buildQueue(bank);
-  nextCard();
 
   el("submit-btn").addEventListener("click", submitAnswer);
   el("answer").addEventListener("keydown", (e) => {
@@ -236,6 +324,16 @@ async function boot() {
     sessionStats = { correct: 0, total: 0 };
     nextCard();
   });
+  el("start-next-lesson-btn").addEventListener("click", () => {
+    showLessonIntro(state.unlockedLessons);
+  });
+
+  if (state.unlockedLessons === 0) {
+    showLessonIntro(0);
+  } else {
+    queue = buildQueue(bank);
+    nextCard();
+  }
 }
 
 boot();

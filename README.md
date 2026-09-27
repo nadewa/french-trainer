@@ -14,6 +14,13 @@ and conjugation tables came from, what was manually verified, and known gaps.
 
 ## Features
 
+- **Lessons**: vocabulary and verbs are grouped into fixed-size lessons in
+  real frequency order (so être/avoir/aller show up in Lesson 1, not after
+  4,900 other words). Each lesson opens with a short "today we're learning"
+  screen — the words/verbs plus an example sentence with translation where
+  one exists — before any quiz starts. A lesson's material is introduced
+  gradually under the daily new-card cap, and the next lesson only unlocks
+  once everything in the current one has been introduced at least once.
 - **Two quiz types**: plain vocabulary (English ↔ French) and verb conjugation
   drills ("je ___ (aller, présent)" → "vais"), covering présent, passé composé,
   imparfait, futur simple, and subjonctif présent for the top 100 verbs.
@@ -85,10 +92,12 @@ index.html          # page shell
 css/style.css        # styling (light/dark aware)
 js/app.js            # session/queue orchestration, grading, UI wiring
 js/items.js          # builds the review-item bank from the data files
+js/lessons.js        # groups items into lessons, in frequency order
 js/srs.js            # SM-2 scheduler
 js/fuzzy.js          # typo/accent-tolerant answer checking
 data/vocab.json      # 4,900 vocabulary words + English gloss(es)
 data/verbs.json       # 100 verbs with full conjugation tables
+data/examples.json   # example sentences for the lesson-intro screen (phase 1 coverage)
 data/build_data.py    # reproducible data-build pipeline (see DATA_SOURCES.md)
 DATA_SOURCES.md       # exact sources, licenses, manual verification, gaps
 ```

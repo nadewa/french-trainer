@@ -44,10 +44,24 @@
     </div>
   </div>
 
+  <div id="lesson-intro" class="card lesson-intro hidden">
+    <h2 id="lesson-title"></h2>
+    <p class="lesson-subtitle">Today we're learning:</p>
+    <ul id="lesson-concepts"></ul>
+    <div id="lesson-examples"></div>
+    <button id="start-lesson-btn">Start lesson</button>
+  </div>
+
   <div id="done" class="card hidden">
-    <p>No cards due right now — nice work.</p>
-    <p>Come back later, or lower/raise "new cards per day" in settings to pull in more.</p>
-    <button id="restart-btn">Check again</button>
+    <div id="done-nothing">
+      <p>No cards due right now — nice work.</p>
+      <p>Come back later, or lower/raise "new cards per day" in settings to pull in more.</p>
+      <button id="restart-btn">Check again</button>
+    </div>
+    <div id="done-next-lesson" class="hidden">
+      <p>You've finished everything available right now.</p>
+      <button id="start-next-lesson-btn">Start Lesson <span id="next-lesson-num"></span></button>
+    </div>
   </div>
 </main>
 

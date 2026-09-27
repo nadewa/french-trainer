@@ -1,5 +1,7 @@
 // Builds the full review-item bank from the sourced data files.
 
+import { lessonIndexForRank } from "./lessons.js";
+
 const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
 
 const TENSES = [
@@ -37,7 +39,7 @@ export function pronounFor(tense, personIdx, verb) {
 // cards -- without this, all 100 verbs (many of them, like etre/avoir/aller, among
 // the most frequent words in French) would only be reached after all ~4900 plain
 // vocab words, which is backwards.
-function buildIntroRanks(vocab, verbs) {
+export function buildIntroRanks(vocab, verbs) {
   const combined = [
     ...vocab.map((v) => ({ key: `v:${v.word}`, freq: v.frequency })),
     ...verbs.map((verb) => ({ key: `verb:${verb.infinitive}`, freq: verb.true_frequency })),
@@ -96,6 +98,10 @@ export function buildItemBank(vocab, verbs) {
         });
       }
     }
+  });
+
+  items.forEach((item) => {
+    item.lessonIndex = lessonIndexForRank(item.rank);
   });
 
   return items;

@@ -299,13 +299,11 @@
  {
   "word": "plus",
   "gloss": [
-   "and",
+   "more",
    "anymore",
-   "-er",
-   "-est",
-   "less"
+   "plus"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1214520
  },
  {
@@ -330,18 +328,19 @@
  {
   "word": "au",
   "gloss": [
-   "Au"
+   "to the",
+   "at the"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1109359
  },
  {
   "word": "moi",
   "gloss": [
-   "ego",
-   "self"
+   "me",
+   "myself"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1048758
  },
  {
@@ -455,10 +454,10 @@
  {
   "word": "où",
   "gloss": [
-   "when",
-   "where"
+   "where",
+   "when"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 643564
  },
  {
@@ -559,13 +558,10 @@
  {
   "word": "chose",
   "gloss": [
-   "affair",
-   "article",
-   "business",
-   "case",
-   "issue"
+   "thing",
+   "something"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 490339
  },
  {
@@ -662,9 +658,11 @@
  {
   "word": "sa",
   "gloss": [
-   "Sa"
+   "her",
+   "his",
+   "its"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 408233
  },
  {

@@ -107,6 +107,22 @@ for full reproducibility).
   4,700 candidate vocabulary words were skipped for the same reason before
   reaching 4,900 with a gloss.
 
+## 7. Example sentences — assistant-composed (not corpus-sourced)
+
+- **File**: `data/examples.json`
+- Unlike everything above, these are written by the assistant, not pulled from
+  an open dataset. Tatoeba (the standard open sentence-pair corpus most
+  language apps use for this) and other candidates (Helsinki-NLP/Tatoeba
+  Challenge, HuggingFace-hosted sentence datasets) were all unreachable from
+  this build environment's network policy — only github.com/raw content, npm,
+  and PyPI are allowed through, and none of them mirror a usable sentence
+  corpus. Rather than skip example sentences entirely, they were written
+  directly using ordinary French competence and flagged clearly as such.
+- **Coverage (phase 1)**: the 100 verbs and the 100 highest-frequency
+  vocabulary words — one example sentence each. This covers roughly the first
+  20 lessons; lessons beyond that show the word list and gloss only, no
+  example sentence, until more are added.
+
 ## Reproducing / regenerating the data
 
 `data/build_data.py` expects the five raw source files (listed above, with

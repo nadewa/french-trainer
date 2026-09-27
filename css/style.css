@@ -152,3 +152,51 @@ button:disabled { opacity: 0.5; cursor: default; }
 }
 
 .self-confirm button { margin: 0 4px; }
+
+.lesson-intro {
+  text-align: left;
+}
+
+.lesson-intro h2 {
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.lesson-subtitle {
+  text-align: center;
+  opacity: 0.75;
+  margin-top: 0;
+}
+
+#lesson-concepts {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+
+#lesson-concepts li {
+  margin-bottom: 4px;
+}
+
+#lesson-examples {
+  margin-bottom: 20px;
+}
+
+.example {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0 0 8px;
+}
+
+.example .fr { font-weight: 600; }
+.example .en { opacity: 0.75; font-size: 0.9rem; }
+
+.lesson-intro #start-lesson-btn {
+  display: block;
+  width: 100%;
+}
+
+#done-next-lesson button {
+  width: 100%;
+}
