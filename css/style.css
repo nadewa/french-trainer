@@ -200,3 +200,143 @@ button:disabled { opacity: 0.5; cursor: default; }
 #done-next-lesson button {
   width: 100%;
 }
+
+.context {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.picker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picker-header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+#lesson-list {
+  max-height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lesson-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.lesson-row .lesson-row-label {
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.lesson-row .lesson-row-num {
+  font-weight: 600;
+}
+
+.lesson-row .lesson-row-concepts {
+  opacity: 0.65;
+}
+
+.lesson-row button {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  flex-shrink: 0;
+}
+
+.lesson-row.locked button {
+  background: var(--border);
+  color: var(--fg);
+}
+
+.focus-banner {
+  max-width: 480px;
+  margin: 12px auto 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--close);
+  color: #1d1d1d;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.focus-banner button {
+  font-size: 0.78rem;
+  padding: 5px 8px;
+  background: #1d1d1d;
+  color: #fff;
+}
+
+#stats-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-tile {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stat-tile .stat-tile-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.stat-tile .stat-tile-label {
+  font-size: 0.75rem;
+  opacity: 0.65;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.history-row .history-date {
+  width: 70px;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.history-row .history-bar-track {
+  flex: 1;
+  background: var(--border);
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.history-row .history-bar-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+.history-row .history-count {
+  width: 60px;
+  text-align: right;
+  opacity: 0.7;
+  flex-shrink: 0;
+}

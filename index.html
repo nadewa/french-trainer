@@ -13,6 +13,9 @@
     <span title="Cards due for review">Due: <b id="stat-due">0</b></span>
     <span title="New cards left today">New left: <b id="stat-new">0</b></span>
     <span title="This session">Session: <b id="stat-session">0/0</b></span>
+    <span title="Consecutive days with a review">🔥 <b id="stat-streak">0</b></span>
+    <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
+    <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
   </div>
 </header>
@@ -27,11 +30,43 @@
     New cards per day
     <input type="number" id="new-per-day" min="0" max="200" />
   </label>
+  <label>
+    Practice
+    <select id="practice-mode">
+      <option value="all">Vocab + verb conjugation</option>
+      <option value="vocab">Vocabulary only</option>
+      <option value="conj">Verb conjugation only</option>
+    </select>
+  </label>
   <p class="note">Progress is stored only in this browser (localStorage). No account, no server.</p>
 </section>
 
+<section id="lesson-picker" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Lessons</h2>
+    <button id="close-picker-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+  <p class="note">Pick any lesson to study it directly, whether or not it's normally unlocked yet.</p>
+  <div id="lesson-list"></div>
+</section>
+
+<section id="stats-view" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Progress</h2>
+    <button id="close-stats-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+  <div id="stats-summary"></div>
+  <div id="stats-history"></div>
+</section>
+
+<div id="focus-banner" class="focus-banner hidden">
+  Studying <b id="focus-lesson-label"></b> directly.
+  <button id="exit-focus-btn">Back to normal review</button>
+</div>
+
 <main>
   <div id="card" class="card">
+    <div id="context" class="context hidden"></div>
     <div id="prompt" class="prompt"></div>
     <div id="hint" class="hint"></div>
     <input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your answer…" />
@@ -61,6 +96,10 @@
     <div id="done-next-lesson" class="hidden">
       <p>You've finished everything available right now.</p>
       <button id="start-next-lesson-btn">Start Lesson <span id="next-lesson-num"></span></button>
+      <p id="next-lesson-wait-note" class="note hidden">
+        Today's new lesson is already unlocked — Lesson <span id="next-lesson-num2"></span> unlocks tomorrow,
+        or pick any lesson now from 📖 Lessons.
+      </p>
     </div>
   </div>
 </main>

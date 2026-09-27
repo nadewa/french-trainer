@@ -20,7 +20,13 @@ and conjugation tables came from, what was manually verified, and known gaps.
   screen — the words/verbs plus an example sentence with translation where
   one exists — before any quiz starts. A lesson's material is introduced
   gradually under the daily new-card cap, and the next lesson only unlocks
-  once everything in the current one has been introduced at least once.
+  automatically once per calendar day once everything in the current one has
+  been introduced at least once. Use the 📖 Lessons picker to jump straight
+  to any lesson (locked or not) and study it directly instead of waiting.
+- **Practice filter**: in Settings, restrict review to vocabulary only, verb
+  conjugation only, or both.
+- **Progress tracking**: the 📊 panel shows a daily streak, today's and
+  all-time accuracy, and a 14-day review history.
 - **Two quiz types**: plain vocabulary (English ↔ French) and verb conjugation
   drills ("je ___ (aller, présent)" → "vais"), covering présent, passé composé,
   imparfait, futur simple, and subjonctif présent for the top 100 verbs.

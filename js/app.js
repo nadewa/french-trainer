@@ -4,7 +4,7 @@ import { buildItemBank, buildIntroRanks } from "./items.js";
 import { buildConcepts, groupByLesson } from "./lessons.js";
 
 const STATE_KEY = "ft_state_v1";
-const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15 };
+const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all" };
 
 function todayStr(d = new Date()) {
   return d.toISOString().slice(0, 10);
@@ -20,9 +20,13 @@ function loadState() {
   if (!raw) raw = {};
   if (!raw.cards) raw.cards = {};
   if (!raw.settings) raw.settings = { ...DEFAULT_SETTINGS };
+  for (const k of Object.keys(DEFAULT_SETTINGS)) {
+    if (raw.settings[k] === undefined) raw.settings[k] = DEFAULT_SETTINGS[k];
+  }
   if (!raw.newToday || raw.newToday.date !== todayStr()) {
     raw.newToday = { date: todayStr(), count: 0 };
   }
+  if (!raw.dailyLog) raw.dailyLog = {};
   return raw;
 }
 
@@ -40,21 +44,33 @@ let current = null;
 let currentDirection = null; // "en2fr" | "fr2en" | null (conj items)
 let sessionStats = { correct: 0, total: 0 };
 let pendingSelfConfirm = null;
+let focusLessonIndex = null; // set via the lesson picker to study one lesson directly
 
 const el = (id) => document.getElementById(id);
 
+function matchesPracticeMode(item) {
+  const mode = state.settings.practiceMode;
+  if (mode === "vocab") return item.type === "vocab";
+  if (mode === "conj") return item.type === "conj";
+  return true;
+}
+
 // Items belonging to a lesson the user hasn't started yet are never eligible as
 // "new" cards, regardless of the daily new-card cap -- the lesson intro screen
-// is the only door that opens them.
+// (or the lesson picker, for a direct choice) is the only door that opens them.
+// When focusLessonIndex is set (via the picker), the queue narrows to just that
+// lesson's items and ignores the daily new-card cap -- it's a deliberate choice.
 function buildQueue(allItems) {
   const now = Date.now();
   const due = [];
   const unseen = [];
 
   for (const item of allItems) {
+    if (!matchesPracticeMode(item)) continue;
+    if (focusLessonIndex !== null && item.lessonIndex !== focusLessonIndex) continue;
     const card = state.cards[item.id];
     if (!card) {
-      if (item.lessonIndex < state.unlockedLessons) unseen.push(item);
+      if (focusLessonIndex !== null || item.lessonIndex < state.unlockedLessons) unseen.push(item);
     } else if (isDue(card, now)) {
       due.push({ item, card });
     }
@@ -63,8 +79,10 @@ function buildQueue(allItems) {
   due.sort((a, b) => a.card.due - b.card.due);
   unseen.sort((a, b) => a.rank - b.rank);
 
-  const remainingNew = Math.max(0, state.settings.newPerDay - state.newToday.count);
-  const freshBatch = unseen.slice(0, remainingNew);
+  const freshBatch =
+    focusLessonIndex !== null
+      ? unseen
+      : unseen.slice(0, Math.max(0, state.settings.newPerDay - state.newToday.count));
 
   const combined = due.map((d) => d.item).concat(freshBatch);
   return combined;
@@ -82,8 +100,36 @@ function hasNextLesson() {
   return !hasUnintroducedUnlockedItems() && state.unlockedLessons < lessonsGrouped.length;
 }
 
+// The automatic "done -> start next lesson" prompt is capped to once per
+// calendar day ("daily lessons"); the lesson picker bypasses this cap since
+// that's an explicit manual choice, not the auto-advance flow.
+function canAutoAdvanceToday() {
+  return state.lastAutoUnlockDate !== todayStr();
+}
+
 function pickDirection() {
   return Math.random() < state.settings.dirWeight ? "en2fr" : "fr2en";
+}
+
+function recordOutcome(quality) {
+  const day = state.dailyLog[todayStr()] || { correct: 0, total: 0 };
+  day.total += 1;
+  if (quality >= 3) day.correct += 1;
+  state.dailyLog[todayStr()] = day;
+}
+
+function computeStreak() {
+  const log = state.dailyLog;
+  const d = new Date();
+  if (!log[todayStr(d)] || log[todayStr(d)].total === 0) {
+    d.setDate(d.getDate() - 1);
+  }
+  let streak = 0;
+  while (log[todayStr(d)] && log[todayStr(d)].total > 0) {
+    streak++;
+    d.setDate(d.getDate() - 1);
+  }
+  return streak;
 }
 
 function renderStats() {
@@ -93,20 +139,27 @@ function renderStats() {
   el("stat-due").textContent = String(dueCount);
   el("stat-new").textContent = String(newLeft);
   el("stat-session").textContent = `${sessionStats.correct}/${sessionStats.total}`;
+  el("stat-streak").textContent = String(computeStreak());
 }
 
 function promptTextFor(item, direction) {
   if (item.type === "vocab") {
     if (direction === "en2fr") {
-      return { prompt: item.gloss.slice(0, 3).join(" / "), hint: "Type the French word." };
+      return { prompt: item.gloss.slice(0, 3).join(" / "), hint: "Type the French word.", context: "" };
     }
-    return { prompt: item.word, hint: "Type the English meaning." };
+    return { prompt: item.word, hint: "Type the English meaning.", context: "" };
   }
-  // conjugation
+  // conjugation -- show the verb's example sentence (if we have one) as a quick
+  // meaning reminder. It's usually in a different tense than the one being
+  // drilled here (most are written in the present), so it's a context hint,
+  // not a tense-matched translation.
   const glossHint = item.gloss.slice(0, 2).join("/");
+  const examples = examplesData[`verb:${item.infinitive}`];
+  const context = examples && examples.length ? examples[0].en : "";
   return {
     prompt: `${item.pronounLabel} ___`,
     hint: `(${item.displayInfinitive} — ${glossHint} — ${item.tenseLabel})`,
+    context,
   };
 }
 
@@ -123,12 +176,28 @@ function nextCard() {
     queue = buildQueue(bank);
   }
   if (queue.length === 0) {
+    if (focusLessonIndex !== null) {
+      el("card").classList.add("hidden");
+      el("lesson-intro").classList.add("hidden");
+      el("done").classList.remove("hidden");
+      el("done-nothing").classList.remove("hidden");
+      el("done-next-lesson").classList.add("hidden");
+      renderStats();
+      return;
+    }
+    const showNext = hasNextLesson();
+    const canAuto = showNext && canAutoAdvanceToday();
     el("card").classList.add("hidden");
     el("lesson-intro").classList.add("hidden");
     el("done").classList.remove("hidden");
-    el("done-next-lesson").classList.toggle("hidden", !hasNextLesson());
-    el("done-nothing").classList.toggle("hidden", hasNextLesson());
-    if (hasNextLesson()) el("next-lesson-num").textContent = String(state.unlockedLessons + 1);
+    el("done-next-lesson").classList.toggle("hidden", !showNext);
+    el("done-nothing").classList.toggle("hidden", showNext);
+    if (showNext) {
+      el("next-lesson-num").textContent = String(state.unlockedLessons + 1);
+      el("next-lesson-num2").textContent = String(state.unlockedLessons + 1);
+      el("start-next-lesson-btn").classList.toggle("hidden", !canAuto);
+      el("next-lesson-wait-note").classList.toggle("hidden", canAuto);
+    }
     renderStats();
     return;
   }
@@ -139,9 +208,11 @@ function nextCard() {
   current = queue.shift();
   currentDirection = current.type === "vocab" ? pickDirection() : null;
 
-  const { prompt, hint } = promptTextFor(current, currentDirection);
+  const { prompt, hint, context } = promptTextFor(current, currentDirection);
   el("prompt").textContent = prompt;
   el("hint").textContent = hint;
+  el("context").textContent = context;
+  el("context").classList.toggle("hidden", !context);
   el("answer").focus();
   renderStats();
 }
@@ -158,6 +229,7 @@ function gradeAndSchedule(quality) {
   const isNew = !state.cards[current.id];
   state.cards[current.id] = schedule(card, quality, Date.now());
   if (isNew) state.newToday.count += 1;
+  recordOutcome(quality);
   saveState(state);
 }
 
@@ -251,11 +323,103 @@ function showLessonIntro(index) {
   el("start-lesson-btn").onclick = () => startLesson(index);
 }
 
-function startLesson(index) {
+function startLesson(index, { manual = false } = {}) {
   state.unlockedLessons = Math.max(state.unlockedLessons, index + 1);
+  if (!manual) state.lastAutoUnlockDate = todayStr();
   saveState(state);
+  focusLessonIndex = null;
   queue = buildQueue(bank);
   nextCard();
+}
+
+function studyLessonDirectly(index) {
+  focusLessonIndex = index;
+  el("focus-lesson-label").textContent = `Lesson ${index + 1}`;
+  el("focus-banner").classList.remove("hidden");
+  if (state.unlockedLessons <= index) {
+    // studying an as-yet-locked lesson directly still counts as a manual
+    // unlock, so it never eats into the once-a-day automatic advance
+    state.unlockedLessons = Math.max(state.unlockedLessons, index + 1);
+    saveState(state);
+  }
+  el("lesson-picker").classList.add("hidden");
+  queue = buildQueue(bank);
+  nextCard();
+}
+
+function exitFocus() {
+  focusLessonIndex = null;
+  el("focus-banner").classList.add("hidden");
+  queue = buildQueue(bank);
+  nextCard();
+}
+
+function conceptPreview(concepts) {
+  return concepts
+    .slice(0, 4)
+    .map((c) => (c.kind === "verb" ? c.infinitive : c.word))
+    .join(", ");
+}
+
+function renderLessonPicker() {
+  const list = el("lesson-list");
+  list.innerHTML = "";
+  lessonsGrouped.forEach((concepts, index) => {
+    const unlocked = index < state.unlockedLessons;
+    const row = document.createElement("div");
+    row.className = "lesson-row" + (unlocked ? "" : " locked");
+
+    const label = document.createElement("div");
+    label.className = "lesson-row-label";
+    label.innerHTML = `<span class="lesson-row-num">Lesson ${index + 1}</span> — <span class="lesson-row-concepts">${conceptPreview(concepts)}…</span>`;
+
+    const btn = document.createElement("button");
+    btn.textContent = unlocked ? "Study" : "Unlock & study";
+    btn.onclick = () => studyLessonDirectly(index);
+
+    row.appendChild(label);
+    row.appendChild(btn);
+    list.appendChild(row);
+  });
+}
+
+function renderStatsView() {
+  const log = state.dailyLog;
+  const days = Object.keys(log).sort();
+  const totals = days.reduce(
+    (acc, d) => ({ correct: acc.correct + log[d].correct, total: acc.total + log[d].total }),
+    { correct: 0, total: 0 }
+  );
+  const overallAccuracy = totals.total ? Math.round((totals.correct / totals.total) * 100) : 0;
+  const today = log[todayStr()] || { correct: 0, total: 0 };
+  const todayAccuracy = today.total ? Math.round((today.correct / today.total) * 100) : 0;
+  const learnedCount = Object.values(state.cards).filter((c) => c.repetitions >= 2).length;
+
+  el("stats-summary").innerHTML = `
+    <div class="stat-tile"><div class="stat-tile-value">${computeStreak()}🔥</div><div class="stat-tile-label">Day streak</div></div>
+    <div class="stat-tile"><div class="stat-tile-value">${todayAccuracy}%</div><div class="stat-tile-label">Today's accuracy (${today.total} reviewed)</div></div>
+    <div class="stat-tile"><div class="stat-tile-value">${overallAccuracy}%</div><div class="stat-tile-label">All-time accuracy (${totals.total} reviews)</div></div>
+    <div class="stat-tile"><div class="stat-tile-value">${learnedCount}</div><div class="stat-tile-label">Items past initial learning</div></div>
+  `;
+
+  const history = el("stats-history");
+  history.innerHTML = "";
+  const last14 = days.slice(-14).reverse();
+  for (const d of last14) {
+    const entry = log[d];
+    const pct = entry.total ? Math.round((entry.correct / entry.total) * 100) : 0;
+    const row = document.createElement("div");
+    row.className = "history-row";
+    row.innerHTML = `
+      <span class="history-date">${d.slice(5)}</span>
+      <span class="history-bar-track"><span class="history-bar-fill" style="width:${pct}%"></span></span>
+      <span class="history-count">${entry.correct}/${entry.total}</span>
+    `;
+    history.appendChild(row);
+  }
+  if (!last14.length) {
+    history.innerHTML = '<p class="note">No reviews logged yet.</p>';
+  }
 }
 
 function initSettingsUI() {
@@ -278,6 +442,15 @@ function initSettingsUI() {
     newPerDay.value = v;
     saveState(state);
     renderStats();
+  });
+
+  const practiceMode = el("practice-mode");
+  practiceMode.value = state.settings.practiceMode;
+  practiceMode.addEventListener("change", () => {
+    state.settings.practiceMode = practiceMode.value;
+    saveState(state);
+    queue = buildQueue(bank);
+    nextCard();
   });
 }
 
@@ -327,6 +500,25 @@ async function boot() {
   el("start-next-lesson-btn").addEventListener("click", () => {
     showLessonIntro(state.unlockedLessons);
   });
+  el("lessons-toggle").addEventListener("click", () => {
+    renderLessonPicker();
+    el("lesson-picker").classList.toggle("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+  });
+  el("close-picker-btn").addEventListener("click", () => {
+    el("lesson-picker").classList.add("hidden");
+  });
+  el("stats-toggle").addEventListener("click", () => {
+    renderStatsView();
+    el("stats-view").classList.toggle("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("lesson-picker").classList.add("hidden");
+  });
+  el("close-stats-btn").addEventListener("click", () => {
+    el("stats-view").classList.add("hidden");
+  });
+  el("exit-focus-btn").addEventListener("click", exitFocus);
 
   if (state.unlockedLessons === 0) {
     showLessonIntro(0);
