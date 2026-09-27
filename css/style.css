@@ -340,3 +340,26 @@ button:disabled { opacity: 0.5; cursor: default; }
   opacity: 0.7;
   flex-shrink: 0;
 }
+
+#account-panel input {
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.account-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.account-actions button {
+  flex: 1;
+}
+
+#account-signout-btn {
+  background: var(--wrong);
+}

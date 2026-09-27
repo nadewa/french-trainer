@@ -2,6 +2,7 @@ import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
 import { buildItemBank, buildIntroRanks } from "./items.js";
 import { buildConcepts, groupByLesson } from "./lessons.js";
+import * as cloud from "./cloud.js";
 
 const STATE_KEY = "ft_state_v1";
 const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all" };
@@ -10,13 +11,7 @@ function todayStr(d = new Date()) {
   return d.toISOString().slice(0, 10);
 }
 
-function loadState() {
-  let raw;
-  try {
-    raw = JSON.parse(localStorage.getItem(STATE_KEY));
-  } catch {
-    raw = null;
-  }
+function normalizeState(raw) {
   if (!raw) raw = {};
   if (!raw.cards) raw.cards = {};
   if (!raw.settings) raw.settings = { ...DEFAULT_SETTINGS };
@@ -30,8 +25,41 @@ function loadState() {
   return raw;
 }
 
+function loadState() {
+  let raw;
+  try {
+    raw = JSON.parse(localStorage.getItem(STATE_KEY));
+  } catch {
+    raw = null;
+  }
+  return normalizeState(raw);
+}
+
+let currentUser = null;
+let cloudPushTimer = null;
+
+function scheduleCloudPush() {
+  if (!currentUser) return;
+  clearTimeout(cloudPushTimer);
+  cloudPushTimer = setTimeout(() => {
+    cloud
+      .pushProgress(currentUser.id, state)
+      .then(() => setSyncStatus(`Synced ${new Date().toLocaleTimeString()}`))
+      .catch((e) => {
+        console.error("cloud push failed", e);
+        setSyncStatus("Sync failed — will retry on next change.");
+      });
+  }, 1500);
+}
+
+function setSyncStatus(text) {
+  const el2 = document.getElementById("account-sync-status");
+  if (el2) el2.textContent = text;
+}
+
 function saveState(state) {
   localStorage.setItem(STATE_KEY, JSON.stringify(state));
+  scheduleCloudPush();
 }
 
 const state = loadState();
@@ -454,6 +482,102 @@ function initSettingsUI() {
   });
 }
 
+function renderAccountUI() {
+  const configured = cloud.isConfigured();
+  el("account-not-configured").classList.toggle("hidden", configured);
+  el("account-signed-out").classList.toggle("hidden", !configured || Boolean(currentUser));
+  el("account-signed-in").classList.toggle("hidden", !configured || !currentUser);
+  if (currentUser) el("account-email-display").textContent = currentUser.email;
+}
+
+// Cloud state fully replaces local state on sign-in (last-write-wins, no
+// cross-device merge -- documented in README.md). `state` is a shared const
+// referenced by closures throughout the file, so its properties are mutated
+// in place rather than reassigning the binding.
+function replaceLocalState(raw) {
+  const normalized = normalizeState(raw);
+  for (const k of Object.keys(state)) delete state[k];
+  Object.assign(state, normalized);
+}
+
+async function handleSession(session) {
+  currentUser = session ? session.user : null;
+  if (!currentUser) {
+    renderAccountUI();
+    return;
+  }
+  setSyncStatus("Syncing…");
+  try {
+    const cloudState = await cloud.pullProgress(currentUser.id);
+    if (cloudState) {
+      replaceLocalState(cloudState);
+      saveState(state);
+    } else {
+      await cloud.pushProgress(currentUser.id, state);
+    }
+    setSyncStatus(`Synced ${new Date().toLocaleTimeString()}`);
+  } catch (e) {
+    console.error(e);
+    setSyncStatus("Could not sync — check your connection.");
+  }
+  renderAccountUI();
+  migrateUnlockedLessons();
+  focusLessonIndex = null;
+  queue = buildQueue(bank);
+  sessionStats = { correct: 0, total: 0 };
+  nextCard();
+}
+
+function initAccountUI() {
+  el("account-toggle").addEventListener("click", () => {
+    el("account-panel").classList.toggle("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+  });
+  el("close-account-btn").addEventListener("click", () => el("account-panel").classList.add("hidden"));
+
+  el("account-signup-btn").addEventListener("click", async () => {
+    const email = el("account-email").value.trim();
+    const password = el("account-password").value;
+    el("account-message").textContent = "";
+    try {
+      await cloud.signUp(email, password);
+      el("account-message").textContent = "Account created. Check your email to confirm, then sign in.";
+    } catch (e) {
+      el("account-message").textContent = e.message;
+    }
+  });
+
+  el("account-signin-btn").addEventListener("click", async () => {
+    const email = el("account-email").value.trim();
+    const password = el("account-password").value;
+    el("account-message").textContent = "";
+    try {
+      const data = await cloud.signIn(email, password);
+      await handleSession(data.session);
+    } catch (e) {
+      el("account-message").textContent = e.message;
+    }
+  });
+
+  el("account-signout-btn").addEventListener("click", async () => {
+    await cloud.signOut();
+    currentUser = null;
+    setSyncStatus("");
+    renderAccountUI();
+  });
+
+  if (cloud.isConfigured()) {
+    cloud.getSession().then((session) => {
+      if (session) handleSession(session);
+      else renderAccountUI();
+    });
+  } else {
+    renderAccountUI();
+  }
+}
+
 function migrateUnlockedLessons() {
   if (state.unlockedLessons !== undefined) return;
   let maxLesson = -1;
@@ -482,6 +606,7 @@ async function boot() {
   migrateUnlockedLessons();
 
   initSettingsUI();
+  initAccountUI();
 
   el("submit-btn").addEventListener("click", submitAnswer);
   el("answer").addEventListener("keydown", (e) => {
@@ -491,6 +616,9 @@ async function boot() {
   el("didnt-know").addEventListener("click", () => confirmSelf(false));
   el("settings-toggle").addEventListener("click", () => {
     el("settings-panel").classList.toggle("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
   });
   el("restart-btn").addEventListener("click", () => {
     queue = buildQueue(bank);
@@ -505,6 +633,7 @@ async function boot() {
     el("lesson-picker").classList.toggle("hidden");
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
   });
   el("close-picker-btn").addEventListener("click", () => {
     el("lesson-picker").classList.add("hidden");
@@ -514,6 +643,7 @@ async function boot() {
     el("stats-view").classList.toggle("hidden");
     el("settings-panel").classList.add("hidden");
     el("lesson-picker").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
   });
   el("close-stats-btn").addEventListener("click", () => {
     el("stats-view").classList.add("hidden");

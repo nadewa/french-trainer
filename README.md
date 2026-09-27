@@ -43,8 +43,11 @@ and conjugation tables came from, what was manually verified, and known gaps.
   with the classic SuperMemo-2 algorithm.
 - **New cards per day cap** (default 15, adjustable) so new material doesn't
   outpace what you're actually reviewing.
-- **No login, no server**: all state lives in your browser's `localStorage`.
-  Clearing site data resets your progress.
+- **Works fully offline by default**: all state lives in your browser's
+  `localStorage`. Clearing site data resets your progress.
+- **Optional account + cloud sync**: create an account under 👤 Account to
+  sync progress across devices (see "Cloud sync setup" below). Entirely
+  optional — the app is fully functional without it.
 
 ## Running locally
 
@@ -85,6 +88,43 @@ git push
 GitHub Pages picks up the new commit automatically (usually live within ~1
 minute). There's no separate build/deploy command to run.
 
+## Cloud sync setup
+
+Optional. Without this, the app works exactly as before (localStorage only).
+With it, you can sign up/in from any browser and your progress follows you.
+Uses [Supabase](https://supabase.com) (free tier: 50,000 monthly active
+users, 500MB database — far more than one person needs) so there's no server
+for you to run or pay for.
+
+1. Create a free account at [supabase.com](https://supabase.com) and a new
+   project (pick any name/region/password — you won't need the DB password
+   day to day).
+2. In your new project, open the **SQL Editor**, paste in the contents of
+   [`data/schema.sql`](./data/schema.sql), and run it. This creates the
+   `progress` table with Row Level Security so each user can only ever read
+   or write their own row.
+3. In **Project Settings → API**, copy the **Project URL** and the **anon
+   public** key.
+4. Edit `js/supabase-config.js` and paste them in:
+   ```js
+   export const SUPABASE_URL = "https://xxxxx.supabase.co";
+   export const SUPABASE_ANON_KEY = "eyJ...";
+   ```
+   The anon key is meant to be public (it's committed to the repo on
+   purpose) — Row Level Security is what actually protects your data, not
+   secrecy of this key.
+5. Commit and push. Redeploy as usual (see "Redeploying after edits").
+6. Optional: in Supabase's **Authentication → Providers → Email** settings,
+   you can turn off "Confirm email" if you don't want to click a
+   confirmation link after signing up (fine for personal use; leave it on
+   for anything more public).
+
+**Limitations (v1)**: last-write-wins sync — no merge across two devices
+active at the same time, no password-reset flow yet (delete and recreate
+the user from the Supabase dashboard if you get locked out), and no way to
+delete your own account from within the app (do it from the Supabase
+dashboard's Authentication tab).
+
 ## Editing the data
 
 `data/vocab.json` and `data/verbs.json` are plain JSON — hand-edit them if you
@@ -101,9 +141,12 @@ js/items.js          # builds the review-item bank from the data files
 js/lessons.js        # groups items into lessons, in frequency order
 js/srs.js            # SM-2 scheduler
 js/fuzzy.js          # typo/accent-tolerant answer checking
+js/cloud.js          # optional Supabase auth + progress sync
+js/supabase-config.js # your Supabase project URL/anon key (see Cloud sync setup)
 data/vocab.json      # 4,900 vocabulary words + English gloss(es)
 data/verbs.json       # 100 verbs with full conjugation tables
 data/examples.json   # example sentences for the lesson-intro screen (phase 1 coverage)
 data/build_data.py    # reproducible data-build pipeline (see DATA_SOURCES.md)
+data/schema.sql       # Supabase table + RLS policies for cloud sync
 DATA_SOURCES.md       # exact sources, licenses, manual verification, gaps
 ```

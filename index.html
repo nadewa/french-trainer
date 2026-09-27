@@ -16,9 +16,37 @@
     <span title="Consecutive days with a review">🔥 <b id="stat-streak">0</b></span>
     <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
     <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
+    <button id="account-toggle" class="icon-btn" aria-label="Account">👤</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
   </div>
 </header>
+
+<section id="account-panel" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Account</h2>
+    <button id="close-account-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+  <div id="account-not-configured" class="hidden">
+    <p class="note">Cloud sync isn't set up for this deployment yet. Progress still saves
+    to this browser. See README.md "Cloud sync setup" to enable it.</p>
+  </div>
+  <div id="account-signed-out" class="hidden">
+    <label>Email <input id="account-email" type="email" autocomplete="email" /></label>
+    <label>Password <input id="account-password" type="password" autocomplete="current-password" /></label>
+    <div class="account-actions">
+      <button id="account-signin-btn">Sign in</button>
+      <button id="account-signup-btn">Create account</button>
+    </div>
+    <p id="account-message" class="note"></p>
+    <p class="note">Signing in pulls your saved progress from the cloud (replacing what's in
+    this browser); signing up pushes your current progress up for the first time.</p>
+  </div>
+  <div id="account-signed-in" class="hidden">
+    <p>Signed in as <b id="account-email-display"></b>.</p>
+    <p id="account-sync-status" class="note"></p>
+    <button id="account-signout-btn">Sign out</button>
+  </div>
+</section>
 
 <section id="settings-panel" class="settings-panel hidden">
   <label>
@@ -38,7 +66,8 @@
       <option value="conj">Verb conjugation only</option>
     </select>
   </label>
-  <p class="note">Progress is stored only in this browser (localStorage). No account, no server.</p>
+  <p class="note">Progress always saves to this browser (localStorage). Optional cloud sync
+  is under 👤 Account.</p>
 </section>
 
 <section id="lesson-picker" class="settings-panel hidden">
@@ -104,6 +133,7 @@
   </div>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script type="module" src="js/app.js"></script>
 </body>
 </html>
