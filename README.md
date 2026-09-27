@@ -50,6 +50,18 @@ and conjugation tables came from, what was manually verified, and known gaps.
 - **Two quiz types**: plain vocabulary (English ↔ French) and verb conjugation
   drills ("je ___ (aller, présent)" → "vais"), covering présent, passé composé,
   imparfait, futur simple, and subjonctif présent for the top 100 verbs.
+- **Full-sentence fill-in-the-blank**: when a word's example sentence is
+  available and the exact form being drilled appears in it, the prompt shows
+  the whole French sentence with just that word blanked out, plus its English
+  translation, instead of the word in isolation. Falls back to the isolated
+  word/phrase prompt otherwise (most items, since example coverage is phase 1
+  — see DATA_SOURCES.md).
+- **Categories**: the 🗂 picker groups vocabulary into themes (House & Home,
+  Family & People, Food & Drink, Animals, Body & Health, Clothing, Colors,
+  Time & Calendar, Weather & Nature, Travel & Places, Work & School, Emotions
+  & Feelings) computed from each word's English gloss, so common nouns like
+  "maison" are easy to find and study directly instead of waiting for the
+  frequency-ordered lesson path to reach them.
 - **Direction weighting**: vocabulary defaults to 70% English→French (the
   harder, productive-recall direction) / 30% French→English, adjustable with a
   slider in Settings.
@@ -159,6 +171,7 @@ css/style.css        # styling (light/dark aware)
 js/app.js            # session/queue orchestration, grading, UI wiring
 js/items.js          # builds the review-item bank from the data files
 js/lessons.js        # groups items into lessons, in frequency order
+js/categories.js     # keyword-based thematic groupings for the 🗂 picker
 js/srs.js            # SM-2 scheduler
 js/fuzzy.js          # typo/accent-tolerant answer checking
 js/cloud.js          # optional Supabase auth + progress sync

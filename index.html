@@ -14,6 +14,7 @@
     <span class="stat-pill gems" title="Total correct answers, all time">💎 <b id="stat-gems">0</b></span>
     <span class="stat-pill hearts" title="Wrong answers left before you'd lose a heart today (just for fun — never blocks practice)">❤️ <b id="stat-hearts">5</b></span>
     <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
+    <button id="categories-toggle" class="icon-btn" aria-label="Categories">🗂</button>
     <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
     <button id="account-toggle" class="icon-btn" aria-label="Account">👤</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
@@ -92,6 +93,16 @@
   </div>
   <button id="browse-toggle-btn" class="browse-toggle">Browse all 500 lessons ▾</button>
   <div id="lesson-list" class="hidden"></div>
+</section>
+
+<section id="category-picker" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Categories</h2>
+    <button id="close-category-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+  <p class="note">Common words, grouped by theme — tap one to study just those words,
+  regardless of which lesson they're normally introduced in.</p>
+  <div id="category-list" class="category-list"></div>
 </section>
 
 <section id="stats-view" class="settings-panel hidden">

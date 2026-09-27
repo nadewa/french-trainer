@@ -2,6 +2,7 @@ import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
 import { buildItemBank, buildIntroRanks } from "./items.js";
 import { buildConcepts, groupByLesson } from "./lessons.js";
+import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
 
 const STATE_KEY = "ft_state_v1";
@@ -66,6 +67,7 @@ const state = loadState();
 let itemsById = new Map();
 let bank = [];
 let lessonsGrouped = [];
+let categoryGroups = [];
 let examplesData = {};
 let vocabWordPool = [];
 let vocabGlossPool = [];
@@ -76,6 +78,7 @@ let currentDirection = null; // "en2fr" | "fr2en" | null (conj items)
 let sessionStats = { correct: 0, total: 0 };
 let pendingSelfConfirm = null;
 let focusLessonIndex = null; // set via the lesson picker to study one lesson directly
+let focusFilter = null; // set via the category picker: function(item) -> bool
 
 const el = (id) => document.getElementById(id);
 
@@ -86,11 +89,21 @@ function matchesPracticeMode(item) {
   return true;
 }
 
+function inFocus(item) {
+  if (focusLessonIndex !== null) return item.lessonIndex === focusLessonIndex;
+  if (focusFilter) return focusFilter(item);
+  return true;
+}
+
+function focusActive() {
+  return focusLessonIndex !== null || focusFilter !== null;
+}
+
 // Items belonging to a lesson the user hasn't started yet are never eligible as
 // "new" cards, regardless of the daily new-card cap -- the lesson intro screen
-// (or the lesson picker, for a direct choice) is the only door that opens them.
-// When focusLessonIndex is set (via the picker), the queue narrows to just that
-// lesson's items and ignores the daily new-card cap -- it's a deliberate choice.
+// (or the lesson/category picker, for a direct choice) is the only door that
+// opens them. Focus mode (lesson or category picker) narrows the queue to just
+// the matching items and ignores the daily new-card cap -- a deliberate choice.
 function buildQueue(allItems) {
   const now = Date.now();
   const due = [];
@@ -98,10 +111,10 @@ function buildQueue(allItems) {
 
   for (const item of allItems) {
     if (!matchesPracticeMode(item)) continue;
-    if (focusLessonIndex !== null && item.lessonIndex !== focusLessonIndex) continue;
+    if (!inFocus(item)) continue;
     const card = state.cards[item.id];
     if (!card) {
-      if (focusLessonIndex !== null || item.lessonIndex < state.unlockedLessons) unseen.push(item);
+      if (focusActive() || item.lessonIndex < state.unlockedLessons) unseen.push(item);
     } else if (isDue(card, now)) {
       due.push({ item, card });
     }
@@ -110,10 +123,9 @@ function buildQueue(allItems) {
   due.sort((a, b) => a.card.due - b.card.due);
   unseen.sort((a, b) => a.rank - b.rank);
 
-  const freshBatch =
-    focusLessonIndex !== null
-      ? unseen
-      : unseen.slice(0, Math.max(0, state.settings.newPerDay - state.newToday.count));
+  const freshBatch = focusActive()
+    ? unseen
+    : unseen.slice(0, Math.max(0, state.settings.newPerDay - state.newToday.count));
 
   const combined = due.map((d) => d.item).concat(freshBatch);
   return combined;
@@ -210,24 +222,203 @@ function audioTextFor(item) {
   return item.type === "vocab" ? item.word : item.expected;
 }
 
+// Tense-matched English periphrasis for conjugation drills, e.g. "he/she was
+// doing" for faire+imparfait+il/elle. Built from a per-verb {base, particle}
+// English mapping (ordinary translation, not sourced data) plus regular
+// English inflection rules and a small irregular-verb override table --
+// covers all 100 verbs across the 5 drilled tenses.
+const EN_PRONOUNS = ["I", "you", "he/she", "we", "you", "they"];
+
+const ENGLISH_VERBS = {
+  aller: "go", vouloir: "want", faire: "do", savoir: "know", dire: "say",
+  penser: "think", voir: "see", venir: "come", attendre: "wait for",
+  croire: "believe", parler: "speak", prendre: "take", regarder: "watch",
+  aimer: "like", trouver: "find", laisser: "leave", connaître: "know",
+  arrêter: "stop", rester: "stay", appeler: "call", sortir: "go out",
+  passer: "pass", partir: "leave", arriver: "arrive", essayer: "try",
+  écouter: "listen", demander: "ask", tenir: "hold", revenir: "come back",
+  donner: "give", mettre: "put", chercher: "look for", comprendre: "understand",
+  travailler: "work", entrer: "enter", oublier: "forget", continuer: "continue",
+  vivre: "live", jouer: "play", sentir: "feel", rentrer: "come home",
+  aider: "help", tuer: "kill", commencer: "start", espérer: "hope",
+  porter: "carry", entendre: "hear", garder: "keep", ouvrir: "open",
+  rendre: "give back", sembler: "seem", envoyer: "send", tirer: "pull",
+  ignorer: "ignore", mourir: "die", inquiéter: "worry", suivre: "follow",
+  bouger: "move", retourner: "go back", souvenir: "remember", marcher: "walk",
+  finir: "finish", changer: "change", perdre: "lose", répondre: "answer",
+  manger: "eat", occuper: "occupy", boire: "drink", utiliser: "use",
+  imaginer: "imagine", dormir: "sleep", manquer: "miss", monter: "go up",
+  compter: "count", rappeler: "call back", devenir: "become", toucher: "touch",
+  relater: "recount", permettre: "allow", retrouver: "find again",
+  apprendre: "learn", quitter: "leave", montrer: "show", poser: "place",
+  emmener: "take away", reculer: "back up", jeter: "throw", allier: "combine",
+  excuser: "excuse", revoir: "see again", ressembler: "resemble", lire: "read",
+  dégager: "clear", servir: "serve", battre: "beat",
+};
+
+const IRREGULAR_PP = {
+  go: "gone", do: "done", say: "said", see: "seen", come: "come",
+  speak: "spoken", take: "taken", find: "found", leave: "left", know: "known",
+  hold: "held", give: "given", put: "put", understand: "understood",
+  forget: "forgotten", feel: "felt", hear: "heard", keep: "kept", send: "sent",
+  eat: "eaten", drink: "drunk", become: "become", lose: "lost", show: "shown",
+  throw: "thrown", read: "read", beat: "beaten",
+};
+const IRREGULAR_GERUND = { die: "dying", stop: "stopping", put: "putting" };
+
+function englishBase(item) {
+  const [base, ...rest] = (ENGLISH_VERBS[item.infinitive] || item.gloss[0]).split(" ");
+  return { base, particle: rest.join(" ") };
+}
+function thirdPersonEn(base) {
+  if (/[sxz]$/.test(base) || /(sh|ch)$/.test(base)) return base + "es";
+  if (/[^aeiou]y$/.test(base)) return base.slice(0, -1) + "ies";
+  if (base.endsWith("o")) return base + "es";
+  return base + "s";
+}
+function gerundEn(base) {
+  if (IRREGULAR_GERUND[base]) return IRREGULAR_GERUND[base];
+  if (base.endsWith("ie")) return base.slice(0, -2) + "ying";
+  if (base.endsWith("e") && !base.endsWith("ee")) return base.slice(0, -1) + "ing";
+  return base + "ing";
+}
+function pastParticipleEn(base) {
+  if (IRREGULAR_PP[base]) return IRREGULAR_PP[base];
+  if (base === "stop") return "stopped";
+  if (base.endsWith("e")) return base + "d";
+  if (/[^aeiou]y$/.test(base)) return base.slice(0, -1) + "ied";
+  return base + "ed";
+}
+
+// être/avoir/pouvoir/devoir/falloir are too irregular for the template above
+// (be: am/is/are; have: has; can/must/be-necessary-to are modal, no -s form).
+const AUX_BE = ["was", "were", "was", "were", "were", "were"];
+const AUX_HAVE = ["have", "have", "has", "have", "have", "have"];
+const SPECIAL_ENGLISH = {
+  "être:present": ["am", "are", "is", "are", "are", "are"],
+  "être:imparfait": AUX_BE,
+  "être:futur_simple": Array(6).fill("will be"),
+  "être:passe_compose": AUX_HAVE.map((a) => `${a} been`),
+  "être:subjonctif_present": Array(6).fill("be"),
+  "avoir:present": ["have", "have", "has", "have", "have", "have"],
+  "avoir:imparfait": Array(6).fill("had"),
+  "avoir:futur_simple": Array(6).fill("will have"),
+  "avoir:passe_compose": AUX_HAVE.map((a) => `${a} had`),
+  "avoir:subjonctif_present": Array(6).fill("have"),
+  "pouvoir:present": Array(6).fill("can"),
+  "pouvoir:imparfait": Array(6).fill("could"),
+  "pouvoir:futur_simple": Array(6).fill("will be able to"),
+  "pouvoir:passe_compose": AUX_HAVE.map((a) => `${a} been able to`),
+  "pouvoir:subjonctif_present": Array(6).fill("can"),
+  "devoir:present": ["have to", "have to", "has to", "have to", "have to", "have to"],
+  "devoir:imparfait": Array(6).fill("had to"),
+  "devoir:futur_simple": Array(6).fill("will have to"),
+  "devoir:passe_compose": AUX_HAVE.map((a) => `${a} had to`),
+  "devoir:subjonctif_present": Array(6).fill("have to"),
+  "falloir:present": Array(6).fill("is necessary"),
+  "falloir:imparfait": Array(6).fill("was necessary"),
+  "falloir:futur_simple": Array(6).fill("will be necessary"),
+  "falloir:passe_compose": Array(6).fill("has been necessary"),
+  "falloir:subjonctif_present": Array(6).fill("be necessary"),
+};
+
+function englishPhraseFor(item) {
+  const key = `${item.infinitive}:${item.tenseKey}`;
+  if (SPECIAL_ENGLISH[key]) return SPECIAL_ENGLISH[key][item.personIdx];
+  const { base, particle } = englishBase(item);
+  const suffix = particle ? ` ${particle}` : "";
+  switch (item.tenseKey) {
+    case "present":
+      return (item.personIdx === 2 ? thirdPersonEn(base) : base) + suffix;
+    case "imparfait":
+      return `${AUX_BE[item.personIdx]} ${gerundEn(base)}${suffix}`;
+    case "futur_simple":
+      return `will ${base}${suffix}`;
+    case "passe_compose":
+      return `${AUX_HAVE[item.personIdx]} ${pastParticipleEn(base)}${suffix}`;
+    case "subjonctif_present":
+      return `(that) ${base}${suffix}`;
+    default:
+      return "";
+  }
+}
+
+// Frenchword characters -- used to make sure a whole-word match doesn't fire
+// inside a longer word (e.g. needle "va" must not match inside "avait").
+const FR_WORD_CHAR = "a-zA-ZàâäéèêëïîôöùûüçÀÂÄÉÈÊËÏÎÔÖÙÛÜÇœŒæÆ";
+
+function findWholeWord(haystack, needle) {
+  if (!needle) return null;
+  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(`(?<![${FR_WORD_CHAR}])${escaped}(?![${FR_WORD_CHAR}])`, "i");
+  const m = haystack.match(re);
+  return m ? { index: m.index, match: m[0] } : null;
+}
+
+// A verb's own vocab-meaning card (e.g. "faire" -> "do/make") shares the
+// verb's single example sentence, which is stored under "verb:<infinitive>",
+// not the card's own "v:<infinitive>" id.
+function findExampleFor(item) {
+  if (item.type === "conj") {
+    const list = examplesData[`verb:${item.infinitive}`];
+    return list ? list[0] : null;
+  }
+  const direct = examplesData[item.id];
+  if (direct) return direct[0];
+  const asVerb = examplesData[`verb:${item.id.slice(2)}`];
+  return asVerb ? asVerb[0] : null;
+}
+
+// Builds a full-sentence fill-in-the-blank prompt when `targetWord` (the
+// exact surface form being drilled) can be found as a whole word inside the
+// item's example sentence -- searching for the literal expected form (rather
+// than restricting by tense/person) guarantees the blank is tense-matched by
+// construction, since it can only match a sentence actually written in that
+// form. Returns null (falls back to the isolated word/phrase prompt) for the
+// large majority of items that don't have a matching example.
+function sentencePromptFor(item, targetWord) {
+  const ex = findExampleFor(item);
+  if (!ex) return null;
+  const found = findWholeWord(ex.fr, targetWord);
+  if (!found) return null;
+  const blanked = ex.fr.slice(0, found.index) + "___" + ex.fr.slice(found.index + found.match.length);
+  return { blanked, english: ex.en };
+}
+
 function promptTextFor(item, direction) {
   if (item.type === "vocab") {
     if (direction === "en2fr") {
+      const sentence = sentencePromptFor(item, item.word);
+      if (sentence) {
+        return {
+          prompt: sentence.blanked,
+          hint: "Type the missing French word.",
+          context: sentence.english,
+          sentenceMode: true,
+        };
+      }
       return { prompt: item.gloss.slice(0, 3).join(" / "), hint: "Type the French word.", context: "" };
     }
     return { prompt: item.word, hint: "Type the English meaning.", context: "" };
   }
-  // conjugation -- show the verb's example sentence ONLY when its tense
-  // matches the one being drilled (every authored example is written in the
-  // présent). Showing a présent-tense example above a passé composé/imparfait/
-  // futur/subjonctif drill looked like a translation prompt for the wrong
-  // tense and was genuinely misleading, not just imprecise.
-  const glossHint = item.gloss.slice(0, 2).join("/");
-  const examples = examplesData[`verb:${item.infinitive}`];
-  const context = item.tenseKey === "present" && examples && examples.length ? examples[0].en : "";
+  // conjugation -- prefer a full-sentence blank (tense-matched by
+  // construction, see sentencePromptFor); otherwise fall back to an
+  // isolated pronoun + accurate, tense-matched English translation of the
+  // exact person+tense being drilled (e.g. "he/she was doing"), not just
+  // the bare infinitive gloss + tense label.
+  const sentence = sentencePromptFor(item, item.expected);
+  if (sentence) {
+    return {
+      prompt: sentence.blanked,
+      hint: `(${item.displayInfinitive} — ${item.tenseLabel})`,
+      context: sentence.english,
+      sentenceMode: true,
+    };
+  }
+  const context = `${EN_PRONOUNS[item.personIdx]} ${englishPhraseFor(item)}`;
   return {
     prompt: `${item.pronounLabel} ___`,
-    hint: `(${item.displayInfinitive} — ${glossHint} — ${item.tenseLabel})`,
+    hint: `(${item.displayInfinitive} — ${item.tenseLabel})`,
     context,
   };
 }
@@ -245,7 +436,7 @@ function nextCard() {
     queue = buildQueue(bank);
   }
   if (queue.length === 0) {
-    if (focusLessonIndex !== null) {
+    if (focusActive()) {
       el("card").classList.add("hidden");
       el("lesson-intro").classList.add("hidden");
       el("done").classList.remove("hidden");
@@ -277,8 +468,9 @@ function nextCard() {
   current = queue.shift();
   currentDirection = current.type === "vocab" ? pickDirection() : null;
 
-  const { prompt, hint, context } = promptTextFor(current, currentDirection);
+  const { prompt, hint, context, sentenceMode } = promptTextFor(current, currentDirection);
   el("prompt").textContent = prompt;
+  el("prompt").classList.toggle("sentence", !!sentenceMode);
   el("hint").textContent = hint;
   el("context").textContent = context;
   el("context").classList.toggle("hidden", !context);
@@ -461,6 +653,8 @@ function renderCookingPanel(justCelebrated) {
 // auto-advance-after-a-timeout pattern -- the user reads at their own pace
 // and can hear the French form (whichever direction they were quizzed in)
 // before moving on.
+let hideBannerTimer = null;
+
 function showCompletionBanner(verdict, correctText) {
   const banner = el("completion-banner");
   const msg = el("completion-message");
@@ -472,6 +666,13 @@ function showCompletionBanner(verdict, correctText) {
   speakBtn.classList.toggle("hidden", !audioText);
   if (audioText) speakBtn.onclick = () => speakFrench(audioText);
 
+  // a fast-following show (e.g. answering again right after Continue) must
+  // not let an earlier hide's delayed classList.add("hidden") land after
+  // this "show" and re-hide the banner underneath it
+  if (hideBannerTimer !== null) {
+    clearTimeout(hideBannerTimer);
+    hideBannerTimer = null;
+  }
   banner.classList.remove("hidden");
   requestAnimationFrame(() => banner.classList.add("show"));
 }
@@ -479,7 +680,11 @@ function showCompletionBanner(verdict, correctText) {
 function hideCompletionBanner() {
   const banner = el("completion-banner");
   banner.classList.remove("show");
-  setTimeout(() => banner.classList.add("hidden"), 250);
+  if (hideBannerTimer !== null) clearTimeout(hideBannerTimer);
+  hideBannerTimer = setTimeout(() => {
+    banner.classList.add("hidden");
+    hideBannerTimer = null;
+  }, 250);
 }
 
 function submitAnswer() {
@@ -560,12 +765,14 @@ function startLesson(index, { manual = false } = {}) {
   if (!manual) state.lastAutoUnlockDate = todayStr();
   saveState(state);
   focusLessonIndex = null;
+  focusFilter = null;
   queue = buildQueue(bank);
   nextCard();
 }
 
 function studyLessonDirectly(index) {
   focusLessonIndex = index;
+  focusFilter = null;
   el("focus-lesson-label").textContent = `Lesson ${index + 1}`;
   el("focus-banner").classList.remove("hidden");
   if (state.unlockedLessons <= index) {
@@ -579,8 +786,19 @@ function studyLessonDirectly(index) {
   nextCard();
 }
 
+function studyCategoryDirectly(name, itemIds) {
+  focusLessonIndex = null;
+  focusFilter = (item) => itemIds.has(item.id);
+  el("focus-lesson-label").textContent = name;
+  el("focus-banner").classList.remove("hidden");
+  el("category-picker").classList.add("hidden");
+  queue = buildQueue(bank);
+  nextCard();
+}
+
 function exitFocus() {
   focusLessonIndex = null;
+  focusFilter = null;
   el("focus-banner").classList.add("hidden");
   queue = buildQueue(bank);
   nextCard();
@@ -656,6 +874,27 @@ function renderLessonList() {
     const btn = document.createElement("button");
     btn.textContent = unlocked ? "Study" : "Unlock & study";
     btn.onclick = () => studyLessonDirectly(index);
+
+    row.appendChild(label);
+    row.appendChild(btn);
+    list.appendChild(row);
+  });
+}
+
+function renderCategoryList() {
+  const list = el("category-list");
+  list.innerHTML = "";
+  categoryGroups.forEach((group) => {
+    const row = document.createElement("div");
+    row.className = "category-row";
+
+    const label = document.createElement("div");
+    label.className = "category-row-label";
+    label.innerHTML = `<span class="category-row-name">${group.name}</span> — <span class="category-row-count">${group.count} words</span>`;
+
+    const btn = document.createElement("button");
+    btn.textContent = "Study";
+    btn.onclick = () => studyCategoryDirectly(group.name, group.itemIds);
 
     row.appendChild(label);
     row.appendChild(btn);
@@ -781,6 +1020,7 @@ async function handleSession(session) {
   renderAccountUI();
   migrateUnlockedLessons();
   focusLessonIndex = null;
+  focusFilter = null;
   queue = buildQueue(bank);
   sessionStats = { correct: 0, total: 0 };
   nextCard();
@@ -791,6 +1031,7 @@ function initAccountUI() {
     el("account-panel").classList.toggle("hidden");
     el("settings-panel").classList.add("hidden");
     el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
   });
   el("close-account-btn").addEventListener("click", () => el("account-panel").classList.add("hidden"));
@@ -872,6 +1113,7 @@ async function boot() {
   const introRank = buildIntroRanks(vocab, verbs);
   const concepts = buildConcepts(vocab, verbs, introRank);
   lessonsGrouped = groupByLesson(concepts);
+  categoryGroups = buildCategoryGroups(bank);
 
   migrateUnlockedLessons();
 
@@ -893,6 +1135,7 @@ async function boot() {
   el("settings-toggle").addEventListener("click", () => {
     el("settings-panel").classList.toggle("hidden");
     el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
   });
@@ -907,12 +1150,24 @@ async function boot() {
   el("lessons-toggle").addEventListener("click", () => {
     renderPath();
     el("lesson-picker").classList.toggle("hidden");
+    el("category-picker").classList.add("hidden");
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
   });
   el("close-picker-btn").addEventListener("click", () => {
     el("lesson-picker").classList.add("hidden");
+  });
+  el("categories-toggle").addEventListener("click", () => {
+    renderCategoryList();
+    el("category-picker").classList.toggle("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
+  });
+  el("close-category-btn").addEventListener("click", () => {
+    el("category-picker").classList.add("hidden");
   });
   el("browse-toggle-btn").addEventListener("click", () => {
     const list = el("lesson-list");
@@ -925,6 +1180,7 @@ async function boot() {
     el("stats-view").classList.toggle("hidden");
     el("settings-panel").classList.add("hidden");
     el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
     el("account-panel").classList.add("hidden");
   });
   el("close-stats-btn").addEventListener("click", () => {

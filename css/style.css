@@ -222,6 +222,13 @@ main {
   font-weight: 800;
 }
 
+.prompt.sentence {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+}
+
 .speak-btn {
   font-size: 1.1rem;
   padding: 6px 9px;
@@ -558,6 +565,44 @@ button:disabled { opacity: 0.5; cursor: default; }
   background: var(--gray);
   color: var(--fg);
   box-shadow: 0 3px 0 var(--gray-dark);
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.category-row .category-row-label {
+  font-size: 0.85rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.category-row .category-row-name {
+  font-weight: 800;
+}
+
+.category-row .category-row-count {
+  color: var(--fg-soft);
+}
+
+.category-row button {
+  font-size: 0.8rem;
+  padding: 7px 11px;
+  flex-shrink: 0;
 }
 
 .focus-banner {
