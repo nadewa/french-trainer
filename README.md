@@ -30,6 +30,11 @@ and conjugation tables came from, what was manually verified, and known gaps.
   never lock you out of practicing) in the header.
 - **Practice filter**: in Settings, restrict review to vocabulary only, verb
   conjugation only, or both.
+- **Answer mode**: typed (accent/typo-tolerant, the default) or multiple
+  choice — pick per your preference in Settings.
+- **Cooking companion**: the bird mascot cooks through five stages toward a
+  pie for five correct answers in a row (streak resets on a miss); purely a
+  fun session combo, doesn't affect scheduling.
 - **Progress tracking**: the 📊 panel shows a daily streak, today's and
   all-time accuracy, and a 14-day review history.
 - **Two quiz types**: plain vocabulary (English ↔ French) and verb conjugation

@@ -5,7 +5,7 @@ import { buildConcepts, groupByLesson } from "./lessons.js";
 import * as cloud from "./cloud.js";
 
 const STATE_KEY = "ft_state_v1";
-const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all" };
+const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all", answerMode: "type" };
 
 function todayStr(d = new Date()) {
   return d.toISOString().slice(0, 10);
@@ -67,6 +67,9 @@ let itemsById = new Map();
 let bank = [];
 let lessonsGrouped = [];
 let examplesData = {};
+let vocabWordPool = [];
+let vocabGlossPool = [];
+let conjFormPool = [];
 let queue = [];
 let current = null;
 let currentDirection = null; // "en2fr" | "fr2en" | null (conj items)
@@ -218,6 +221,7 @@ function nextCard() {
   el("answer").value = "";
   el("answer").disabled = false;
   el("submit-btn").disabled = false;
+  el("choices").innerHTML = "";
 
   if (queue.length === 0) {
     queue = buildQueue(bank);
@@ -260,8 +264,52 @@ function nextCard() {
   el("hint").textContent = hint;
   el("context").textContent = context;
   el("context").classList.toggle("hidden", !context);
-  el("answer").focus();
+
+  if (state.settings.answerMode === "choice") {
+    el("answer").classList.add("hidden");
+    el("submit-btn").classList.add("hidden");
+    el("choices").classList.remove("hidden");
+    renderChoices();
+  } else {
+    el("answer").classList.remove("hidden");
+    el("submit-btn").classList.remove("hidden");
+    el("choices").classList.add("hidden");
+    el("answer").focus();
+  }
   renderStats();
+}
+
+function renderChoices() {
+  const { choices, correctIndex, correctText } = buildChoices(current, currentDirection);
+  const box = el("choices");
+  box.innerHTML = "";
+  choices.forEach((choiceText, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "choice-btn";
+    btn.textContent = choiceText;
+    btn.onclick = () => submitChoice(idx, correctIndex, correctText, box);
+    box.appendChild(btn);
+  });
+}
+
+function submitChoice(selectedIndex, correctIndex, correctText, box) {
+  const buttons = box.querySelectorAll(".choice-btn");
+  buttons.forEach((b) => (b.disabled = true));
+  sessionStats.total += 1;
+
+  if (selectedIndex === correctIndex) {
+    sessionStats.correct += 1;
+    buttons[selectedIndex].classList.add("correct");
+    showFeedback("exact", correctText);
+    gradeAndSchedule(5);
+    setTimeout(nextCard, 500);
+  } else {
+    buttons[selectedIndex].classList.add("incorrect");
+    buttons[correctIndex].classList.add("correct");
+    showFeedback("wrong", correctText);
+    gradeAndSchedule(1);
+    setTimeout(nextCard, 1400);
+  }
 }
 
 function targetsFor(item, direction) {
@@ -271,13 +319,118 @@ function targetsFor(item, direction) {
   return [item.expected, ...item.alternates];
 }
 
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function pickDistractors(pool, exclude, n) {
+  const seen = new Set(exclude.map((s) => s.toLowerCase()));
+  const picked = [];
+  const shuffled = shuffle(pool);
+  for (const candidate of shuffled) {
+    const key = candidate.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    picked.push(candidate);
+    if (picked.length === n) break;
+  }
+  return picked;
+}
+
+// Multiple-choice mode: 1 correct answer + 3 distractors sampled from the
+// same kind of pool (other French words, other English glosses, or other
+// conjugated forms) so the wrong options are at least plausible.
+function buildChoices(item, direction) {
+  let correct, pool;
+  if (item.type === "vocab") {
+    if (direction === "en2fr") {
+      correct = item.word;
+      pool = vocabWordPool;
+    } else {
+      correct = item.gloss[0];
+      pool = vocabGlossPool;
+    }
+  } else {
+    correct = item.expected;
+    pool = conjFormPool;
+  }
+  const distractors = pickDistractors(pool, [correct], 3);
+  const choices = shuffle([correct, ...distractors]);
+  return { choices, correctIndex: choices.indexOf(correct), correctText: correct };
+}
+
 function gradeAndSchedule(quality) {
   const card = state.cards[current.id] || newCard();
   const isNew = !state.cards[current.id];
   state.cards[current.id] = schedule(card, quality, Date.now());
   if (isNew) state.newToday.count += 1;
   recordOutcome(quality);
+  updateCooking(quality);
   saveState(state);
+}
+
+// A small session-only "combo" game: five correct answers in a row bakes a
+// pie the bird shares with its friends, then starts over. Purely decorative
+// -- comboStreak resets on reload, only state.piesBaked (the celebration
+// count) persists.
+const COOK_STAGES = [
+  { emoji: "🥕🔪", caption: "Chopping vegetables…" },
+  { emoji: "🧅🍅", caption: "Prepping the mirepoix…" },
+  { emoji: "🍲", caption: "Simmering on the stove…" },
+  { emoji: "🥧", caption: "Assembling the pie…" },
+  { emoji: "🥧✨", caption: "Decorating beautifully…" },
+];
+let comboStreak = 0;
+let cookingMishap = false;
+
+function updateCooking(quality) {
+  if (quality >= 3) {
+    cookingMishap = false;
+    comboStreak++;
+    if (comboStreak >= 5) {
+      state.piesBaked = (state.piesBaked || 0) + 1;
+      renderCookingPanel(true);
+      comboStreak = 0;
+      return;
+    }
+  } else {
+    cookingMishap = true;
+    comboStreak = 0;
+  }
+  renderCookingPanel(false);
+}
+
+function renderCookingPanel(justCelebrated) {
+  const emojiEl = el("cooking-emoji");
+  const captionEl = el("cooking-caption");
+  const dotsEl = el("cooking-dots");
+
+  if (justCelebrated) {
+    emojiEl.textContent = "🥧🎉🐦🐦🐦";
+    captionEl.textContent = `Pie shared with friends! (${state.piesBaked} baked so far)`;
+  } else if (cookingMishap) {
+    emojiEl.textContent = "🔥💨";
+    captionEl.textContent = "Oops, dropped the pan — starting over.";
+  } else {
+    const stage = COOK_STAGES[Math.min(comboStreak, COOK_STAGES.length - 1)];
+    emojiEl.textContent = stage.emoji;
+    captionEl.textContent = stage.caption;
+  }
+  emojiEl.classList.remove("pop");
+  void emojiEl.offsetWidth; // restart the CSS animation
+  emojiEl.classList.add("pop");
+
+  dotsEl.innerHTML = "";
+  for (let i = 0; i < 5; i++) {
+    const dot = document.createElement("span");
+    dot.className = "cooking-dot" + (i < comboStreak ? " filled" : "");
+    dotsEl.appendChild(dot);
+  }
 }
 
 function showFeedback(verdict, correctText) {
@@ -492,6 +645,7 @@ function renderStatsView() {
     <div class="stat-tile"><div class="stat-tile-value">${todayAccuracy}%</div><div class="stat-tile-label">Today's accuracy (${today.total} reviewed)</div></div>
     <div class="stat-tile"><div class="stat-tile-value">${overallAccuracy}%</div><div class="stat-tile-label">All-time accuracy (${totals.total} reviews)</div></div>
     <div class="stat-tile"><div class="stat-tile-value">${learnedCount}</div><div class="stat-tile-label">Items past initial learning</div></div>
+    <div class="stat-tile"><div class="stat-tile-value">${state.piesBaked || 0}🥧</div><div class="stat-tile-label">Pies baked (5-in-a-row streaks)</div></div>
   `;
 
   const history = el("stats-history");
@@ -542,6 +696,14 @@ function initSettingsUI() {
     state.settings.practiceMode = practiceMode.value;
     saveState(state);
     queue = buildQueue(bank);
+    nextCard();
+  });
+
+  const answerMode = el("answer-mode");
+  answerMode.value = state.settings.answerMode;
+  answerMode.addEventListener("change", () => {
+    state.settings.answerMode = answerMode.value;
+    saveState(state);
     nextCard();
   });
 }
@@ -671,6 +833,10 @@ async function boot() {
   bank = buildItemBank(vocab, verbs);
   itemsById = new Map(bank.map((i) => [i.id, i]));
 
+  vocabWordPool = bank.filter((i) => i.type === "vocab").map((i) => i.word);
+  vocabGlossPool = bank.filter((i) => i.type === "vocab").map((i) => i.gloss[0]);
+  conjFormPool = bank.filter((i) => i.type === "conj").map((i) => i.expected);
+
   const introRank = buildIntroRanks(vocab, verbs);
   const concepts = buildConcepts(vocab, verbs, introRank);
   lessonsGrouped = groupByLesson(concepts);
@@ -727,6 +893,8 @@ async function boot() {
     el("stats-view").classList.add("hidden");
   });
   el("exit-focus-btn").addEventListener("click", exitFocus);
+
+  renderCookingPanel(false);
 
   if (state.unlockedLessons === 0) {
     showLessonIntro(0);

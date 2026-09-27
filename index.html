@@ -70,6 +70,13 @@
       <option value="conj">Verb conjugation only</option>
     </select>
   </label>
+  <label>
+    Answer with
+    <select id="answer-mode">
+      <option value="type">Typing (accent/typo-tolerant)</option>
+      <option value="choice">Multiple choice</option>
+    </select>
+  </label>
   <p class="note">Progress always saves to this browser (localStorage). Optional cloud sync
   is under 👤 Account.</p>
 </section>
@@ -97,7 +104,7 @@
 </section>
 
 <div id="focus-banner" class="focus-banner hidden">
-  Studying <b id="focus-lesson-label"></b> directly.
+  <span>Studying <b id="focus-lesson-label"></b> directly.</span>
   <button id="exit-focus-btn">Back to normal review</button>
 </div>
 
@@ -108,6 +115,7 @@
     <div id="hint" class="hint"></div>
     <input id="answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your answer…" />
     <button id="submit-btn">Check</button>
+    <div id="choices" class="choices hidden"></div>
     <div id="feedback" class="feedback hidden"></div>
     <div id="self-confirm" class="self-confirm hidden">
       <p>Did you actually know this one?</p>
@@ -139,6 +147,12 @@
         or pick any lesson now from 📖 Lessons.
       </p>
     </div>
+  </div>
+
+  <div id="cooking-panel" class="cooking-panel">
+    <div id="cooking-emoji" class="cooking-emoji">🥕🔪</div>
+    <div id="cooking-caption" class="cooking-caption">Chopping vegetables…</div>
+    <div id="cooking-dots" class="cooking-dots"></div>
   </div>
 </main>
 
