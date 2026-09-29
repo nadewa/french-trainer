@@ -1,204 +1,1689 @@
 {
   "_note": "Example sentences here are composed by the assistant (not pulled from an external corpus -- no reachable open sentence-pair dataset was found; see DATA_SOURCES.md). Coverage is phase 1: the 100 verbs plus the 100 highest-frequency vocabulary words. Everything else in the app (the word list, frequencies, and conjugation tables) is corpus-sourced as documented in DATA_SOURCES.md -- only these example sentences are assistant-written.",
-  "verb:être": [{"fr": "Je suis fatigué ce soir.", "en": "I am tired tonight."}],
-  "verb:avoir": [{"fr": "Elle a deux frères.", "en": "She has two brothers."}],
-  "verb:aller": [{"fr": "Nous allons au marché.", "en": "We are going to the market."}],
-  "verb:vouloir": [{"fr": "Il veut apprendre le français.", "en": "He wants to learn French."}],
-  "verb:faire": [{"fr": "Que fais-tu ce week-end ?", "en": "What are you doing this weekend?"}],
-  "verb:pouvoir": [{"fr": "Tu peux m'aider, s'il te plaît ?", "en": "Can you help me, please?"}],
-  "verb:savoir": [{"fr": "Je sais où il habite.", "en": "I know where he lives."}],
-  "verb:devoir": [{"fr": "Vous devez partir avant six heures.", "en": "You have to leave before six o'clock."}],
-  "verb:dire": [{"fr": "Elle dit toujours la vérité.", "en": "She always tells the truth."}],
-  "verb:penser": [{"fr": "Je pense souvent à toi.", "en": "I think of you often."}],
-  "verb:voir": [{"fr": "Nous voyons la mer d'ici.", "en": "We can see the sea from here."}],
-  "verb:venir": [{"fr": "Ils viennent chez nous demain.", "en": "They are coming to our place tomorrow."}],
-  "verb:attendre": [{"fr": "J'attends le bus depuis dix minutes.", "en": "I've been waiting for the bus for ten minutes."}],
-  "verb:croire": [{"fr": "Je crois que c'est une bonne idée.", "en": "I think that's a good idea."}],
-  "verb:parler": [{"fr": "Elle parle trois langues.", "en": "She speaks three languages."}],
-  "verb:prendre": [{"fr": "Il prend son café le matin.", "en": "He has his coffee in the morning."}],
-  "verb:regarder": [{"fr": "Nous regardons un film ce soir.", "en": "We are watching a movie tonight."}],
-  "verb:aimer": [{"fr": "J'aime beaucoup cette chanson.", "en": "I really like this song."}],
-  "verb:trouver": [{"fr": "Je trouve ce livre passionnant.", "en": "I find this book fascinating."}],
-  "verb:laisser": [{"fr": "Laisse la porte ouverte, s'il te plaît.", "en": "Leave the door open, please."}],
-  "verb:connaître": [{"fr": "Tu connais bien cette ville ?", "en": "Do you know this city well?"}],
-  "verb:arrêter": [{"fr": "Arrête de crier !", "en": "Stop shouting!"}],
-  "verb:rester": [{"fr": "Je reste à la maison aujourd'hui.", "en": "I'm staying home today."}],
-  "verb:appeler": [{"fr": "Elle appelle sa mère tous les jours.", "en": "She calls her mother every day."}],
-  "verb:sortir": [{"fr": "Nous sortons ce soir avec des amis.", "en": "We're going out tonight with friends."}],
-  "verb:passer": [{"fr": "Le temps passe vite.", "en": "Time passes quickly."}],
-  "verb:falloir": [{"fr": "Il faut réserver à l'avance.", "en": "You have to book in advance."}],
-  "verb:partir": [{"fr": "Le train part dans cinq minutes.", "en": "The train leaves in five minutes."}],
-  "verb:arriver": [{"fr": "Il arrive toujours en retard.", "en": "He always arrives late."}],
-  "verb:essayer": [{"fr": "J'essaie de comprendre.", "en": "I'm trying to understand."}],
-  "verb:écouter": [{"fr": "Écoute cette musique, elle est belle.", "en": "Listen to this music, it's beautiful."}],
-  "verb:demander": [{"fr": "Elle demande de l'aide.", "en": "She's asking for help."}],
-  "verb:tenir": [{"fr": "Il tient la main de son fils.", "en": "He's holding his son's hand."}],
-  "verb:revenir": [{"fr": "Je reviens dans une heure.", "en": "I'll be back in an hour."}],
-  "verb:donner": [{"fr": "Je te donne mon numéro.", "en": "I'll give you my number."}],
-  "verb:mettre": [{"fr": "Mets ton manteau, il fait froid.", "en": "Put on your coat, it's cold."}],
-  "verb:chercher": [{"fr": "Je cherche mes clés.", "en": "I'm looking for my keys."}],
-  "verb:comprendre": [{"fr": "Je ne comprends pas cette phrase.", "en": "I don't understand this sentence."}],
-  "verb:travailler": [{"fr": "Elle travaille dans un hôpital.", "en": "She works in a hospital."}],
-  "verb:entrer": [{"fr": "Entrez, la porte est ouverte.", "en": "Come in, the door is open."}],
-  "verb:oublier": [{"fr": "N'oublie pas ton parapluie.", "en": "Don't forget your umbrella."}],
-  "verb:continuer": [{"fr": "Continuez tout droit jusqu'au feu.", "en": "Continue straight ahead to the light."}],
-  "verb:vivre": [{"fr": "Ils vivent à Lyon depuis dix ans.", "en": "They've been living in Lyon for ten years."}],
-  "verb:jouer": [{"fr": "Les enfants jouent dans le jardin.", "en": "The children are playing in the garden."}],
-  "verb:sentir": [{"fr": "Je sens une odeur de pain frais.", "en": "I smell fresh bread."}],
-  "verb:rentrer": [{"fr": "Je rentre tard ce soir.", "en": "I'm coming home late tonight."}],
-  "verb:aider": [{"fr": "Peux-tu m'aider à porter ça ?", "en": "Can you help me carry this?"}],
-  "verb:tuer": [{"fr": "Ce virus tue des milliers de personnes chaque année.", "en": "This virus kills thousands of people every year."}],
-  "verb:commencer": [{"fr": "Le film commence à huit heures.", "en": "The movie starts at eight o'clock."}],
-  "verb:espérer": [{"fr": "J'espère que tu vas bien.", "en": "I hope you're doing well."}],
-  "verb:porter": [{"fr": "Elle porte une robe rouge.", "en": "She's wearing a red dress."}],
-  "verb:entendre": [{"fr": "J'entends de la musique à côté.", "en": "I hear music next door."}],
-  "verb:garder": [{"fr": "Elle garde les enfants le samedi.", "en": "She looks after the kids on Saturdays."}],
-  "verb:ouvrir": [{"fr": "Ouvre la fenêtre, il fait chaud.", "en": "Open the window, it's hot."}],
-  "verb:rendre": [{"fr": "Je te rends ton livre demain.", "en": "I'll give you back your book tomorrow."}],
-  "verb:sembler": [{"fr": "Il semble fatigué aujourd'hui.", "en": "He seems tired today."}],
-  "verb:envoyer": [{"fr": "Je t'envoie le document ce soir.", "en": "I'll send you the document tonight."}],
-  "verb:tirer": [{"fr": "Il tire la corde de toutes ses forces.", "en": "He pulls the rope with all his strength."}],
-  "verb:ignorer": [{"fr": "J'ignore pourquoi il est parti.", "en": "I don't know why he left."}],
-  "verb:mourir": [{"fr": "Cette tradition ne meurt jamais.", "en": "This tradition never dies."}],
-  "verb:inquiéter": [{"fr": "Son silence m'inquiète un peu.", "en": "His silence worries me a little."}],
-  "verb:suivre": [{"fr": "Suivez-moi, ce n'est pas loin.", "en": "Follow me, it's not far."}],
-  "verb:bouger": [{"fr": "Ne bouge pas, j'arrive.", "en": "Don't move, I'm coming."}],
-  "verb:retourner": [{"fr": "Nous retournons en France l'été prochain.", "en": "We're going back to France next summer."}],
-  "verb:souvenir": [{"fr": "Je me souviens de mon premier jour d'école.", "en": "I remember my first day of school."}],
-  "verb:marcher": [{"fr": "Nous marchons le long de la plage.", "en": "We're walking along the beach."}],
-  "verb:finir": [{"fr": "Je finis mon travail à cinq heures.", "en": "I finish work at five o'clock."}],
-  "verb:changer": [{"fr": "Les choses changent vite ici.", "en": "Things change quickly here."}],
-  "verb:perdre": [{"fr": "Je perds toujours mes clés.", "en": "I always lose my keys."}],
-  "verb:répondre": [{"fr": "Elle répond à toutes ses questions.", "en": "She answers all his questions."}],
-  "verb:manger": [{"fr": "Nous mangeons ensemble ce midi.", "en": "We're eating together this noon."}],
-  "verb:occuper": [{"fr": "Ce projet occupe tout mon temps.", "en": "This project takes up all my time."}],
-  "verb:boire": [{"fr": "Il boit un café tous les matins.", "en": "He drinks a coffee every morning."}],
-  "verb:utiliser": [{"fr": "J'utilise mon téléphone pour tout.", "en": "I use my phone for everything."}],
-  "verb:imaginer": [{"fr": "J'imagine que tu es fatigué.", "en": "I imagine you're tired."}],
-  "verb:dormir": [{"fr": "Le bébé dort depuis deux heures.", "en": "The baby has been sleeping for two hours."}],
-  "verb:manquer": [{"fr": "Tu me manques beaucoup.", "en": "I miss you a lot."}],
-  "verb:monter": [{"fr": "Nous montons les escaliers ensemble.", "en": "We're going up the stairs together."}],
-  "verb:compter": [{"fr": "Je compte sur toi.", "en": "I'm counting on you."}],
-  "verb:rappeler": [{"fr": "Je te rappelle plus tard.", "en": "I'll call you back later."}],
-  "verb:devenir": [{"fr": "Elle veut devenir médecin.", "en": "She wants to become a doctor."}],
-  "verb:toucher": [{"fr": "Ne touche pas à ça !", "en": "Don't touch that!"}],
-  "verb:relater": [{"fr": "Cet article relate les événements de la guerre.", "en": "This article recounts the events of the war."}],
-  "verb:permettre": [{"fr": "Ce billet permet d'entrer gratuitement.", "en": "This ticket allows free entry."}],
-  "verb:retrouver": [{"fr": "Je retrouve mes amis au café.", "en": "I'm meeting my friends at the café."}],
-  "verb:apprendre": [{"fr": "Elle apprend le piano depuis un an.", "en": "She has been learning piano for a year."}],
-  "verb:quitter": [{"fr": "Il quitte la ville demain.", "en": "He is leaving the city tomorrow."}],
-  "verb:montrer": [{"fr": "Montre-moi tes photos de vacances.", "en": "Show me your vacation photos."}],
-  "verb:poser": [{"fr": "Je pose la question autrement.", "en": "I'll ask the question differently."}],
-  "verb:emmener": [{"fr": "Je t'emmène à l'aéroport.", "en": "I'll take you to the airport."}],
-  "verb:reculer": [{"fr": "La voiture recule lentement.", "en": "The car is backing up slowly."}],
-  "verb:jeter": [{"fr": "Ne jette pas ça, c'est utile.", "en": "Don't throw that away, it's useful."}],
-  "verb:allier": [{"fr": "Ce plat allie douceur et épices.", "en": "This dish combines sweetness and spices."}],
-  "verb:excuser": [{"fr": "Excusez-moi, je suis en retard.", "en": "Excuse me, I'm late."}],
-  "verb:revoir": [{"fr": "J'espère te revoir bientôt.", "en": "I hope to see you again soon."}],
-  "verb:ressembler": [{"fr": "Tu ressembles beaucoup à ton père.", "en": "You look a lot like your father."}],
-  "verb:lire": [{"fr": "Je lis un roman en ce moment.", "en": "I'm reading a novel right now."}],
-  "verb:dégager": [{"fr": "Cette fleur dégage un parfum agréable.", "en": "This flower gives off a pleasant scent."}],
-  "verb:servir": [{"fr": "Le dîner est servi à huit heures.", "en": "Dinner is served at eight o'clock."}],
-  "verb:battre": [{"fr": "Mon cœur bat très vite.", "en": "My heart is beating very fast."}],
-  "verb:fermer": [{"fr": "Le magasin ferme à dix-neuf heures.", "en": "The store closes at seven p.m."}],
-  "v:de": [{"fr": "Je viens de Paris.", "en": "I come from Paris."}],
-  "v:je": [{"fr": "Je m'appelle Marie.", "en": "My name is Marie."}],
-  "v:pas": [{"fr": "Je ne comprends pas.", "en": "I don't understand."}],
-  "v:le": [{"fr": "Le chat dort sur le canapé.", "en": "The cat is sleeping on the couch."}],
-  "v:que": [{"fr": "Je sais que tu as raison.", "en": "I know that you're right."}],
-  "v:la": [{"fr": "La maison est grande.", "en": "The house is big."}],
-  "v:vous": [{"fr": "Vous êtes très gentil.", "en": "You are very kind."}],
-  "v:tu": [{"fr": "Tu es mon meilleur ami.", "en": "You are my best friend."}],
-  "v:un": [{"fr": "J'ai un chat et un chien.", "en": "I have a cat and a dog."}],
-  "v:à": [{"fr": "Je vais à l'école.", "en": "I'm going to school."}],
-  "v:et": [{"fr": "J'aime le café et le thé.", "en": "I like coffee and tea."}],
-  "v:il": [{"fr": "Il habite à Paris.", "en": "He lives in Paris."}],
-  "v:ne": [{"fr": "Je ne sais pas.", "en": "I don't know."}],
-  "v:les": [{"fr": "Les enfants jouent dehors.", "en": "The children are playing outside."}],
-  "v:en": [{"fr": "Je vais en France.", "en": "I'm going to France."}],
-  "v:on": [{"fr": "On va au cinéma ce soir.", "en": "We're going to the movies tonight."}],
-  "v:une": [{"fr": "C'est une bonne idée.", "en": "That's a good idea."}],
-  "v:ce": [{"fr": "Ce livre est très intéressant.", "en": "This book is very interesting."}],
-  "v:pour": [{"fr": "C'est un cadeau pour toi.", "en": "This is a gift for you."}],
-  "v:des": [{"fr": "J'ai des amis à Lyon.", "en": "I have friends in Lyon."}],
-  "v:qui": [{"fr": "C'est la femme qui habite à côté.", "en": "That's the woman who lives next door."}],
-  "v:mais": [{"fr": "J'aime le café, mais pas le thé.", "en": "I like coffee, but not tea."}],
-  "v:dans": [{"fr": "Le livre est dans le sac.", "en": "The book is in the bag."}],
-  "v:nous": [{"fr": "Nous habitons à Marseille.", "en": "We live in Marseille."}],
-  "v:elle": [{"fr": "Elle est très intelligente.", "en": "She is very intelligent."}],
-  "v:me": [{"fr": "Il me connaît bien.", "en": "He knows me well."}],
-  "v:bien": [{"fr": "Tu parles très bien français.", "en": "You speak French very well."}],
-  "v:si": [{"fr": "Si tu veux, on peut partir maintenant.", "en": "If you want, we can leave now."}],
-  "v:du": [{"fr": "Je bois du café le matin.", "en": "I drink coffee in the morning."}],
-  "v:non": [{"fr": "Non, je ne suis pas d'accord.", "en": "No, I don't agree."}],
-  "v:avec": [{"fr": "Je pars en vacances avec ma famille.", "en": "I'm going on vacation with my family."}],
-  "v:tout": [{"fr": "Tout va bien.", "en": "Everything is fine."}],
-  "v:plus": [{"fr": "J'ai besoin de plus de temps.", "en": "I need more time."}],
-  "v:mon": [{"fr": "Mon frère habite à Nice.", "en": "My brother lives in Nice."}],
-  "v:te": [{"fr": "Je te comprends.", "en": "I understand you."}],
-  "v:au": [{"fr": "Je vais au marché.", "en": "I'm going to the market."}],
-  "v:moi": [{"fr": "C'est moi qui ai fait ça.", "en": "It's me who did that."}],
-  "v:oui": [{"fr": "Oui, bien sûr !", "en": "Yes, of course!"}],
-  "v:ils": [{"fr": "Ils habitent en Espagne.", "en": "They live in Spain."}],
-  "v:sur": [{"fr": "Le livre est sur la table.", "en": "The book is on the table."}],
-  "v:quoi": [{"fr": "Quoi de neuf ?", "en": "What's new?"}],
-  "v:comme": [{"fr": "Il travaille comme professeur.", "en": "He works as a teacher."}],
-  "v:ici": [{"fr": "Viens ici, s'il te plaît.", "en": "Come here, please."}],
-  "v:ma": [{"fr": "Ma sœur arrive demain.", "en": "My sister arrives tomorrow."}],
-  "v:toi": [{"fr": "Et toi, comment vas-tu ?", "en": "And you, how are you?"}],
-  "v:lui": [{"fr": "Je lui ai parlé hier.", "en": "I spoke to him yesterday."}],
-  "v:votre": [{"fr": "Votre maison est magnifique.", "en": "Your house is beautiful."}],
-  "v:pourquoi": [{"fr": "Pourquoi tu pleures ?", "en": "Why are you crying?"}],
-  "v:où": [{"fr": "Où habites-tu ?", "en": "Where do you live?"}],
-  "v:là": [{"fr": "Il est là, dans la cuisine.", "en": "He's there, in the kitchen."}],
-  "v:rien": [{"fr": "Il n'y a rien dans le frigo.", "en": "There's nothing in the fridge."}],
-  "v:quand": [{"fr": "Quand pars-tu en vacances ?", "en": "When are you leaving on vacation?"}],
-  "v:son": [{"fr": "Son chien s'appelle Rex.", "en": "His dog is named Rex."}],
-  "v:alors": [{"fr": "Alors, on y va ?", "en": "So, shall we go?"}],
-  "v:ton": [{"fr": "Ton sac est ici.", "en": "Your bag is here."}],
-  "v:comment": [{"fr": "Comment tu t'appelles ?", "en": "What's your name?"}],
-  "v:par": [{"fr": "Elle est passée par Paris.", "en": "She went through Paris."}],
-  "v:ou": [{"fr": "Tu veux du thé ou du café ?", "en": "Do you want tea or coffee?"}],
-  "v:chose": [{"fr": "C'est une chose importante.", "en": "That's an important thing."}],
-  "v:bon": [{"fr": "Ce gâteau est très bon.", "en": "This cake is very good."}],
-  "v:merci": [{"fr": "Merci beaucoup pour ton aide.", "en": "Thank you very much for your help."}],
-  "v:juste": [{"fr": "C'est juste à côté d'ici.", "en": "It's just next to here."}],
-  "v:très": [{"fr": "Elle est très gentille.", "en": "She is very kind."}],
-  "v:jamais": [{"fr": "Je ne mens jamais.", "en": "I never lie."}],
-  "v:été": [{"fr": "Nous partons en vacances cet été.", "en": "We're going on vacation this summer."}],
-  "v:aussi": [{"fr": "Moi aussi, j'aime le chocolat.", "en": "Me too, I like chocolate."}],
-  "v:vraiment": [{"fr": "C'est vraiment délicieux.", "en": "It's really delicious."}],
-  "v:même": [{"fr": "C'est le même livre.", "en": "It's the same book."}],
-  "v:sa": [{"fr": "Sa voiture est neuve.", "en": "Her car is new."}],
-  "v:oh": [{"fr": "Oh, quelle surprise !", "en": "Oh, what a surprise!"}],
-  "v:maintenant": [{"fr": "Je dois partir maintenant.", "en": "I have to leave now."}],
-  "v:tous": [{"fr": "Tous mes amis sont là.", "en": "All my friends are here."}],
-  "v:deux": [{"fr": "J'ai deux enfants.", "en": "I have two children."}],
-  "v:ces": [{"fr": "Ces chaussures sont trop petites.", "en": "These shoes are too small."}],
-  "v:ta": [{"fr": "Ta chambre est propre.", "en": "Your room is clean."}],
-  "v:autre": [{"fr": "Prends l'autre chemise.", "en": "Take the other shirt."}],
-  "v:peu": [{"fr": "J'ai un peu faim.", "en": "I'm a little hungry."}],
-  "v:temps": [{"fr": "Je n'ai pas le temps aujourd'hui.", "en": "I don't have time today."}],
-  "v:quelque": [{"fr": "J'ai quelque chose à te dire.", "en": "I have something to tell you."}],
-  "v:toujours": [{"fr": "Il arrive toujours à l'heure.", "en": "He always arrives on time."}],
-  "v:encore": [{"fr": "Tu veux encore du café ?", "en": "Do you want more coffee?"}],
-  "v:notre": [{"fr": "Notre maison est près de la mer.", "en": "Our house is near the sea."}],
-  "v:mes": [{"fr": "Mes parents habitent à Nice.", "en": "My parents live in Nice."}],
-  "v:besoin": [{"fr": "J'ai besoin d'aide.", "en": "I need help."}],
-  "v:accord": [{"fr": "Je suis d'accord avec toi.", "en": "I agree with you."}],
-  "v:vie": [{"fr": "La vie est belle.", "en": "Life is beautiful."}],
-  "v:peut-être": [{"fr": "Peut-être qu'il pleuvra demain.", "en": "Maybe it will rain tomorrow."}],
-  "v:fois": [{"fr": "C'est la première fois.", "en": "It's the first time."}],
-  "v:vu": [{"fr": "Vu la situation, on annule la réunion.", "en": "Given the situation, we're cancelling the meeting."}],
-  "v:donc": [{"fr": "Je pense, donc je suis.", "en": "I think, therefore I am."}],
-  "v:sans": [{"fr": "Il est parti sans dire au revoir.", "en": "He left without saying goodbye."}],
-  "v:monde": [{"fr": "Le monde est grand.", "en": "The world is big."}],
-  "v:avant": [{"fr": "Appelle-moi avant midi.", "en": "Call me before noon."}],
-  "v:sûr": [{"fr": "Je suis sûr que tu vas réussir.", "en": "I'm sure you'll succeed."}],
-  "v:trop": [{"fr": "Il fait trop chaud aujourd'hui.", "en": "It's too hot today."}],
-  "v:personne": [{"fr": "Il n'y a personne à la maison.", "en": "There's no one home."}],
-  "v:père": [{"fr": "Mon père travaille beaucoup.", "en": "My father works a lot."}],
-  "v:après": [{"fr": "On se voit après le travail.", "en": "We'll see each other after work."}],
-  "v:aux": [{"fr": "Je pense aux vacances.", "en": "I'm thinking about the vacation."}],
-  "v:dieu": [{"fr": "Mon Dieu, quelle nouvelle !", "en": "My God, what news!"}]
+  "verb:être": [
+    {
+      "fr": "Je suis fatigué ce soir.",
+      "en": "I am tired tonight."
+    },
+    {
+      "fr": "Le film a été incroyable.",
+      "en": "The movie was incredible."
+    },
+    {
+      "fr": "Quand j'étais enfant, j'étais très timide.",
+      "en": "When I was a child, I was very shy."
+    },
+    {
+      "fr": "Tu seras content de le voir.",
+      "en": "You will be happy to see it."
+    },
+    {
+      "fr": "Il faut que je sois à l'heure.",
+      "en": "I need to be on time."
+    }
+  ],
+  "verb:avoir": [
+    {
+      "fr": "Elle a deux frères.",
+      "en": "She has two brothers."
+    },
+    {
+      "fr": "J'ai eu de la chance hier.",
+      "en": "I got lucky yesterday."
+    },
+    {
+      "fr": "Nous avions un chien quand j'étais petit.",
+      "en": "We had a dog when I was little."
+    },
+    {
+      "fr": "Tu auras besoin d'aide.",
+      "en": "You will need help."
+    },
+    {
+      "fr": "Il faut que vous ayez votre passeport.",
+      "en": "You need to have your passport."
+    }
+  ],
+  "verb:aller": [
+    {
+      "fr": "Je vais au marché tous les samedis.",
+      "en": "I go to the market every Saturday."
+    },
+    {
+      "fr": "Il est allé à Paris l'année dernière.",
+      "en": "He went to Paris last year."
+    },
+    {
+      "fr": "Nous allions à la plage chaque été.",
+      "en": "We used to go to the beach every summer."
+    },
+    {
+      "fr": "Tu iras à l'école demain.",
+      "en": "You will go to school tomorrow."
+    },
+    {
+      "fr": "Il faut que j'aille chez le médecin.",
+      "en": "I need to go to the doctor."
+    }
+  ],
+  "verb:vouloir": [
+    {
+      "fr": "Je veux apprendre le français.",
+      "en": "I want to learn French."
+    },
+    {
+      "fr": "Elle a voulu partir tôt.",
+      "en": "She wanted to leave early."
+    },
+    {
+      "fr": "Tu voulais toujours avoir raison.",
+      "en": "You always wanted to be right."
+    },
+    {
+      "fr": "Nous voudrons plus de détails.",
+      "en": "We will want more details."
+    },
+    {
+      "fr": "Il faut que je veuille vraiment changer.",
+      "en": "I need to really want to change."
+    }
+  ],
+  "verb:faire": [
+    {
+      "fr": "Que fais-tu ce week-end ?",
+      "en": "What are you doing this weekend?"
+    },
+    {
+      "fr": "J'ai fait une erreur.",
+      "en": "I made a mistake."
+    },
+    {
+      "fr": "Il faisait froid ce matin-là.",
+      "en": "It was cold that morning."
+    },
+    {
+      "fr": "Nous ferons de notre mieux.",
+      "en": "We will do our best."
+    },
+    {
+      "fr": "Il faut que je fasse mes devoirs.",
+      "en": "I need to do my homework."
+    }
+  ],
+  "verb:pouvoir": [
+    {
+      "fr": "Tu peux m'aider, s'il te plaît ?",
+      "en": "Can you help me, please?"
+    },
+    {
+      "fr": "J'ai pu finir le rapport à temps.",
+      "en": "I was able to finish the report in time."
+    },
+    {
+      "fr": "Il ne pouvait pas dormir la nuit dernière.",
+      "en": "He couldn't sleep last night."
+    },
+    {
+      "fr": "Nous pourrons partir demain matin.",
+      "en": "We will be able to leave tomorrow morning."
+    },
+    {
+      "fr": "Il faut que je puisse finir à temps.",
+      "en": "I need to be able to finish in time."
+    }
+  ],
+  "verb:savoir": [
+    {
+      "fr": "Je sais nager depuis l'âge de six ans.",
+      "en": "I've known how to swim since I was six."
+    },
+    {
+      "fr": "Il a su la réponse tout de suite.",
+      "en": "He knew the answer right away."
+    },
+    {
+      "fr": "Tu savais déjà la nouvelle.",
+      "en": "You already knew the news."
+    },
+    {
+      "fr": "Nous saurons les résultats demain.",
+      "en": "We will know the results tomorrow."
+    },
+    {
+      "fr": "Il faut que je sache la vérité.",
+      "en": "I need to know the truth."
+    }
+  ],
+  "verb:devoir": [
+    {
+      "fr": "Je dois partir maintenant.",
+      "en": "I have to leave now."
+    },
+    {
+      "fr": "Il a dû annuler son voyage.",
+      "en": "He had to cancel his trip."
+    },
+    {
+      "fr": "Tu devais m'appeler hier soir.",
+      "en": "You were supposed to call me last night."
+    },
+    {
+      "fr": "Nous devrons économiser de l'argent.",
+      "en": "We will have to save money."
+    },
+    {
+      "fr": "Je ne pense pas qu'il doive s'inquiéter.",
+      "en": "I don't think he has to worry."
+    }
+  ],
+  "verb:dire": [
+    {
+      "fr": "Il dit toujours la vérité.",
+      "en": "He always tells the truth."
+    },
+    {
+      "fr": "Je t'ai dit la vérité.",
+      "en": "I told you the truth."
+    },
+    {
+      "fr": "Nous disions la même chose.",
+      "en": "We used to say the same thing."
+    },
+    {
+      "fr": "Tu diras bonjour de ma part.",
+      "en": "You will say hello for me."
+    },
+    {
+      "fr": "Il faut que vous disiez la vérité.",
+      "en": "You need to tell the truth."
+    }
+  ],
+  "verb:penser": [
+    {
+      "fr": "Je pense souvent à toi.",
+      "en": "I often think of you."
+    },
+    {
+      "fr": "Elle a pensé à tout.",
+      "en": "She thought of everything."
+    },
+    {
+      "fr": "Tu pensais que j'avais oublié.",
+      "en": "You thought I had forgotten."
+    },
+    {
+      "fr": "Nous penserons à une solution.",
+      "en": "We will think of a solution."
+    },
+    {
+      "fr": "Il faut que je pense à l'avenir.",
+      "en": "I need to think about the future."
+    }
+  ],
+  "verb:voir": [
+    {
+      "fr": "Je vois la mer depuis ma fenêtre.",
+      "en": "I see the sea from my window."
+    },
+    {
+      "fr": "Tu as vu ce film ?",
+      "en": "Did you see this movie?"
+    },
+    {
+      "fr": "Elle voyait mal sans ses lunettes.",
+      "en": "She couldn't see well without her glasses."
+    },
+    {
+      "fr": "Nous verrons demain.",
+      "en": "We will see tomorrow."
+    },
+    {
+      "fr": "Il faut que je voie un médecin.",
+      "en": "I need to see a doctor."
+    }
+  ],
+  "verb:venir": [
+    {
+      "fr": "Elle vient de Marseille.",
+      "en": "She comes from Marseille."
+    },
+    {
+      "fr": "Je suis venu dès que possible.",
+      "en": "I came as soon as possible."
+    },
+    {
+      "fr": "Tu venais souvent nous voir.",
+      "en": "You used to come see us often."
+    },
+    {
+      "fr": "Nous viendrons vous chercher à la gare.",
+      "en": "We will come pick you up at the station."
+    },
+    {
+      "fr": "Il faut que je vienne avec toi.",
+      "en": "I need to come with you."
+    }
+  ],
+  "verb:attendre": [
+    {
+      "fr": "J'attends le bus depuis dix minutes.",
+      "en": "I've been waiting for the bus for ten minutes."
+    },
+    {
+      "fr": "Tu as attendu longtemps ?",
+      "en": "Did you wait long?"
+    },
+    {
+      "fr": "Elle attendait son tour patiemment.",
+      "en": "She was waiting her turn patiently."
+    },
+    {
+      "fr": "Nous attendrons votre réponse.",
+      "en": "We will wait for your answer."
+    },
+    {
+      "fr": "Il faut que j'attende encore un peu.",
+      "en": "I need to wait a bit longer."
+    }
+  ],
+  "verb:croire": [
+    {
+      "fr": "Je crois qu'il a raison.",
+      "en": "I believe he's right."
+    },
+    {
+      "fr": "Tu as cru cette histoire ?",
+      "en": "Did you believe that story?"
+    },
+    {
+      "fr": "Elle croyait encore au père Noël.",
+      "en": "She still believed in Santa Claus."
+    },
+    {
+      "fr": "Nous croirons ça quand nous le verrons.",
+      "en": "We will believe it when we see it."
+    },
+    {
+      "fr": "Je doute qu'elle croie cette excuse.",
+      "en": "I doubt she believes that excuse."
+    }
+  ],
+  "verb:parler": [
+    {
+      "fr": "Je parle un peu espagnol.",
+      "en": "I speak a little Spanish."
+    },
+    {
+      "fr": "Tu as parlé trop vite.",
+      "en": "You spoke too fast."
+    },
+    {
+      "fr": "Il parlait rarement de son passé.",
+      "en": "He rarely used to talk about his past."
+    },
+    {
+      "fr": "Nous parlerons de ce projet demain.",
+      "en": "We will talk about this project tomorrow."
+    },
+    {
+      "fr": "Il faut que je parle au directeur.",
+      "en": "I need to speak to the manager."
+    }
+  ],
+  "verb:prendre": [
+    {
+      "fr": "Je prends le bus tous les jours.",
+      "en": "I take the bus every day."
+    },
+    {
+      "fr": "Tu as pris de bonnes décisions.",
+      "en": "You made good decisions."
+    },
+    {
+      "fr": "Il prenait toujours le même chemin.",
+      "en": "He always used to take the same path."
+    },
+    {
+      "fr": "Nous prendrons le train de huit heures.",
+      "en": "We will take the eight o'clock train."
+    },
+    {
+      "fr": "Il faut que je prenne mes médicaments.",
+      "en": "I need to take my medicine."
+    }
+  ],
+  "verb:regarder": [
+    {
+      "fr": "Je regarde un film ce soir.",
+      "en": "I'm watching a movie tonight."
+    },
+    {
+      "fr": "Tu as regardé la météo ?",
+      "en": "Did you check the weather?"
+    },
+    {
+      "fr": "Il regardait par la fenêtre.",
+      "en": "He was looking out the window."
+    },
+    {
+      "fr": "Nous regarderons le match ensemble.",
+      "en": "We will watch the game together."
+    },
+    {
+      "fr": "Il faut que je regarde mes emails.",
+      "en": "I need to check my emails."
+    }
+  ],
+  "verb:aimer": [
+    {
+      "fr": "J'aime la musique classique.",
+      "en": "I like classical music."
+    },
+    {
+      "fr": "Tu as aimé le spectacle ?",
+      "en": "Did you like the show?"
+    },
+    {
+      "fr": "Elle aimait beaucoup lire.",
+      "en": "She used to love reading."
+    },
+    {
+      "fr": "Nous aimerons sûrement cet endroit.",
+      "en": "We will surely like this place."
+    },
+    {
+      "fr": "Il faut que j'aime mon travail pour rester motivé.",
+      "en": "I need to like my job to stay motivated."
+    }
+  ],
+  "verb:trouver": [
+    {
+      "fr": "Je trouve ce livre passionnant.",
+      "en": "I find this book fascinating."
+    },
+    {
+      "fr": "Tu as trouvé tes clés ?",
+      "en": "Did you find your keys?"
+    },
+    {
+      "fr": "Elle trouvait toujours une solution.",
+      "en": "She always used to find a solution."
+    },
+    {
+      "fr": "Nous trouverons un moyen.",
+      "en": "We will find a way."
+    },
+    {
+      "fr": "Il faut que je trouve un nouvel appartement.",
+      "en": "I need to find a new apartment."
+    }
+  ],
+  "verb:laisser": [
+    {
+      "fr": "Laisse la porte ouverte, s'il te plaît.",
+      "en": "Leave the door open, please."
+    }
+  ],
+  "verb:connaître": [
+    {
+      "fr": "Tu connais bien cette ville ?",
+      "en": "Do you know this city well?"
+    }
+  ],
+  "verb:arrêter": [
+    {
+      "fr": "J'arrête de fumer aujourd'hui.",
+      "en": "I'm quitting smoking today."
+    },
+    {
+      "fr": "Tu as arrêté le sport ?",
+      "en": "Did you stop doing sports?"
+    },
+    {
+      "fr": "Il n'arrêtait pas de parler.",
+      "en": "He wouldn't stop talking."
+    },
+    {
+      "fr": "Nous arrêterons ici pour aujourd'hui.",
+      "en": "We will stop here for today."
+    },
+    {
+      "fr": "Il faut que j'arrête de me plaindre.",
+      "en": "I need to stop complaining."
+    }
+  ],
+  "verb:rester": [
+    {
+      "fr": "Je reste à la maison ce soir.",
+      "en": "I'm staying home tonight."
+    },
+    {
+      "fr": "Il est resté avec nous.",
+      "en": "He stayed with us."
+    },
+    {
+      "fr": "Tu restais souvent tard au bureau.",
+      "en": "You often used to stay late at the office."
+    },
+    {
+      "fr": "Nous resterons ici jusqu'à demain.",
+      "en": "We will stay here until tomorrow."
+    },
+    {
+      "fr": "Il faut que je reste calme.",
+      "en": "I need to stay calm."
+    }
+  ],
+  "verb:appeler": [
+    {
+      "fr": "Elle appelle sa mère tous les jours.",
+      "en": "She calls her mother every day."
+    }
+  ],
+  "verb:sortir": [
+    {
+      "fr": "Je sors avec des amis ce soir.",
+      "en": "I'm going out with friends tonight."
+    },
+    {
+      "fr": "Tu as sorti le chien ce matin ?",
+      "en": "Did you take the dog out this morning?"
+    },
+    {
+      "fr": "Il sortait rarement le soir.",
+      "en": "He rarely used to go out in the evening."
+    },
+    {
+      "fr": "Nous sortirons dîner ce week-end.",
+      "en": "We will go out for dinner this weekend."
+    },
+    {
+      "fr": "Il faut que je sorte les poubelles.",
+      "en": "I need to take out the trash."
+    }
+  ],
+  "verb:passer": [
+    {
+      "fr": "Je passe te voir cet après-midi.",
+      "en": "I'm coming by to see you this afternoon."
+    },
+    {
+      "fr": "Tu as passé un bon week-end ?",
+      "en": "Did you have a good weekend?"
+    },
+    {
+      "fr": "Il passait ses étés à la campagne.",
+      "en": "He used to spend his summers in the countryside."
+    },
+    {
+      "fr": "Nous passerons par Lyon en chemin.",
+      "en": "We will pass through Lyon on the way."
+    },
+    {
+      "fr": "Il faut que je passe à la banque.",
+      "en": "I need to stop by the bank."
+    }
+  ],
+  "verb:falloir": [
+    {
+      "fr": "Il faut partir maintenant.",
+      "en": "We must leave now."
+    },
+    {
+      "fr": "Il a fallu attendre longtemps.",
+      "en": "We had to wait a long time."
+    },
+    {
+      "fr": "Il fallait faire quelque chose.",
+      "en": "Something had to be done."
+    },
+    {
+      "fr": "Il faudra réserver à l'avance.",
+      "en": "It will be necessary to book in advance."
+    },
+    {
+      "fr": "Je doute qu'il faille recommencer.",
+      "en": "I doubt it will be necessary to start over."
+    }
+  ],
+  "verb:partir": [
+    {
+      "fr": "Je pars en vacances demain.",
+      "en": "I'm leaving on vacation tomorrow."
+    },
+    {
+      "fr": "Il est parti sans dire au revoir.",
+      "en": "He left without saying goodbye."
+    },
+    {
+      "fr": "Tu partais toujours tôt le matin.",
+      "en": "You always used to leave early in the morning."
+    },
+    {
+      "fr": "Nous partirons à l'aube.",
+      "en": "We will leave at dawn."
+    },
+    {
+      "fr": "Il faut que je parte maintenant.",
+      "en": "I need to leave now."
+    }
+  ],
+  "verb:arriver": [
+    {
+      "fr": "J'arrive dans cinq minutes.",
+      "en": "I'll be there in five minutes."
+    },
+    {
+      "fr": "Il est arrivé en retard.",
+      "en": "He arrived late."
+    },
+    {
+      "fr": "Tu arrivais toujours le premier.",
+      "en": "You always used to arrive first."
+    },
+    {
+      "fr": "Nous arriverons vers midi.",
+      "en": "We will arrive around noon."
+    },
+    {
+      "fr": "Il faut que j'arrive avant huit heures.",
+      "en": "I need to arrive before eight o'clock."
+    }
+  ],
+  "verb:essayer": [
+    {
+      "fr": "J'essaie de comprendre.",
+      "en": "I'm trying to understand."
+    }
+  ],
+  "verb:écouter": [
+    {
+      "fr": "Écoute cette musique, elle est belle.",
+      "en": "Listen to this music, it's beautiful."
+    }
+  ],
+  "verb:demander": [
+    {
+      "fr": "Elle demande de l'aide.",
+      "en": "She's asking for help."
+    }
+  ],
+  "verb:tenir": [
+    {
+      "fr": "Il tient la main de son fils.",
+      "en": "He's holding his son's hand."
+    }
+  ],
+  "verb:revenir": [
+    {
+      "fr": "Je reviens dans une heure.",
+      "en": "I'll be back in an hour."
+    }
+  ],
+  "verb:donner": [
+    {
+      "fr": "Je te donne mon numéro.",
+      "en": "I'll give you my number."
+    }
+  ],
+  "verb:mettre": [
+    {
+      "fr": "Je mets la table pour le dîner.",
+      "en": "I'm setting the table for dinner."
+    },
+    {
+      "fr": "Tu as mis combien de temps ?",
+      "en": "How long did it take you?"
+    },
+    {
+      "fr": "Il mettait toujours son manteau bleu.",
+      "en": "He always used to wear his blue coat."
+    },
+    {
+      "fr": "Nous mettrons de la musique.",
+      "en": "We will put on some music."
+    },
+    {
+      "fr": "Il faut que je mette mes chaussures.",
+      "en": "I need to put on my shoes."
+    }
+  ],
+  "verb:chercher": [
+    {
+      "fr": "Je cherche mes clés.",
+      "en": "I'm looking for my keys."
+    }
+  ],
+  "verb:comprendre": [
+    {
+      "fr": "Je comprends le problème maintenant.",
+      "en": "I understand the problem now."
+    },
+    {
+      "fr": "Tu as compris la leçon ?",
+      "en": "Did you understand the lesson?"
+    },
+    {
+      "fr": "Elle ne comprenait pas pourquoi.",
+      "en": "She didn't understand why."
+    },
+    {
+      "fr": "Nous comprendrons mieux avec le temps.",
+      "en": "We will understand better with time."
+    },
+    {
+      "fr": "Il faut que je comprenne les règles.",
+      "en": "I need to understand the rules."
+    }
+  ],
+  "verb:travailler": [
+    {
+      "fr": "Elle travaille dans un hôpital.",
+      "en": "She works in a hospital."
+    }
+  ],
+  "verb:entrer": [
+    {
+      "fr": "Entrez, la porte est ouverte.",
+      "en": "Come in, the door is open."
+    }
+  ],
+  "verb:oublier": [
+    {
+      "fr": "N'oublie pas ton parapluie.",
+      "en": "Don't forget your umbrella."
+    }
+  ],
+  "verb:continuer": [
+    {
+      "fr": "Continuez tout droit jusqu'au feu.",
+      "en": "Continue straight ahead to the light."
+    }
+  ],
+  "verb:vivre": [
+    {
+      "fr": "Ils vivent à Lyon depuis dix ans.",
+      "en": "They've been living in Lyon for ten years."
+    }
+  ],
+  "verb:jouer": [
+    {
+      "fr": "Les enfants jouent dans le jardin.",
+      "en": "The children are playing in the garden."
+    }
+  ],
+  "verb:sentir": [
+    {
+      "fr": "Je sens une odeur de pain frais.",
+      "en": "I smell fresh bread."
+    }
+  ],
+  "verb:rentrer": [
+    {
+      "fr": "Je rentre tard ce soir.",
+      "en": "I'm coming home late tonight."
+    }
+  ],
+  "verb:aider": [
+    {
+      "fr": "J'aide mon frère avec ses devoirs.",
+      "en": "I'm helping my brother with his homework."
+    },
+    {
+      "fr": "Tu as aidé ton frère hier.",
+      "en": "You helped your brother yesterday."
+    },
+    {
+      "fr": "Elle aidait toujours les nouveaux élèves.",
+      "en": "She always used to help the new students."
+    },
+    {
+      "fr": "Nous aiderons à organiser la fête.",
+      "en": "We will help organize the party."
+    },
+    {
+      "fr": "Il faut que j'aide mes parents ce week-end.",
+      "en": "I need to help my parents this weekend."
+    }
+  ],
+  "verb:tuer": [
+    {
+      "fr": "Ce virus tue des milliers de personnes chaque année.",
+      "en": "This virus kills thousands of people every year."
+    }
+  ],
+  "verb:commencer": [
+    {
+      "fr": "Le film commence à huit heures.",
+      "en": "The movie starts at eight o'clock."
+    }
+  ],
+  "verb:espérer": [
+    {
+      "fr": "J'espère que tu vas bien.",
+      "en": "I hope you're doing well."
+    }
+  ],
+  "verb:porter": [
+    {
+      "fr": "Elle porte une robe rouge.",
+      "en": "She's wearing a red dress."
+    }
+  ],
+  "verb:entendre": [
+    {
+      "fr": "J'entends de la musique à côté.",
+      "en": "I hear music next door."
+    }
+  ],
+  "verb:garder": [
+    {
+      "fr": "Elle garde les enfants le samedi.",
+      "en": "She looks after the kids on Saturdays."
+    }
+  ],
+  "verb:ouvrir": [
+    {
+      "fr": "Ouvre la fenêtre, il fait chaud.",
+      "en": "Open the window, it's hot."
+    }
+  ],
+  "verb:rendre": [
+    {
+      "fr": "Je te rends ton livre demain.",
+      "en": "I'll give you back your book tomorrow."
+    }
+  ],
+  "verb:sembler": [
+    {
+      "fr": "Il semble fatigué aujourd'hui.",
+      "en": "He seems tired today."
+    }
+  ],
+  "verb:envoyer": [
+    {
+      "fr": "Je t'envoie le document ce soir.",
+      "en": "I'll send you the document tonight."
+    }
+  ],
+  "verb:tirer": [
+    {
+      "fr": "Il tire la corde de toutes ses forces.",
+      "en": "He pulls the rope with all his strength."
+    }
+  ],
+  "verb:ignorer": [
+    {
+      "fr": "J'ignore pourquoi il est parti.",
+      "en": "I don't know why he left."
+    }
+  ],
+  "verb:mourir": [
+    {
+      "fr": "Cette tradition ne meurt jamais.",
+      "en": "This tradition never dies."
+    }
+  ],
+  "verb:inquiéter": [
+    {
+      "fr": "Son silence m'inquiète un peu.",
+      "en": "His silence worries me a little."
+    }
+  ],
+  "verb:suivre": [
+    {
+      "fr": "Je suis un cours de français.",
+      "en": "I am taking a French class."
+    },
+    {
+      "fr": "Tu as suivi mes conseils.",
+      "en": "You followed my advice."
+    },
+    {
+      "fr": "Il suivait des cours du soir.",
+      "en": "He used to take evening classes."
+    },
+    {
+      "fr": "Nous suivrons cette route jusqu'au bout.",
+      "en": "We will follow this road to the end."
+    },
+    {
+      "fr": "Il faut que je suive ce régime strictement.",
+      "en": "I need to follow this diet strictly."
+    }
+  ],
+  "verb:bouger": [
+    {
+      "fr": "Ne bouge pas, j'arrive.",
+      "en": "Don't move, I'm coming."
+    }
+  ],
+  "verb:retourner": [
+    {
+      "fr": "Nous retournons en France l'été prochain.",
+      "en": "We're going back to France next summer."
+    }
+  ],
+  "verb:souvenir": [
+    {
+      "fr": "Je me souviens de mon premier jour d'école.",
+      "en": "I remember my first day of school."
+    }
+  ],
+  "verb:marcher": [
+    {
+      "fr": "Nous marchons le long de la plage.",
+      "en": "We're walking along the beach."
+    }
+  ],
+  "verb:finir": [
+    {
+      "fr": "Je finis mon travail à cinq heures.",
+      "en": "I finish work at five o'clock."
+    }
+  ],
+  "verb:changer": [
+    {
+      "fr": "Les choses changent vite ici.",
+      "en": "Things change quickly here."
+    }
+  ],
+  "verb:perdre": [
+    {
+      "fr": "Je perds toujours mes clés.",
+      "en": "I always lose my keys."
+    }
+  ],
+  "verb:répondre": [
+    {
+      "fr": "Elle répond à toutes ses questions.",
+      "en": "She answers all his questions."
+    }
+  ],
+  "verb:manger": [
+    {
+      "fr": "Nous mangeons ensemble ce midi.",
+      "en": "We're eating together this noon."
+    }
+  ],
+  "verb:occuper": [
+    {
+      "fr": "Ce projet occupe tout mon temps.",
+      "en": "This project takes up all my time."
+    }
+  ],
+  "verb:boire": [
+    {
+      "fr": "Il boit un café tous les matins.",
+      "en": "He drinks a coffee every morning."
+    }
+  ],
+  "verb:utiliser": [
+    {
+      "fr": "J'utilise mon téléphone pour tout.",
+      "en": "I use my phone for everything."
+    }
+  ],
+  "verb:imaginer": [
+    {
+      "fr": "J'imagine que tu es fatigué.",
+      "en": "I imagine you're tired."
+    }
+  ],
+  "verb:dormir": [
+    {
+      "fr": "Le bébé dort depuis deux heures.",
+      "en": "The baby has been sleeping for two hours."
+    }
+  ],
+  "verb:manquer": [
+    {
+      "fr": "Tu me manques beaucoup.",
+      "en": "I miss you a lot."
+    }
+  ],
+  "verb:monter": [
+    {
+      "fr": "Nous montons les escaliers ensemble.",
+      "en": "We're going up the stairs together."
+    }
+  ],
+  "verb:compter": [
+    {
+      "fr": "Je compte sur toi.",
+      "en": "I'm counting on you."
+    }
+  ],
+  "verb:rappeler": [
+    {
+      "fr": "Je te rappelle plus tard.",
+      "en": "I'll call you back later."
+    }
+  ],
+  "verb:devenir": [
+    {
+      "fr": "Elle veut devenir médecin.",
+      "en": "She wants to become a doctor."
+    }
+  ],
+  "verb:toucher": [
+    {
+      "fr": "Ne touche pas à ça !",
+      "en": "Don't touch that!"
+    }
+  ],
+  "verb:relater": [
+    {
+      "fr": "Cet article relate les événements de la guerre.",
+      "en": "This article recounts the events of the war."
+    }
+  ],
+  "verb:permettre": [
+    {
+      "fr": "Ce billet permet d'entrer gratuitement.",
+      "en": "This ticket allows free entry."
+    }
+  ],
+  "verb:retrouver": [
+    {
+      "fr": "Je retrouve mes amis au café.",
+      "en": "I'm meeting my friends at the café."
+    }
+  ],
+  "verb:apprendre": [
+    {
+      "fr": "Elle apprend le piano depuis un an.",
+      "en": "She has been learning piano for a year."
+    }
+  ],
+  "verb:quitter": [
+    {
+      "fr": "Il quitte la ville demain.",
+      "en": "He is leaving the city tomorrow."
+    }
+  ],
+  "verb:montrer": [
+    {
+      "fr": "Montre-moi tes photos de vacances.",
+      "en": "Show me your vacation photos."
+    }
+  ],
+  "verb:poser": [
+    {
+      "fr": "Je pose la question autrement.",
+      "en": "I'll ask the question differently."
+    }
+  ],
+  "verb:emmener": [
+    {
+      "fr": "Je t'emmène à l'aéroport.",
+      "en": "I'll take you to the airport."
+    }
+  ],
+  "verb:reculer": [
+    {
+      "fr": "La voiture recule lentement.",
+      "en": "The car is backing up slowly."
+    }
+  ],
+  "verb:jeter": [
+    {
+      "fr": "Ne jette pas ça, c'est utile.",
+      "en": "Don't throw that away, it's useful."
+    }
+  ],
+  "verb:allier": [
+    {
+      "fr": "Ce plat allie douceur et épices.",
+      "en": "This dish combines sweetness and spices."
+    }
+  ],
+  "verb:excuser": [
+    {
+      "fr": "Excusez-moi, je suis en retard.",
+      "en": "Excuse me, I'm late."
+    }
+  ],
+  "verb:revoir": [
+    {
+      "fr": "J'espère te revoir bientôt.",
+      "en": "I hope to see you again soon."
+    }
+  ],
+  "verb:ressembler": [
+    {
+      "fr": "Tu ressembles beaucoup à ton père.",
+      "en": "You look a lot like your father."
+    }
+  ],
+  "verb:lire": [
+    {
+      "fr": "Je lis un roman en ce moment.",
+      "en": "I'm reading a novel right now."
+    }
+  ],
+  "verb:dégager": [
+    {
+      "fr": "Cette fleur dégage un parfum agréable.",
+      "en": "This flower gives off a pleasant scent."
+    }
+  ],
+  "verb:servir": [
+    {
+      "fr": "Le dîner est servi à huit heures.",
+      "en": "Dinner is served at eight o'clock."
+    }
+  ],
+  "verb:battre": [
+    {
+      "fr": "Mon cœur bat très vite.",
+      "en": "My heart is beating very fast."
+    }
+  ],
+  "verb:fermer": [
+    {
+      "fr": "Le magasin ferme à dix-neuf heures.",
+      "en": "The store closes at seven p.m."
+    }
+  ],
+  "v:de": [
+    {
+      "fr": "Je viens de Paris.",
+      "en": "I come from Paris."
+    }
+  ],
+  "v:je": [
+    {
+      "fr": "Je m'appelle Marie.",
+      "en": "My name is Marie."
+    }
+  ],
+  "v:pas": [
+    {
+      "fr": "Je ne comprends pas.",
+      "en": "I don't understand."
+    }
+  ],
+  "v:le": [
+    {
+      "fr": "Le chat dort sur le canapé.",
+      "en": "The cat is sleeping on the couch."
+    }
+  ],
+  "v:que": [
+    {
+      "fr": "Je sais que tu as raison.",
+      "en": "I know that you're right."
+    }
+  ],
+  "v:la": [
+    {
+      "fr": "La maison est grande.",
+      "en": "The house is big."
+    }
+  ],
+  "v:vous": [
+    {
+      "fr": "Vous êtes très gentil.",
+      "en": "You are very kind."
+    }
+  ],
+  "v:tu": [
+    {
+      "fr": "Tu es mon meilleur ami.",
+      "en": "You are my best friend."
+    }
+  ],
+  "v:un": [
+    {
+      "fr": "J'ai un chat et un chien.",
+      "en": "I have a cat and a dog."
+    }
+  ],
+  "v:à": [
+    {
+      "fr": "Je vais à l'école.",
+      "en": "I'm going to school."
+    }
+  ],
+  "v:et": [
+    {
+      "fr": "J'aime le café et le thé.",
+      "en": "I like coffee and tea."
+    }
+  ],
+  "v:il": [
+    {
+      "fr": "Il habite à Paris.",
+      "en": "He lives in Paris."
+    }
+  ],
+  "v:ne": [
+    {
+      "fr": "Je ne sais pas.",
+      "en": "I don't know."
+    }
+  ],
+  "v:les": [
+    {
+      "fr": "Les enfants jouent dehors.",
+      "en": "The children are playing outside."
+    }
+  ],
+  "v:en": [
+    {
+      "fr": "Je vais en France.",
+      "en": "I'm going to France."
+    }
+  ],
+  "v:on": [
+    {
+      "fr": "On va au cinéma ce soir.",
+      "en": "We're going to the movies tonight."
+    }
+  ],
+  "v:une": [
+    {
+      "fr": "C'est une bonne idée.",
+      "en": "That's a good idea."
+    }
+  ],
+  "v:ce": [
+    {
+      "fr": "Ce livre est très intéressant.",
+      "en": "This book is very interesting."
+    }
+  ],
+  "v:pour": [
+    {
+      "fr": "C'est un cadeau pour toi.",
+      "en": "This is a gift for you."
+    }
+  ],
+  "v:des": [
+    {
+      "fr": "J'ai des amis à Lyon.",
+      "en": "I have friends in Lyon."
+    }
+  ],
+  "v:qui": [
+    {
+      "fr": "C'est la femme qui habite à côté.",
+      "en": "That's the woman who lives next door."
+    }
+  ],
+  "v:mais": [
+    {
+      "fr": "J'aime le café, mais pas le thé.",
+      "en": "I like coffee, but not tea."
+    }
+  ],
+  "v:dans": [
+    {
+      "fr": "Le livre est dans le sac.",
+      "en": "The book is in the bag."
+    }
+  ],
+  "v:nous": [
+    {
+      "fr": "Nous habitons à Marseille.",
+      "en": "We live in Marseille."
+    }
+  ],
+  "v:elle": [
+    {
+      "fr": "Elle est très intelligente.",
+      "en": "She is very intelligent."
+    }
+  ],
+  "v:me": [
+    {
+      "fr": "Il me connaît bien.",
+      "en": "He knows me well."
+    }
+  ],
+  "v:bien": [
+    {
+      "fr": "Tu parles très bien français.",
+      "en": "You speak French very well."
+    }
+  ],
+  "v:si": [
+    {
+      "fr": "Si tu veux, on peut partir maintenant.",
+      "en": "If you want, we can leave now."
+    }
+  ],
+  "v:du": [
+    {
+      "fr": "Je bois du café le matin.",
+      "en": "I drink coffee in the morning."
+    }
+  ],
+  "v:non": [
+    {
+      "fr": "Non, je ne suis pas d'accord.",
+      "en": "No, I don't agree."
+    }
+  ],
+  "v:avec": [
+    {
+      "fr": "Je pars en vacances avec ma famille.",
+      "en": "I'm going on vacation with my family."
+    }
+  ],
+  "v:tout": [
+    {
+      "fr": "Tout va bien.",
+      "en": "Everything is fine."
+    }
+  ],
+  "v:plus": [
+    {
+      "fr": "J'ai besoin de plus de temps.",
+      "en": "I need more time."
+    }
+  ],
+  "v:mon": [
+    {
+      "fr": "Mon frère habite à Nice.",
+      "en": "My brother lives in Nice."
+    }
+  ],
+  "v:te": [
+    {
+      "fr": "Je te comprends.",
+      "en": "I understand you."
+    }
+  ],
+  "v:au": [
+    {
+      "fr": "Je vais au marché.",
+      "en": "I'm going to the market."
+    }
+  ],
+  "v:moi": [
+    {
+      "fr": "C'est moi qui ai fait ça.",
+      "en": "It's me who did that."
+    }
+  ],
+  "v:oui": [
+    {
+      "fr": "Oui, bien sûr !",
+      "en": "Yes, of course!"
+    }
+  ],
+  "v:ils": [
+    {
+      "fr": "Ils habitent en Espagne.",
+      "en": "They live in Spain."
+    }
+  ],
+  "v:sur": [
+    {
+      "fr": "Le livre est sur la table.",
+      "en": "The book is on the table."
+    }
+  ],
+  "v:quoi": [
+    {
+      "fr": "Quoi de neuf ?",
+      "en": "What's new?"
+    }
+  ],
+  "v:comme": [
+    {
+      "fr": "Il travaille comme professeur.",
+      "en": "He works as a teacher."
+    }
+  ],
+  "v:ici": [
+    {
+      "fr": "Viens ici, s'il te plaît.",
+      "en": "Come here, please."
+    }
+  ],
+  "v:ma": [
+    {
+      "fr": "Ma sœur arrive demain.",
+      "en": "My sister arrives tomorrow."
+    }
+  ],
+  "v:toi": [
+    {
+      "fr": "Et toi, comment vas-tu ?",
+      "en": "And you, how are you?"
+    }
+  ],
+  "v:lui": [
+    {
+      "fr": "Je lui ai parlé hier.",
+      "en": "I spoke to him yesterday."
+    }
+  ],
+  "v:votre": [
+    {
+      "fr": "Votre maison est magnifique.",
+      "en": "Your house is beautiful."
+    }
+  ],
+  "v:pourquoi": [
+    {
+      "fr": "Pourquoi tu pleures ?",
+      "en": "Why are you crying?"
+    }
+  ],
+  "v:où": [
+    {
+      "fr": "Où habites-tu ?",
+      "en": "Where do you live?"
+    }
+  ],
+  "v:là": [
+    {
+      "fr": "Il est là, dans la cuisine.",
+      "en": "He's there, in the kitchen."
+    }
+  ],
+  "v:rien": [
+    {
+      "fr": "Il n'y a rien dans le frigo.",
+      "en": "There's nothing in the fridge."
+    }
+  ],
+  "v:quand": [
+    {
+      "fr": "Quand pars-tu en vacances ?",
+      "en": "When are you leaving on vacation?"
+    }
+  ],
+  "v:son": [
+    {
+      "fr": "Son chien s'appelle Rex.",
+      "en": "His dog is named Rex."
+    }
+  ],
+  "v:alors": [
+    {
+      "fr": "Alors, on y va ?",
+      "en": "So, shall we go?"
+    }
+  ],
+  "v:ton": [
+    {
+      "fr": "Ton sac est ici.",
+      "en": "Your bag is here."
+    }
+  ],
+  "v:comment": [
+    {
+      "fr": "Comment tu t'appelles ?",
+      "en": "What's your name?"
+    }
+  ],
+  "v:par": [
+    {
+      "fr": "Elle est passée par Paris.",
+      "en": "She went through Paris."
+    }
+  ],
+  "v:ou": [
+    {
+      "fr": "Tu veux du thé ou du café ?",
+      "en": "Do you want tea or coffee?"
+    }
+  ],
+  "v:chose": [
+    {
+      "fr": "C'est une chose importante.",
+      "en": "That's an important thing."
+    }
+  ],
+  "v:bon": [
+    {
+      "fr": "Ce gâteau est très bon.",
+      "en": "This cake is very good."
+    }
+  ],
+  "v:merci": [
+    {
+      "fr": "Merci beaucoup pour ton aide.",
+      "en": "Thank you very much for your help."
+    }
+  ],
+  "v:juste": [
+    {
+      "fr": "C'est juste à côté d'ici.",
+      "en": "It's just next to here."
+    }
+  ],
+  "v:très": [
+    {
+      "fr": "Elle est très gentille.",
+      "en": "She is very kind."
+    }
+  ],
+  "v:jamais": [
+    {
+      "fr": "Je ne mens jamais.",
+      "en": "I never lie."
+    }
+  ],
+  "v:été": [
+    {
+      "fr": "Nous partons en vacances cet été.",
+      "en": "We're going on vacation this summer."
+    }
+  ],
+  "v:aussi": [
+    {
+      "fr": "Moi aussi, j'aime le chocolat.",
+      "en": "Me too, I like chocolate."
+    }
+  ],
+  "v:vraiment": [
+    {
+      "fr": "C'est vraiment délicieux.",
+      "en": "It's really delicious."
+    }
+  ],
+  "v:même": [
+    {
+      "fr": "C'est le même livre.",
+      "en": "It's the same book."
+    }
+  ],
+  "v:sa": [
+    {
+      "fr": "Sa voiture est neuve.",
+      "en": "Her car is new."
+    }
+  ],
+  "v:oh": [
+    {
+      "fr": "Oh, quelle surprise !",
+      "en": "Oh, what a surprise!"
+    }
+  ],
+  "v:maintenant": [
+    {
+      "fr": "Je dois partir maintenant.",
+      "en": "I have to leave now."
+    }
+  ],
+  "v:tous": [
+    {
+      "fr": "Tous mes amis sont là.",
+      "en": "All my friends are here."
+    }
+  ],
+  "v:deux": [
+    {
+      "fr": "J'ai deux enfants.",
+      "en": "I have two children."
+    }
+  ],
+  "v:ces": [
+    {
+      "fr": "Ces chaussures sont trop petites.",
+      "en": "These shoes are too small."
+    }
+  ],
+  "v:ta": [
+    {
+      "fr": "Ta chambre est propre.",
+      "en": "Your room is clean."
+    }
+  ],
+  "v:autre": [
+    {
+      "fr": "Prends l'autre chemise.",
+      "en": "Take the other shirt."
+    }
+  ],
+  "v:peu": [
+    {
+      "fr": "J'ai un peu faim.",
+      "en": "I'm a little hungry."
+    }
+  ],
+  "v:temps": [
+    {
+      "fr": "Je n'ai pas le temps aujourd'hui.",
+      "en": "I don't have time today."
+    }
+  ],
+  "v:quelque": [
+    {
+      "fr": "J'ai quelque chose à te dire.",
+      "en": "I have something to tell you."
+    }
+  ],
+  "v:toujours": [
+    {
+      "fr": "Il arrive toujours à l'heure.",
+      "en": "He always arrives on time."
+    }
+  ],
+  "v:encore": [
+    {
+      "fr": "Tu veux encore du café ?",
+      "en": "Do you want more coffee?"
+    }
+  ],
+  "v:notre": [
+    {
+      "fr": "Notre maison est près de la mer.",
+      "en": "Our house is near the sea."
+    }
+  ],
+  "v:mes": [
+    {
+      "fr": "Mes parents habitent à Nice.",
+      "en": "My parents live in Nice."
+    }
+  ],
+  "v:besoin": [
+    {
+      "fr": "J'ai besoin d'aide.",
+      "en": "I need help."
+    }
+  ],
+  "v:accord": [
+    {
+      "fr": "Je suis d'accord avec toi.",
+      "en": "I agree with you."
+    }
+  ],
+  "v:vie": [
+    {
+      "fr": "La vie est belle.",
+      "en": "Life is beautiful."
+    }
+  ],
+  "v:peut-être": [
+    {
+      "fr": "Peut-être qu'il pleuvra demain.",
+      "en": "Maybe it will rain tomorrow."
+    }
+  ],
+  "v:fois": [
+    {
+      "fr": "C'est la première fois.",
+      "en": "It's the first time."
+    }
+  ],
+  "v:vu": [
+    {
+      "fr": "Vu la situation, on annule la réunion.",
+      "en": "Given the situation, we're cancelling the meeting."
+    }
+  ],
+  "v:donc": [
+    {
+      "fr": "Je pense, donc je suis.",
+      "en": "I think, therefore I am."
+    }
+  ],
+  "v:sans": [
+    {
+      "fr": "Il est parti sans dire au revoir.",
+      "en": "He left without saying goodbye."
+    }
+  ],
+  "v:monde": [
+    {
+      "fr": "Le monde est grand.",
+      "en": "The world is big."
+    }
+  ],
+  "v:avant": [
+    {
+      "fr": "Appelle-moi avant midi.",
+      "en": "Call me before noon."
+    }
+  ],
+  "v:sûr": [
+    {
+      "fr": "Je suis sûr que tu vas réussir.",
+      "en": "I'm sure you'll succeed."
+    }
+  ],
+  "v:trop": [
+    {
+      "fr": "Il fait trop chaud aujourd'hui.",
+      "en": "It's too hot today."
+    }
+  ],
+  "v:personne": [
+    {
+      "fr": "Il n'y a personne à la maison.",
+      "en": "There's no one home."
+    }
+  ],
+  "v:père": [
+    {
+      "fr": "Mon père travaille beaucoup.",
+      "en": "My father works a lot."
+    }
+  ],
+  "v:après": [
+    {
+      "fr": "On se voit après le travail.",
+      "en": "We'll see each other after work."
+    }
+  ],
+  "v:aux": [
+    {
+      "fr": "Je pense aux vacances.",
+      "en": "I'm thinking about the vacation."
+    }
+  ],
+  "v:dieu": [
+    {
+      "fr": "Mon Dieu, quelle nouvelle !",
+      "en": "My God, what news!"
+    }
+  ]
 }

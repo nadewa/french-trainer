@@ -113,15 +113,26 @@ for full reproducibility).
 - Unlike everything above, these are written by the assistant, not pulled from
   an open dataset. Tatoeba (the standard open sentence-pair corpus most
   language apps use for this) and other candidates (Helsinki-NLP/Tatoeba
-  Challenge, HuggingFace-hosted sentence datasets) were all unreachable from
-  this build environment's network policy — only github.com/raw content, npm,
-  and PyPI are allowed through, and none of them mirror a usable sentence
-  corpus. Rather than skip example sentences entirely, they were written
-  directly using ordinary French competence and flagged clearly as such.
-- **Coverage (phase 1)**: the 100 verbs and the 100 highest-frequency
-  vocabulary words — one example sentence each. This covers roughly the first
-  20 lessons; lessons beyond that show the word list and gloss only, no
-  example sentence, until more are added.
+  Challenge, HuggingFace-hosted sentence datasets, Wikipedia, Openverse) were
+  all re-checked and confirmed unreachable from this build environment's
+  network policy — only github.com/raw content, npm, and PyPI are allowed
+  through, and none of them mirror a usable sentence corpus. Rather than skip
+  example sentences entirely, they were written directly using ordinary
+  French competence and flagged clearly as such.
+- **Coverage**: the 100 highest-frequency vocabulary words get one example
+  sentence each (phase 1). The 100 verbs get one example sentence for their
+  own vocab meaning, **plus**, for the 30 highest-frequency verbs specifically,
+  one additional sentence per drilled tense (présent, passé composé,
+  imparfait, futur simple, subjonctif présent) — so the app's full-sentence
+  fill-in-the-blank mode (see README) has real coverage across tenses for
+  those verbs, not just whichever tense happened to match the single stored
+  sentence. Every added sentence was validated programmatically (not just
+  proofread) to confirm the exact conjugated form being drilled actually
+  appears in it as a whole word, including auxiliary-agreement edge cases
+  (e.g. a être-auxiliary past participle written without gender agreement,
+  to match the ungendered form the app itself drills and grades against).
+  The other 70 verbs and the remaining ~4,800 vocabulary words still have no
+  example sentence, and fall back to the isolated word/phrase prompt.
 
 ## Reproducing / regenerating the data
 

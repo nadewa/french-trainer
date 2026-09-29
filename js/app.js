@@ -423,33 +423,38 @@ function findWholeWord(haystack, needle) {
 }
 
 // A verb's own vocab-meaning card (e.g. "faire" -> "do/make") shares the
-// verb's single example sentence, which is stored under "verb:<infinitive>",
-// not the card's own "v:<infinitive>" id.
-function findExampleFor(item) {
+// verb's example sentences, stored under "verb:<infinitive>", not the
+// card's own "v:<infinitive>" id. A verb can have several example
+// sentences now (one per drilled tense, for the ~30 highest-frequency
+// verbs) -- returns the whole list so the caller can find whichever one
+// actually contains the specific form being drilled.
+function findExamplesFor(item) {
   if (item.type === "conj") {
-    const list = examplesData[`verb:${item.infinitive}`];
-    return list ? list[0] : null;
+    return examplesData[`verb:${item.infinitive}`] || null;
   }
   const direct = examplesData[item.id];
-  if (direct) return direct[0];
-  const asVerb = examplesData[`verb:${item.id.slice(2)}`];
-  return asVerb ? asVerb[0] : null;
+  if (direct) return direct;
+  return examplesData[`verb:${item.id.slice(2)}`] || null;
 }
 
 // Builds a full-sentence fill-in-the-blank prompt when `targetWord` (the
-// exact surface form being drilled) can be found as a whole word inside the
-// item's example sentence -- searching for the literal expected form (rather
-// than restricting by tense/person) guarantees the blank is tense-matched by
-// construction, since it can only match a sentence actually written in that
-// form. Returns null (falls back to the isolated word/phrase prompt) for the
-// large majority of items that don't have a matching example.
+// exact surface form being drilled) can be found as a whole word inside one
+// of the item's example sentences -- searching for the literal expected
+// form (rather than restricting by tense/person) guarantees the blank is
+// tense-matched by construction, since it can only match a sentence
+// actually written in that form. Returns null (falls back to the isolated
+// word/phrase prompt) for the large majority of items that don't have a
+// matching example.
 function sentencePromptFor(item, targetWord) {
-  const ex = findExampleFor(item);
-  if (!ex) return null;
-  const found = findWholeWord(ex.fr, targetWord);
-  if (!found) return null;
-  const blanked = ex.fr.slice(0, found.index) + "___" + ex.fr.slice(found.index + found.match.length);
-  return { blanked, english: ex.en, fr: ex.fr };
+  const examples = findExamplesFor(item);
+  if (!examples) return null;
+  for (const ex of examples) {
+    const found = findWholeWord(ex.fr, targetWord);
+    if (!found) continue;
+    const blanked = ex.fr.slice(0, found.index) + "___" + ex.fr.slice(found.index + found.match.length);
+    return { blanked, english: ex.en, fr: ex.fr };
+  }
+  return null;
 }
 
 function promptTextFor(item, direction) {
@@ -1082,10 +1087,12 @@ function openVerbLesson(infinitive) {
   el("verb-lesson-gloss").textContent = verbGlossText(verb);
   el("verb-lesson-note").textContent = verbUsageNote(verb);
 
-  const example = examplesData[`verb:${infinitive}`];
+  const verbExamples = examplesData[`verb:${infinitive}`];
   const exampleBox = el("verb-lesson-example");
-  if (example && example[0]) {
-    exampleBox.innerHTML = `<span class="fr">${example[0].fr}</span><br><span class="en">${example[0].en}</span>`;
+  if (verbExamples && verbExamples.length) {
+    exampleBox.innerHTML = verbExamples
+      .map((ex) => `<p class="example"><span class="fr">${ex.fr}</span><br><span class="en">${ex.en}</span></p>`)
+      .join("");
     exampleBox.classList.remove("hidden");
   } else {
     exampleBox.classList.add("hidden");

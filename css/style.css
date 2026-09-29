@@ -728,11 +728,11 @@ button:disabled { opacity: 0.5; cursor: default; }
 }
 
 .verb-lesson-example {
-  background: var(--bg);
-  border: 2px solid var(--border);
-  border-radius: 12px;
-  padding: 8px 12px;
-  margin: 0 0 14px;
+  margin: 0 0 6px;
+}
+
+.verb-lesson-example .example:last-child {
+  margin-bottom: 8px;
 }
 
 .verb-lesson-table {
