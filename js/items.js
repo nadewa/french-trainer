@@ -2,9 +2,9 @@
 
 import { lessonIndexForRank } from "./lessons.js";
 
-const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
+export const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
 
-const TENSES = [
+export const TENSES = [
   { key: "present", label: "présent", prefix: "" },
   { key: "passe_compose", label: "passé composé", prefix: "" },
   { key: "imparfait", label: "imparfait", prefix: "" },

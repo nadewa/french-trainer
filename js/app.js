@@ -1,6 +1,6 @@
 import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
-import { buildItemBank, buildIntroRanks } from "./items.js";
+import { buildItemBank, buildIntroRanks, TENSES, PRONOUNS, pronounFor } from "./items.js";
 import { buildConcepts, groupByLesson } from "./lessons.js";
 import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
@@ -68,6 +68,8 @@ let itemsById = new Map();
 let bank = [];
 let lessonsGrouped = [];
 let categoryGroups = [];
+let verbsData = []; // raw verbs.json, sorted by true_frequency desc, for the Verbs browsing mode
+let mainViewBeforeVerbLesson = null; // which of #card/#lesson-intro/#done to restore on verb-lesson close
 let examplesData = {};
 let vocabWordPool = [];
 let vocabGlossPool = [];
@@ -863,6 +865,17 @@ function studyCategoryDirectly(name, itemIds) {
   nextCard();
 }
 
+function studyVerbTenseDirectly(infinitive, tenseKey, tenseLabel) {
+  focusLessonIndex = null;
+  focusFilter = (item) => item.type === "conj" && item.infinitive === infinitive && item.tenseKey === tenseKey;
+  el("focus-lesson-label").textContent = `${infinitive} — ${tenseLabel}`;
+  el("focus-banner").classList.remove("hidden");
+  el("verb-lesson").classList.add("hidden");
+  el("verb-picker").classList.add("hidden");
+  queue = buildQueue(bank);
+  nextCard();
+}
+
 function exitFocus() {
   focusLessonIndex = null;
   focusFilter = null;
@@ -962,6 +975,147 @@ function renderCategoryList() {
     block.onclick = () => studyCategoryDirectly(group.name, group.itemIds);
     list.appendChild(block);
   });
+}
+
+// Regular -er/-ir present-tense endings, used only to detect (not assert)
+// whether a verb's present tense follows the standard pattern -- derived
+// from the verb's own sourced conjugation forms, not a separate claim.
+const REGULAR_ER_ENDINGS = ["e", "es", "e", "ons", "ez", "ent"];
+const REGULAR_IR_ENDINGS = ["is", "is", "it", "issons", "issez", "issent"];
+
+function isRegularConjugation(verb) {
+  let stem = null;
+  let endings = null;
+  if (verb.infinitive.endsWith("er") && verb.infinitive !== "aller") {
+    stem = verb.infinitive.slice(0, -2);
+    endings = REGULAR_ER_ENDINGS;
+  } else if (verb.infinitive.endsWith("ir")) {
+    stem = verb.infinitive.slice(0, -2);
+    endings = REGULAR_IR_ENDINGS;
+  } else {
+    return false;
+  }
+  return verb.present.every((form, i) => form === `${stem}${endings[i]}`);
+}
+
+// A short note built only from structurally-derivable facts already in the
+// sourced data (auxiliary, pronominal, regularity) -- deliberately doesn't
+// claim anything about register/usage context, since that isn't derivable
+// from this data and wasn't independently verified.
+function verbUsageNote(verb) {
+  const parts = [];
+  if (verb.pronominal) {
+    parts.push("Pronominal (reflexive) verb — always paired with a reflexive pronoun.");
+  }
+  parts.push(
+    verb.aux === "être"
+      ? "Takes être as its auxiliary in compound tenses."
+      : "Takes avoir as its auxiliary in compound tenses."
+  );
+  parts.push(
+    isRegularConjugation(verb)
+      ? "Regular conjugation — follows the standard pattern for its infinitive ending."
+      : "Irregular conjugation — doesn't follow the standard pattern; see the table below."
+  );
+  return parts.join(" ");
+}
+
+function verbGlossText(verb) {
+  const item = itemsById.get(`v:${verb.infinitive}`);
+  return item ? item.gloss.slice(0, 3).join(" / ") : "";
+}
+
+function renderVerbGroups() {
+  const container = el("verb-groups");
+  container.innerHTML = "";
+  const groupSize = 20;
+  for (let start = 0; start < verbsData.length; start += groupSize) {
+    const slice = verbsData.slice(start, start + groupSize);
+    const details = document.createElement("details");
+    details.className = "verb-group";
+    if (start === 0) details.open = true;
+    const summary = document.createElement("summary");
+    summary.textContent = `Verbs ${start + 1}–${Math.min(start + groupSize, verbsData.length)}`;
+    details.appendChild(summary);
+    const list = document.createElement("div");
+    list.className = "verb-group-list";
+    slice.forEach((verb) => {
+      const row = document.createElement("button");
+      row.className = "verb-row";
+      row.innerHTML = `<span class="verb-row-infinitive">${verb.display_infinitive}</span><span class="verb-row-gloss">${verbGlossText(verb)}</span>`;
+      row.onclick = () => openVerbLesson(verb.infinitive);
+      list.appendChild(row);
+    });
+    details.appendChild(list);
+    container.appendChild(details);
+  }
+}
+
+function openVerbLesson(infinitive) {
+  const verb = verbsData.find((v) => v.infinitive === infinitive);
+  if (!verb) return;
+  el("verb-lesson-title").textContent = verb.display_infinitive;
+  el("verb-lesson-gloss").textContent = verbGlossText(verb);
+  el("verb-lesson-note").textContent = verbUsageNote(verb);
+
+  const example = examplesData[`verb:${infinitive}`];
+  const exampleBox = el("verb-lesson-example");
+  if (example && example[0]) {
+    exampleBox.innerHTML = `<span class="fr">${example[0].fr}</span><br><span class="en">${example[0].en}</span>`;
+    exampleBox.classList.remove("hidden");
+  } else {
+    exampleBox.classList.add("hidden");
+  }
+
+  const tableBox = el("verb-lesson-table");
+  tableBox.innerHTML = "";
+  TENSES.forEach((tense) => {
+    const forms = verb[tense.key];
+    if (!forms) return;
+    const block = document.createElement("div");
+    block.className = "verb-tense-block";
+    const heading = document.createElement("h3");
+    heading.textContent = tense.label;
+    block.appendChild(heading);
+    const grid = document.createElement("div");
+    grid.className = "verb-tense-grid";
+    PRONOUNS.forEach((_, i) => {
+      const cell = document.createElement("div");
+      cell.className = "verb-tense-cell";
+      cell.innerHTML = `<span class="verb-tense-pronoun">${pronounFor(tense, i, verb)}</span> ${forms[i]}`;
+      grid.appendChild(cell);
+    });
+    block.appendChild(grid);
+    tableBox.appendChild(block);
+  });
+
+  const tensesBox = el("verb-lesson-tenses");
+  tensesBox.innerHTML = "";
+  TENSES.forEach((tense) => {
+    if (!verb[tense.key]) return;
+    const btn = document.createElement("button");
+    btn.className = "verb-tense-practice-btn";
+    btn.textContent = tense.label;
+    btn.onclick = () => studyVerbTenseDirectly(infinitive, tense.key, tense.label);
+    tensesBox.appendChild(btn);
+  });
+
+  // remember which main view was showing so the back button can restore it,
+  // rather than guessing/re-drawing a card (which would consume a queue item)
+  mainViewBeforeVerbLesson = ["card", "lesson-intro", "done"].find(
+    (id) => !el(id).classList.contains("hidden")
+  );
+  el("verb-picker").classList.add("hidden");
+  el("card").classList.add("hidden");
+  el("lesson-intro").classList.add("hidden");
+  el("done").classList.add("hidden");
+  el("verb-lesson").classList.remove("hidden");
+}
+
+function closeVerbLesson() {
+  el("verb-lesson").classList.add("hidden");
+  if (mainViewBeforeVerbLesson) el(mainViewBeforeVerbLesson).classList.remove("hidden");
+  el("verb-picker").classList.remove("hidden");
 }
 
 function renderStatsView() {
@@ -1094,6 +1248,7 @@ function initAccountUI() {
     el("settings-panel").classList.add("hidden");
     el("lesson-picker").classList.add("hidden");
     el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
   });
   el("close-account-btn").addEventListener("click", () => el("account-panel").classList.add("hidden"));
@@ -1176,6 +1331,7 @@ async function boot() {
   const concepts = buildConcepts(vocab, verbs, introRank);
   lessonsGrouped = groupByLesson(concepts);
   categoryGroups = buildCategoryGroups(bank);
+  verbsData = [...verbs].sort((a, b) => b.true_frequency - a.true_frequency);
 
   migrateUnlockedLessons();
 
@@ -1198,6 +1354,7 @@ async function boot() {
     el("settings-panel").classList.toggle("hidden");
     el("lesson-picker").classList.add("hidden");
     el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     if ("speechSynthesis" in window) {
@@ -1217,6 +1374,7 @@ async function boot() {
     renderPath();
     el("lesson-picker").classList.toggle("hidden");
     el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
@@ -1235,6 +1393,19 @@ async function boot() {
   el("close-category-btn").addEventListener("click", () => {
     el("category-picker").classList.add("hidden");
   });
+  el("verbs-toggle").addEventListener("click", () => {
+    renderVerbGroups();
+    el("verb-picker").classList.toggle("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
+  });
+  el("close-verb-picker-btn").addEventListener("click", () => {
+    el("verb-picker").classList.add("hidden");
+  });
+  el("verb-lesson-back-btn").addEventListener("click", closeVerbLesson);
   el("browse-toggle-btn").addEventListener("click", () => {
     const list = el("lesson-list");
     const showing = list.classList.toggle("hidden") === false;
@@ -1247,6 +1418,7 @@ async function boot() {
     el("settings-panel").classList.add("hidden");
     el("lesson-picker").classList.add("hidden");
     el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
     el("account-panel").classList.add("hidden");
   });
   el("close-stats-btn").addEventListener("click", () => {

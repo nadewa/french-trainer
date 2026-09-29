@@ -56,6 +56,12 @@ and conjugation tables came from, what was manually verified, and known gaps.
   translation, instead of the word in isolation. Falls back to the isolated
   word/phrase prompt otherwise (most items, since example coverage is phase 1
   — see DATA_SOURCES.md).
+- **Verbs mode**: the 🗣 picker browses the 100 most common verbs, grouped by
+  frequency rank. Tapping one opens a lesson screen with its meaning, a short
+  structurally-derived usage note (auxiliary, regularity, pronominal), its
+  example sentence where one exists, and its full conjugation table across
+  all 5 drilled tenses — with a button per tense to practice just that tense's
+  6 persons directly, independent of the main lesson path.
 - **Categories**: the 🗂 picker groups vocabulary into themes (House & Home,
   Family & People, Food & Drink, Animals, Body & Health, Clothing, Colors,
   Time & Calendar, Weather & Nature, Travel & Places, Work & School, Emotions

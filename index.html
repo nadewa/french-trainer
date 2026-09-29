@@ -15,6 +15,7 @@
     <span class="stat-pill hearts" title="Wrong answers left before you'd lose a heart today (just for fun — never blocks practice)">❤️ <b id="stat-hearts">5</b></span>
     <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
     <button id="categories-toggle" class="icon-btn" aria-label="Categories">🗂</button>
+    <button id="verbs-toggle" class="icon-btn" aria-label="Verbs">🗣</button>
     <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
     <button id="account-toggle" class="icon-btn" aria-label="Account">👤</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
@@ -106,6 +107,16 @@
   <div id="category-list" class="category-list"></div>
 </section>
 
+<section id="verb-picker" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Verbs</h2>
+    <button id="close-verb-picker-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+  <p class="note">The 100 most common verbs, grouped by frequency rank. Tap one for its
+  full conjugation table and to practice a specific tense.</p>
+  <div id="verb-groups"></div>
+</section>
+
 <section id="stats-view" class="settings-panel hidden">
   <div class="picker-header">
     <h2>Progress</h2>
@@ -146,6 +157,17 @@
     <ul id="lesson-concepts"></ul>
     <div id="lesson-examples"></div>
     <button id="start-lesson-btn">Start lesson</button>
+  </div>
+
+  <div id="verb-lesson" class="card verb-lesson hidden">
+    <button id="verb-lesson-back-btn" class="verb-lesson-back">← Verbs</button>
+    <h2 id="verb-lesson-title"></h2>
+    <p id="verb-lesson-gloss" class="verb-lesson-gloss"></p>
+    <p id="verb-lesson-note" class="note"></p>
+    <div id="verb-lesson-example" class="verb-lesson-example hidden"></div>
+    <div id="verb-lesson-table" class="verb-lesson-table"></div>
+    <p class="verb-lesson-practice-label">Practice a tense:</p>
+    <div id="verb-lesson-tenses" class="verb-lesson-tenses"></div>
   </div>
 
   <div id="done" class="card hidden">
@@ -268,6 +290,10 @@
 </main>
 
 <div id="completion-banner" class="completion-banner hidden">
+  <div id="reward-image-wrap" class="reward-image-wrap hidden">
+    <img id="reward-image" class="reward-image" alt="" />
+    <a id="reward-image-credit" class="reward-image-credit" target="_blank" rel="noopener"></a>
+  </div>
   <div class="completion-content">
     <div id="completion-message" class="completion-message"></div>
     <button id="banner-speak-btn" class="icon-btn speak-btn hidden" aria-label="Listen">🔊</button>
