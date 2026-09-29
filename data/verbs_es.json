@@ -1,0 +1,4938 @@
+[
+ {
+  "infinitive": "estar",
+  "display_infinitive": "estar",
+  "gloss": [
+   "be"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 1267263,
+  "present": [
+   "estoy",
+   "estás",
+   "está",
+   "estamos",
+   "estáis",
+   "están"
+  ],
+  "imparfait": [
+   "estaba",
+   "estabas",
+   "estaba",
+   "estábamos",
+   "estabais",
+   "estaban"
+  ],
+  "passe_compose": [
+   "he estado",
+   "has estado",
+   "ha estado",
+   "hemos estado",
+   "habéis estado",
+   "han estado"
+  ],
+  "futur_simple": [
+   "estaré",
+   "estarás",
+   "estará",
+   "estaremos",
+   "estaréis",
+   "estarán"
+  ],
+  "subjonctif_present": [
+   "esté",
+   "estés",
+   "esté",
+   "estemos",
+   "estéis",
+   "estén"
+  ]
+ },
+ {
+  "infinitive": "ir",
+  "display_infinitive": "ir",
+  "gloss": [
+   "go"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 1253937,
+  "present": [
+   "voy",
+   "vas",
+   "va",
+   "vamos",
+   "vais",
+   "van"
+  ],
+  "imparfait": [
+   "iba",
+   "ibas",
+   "iba",
+   "íbamos",
+   "ibais",
+   "iban"
+  ],
+  "passe_compose": [
+   "he ido",
+   "has ido",
+   "ha ido",
+   "hemos ido",
+   "habéis ido",
+   "han ido"
+  ],
+  "futur_simple": [
+   "iré",
+   "irás",
+   "irá",
+   "iremos",
+   "iréis",
+   "irán"
+  ],
+  "subjonctif_present": [
+   "vaya",
+   "vayas",
+   "vaya",
+   "vayamos",
+   "vayáis",
+   "vayan"
+  ]
+ },
+ {
+  "infinitive": "ser",
+  "display_infinitive": "ser",
+  "gloss": [
+   "being",
+   "be"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 1094874,
+  "present": [
+   "soy",
+   "eres",
+   "es",
+   "somos",
+   "sois",
+   "son"
+  ],
+  "imparfait": [
+   "era",
+   "eras",
+   "era",
+   "éramos",
+   "erais",
+   "eran"
+  ],
+  "passe_compose": [
+   "he sido",
+   "has sido",
+   "ha sido",
+   "hemos sido",
+   "habéis sido",
+   "han sido"
+  ],
+  "futur_simple": [
+   "seré",
+   "serás",
+   "será",
+   "seremos",
+   "seréis",
+   "serán"
+  ],
+  "subjonctif_present": [
+   "sea",
+   "seas",
+   "sea",
+   "seamos",
+   "seáis",
+   "sean"
+  ]
+ },
+ {
+  "infinitive": "tener",
+  "display_infinitive": "tener",
+  "gloss": [
+   "have"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 888814,
+  "present": [
+   "tengo",
+   "tienes",
+   "tiene",
+   "tenemos",
+   "tenéis",
+   "tienen"
+  ],
+  "imparfait": [
+   "tenía",
+   "tenías",
+   "tenía",
+   "teníamos",
+   "teníais",
+   "tenían"
+  ],
+  "passe_compose": [
+   "he tenido",
+   "has tenido",
+   "ha tenido",
+   "hemos tenido",
+   "habéis tenido",
+   "han tenido"
+  ],
+  "futur_simple": [
+   "tendré",
+   "tendrás",
+   "tendrá",
+   "tendremos",
+   "tendréis",
+   "tendrán"
+  ],
+  "subjonctif_present": [
+   "tenga",
+   "tengas",
+   "tenga",
+   "tengamos",
+   "tengáis",
+   "tengan"
+  ]
+ },
+ {
+  "infinitive": "haber",
+  "display_infinitive": "haber",
+  "gloss": [
+   "have"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 589055,
+  "present": [
+   "he",
+   "has",
+   "hay",
+   "hemos",
+   "habéis",
+   "han"
+  ],
+  "imparfait": [
+   "había",
+   "habías",
+   "había",
+   "habíamos",
+   "habíais",
+   "habían"
+  ],
+  "passe_compose": [
+   "he habido",
+   "has habido",
+   "ha habido",
+   "hemos habido",
+   "habéis habido",
+   "han habido"
+  ],
+  "futur_simple": [
+   "habré",
+   "habrás",
+   "habrá",
+   "habremos",
+   "habréis",
+   "habrán"
+  ],
+  "subjonctif_present": [
+   "haya",
+   "hayas",
+   "haya",
+   "hayamos",
+   "hayáis",
+   "hayan"
+  ]
+ },
+ {
+  "infinitive": "poder",
+  "display_infinitive": "poder",
+  "gloss": [
+   "power",
+   "can"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 417372,
+  "present": [
+   "puedo",
+   "puedes",
+   "puede",
+   "podemos",
+   "podéis",
+   "pueden"
+  ],
+  "imparfait": [
+   "podía",
+   "podías",
+   "podía",
+   "podíamos",
+   "podíais",
+   "podían"
+  ],
+  "passe_compose": [
+   "he podido",
+   "has podido",
+   "ha podido",
+   "hemos podido",
+   "habéis podido",
+   "han podido"
+  ],
+  "futur_simple": [
+   "podré",
+   "podrás",
+   "podrá",
+   "podremos",
+   "podréis",
+   "podrán"
+  ],
+  "subjonctif_present": [
+   "pueda",
+   "puedas",
+   "pueda",
+   "podamos",
+   "podáis",
+   "puedan"
+  ]
+ },
+ {
+  "infinitive": "querer",
+  "display_infinitive": "querer",
+  "gloss": [
+   "love",
+   "want"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 374075,
+  "present": [
+   "quiero",
+   "quieres",
+   "quiere",
+   "queremos",
+   "queréis",
+   "quieren"
+  ],
+  "imparfait": [
+   "quería",
+   "querías",
+   "quería",
+   "queríamos",
+   "queríais",
+   "querían"
+  ],
+  "passe_compose": [
+   "he querido",
+   "has querido",
+   "ha querido",
+   "hemos querido",
+   "habéis querido",
+   "han querido"
+  ],
+  "futur_simple": [
+   "querré",
+   "querrás",
+   "querrá",
+   "querremos",
+   "querréis",
+   "querrán"
+  ],
+  "subjonctif_present": [
+   "quiera",
+   "quieras",
+   "quiera",
+   "queramos",
+   "queráis",
+   "quieran"
+  ]
+ },
+ {
+  "infinitive": "saber",
+  "display_infinitive": "saber",
+  "gloss": [
+   "knowledge",
+   "know"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 312771,
+  "present": [
+   "sé",
+   "sabes",
+   "sabe",
+   "sabemos",
+   "sabéis",
+   "saben"
+  ],
+  "imparfait": [
+   "sabía",
+   "sabías",
+   "sabía",
+   "sabíamos",
+   "sabíais",
+   "sabían"
+  ],
+  "passe_compose": [
+   "he sabido",
+   "has sabido",
+   "ha sabido",
+   "hemos sabido",
+   "habéis sabido",
+   "han sabido"
+  ],
+  "futur_simple": [
+   "sabré",
+   "sabrás",
+   "sabrá",
+   "sabremos",
+   "sabréis",
+   "sabrán"
+  ],
+  "subjonctif_present": [
+   "sepa",
+   "sepas",
+   "sepa",
+   "sepamos",
+   "sepáis",
+   "sepan"
+  ]
+ },
+ {
+  "infinitive": "necesitar",
+  "display_infinitive": "necesitar",
+  "gloss": [
+   "need"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 137972,
+  "present": [
+   "necesito",
+   "necesitas",
+   "necesita",
+   "necesitamos",
+   "necesitáis",
+   "necesitan"
+  ],
+  "imparfait": [
+   "necesitaba",
+   "necesitabas",
+   "necesitaba",
+   "necesitábamos",
+   "necesitabais",
+   "necesitaban"
+  ],
+  "passe_compose": [
+   "he necesitado",
+   "has necesitado",
+   "ha necesitado",
+   "hemos necesitado",
+   "habéis necesitado",
+   "han necesitado"
+  ],
+  "futur_simple": [
+   "necesitaré",
+   "necesitarás",
+   "necesitará",
+   "necesitaremos",
+   "necesitaréis",
+   "necesitarán"
+  ],
+  "subjonctif_present": [
+   "necesite",
+   "necesites",
+   "necesite",
+   "necesitemos",
+   "necesitéis",
+   "necesiten"
+  ]
+ },
+ {
+  "infinitive": "deber",
+  "display_infinitive": "deber",
+  "gloss": [
+   "homework",
+   "duty",
+   "owe"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 137165,
+  "present": [
+   "debo",
+   "debes",
+   "debe",
+   "debemos",
+   "debéis",
+   "deben"
+  ],
+  "imparfait": [
+   "debía",
+   "debías",
+   "debía",
+   "debíamos",
+   "debíais",
+   "debían"
+  ],
+  "passe_compose": [
+   "he debido",
+   "has debido",
+   "ha debido",
+   "hemos debido",
+   "habéis debido",
+   "han debido"
+  ],
+  "futur_simple": [
+   "deberé",
+   "deberás",
+   "deberá",
+   "deberemos",
+   "deberéis",
+   "deberán"
+  ],
+  "subjonctif_present": [
+   "deba",
+   "debas",
+   "deba",
+   "debamos",
+   "debáis",
+   "deban"
+  ]
+ },
+ {
+  "infinitive": "hacer",
+  "display_infinitive": "hacer",
+  "gloss": [
+   "do"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 132917,
+  "present": [
+   "hago",
+   "haces",
+   "hace",
+   "hacemos",
+   "hacéis",
+   "hacen"
+  ],
+  "imparfait": [
+   "hacía",
+   "hacías",
+   "hacía",
+   "hacíamos",
+   "hacíais",
+   "hacían"
+  ],
+  "passe_compose": [
+   "he hecho",
+   "has hecho",
+   "ha hecho",
+   "hemos hecho",
+   "habéis hecho",
+   "han hecho"
+  ],
+  "futur_simple": [
+   "haré",
+   "harás",
+   "hará",
+   "haremos",
+   "haréis",
+   "harán"
+  ],
+  "subjonctif_present": [
+   "haga",
+   "hagas",
+   "haga",
+   "tengamos",
+   "tengáis",
+   "tengan"
+  ]
+ },
+ {
+  "infinitive": "pensar",
+  "display_infinitive": "pensar",
+  "gloss": [
+   "think"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 83783,
+  "present": [
+   "pienso",
+   "piensas",
+   "piensa",
+   "pensamos",
+   "pensáis",
+   "piensan"
+  ],
+  "imparfait": [
+   "pensaba",
+   "pensabas",
+   "pensaba",
+   "pensábamos",
+   "pensabais",
+   "pensaban"
+  ],
+  "passe_compose": [
+   "he pensado",
+   "has pensado",
+   "ha pensado",
+   "hemos pensado",
+   "habéis pensado",
+   "han pensado"
+  ],
+  "futur_simple": [
+   "pensaré",
+   "pensarás",
+   "pensará",
+   "pensaremos",
+   "pensaréis",
+   "pensarán"
+  ],
+  "subjonctif_present": [
+   "piense",
+   "pienses",
+   "piense",
+   "pensemos",
+   "penséis",
+   "piensen"
+  ]
+ },
+ {
+  "infinitive": "ver",
+  "display_infinitive": "ver",
+  "gloss": [
+   "see"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 78144,
+  "present": [
+   "veo",
+   "ves",
+   "ve",
+   "vemos",
+   "veis",
+   "ven"
+  ],
+  "imparfait": [
+   "veía",
+   "veías",
+   "veía",
+   "veíamos",
+   "veíais",
+   "veían"
+  ],
+  "passe_compose": [
+   "he visto",
+   "has visto",
+   "ha visto",
+   "hemos visto",
+   "habéis visto",
+   "han visto"
+  ],
+  "futur_simple": [
+   "veré",
+   "verás",
+   "verá",
+   "veremos",
+   "veréis",
+   "verán"
+  ],
+  "subjonctif_present": [
+   "vea",
+   "veas",
+   "vea",
+   "veamos",
+   "veáis",
+   "vean"
+  ]
+ },
+ {
+  "infinitive": "decir",
+  "display_infinitive": "decir",
+  "gloss": [
+   "say",
+   "tell"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 66678,
+  "present": [
+   "digo",
+   "dices",
+   "dice",
+   "decimos",
+   "decís",
+   "dicen"
+  ],
+  "imparfait": [
+   "decía",
+   "decías",
+   "decía",
+   "decíamos",
+   "decíais",
+   "decían"
+  ],
+  "passe_compose": [
+   "he dicho",
+   "has dicho",
+   "ha dicho",
+   "hemos dicho",
+   "habéis dicho",
+   "han dicho"
+  ],
+  "futur_simple": [
+   "diré",
+   "dirás",
+   "dirá",
+   "diremos",
+   "diréis",
+   "dirán"
+  ],
+  "subjonctif_present": [
+   "diga",
+   "digas",
+   "diga",
+   "digamos",
+   "digáis",
+   "digan"
+  ]
+ },
+ {
+  "infinitive": "creer",
+  "display_infinitive": "creer",
+  "gloss": [
+   "believe"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 64890,
+  "present": [
+   "creo",
+   "crees",
+   "cree",
+   "creemos",
+   "creéis",
+   "creen"
+  ],
+  "imparfait": [
+   "creía",
+   "creías",
+   "creía",
+   "creíamos",
+   "creíais",
+   "creían"
+  ],
+  "passe_compose": [
+   "he creido",
+   "has creido",
+   "ha creido",
+   "hemos creido",
+   "habéis creido",
+   "han creido"
+  ],
+  "futur_simple": [
+   "creeré",
+   "creerás",
+   "creerá",
+   "creeremos",
+   "creeréis",
+   "creerán"
+  ],
+  "subjonctif_present": [
+   "crea",
+   "creas",
+   "crea",
+   "creamos",
+   "creáis",
+   "crean"
+  ]
+ },
+ {
+  "infinitive": "esperar",
+  "display_infinitive": "esperar",
+  "gloss": [
+   "expect",
+   "hope",
+   "wait"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 63867,
+  "present": [
+   "espero",
+   "esperas",
+   "espera",
+   "esperamos",
+   "esperáis",
+   "esperan"
+  ],
+  "imparfait": [
+   "esperaba",
+   "esperabas",
+   "esperaba",
+   "esperábamos",
+   "esperabais",
+   "esperaban"
+  ],
+  "passe_compose": [
+   "he esperado",
+   "has esperado",
+   "ha esperado",
+   "hemos esperado",
+   "habéis esperado",
+   "han esperado"
+  ],
+  "futur_simple": [
+   "esperaré",
+   "esperarás",
+   "esperará",
+   "esperaremos",
+   "esperaréis",
+   "esperarán"
+  ],
+  "subjonctif_present": [
+   "espere",
+   "esperes",
+   "espere",
+   "esperemos",
+   "esperéis",
+   "esperen"
+  ]
+ },
+ {
+  "infinitive": "hablar",
+  "display_infinitive": "hablar",
+  "gloss": [
+   "speak"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 58859,
+  "present": [
+   "hablo",
+   "hablas",
+   "habla",
+   "hablamos",
+   "habláis",
+   "hablan"
+  ],
+  "imparfait": [
+   "hablaba",
+   "hablabas",
+   "hablaba",
+   "hablábamos",
+   "hablabais",
+   "hablaban"
+  ],
+  "passe_compose": [
+   "he hablado",
+   "has hablado",
+   "ha hablado",
+   "hemos hablado",
+   "habéis hablado",
+   "han hablado"
+  ],
+  "futur_simple": [
+   "hablaré",
+   "hablarás",
+   "hablará",
+   "hablaremos",
+   "hablaréis",
+   "hablarán"
+  ],
+  "subjonctif_present": [
+   "hable",
+   "hables",
+   "hable",
+   "hablemos",
+   "habléis",
+   "hablen"
+  ]
+ },
+ {
+  "infinitive": "conocer",
+  "display_infinitive": "conocer",
+  "gloss": [
+   "know"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 47580,
+  "present": [
+   "conozco",
+   "conoces",
+   "conoce",
+   "conocemos",
+   "conocéis",
+   "conocen"
+  ],
+  "imparfait": [
+   "conocía",
+   "conocías",
+   "conocía",
+   "conocíamos",
+   "conocíais",
+   "conocían"
+  ],
+  "passe_compose": [
+   "he conocido",
+   "has conocido",
+   "ha conocido",
+   "hemos conocido",
+   "habéis conocido",
+   "han conocido"
+  ],
+  "futur_simple": [
+   "conoceré",
+   "conocerás",
+   "conocerá",
+   "conoceremos",
+   "conoceréis",
+   "conocerán"
+  ],
+  "subjonctif_present": [
+   "conozca",
+   "conozcas",
+   "conozca",
+   "conozcamos",
+   "conozcáis",
+   "conozcan"
+  ]
+ },
+ {
+  "infinitive": "encontrar",
+  "display_infinitive": "encontrar",
+  "gloss": [
+   "find"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 44861,
+  "present": [
+   "encuentro",
+   "encuentras",
+   "encuentra",
+   "encontramos",
+   "encontráis",
+   "encuentran"
+  ],
+  "imparfait": [
+   "encontraba",
+   "encontrabas",
+   "encontraba",
+   "encontrábamos",
+   "encontrabais",
+   "encontraban"
+  ],
+  "passe_compose": [
+   "he encontrado",
+   "has encontrado",
+   "ha encontrado",
+   "hemos encontrado",
+   "habéis encontrado",
+   "han encontrado"
+  ],
+  "futur_simple": [
+   "encontraré",
+   "encontrarás",
+   "encontrará",
+   "encontraremos",
+   "encontraréis",
+   "encontrarán"
+  ],
+  "subjonctif_present": [
+   "encuentre",
+   "encuentres",
+   "encuentre",
+   "encontremos",
+   "encontréis",
+   "encuentren"
+  ]
+ },
+ {
+  "infinitive": "llevar",
+  "display_infinitive": "llevar",
+  "gloss": [
+   "carry",
+   "spend",
+   "take",
+   "wear"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 44826,
+  "present": [
+   "llevo",
+   "llevas",
+   "lleva",
+   "llevamos",
+   "lleváis",
+   "llevan"
+  ],
+  "imparfait": [
+   "llevaba",
+   "llevabas",
+   "llevaba",
+   "llevábamos",
+   "llevabais",
+   "llevaban"
+  ],
+  "passe_compose": [
+   "he llevado",
+   "has llevado",
+   "ha llevado",
+   "hemos llevado",
+   "habéis llevado",
+   "han llevado"
+  ],
+  "futur_simple": [
+   "llevaré",
+   "llevarás",
+   "llevará",
+   "llevaremos",
+   "llevaréis",
+   "llevarán"
+  ],
+  "subjonctif_present": [
+   "lleve",
+   "lleves",
+   "lleve",
+   "llevemos",
+   "llevéis",
+   "lleven"
+  ]
+ },
+ {
+  "infinitive": "parecer",
+  "display_infinitive": "parecer",
+  "gloss": [
+   "opinion",
+   "look",
+   "seem"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 44407,
+  "present": [
+   "parezco",
+   "pareces",
+   "parece",
+   "parecemos",
+   "parecéis",
+   "parecen"
+  ],
+  "imparfait": [
+   "parecía",
+   "parecías",
+   "parecía",
+   "parecíamos",
+   "parecíais",
+   "parecían"
+  ],
+  "passe_compose": [
+   "he parecido",
+   "has parecido",
+   "ha parecido",
+   "hemos parecido",
+   "habéis parecido",
+   "han parecido"
+  ],
+  "futur_simple": [
+   "pareceré",
+   "parecerás",
+   "parecerá",
+   "pareceremos",
+   "pareceréis",
+   "parecerán"
+  ],
+  "subjonctif_present": [
+   "parezca",
+   "parezcas",
+   "parezca",
+   "parezcamos",
+   "parezcáis",
+   "parezcan"
+  ]
+ },
+ {
+  "infinitive": "sentir",
+  "display_infinitive": "sentir",
+  "gloss": [
+   "feel"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 35229,
+  "present": [
+   "siento",
+   "sientes",
+   "siente",
+   "sentimos",
+   "sentís",
+   "sienten"
+  ],
+  "imparfait": [
+   "sentía",
+   "sentías",
+   "sentía",
+   "sentíamos",
+   "sentíais",
+   "sentían"
+  ],
+  "passe_compose": [
+   "he sentido",
+   "has sentido",
+   "ha sentido",
+   "hemos sentido",
+   "habéis sentido",
+   "han sentido"
+  ],
+  "futur_simple": [
+   "sentiré",
+   "sentirás",
+   "sentirá",
+   "sentiremos",
+   "sentiréis",
+   "sentirán"
+  ],
+  "subjonctif_present": [
+   "sienta",
+   "sientas",
+   "sienta",
+   "sintamos",
+   "sintáis",
+   "sientan"
+  ]
+ },
+ {
+  "infinitive": "llamar",
+  "display_infinitive": "llamar",
+  "gloss": [
+   "call"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 34626,
+  "present": [
+   "llamo",
+   "llamas",
+   "llama",
+   "llamamos",
+   "llamáis",
+   "llaman"
+  ],
+  "imparfait": [
+   "llamaba",
+   "llamabas",
+   "llamaba",
+   "llamábamos",
+   "llamabais",
+   "llamaban"
+  ],
+  "passe_compose": [
+   "he llamado",
+   "has llamado",
+   "ha llamado",
+   "hemos llamado",
+   "habéis llamado",
+   "han llamado"
+  ],
+  "futur_simple": [
+   "llamaré",
+   "llamarás",
+   "llamará",
+   "llamaremos",
+   "llamaréis",
+   "llamarán"
+  ],
+  "subjonctif_present": [
+   "llame",
+   "llames",
+   "llame",
+   "llamemos",
+   "llaméis",
+   "llamen"
+  ]
+ },
+ {
+  "infinitive": "vivir",
+  "display_infinitive": "vivir",
+  "gloss": [
+   "live"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 29882,
+  "present": [
+   "vivo",
+   "vives",
+   "vive",
+   "vivimos",
+   "vivís",
+   "viven"
+  ],
+  "imparfait": [
+   "vivía",
+   "vivías",
+   "vivía",
+   "vivíamos",
+   "vivíais",
+   "vivían"
+  ],
+  "passe_compose": [
+   "he vivido",
+   "has vivido",
+   "ha vivido",
+   "hemos vivido",
+   "habéis vivido",
+   "han vivido"
+  ],
+  "futur_simple": [
+   "viviré",
+   "vivirás",
+   "vivirá",
+   "viviremos",
+   "viviréis",
+   "vivirán"
+  ],
+  "subjonctif_present": [
+   "viva",
+   "vivas",
+   "viva",
+   "vivamos",
+   "viváis",
+   "vivan"
+  ]
+ },
+ {
+  "infinitive": "pasar",
+  "display_infinitive": "pasar",
+  "gloss": [
+   "happen",
+   "spend"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 28514,
+  "present": [
+   "paso",
+   "pasas",
+   "pasa",
+   "pasamos",
+   "pasáis",
+   "pasan"
+  ],
+  "imparfait": [
+   "pasaba",
+   "pasabas",
+   "pasaba",
+   "pasábamos",
+   "pasabais",
+   "pasaban"
+  ],
+  "passe_compose": [
+   "he pasado",
+   "has pasado",
+   "ha pasado",
+   "hemos pasado",
+   "habéis pasado",
+   "han pasado"
+  ],
+  "futur_simple": [
+   "pasaré",
+   "pasarás",
+   "pasará",
+   "pasaremos",
+   "pasaréis",
+   "pasarán"
+  ],
+  "subjonctif_present": [
+   "pase",
+   "pases",
+   "pase",
+   "pasemos",
+   "paséis",
+   "pasen"
+  ]
+ },
+ {
+  "infinitive": "trabajar",
+  "display_infinitive": "trabajar",
+  "gloss": [
+   "work"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 27528,
+  "present": [
+   "trabajo",
+   "trabajas",
+   "trabaja",
+   "trabajamos",
+   "trabajáis",
+   "trabajan"
+  ],
+  "imparfait": [
+   "trabajaba",
+   "trabajabas",
+   "trabajaba",
+   "trabajábamos",
+   "trabajabais",
+   "trabajaban"
+  ],
+  "passe_compose": [
+   "he trabajado",
+   "has trabajado",
+   "ha trabajado",
+   "hemos trabajado",
+   "habéis trabajado",
+   "han trabajado"
+  ],
+  "futur_simple": [
+   "trabajaré",
+   "trabajarás",
+   "trabajará",
+   "trabajaremos",
+   "trabajaréis",
+   "trabajarán"
+  ],
+  "subjonctif_present": [
+   "trabaje",
+   "trabajes",
+   "trabaje",
+   "trabajemos",
+   "trabajéis",
+   "trabajen"
+  ]
+ },
+ {
+  "infinitive": "dar",
+  "display_infinitive": "dar",
+  "gloss": [
+   "give"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 27498,
+  "present": [
+   "doy",
+   "das",
+   "da",
+   "damos",
+   "dais",
+   "dan"
+  ],
+  "imparfait": [
+   "daba",
+   "dabas",
+   "daba",
+   "dábamos",
+   "dabais",
+   "daban"
+  ],
+  "passe_compose": [
+   "he dado",
+   "has dado",
+   "ha dado",
+   "hemos dado",
+   "habéis dado",
+   "han dado"
+  ],
+  "futur_simple": [
+   "daré",
+   "darás",
+   "dará",
+   "daremos",
+   "daréis",
+   "darán"
+  ],
+  "subjonctif_present": [
+   "dé",
+   "des",
+   "dé",
+   "demos",
+   "deis",
+   "den"
+  ]
+ },
+ {
+  "infinitive": "llegar",
+  "display_infinitive": "llegar",
+  "gloss": [
+   "arrive"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 27471,
+  "present": [
+   "llego",
+   "llegas",
+   "llega",
+   "llegamos",
+   "llegáis",
+   "llegan"
+  ],
+  "imparfait": [
+   "llegaba",
+   "llegabas",
+   "llegaba",
+   "llegábamos",
+   "llegabais",
+   "llegaban"
+  ],
+  "passe_compose": [
+   "he llegado",
+   "has llegado",
+   "ha llegado",
+   "hemos llegado",
+   "habéis llegado",
+   "han llegado"
+  ],
+  "futur_simple": [
+   "llegaré",
+   "llegarás",
+   "llegará",
+   "llegaremos",
+   "llegaréis",
+   "llegarán"
+  ],
+  "subjonctif_present": [
+   "llegue",
+   "llegues",
+   "llegue",
+   "lleguemos",
+   "lleguéis",
+   "lleguen"
+  ]
+ },
+ {
+  "infinitive": "venir",
+  "display_infinitive": "venir",
+  "gloss": [
+   "come"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 27470,
+  "present": [
+   "vengo",
+   "vienes",
+   "viene",
+   "venimos",
+   "venís",
+   "vienen"
+  ],
+  "imparfait": [
+   "venía",
+   "venías",
+   "venía",
+   "veníamos",
+   "veníais",
+   "venían"
+  ],
+  "passe_compose": [
+   "he venido",
+   "has venido",
+   "ha venido",
+   "hemos venido",
+   "habéis venido",
+   "han venido"
+  ],
+  "futur_simple": [
+   "veniré",
+   "venirás",
+   "venirá",
+   "veniremos",
+   "veniréis",
+   "venirán"
+  ],
+  "subjonctif_present": [
+   "venga",
+   "vengas",
+   "venga",
+   "vengamos",
+   "vengáis",
+   "vengan"
+  ]
+ },
+ {
+  "infinitive": "seguir",
+  "display_infinitive": "seguir",
+  "gloss": [
+   "follow",
+   "keep"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 27373,
+  "present": [
+   "sigo",
+   "sigues",
+   "sigue",
+   "seguimos",
+   "seguís",
+   "siguen"
+  ],
+  "imparfait": [
+   "seguía",
+   "seguías",
+   "seguía",
+   "seguíamos",
+   "seguíais",
+   "seguían"
+  ],
+  "passe_compose": [
+   "he seguido",
+   "has seguido",
+   "ha seguido",
+   "hemos seguido",
+   "habéis seguido",
+   "han seguido"
+  ],
+  "futur_simple": [
+   "seguiré",
+   "seguirás",
+   "seguirá",
+   "seguiremos",
+   "seguiréis",
+   "seguirán"
+  ],
+  "subjonctif_present": [
+   "siga",
+   "sigas",
+   "siga",
+   "seguamos",
+   "seguáis",
+   "sigan"
+  ]
+ },
+ {
+  "infinitive": "gustar",
+  "display_infinitive": "gustar",
+  "gloss": [
+   "like"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 26480,
+  "present": [
+   "gusto",
+   "gustas",
+   "gusta",
+   "gustamos",
+   "gustáis",
+   "gustan"
+  ],
+  "imparfait": [
+   "gustaba",
+   "gustabas",
+   "gustaba",
+   "gustábamos",
+   "gustabais",
+   "gustaban"
+  ],
+  "passe_compose": [
+   "he gustado",
+   "has gustado",
+   "ha gustado",
+   "hemos gustado",
+   "habéis gustado",
+   "han gustado"
+  ],
+  "futur_simple": [
+   "gustaré",
+   "gustarás",
+   "gustará",
+   "gustaremos",
+   "gustaréis",
+   "gustarán"
+  ],
+  "subjonctif_present": [
+   "guste",
+   "gustes",
+   "guste",
+   "gustemos",
+   "gustéis",
+   "gusten"
+  ]
+ },
+ {
+  "infinitive": "parir",
+  "display_infinitive": "parir",
+  "gloss": [
+   "bear"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 25131,
+  "present": [
+   "paro",
+   "pares",
+   "pare",
+   "parimos",
+   "parís",
+   "paren"
+  ],
+  "imparfait": [
+   "paría",
+   "parías",
+   "paría",
+   "paríamos",
+   "paríais",
+   "parían"
+  ],
+  "passe_compose": [
+   "he parido",
+   "has parido",
+   "ha parido",
+   "hemos parido",
+   "habéis parido",
+   "han parido"
+  ],
+  "futur_simple": [
+   "pariré",
+   "parirás",
+   "parirá",
+   "pariremos",
+   "pariréis",
+   "parirán"
+  ],
+  "subjonctif_present": [
+   "para",
+   "paras",
+   "para",
+   "paramos",
+   "paráis",
+   "paran"
+  ]
+ },
+ {
+  "infinitive": "dejar",
+  "display_infinitive": "dejar",
+  "gloss": [
+   "leave",
+   "lend",
+   "let",
+   "quit"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 22996,
+  "present": [
+   "dejo",
+   "dejas",
+   "deja",
+   "dejamos",
+   "dejáis",
+   "dejan"
+  ],
+  "imparfait": [
+   "dejaba",
+   "dejabas",
+   "dejaba",
+   "dejábamos",
+   "dejabais",
+   "dejaban"
+  ],
+  "passe_compose": [
+   "he dejado",
+   "has dejado",
+   "ha dejado",
+   "hemos dejado",
+   "habéis dejado",
+   "han dejado"
+  ],
+  "futur_simple": [
+   "dejaré",
+   "dejarás",
+   "dejará",
+   "dejaremos",
+   "dejaréis",
+   "dejarán"
+  ],
+  "subjonctif_present": [
+   "deje",
+   "dejes",
+   "deje",
+   "dejemos",
+   "dejéis",
+   "dejen"
+  ]
+ },
+ {
+  "infinitive": "salir",
+  "display_infinitive": "salir",
+  "gloss": [
+   "exit"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 22560,
+  "present": [
+   "salgo",
+   "sales",
+   "sale",
+   "salimos",
+   "salís",
+   "salen"
+  ],
+  "imparfait": [
+   "salía",
+   "salías",
+   "salía",
+   "salíamos",
+   "salíais",
+   "salían"
+  ],
+  "passe_compose": [
+   "he salido",
+   "has salido",
+   "ha salido",
+   "hemos salido",
+   "habéis salido",
+   "han salido"
+  ],
+  "futur_simple": [
+   "saldré",
+   "saldrás",
+   "saldrá",
+   "saldremos",
+   "saldréis",
+   "saldrán"
+  ],
+  "subjonctif_present": [
+   "salga",
+   "salgas",
+   "salga",
+   "salgamos",
+   "salgáis",
+   "salgan"
+  ]
+ },
+ {
+  "infinitive": "quedar",
+  "display_infinitive": "quedar",
+  "gloss": [
+   "remain",
+   "stay"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 22482,
+  "present": [
+   "quedo",
+   "quedas",
+   "queda",
+   "quedamos",
+   "quedáis",
+   "quedan"
+  ],
+  "imparfait": [
+   "quedaba",
+   "quedabas",
+   "quedaba",
+   "quedábamos",
+   "quedabais",
+   "quedaban"
+  ],
+  "passe_compose": [
+   "he quedado",
+   "has quedado",
+   "ha quedado",
+   "hemos quedado",
+   "habéis quedado",
+   "han quedado"
+  ],
+  "futur_simple": [
+   "quedaré",
+   "quedarás",
+   "quedará",
+   "quedaremos",
+   "quedaréis",
+   "quedarán"
+  ],
+  "subjonctif_present": [
+   "quede",
+   "quedes",
+   "quede",
+   "quedemos",
+   "quedéis",
+   "queden"
+  ]
+ },
+ {
+  "infinitive": "amar",
+  "display_infinitive": "amar",
+  "gloss": [
+   "love"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 22248,
+  "present": [
+   "amo",
+   "amas",
+   "ama",
+   "amamos",
+   "amáis",
+   "aman"
+  ],
+  "imparfait": [
+   "amaba",
+   "amabas",
+   "amaba",
+   "amábamos",
+   "amabais",
+   "amaban"
+  ],
+  "passe_compose": [
+   "he amado",
+   "has amado",
+   "ha amado",
+   "hemos amado",
+   "habéis amado",
+   "han amado"
+  ],
+  "futur_simple": [
+   "amaré",
+   "amarás",
+   "amará",
+   "amaremos",
+   "amaréis",
+   "amarán"
+  ],
+  "subjonctif_present": [
+   "ame",
+   "ames",
+   "ame",
+   "amemos",
+   "améis",
+   "amen"
+  ]
+ },
+ {
+  "infinitive": "acabar",
+  "display_infinitive": "acabar",
+  "gloss": [
+   "finish"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 21033,
+  "present": [
+   "acabo",
+   "acabas",
+   "acaba",
+   "acabamos",
+   "acabáis",
+   "acaban"
+  ],
+  "imparfait": [
+   "acababa",
+   "acababas",
+   "acababa",
+   "acabábamos",
+   "acababais",
+   "acababan"
+  ],
+  "passe_compose": [
+   "he acabado",
+   "has acabado",
+   "ha acabado",
+   "hemos acabado",
+   "habéis acabado",
+   "han acabado"
+  ],
+  "futur_simple": [
+   "acabaré",
+   "acabarás",
+   "acabará",
+   "acabaremos",
+   "acabaréis",
+   "acabarán"
+  ],
+  "subjonctif_present": [
+   "acabe",
+   "acabes",
+   "acabe",
+   "acabemos",
+   "acabéis",
+   "acaben"
+  ]
+ },
+ {
+  "infinitive": "preguntar",
+  "display_infinitive": "preguntar",
+  "gloss": [
+   "ask"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 20818,
+  "present": [
+   "pregunto",
+   "preguntas",
+   "pregunta",
+   "preguntamos",
+   "preguntáis",
+   "preguntan"
+  ],
+  "imparfait": [
+   "preguntaba",
+   "preguntabas",
+   "preguntaba",
+   "preguntábamos",
+   "preguntabais",
+   "preguntaban"
+  ],
+  "passe_compose": [
+   "he preguntado",
+   "has preguntado",
+   "ha preguntado",
+   "hemos preguntado",
+   "habéis preguntado",
+   "han preguntado"
+  ],
+  "futur_simple": [
+   "preguntaré",
+   "preguntarás",
+   "preguntará",
+   "preguntaremos",
+   "preguntaréis",
+   "preguntarán"
+  ],
+  "subjonctif_present": [
+   "pregunte",
+   "preguntes",
+   "pregunte",
+   "preguntemos",
+   "preguntéis",
+   "pregunten"
+  ]
+ },
+ {
+  "infinitive": "intentar",
+  "display_infinitive": "intentar",
+  "gloss": [
+   "try",
+   "endeavour"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 20740,
+  "present": [
+   "intento",
+   "intentas",
+   "intenta",
+   "intentamos",
+   "intentáis",
+   "intentan"
+  ],
+  "imparfait": [
+   "intentaba",
+   "intentabas",
+   "intentaba",
+   "intentábamos",
+   "intentabais",
+   "intentaban"
+  ],
+  "passe_compose": [
+   "he intentado",
+   "has intentado",
+   "ha intentado",
+   "hemos intentado",
+   "habéis intentado",
+   "han intentado"
+  ],
+  "futur_simple": [
+   "intentaré",
+   "intentarás",
+   "intentará",
+   "intentaremos",
+   "intentaréis",
+   "intentarán"
+  ],
+  "subjonctif_present": [
+   "intente",
+   "intentes",
+   "intente",
+   "intentemos",
+   "intentéis",
+   "intenten"
+  ]
+ },
+ {
+  "infinitive": "tratar",
+  "display_infinitive": "tratar",
+  "gloss": [
+   "treat"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 20545,
+  "present": [
+   "trato",
+   "tratas",
+   "trata",
+   "tratamos",
+   "tratáis",
+   "tratan"
+  ],
+  "imparfait": [
+   "trataba",
+   "tratabas",
+   "trataba",
+   "tratábamos",
+   "tratabais",
+   "trataban"
+  ],
+  "passe_compose": [
+   "he tratado",
+   "has tratado",
+   "ha tratado",
+   "hemos tratado",
+   "habéis tratado",
+   "han tratado"
+  ],
+  "futur_simple": [
+   "trataré",
+   "tratarás",
+   "tratará",
+   "trataremos",
+   "trataréis",
+   "tratarán"
+  ],
+  "subjonctif_present": [
+   "trate",
+   "trates",
+   "trate",
+   "tratemos",
+   "tratéis",
+   "traten"
+  ]
+ },
+ {
+  "infinitive": "empezar",
+  "display_infinitive": "empezar",
+  "gloss": [
+   "begin"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 18428,
+  "present": [
+   "empiezo",
+   "empiezas",
+   "empieza",
+   "empezamos",
+   "empezáis",
+   "empiezan"
+  ],
+  "imparfait": [
+   "empezaba",
+   "empezabas",
+   "empezaba",
+   "empezábamos",
+   "empezabais",
+   "empezaban"
+  ],
+  "passe_compose": [
+   "he empezado",
+   "has empezado",
+   "ha empezado",
+   "hemos empezado",
+   "habéis empezado",
+   "han empezado"
+  ],
+  "futur_simple": [
+   "empezaré",
+   "empezarás",
+   "empezará",
+   "empezaremos",
+   "empezaréis",
+   "empezarán"
+  ],
+  "subjonctif_present": [
+   "empiece",
+   "empieces",
+   "empiece",
+   "empecemos",
+   "empecéis",
+   "empiecen"
+  ]
+ },
+ {
+  "infinitive": "tomar",
+  "display_infinitive": "tomar",
+  "gloss": [
+   "take"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 16730,
+  "present": [
+   "tomo",
+   "tomas",
+   "toma",
+   "tomamos",
+   "tomáis",
+   "toman"
+  ],
+  "imparfait": [
+   "tomaba",
+   "tomabas",
+   "tomaba",
+   "tomábamos",
+   "tomabais",
+   "tomaban"
+  ],
+  "passe_compose": [
+   "he tomado",
+   "has tomado",
+   "ha tomado",
+   "hemos tomado",
+   "habéis tomado",
+   "han tomado"
+  ],
+  "futur_simple": [
+   "tomaré",
+   "tomarás",
+   "tomará",
+   "tomaremos",
+   "tomaréis",
+   "tomarán"
+  ],
+  "subjonctif_present": [
+   "tome",
+   "tomes",
+   "tome",
+   "tomemos",
+   "toméis",
+   "tomen"
+  ]
+ },
+ {
+  "infinitive": "suponer",
+  "display_infinitive": "suponer",
+  "gloss": [
+   "suppose"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 15438,
+  "present": [
+   "supongo",
+   "supones",
+   "supone",
+   "suponemos",
+   "suponéis",
+   "suponen"
+  ],
+  "imparfait": [
+   "suponía",
+   "suponías",
+   "suponía",
+   "suponíamos",
+   "suponíais",
+   "suponían"
+  ],
+  "passe_compose": [
+   "he supuesto",
+   "has supuesto",
+   "ha supuesto",
+   "hemos supuesto",
+   "habéis supuesto",
+   "han supuesto"
+  ],
+  "futur_simple": [
+   "supondré",
+   "supondrás",
+   "supondrá",
+   "supondremos",
+   "supondréis",
+   "supondrán"
+  ],
+  "subjonctif_present": [
+   "suponga",
+   "supongas",
+   "suponga",
+   "supongamos",
+   "supongáis",
+   "supongan"
+  ]
+ },
+ {
+  "infinitive": "usar",
+  "display_infinitive": "usar",
+  "gloss": [
+   "use"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 15269,
+  "present": [
+   "uso",
+   "usas",
+   "usa",
+   "usamos",
+   "usáis",
+   "usan"
+  ],
+  "imparfait": [
+   "usaba",
+   "usabas",
+   "usaba",
+   "usábamos",
+   "usabais",
+   "usaban"
+  ],
+  "passe_compose": [
+   "he usado",
+   "has usado",
+   "ha usado",
+   "hemos usado",
+   "habéis usado",
+   "han usado"
+  ],
+  "futur_simple": [
+   "usaré",
+   "usarás",
+   "usará",
+   "usaremos",
+   "usaréis",
+   "usarán"
+  ],
+  "subjonctif_present": [
+   "use",
+   "uses",
+   "use",
+   "usemos",
+   "uséis",
+   "usen"
+  ]
+ },
+ {
+  "infinitive": "poner",
+  "display_infinitive": "poner",
+  "gloss": [
+   "put"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 13593,
+  "present": [
+   "pongo",
+   "pones",
+   "pone",
+   "ponemos",
+   "ponéis",
+   "ponen"
+  ],
+  "imparfait": [
+   "ponía",
+   "ponías",
+   "ponía",
+   "poníamos",
+   "poníais",
+   "ponían"
+  ],
+  "passe_compose": [
+   "he puesto",
+   "has puesto",
+   "ha puesto",
+   "hemos puesto",
+   "habéis puesto",
+   "han puesto"
+  ],
+  "futur_simple": [
+   "pondré",
+   "pondrás",
+   "pondrá",
+   "pondremos",
+   "pondréis",
+   "pondrán"
+  ],
+  "subjonctif_present": [
+   "ponga",
+   "pongas",
+   "ponga",
+   "pongamos",
+   "pongáis",
+   "pongan"
+  ]
+ },
+ {
+  "infinitive": "mirar",
+  "display_infinitive": "mirar",
+  "gloss": [
+   "look"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 12133,
+  "present": [
+   "miro",
+   "miras",
+   "mira",
+   "miramos",
+   "miráis",
+   "miran"
+  ],
+  "imparfait": [
+   "miraba",
+   "mirabas",
+   "miraba",
+   "mirábamos",
+   "mirabais",
+   "miraban"
+  ],
+  "passe_compose": [
+   "he mirado",
+   "has mirado",
+   "ha mirado",
+   "hemos mirado",
+   "habéis mirado",
+   "han mirado"
+  ],
+  "futur_simple": [
+   "miraré",
+   "mirarás",
+   "mirará",
+   "miraremos",
+   "miraréis",
+   "mirarán"
+  ],
+  "subjonctif_present": [
+   "mire",
+   "mires",
+   "mire",
+   "miremos",
+   "miréis",
+   "miren"
+  ]
+ },
+ {
+  "infinitive": "jugar",
+  "display_infinitive": "jugar",
+  "gloss": [
+   "play"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 11577,
+  "present": [
+   "juego",
+   "juegas",
+   "juega",
+   "jugamos",
+   "jugáis",
+   "juegan"
+  ],
+  "imparfait": [
+   "jugaba",
+   "jugabas",
+   "jugaba",
+   "jugábamos",
+   "jugabais",
+   "jugaban"
+  ],
+  "passe_compose": [
+   "he jugado",
+   "has jugado",
+   "ha jugado",
+   "hemos jugado",
+   "habéis jugado",
+   "han jugado"
+  ],
+  "futur_simple": [
+   "jugaré",
+   "jugarás",
+   "jugará",
+   "jugaremos",
+   "jugaréis",
+   "jugarán"
+  ],
+  "subjonctif_present": [
+   "juegue",
+   "juegues",
+   "juegue",
+   "juguemos",
+   "juguéis",
+   "jueguen"
+  ]
+ },
+ {
+  "infinitive": "terminar",
+  "display_infinitive": "terminar",
+  "gloss": [
+   "finish"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 11126,
+  "present": [
+   "termino",
+   "terminas",
+   "termina",
+   "terminamos",
+   "termináis",
+   "terminan"
+  ],
+  "imparfait": [
+   "terminaba",
+   "terminabas",
+   "terminaba",
+   "terminábamos",
+   "terminabais",
+   "terminaban"
+  ],
+  "passe_compose": [
+   "he terminado",
+   "has terminado",
+   "ha terminado",
+   "hemos terminado",
+   "habéis terminado",
+   "han terminado"
+  ],
+  "futur_simple": [
+   "terminaré",
+   "terminarás",
+   "terminará",
+   "terminaremos",
+   "terminaréis",
+   "terminarán"
+  ],
+  "subjonctif_present": [
+   "termine",
+   "termines",
+   "termine",
+   "terminemos",
+   "terminéis",
+   "terminen"
+  ]
+ },
+ {
+  "infinitive": "conseguir",
+  "display_infinitive": "conseguir",
+  "gloss": [
+   "achieve",
+   "get",
+   "manage"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 10855,
+  "present": [
+   "consigo",
+   "consigues",
+   "consigue",
+   "conseguimos",
+   "conseguís",
+   "consiguen"
+  ],
+  "imparfait": [
+   "conseguía",
+   "conseguías",
+   "conseguía",
+   "conseguíamos",
+   "conseguíais",
+   "conseguían"
+  ],
+  "passe_compose": [
+   "he conseguido",
+   "has conseguido",
+   "ha conseguido",
+   "hemos conseguido",
+   "habéis conseguido",
+   "han conseguido"
+  ],
+  "futur_simple": [
+   "conseguiré",
+   "conseguirás",
+   "conseguirá",
+   "conseguiremos",
+   "conseguiréis",
+   "conseguirán"
+  ],
+  "subjonctif_present": [
+   "consiga",
+   "consigas",
+   "consiga",
+   "conseguamos",
+   "conseguáis",
+   "consigan"
+  ]
+ },
+ {
+  "infinitive": "entender",
+  "display_infinitive": "entender",
+  "gloss": [
+   "understand"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 10305,
+  "present": [
+   "entiendo",
+   "entiendes",
+   "entiende",
+   "entendemos",
+   "entendéis",
+   "entienden"
+  ],
+  "imparfait": [
+   "entendía",
+   "entendías",
+   "entendía",
+   "entendíamos",
+   "entendíais",
+   "entendían"
+  ],
+  "passe_compose": [
+   "he entendido",
+   "has entendido",
+   "ha entendido",
+   "hemos entendido",
+   "habéis entendido",
+   "han entendido"
+  ],
+  "futur_simple": [
+   "entenderé",
+   "entenderás",
+   "entenderá",
+   "entenderemos",
+   "entenderéis",
+   "entenderán"
+  ],
+  "subjonctif_present": [
+   "entienda",
+   "entiendas",
+   "entienda",
+   "entendamos",
+   "entendáis",
+   "entiendan"
+  ]
+ },
+ {
+  "infinitive": "ganar",
+  "display_infinitive": "ganar",
+  "gloss": [
+   "earn",
+   "win"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 10167,
+  "present": [
+   "gano",
+   "ganas",
+   "gana",
+   "ganamos",
+   "ganáis",
+   "ganan"
+  ],
+  "imparfait": [
+   "ganaba",
+   "ganabas",
+   "ganaba",
+   "ganábamos",
+   "ganabais",
+   "ganaban"
+  ],
+  "passe_compose": [
+   "he ganado",
+   "has ganado",
+   "ha ganado",
+   "hemos ganado",
+   "habéis ganado",
+   "han ganado"
+  ],
+  "futur_simple": [
+   "ganaré",
+   "ganarás",
+   "ganará",
+   "ganaremos",
+   "ganaréis",
+   "ganarán"
+  ],
+  "subjonctif_present": [
+   "gane",
+   "ganes",
+   "gane",
+   "ganemos",
+   "ganéis",
+   "ganen"
+  ]
+ },
+ {
+  "infinitive": "pedir",
+  "display_infinitive": "pedir",
+  "gloss": [
+   "ask"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 9919,
+  "present": [
+   "pido",
+   "pides",
+   "pide",
+   "pedimos",
+   "pedís",
+   "piden"
+  ],
+  "imparfait": [
+   "pedía",
+   "pedías",
+   "pedía",
+   "pedíamos",
+   "pedíais",
+   "pedían"
+  ],
+  "passe_compose": [
+   "he pedido",
+   "has pedido",
+   "ha pedido",
+   "hemos pedido",
+   "habéis pedido",
+   "han pedido"
+  ],
+  "futur_simple": [
+   "pediré",
+   "pedirás",
+   "pedirá",
+   "pediremos",
+   "pediréis",
+   "pedirán"
+  ],
+  "subjonctif_present": [
+   "pida",
+   "pidas",
+   "pida",
+   "pidamos",
+   "pidáis",
+   "pidan"
+  ]
+ },
+ {
+  "infinitive": "odiar",
+  "display_infinitive": "odiar",
+  "gloss": [
+   "hate"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 9809,
+  "present": [
+   "odio",
+   "odias",
+   "odia",
+   "odiamos",
+   "odiáis",
+   "odian"
+  ],
+  "imparfait": [
+   "odiaba",
+   "odiabas",
+   "odiaba",
+   "odiábamos",
+   "odiabais",
+   "odiaban"
+  ],
+  "passe_compose": [
+   "he odiado",
+   "has odiado",
+   "ha odiado",
+   "hemos odiado",
+   "habéis odiado",
+   "han odiado"
+  ],
+  "futur_simple": [
+   "odiaré",
+   "odiarás",
+   "odiará",
+   "odiaremos",
+   "odiaréis",
+   "odiarán"
+  ],
+  "subjonctif_present": [
+   "odie",
+   "odies",
+   "odie",
+   "odiemos",
+   "odiéis",
+   "odien"
+  ]
+ },
+ {
+  "infinitive": "merecer",
+  "display_infinitive": "merecer",
+  "gloss": [
+   "deserve"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 8963,
+  "present": [
+   "merezco",
+   "mereces",
+   "merece",
+   "merecemos",
+   "merecéis",
+   "merecen"
+  ],
+  "imparfait": [
+   "merecía",
+   "merecías",
+   "merecía",
+   "merecíamos",
+   "merecíais",
+   "merecían"
+  ],
+  "passe_compose": [
+   "he merecido",
+   "has merecido",
+   "ha merecido",
+   "hemos merecido",
+   "habéis merecido",
+   "han merecido"
+  ],
+  "futur_simple": [
+   "mereceré",
+   "merecerás",
+   "merecerá",
+   "mereceremos",
+   "mereceréis",
+   "merecerán"
+  ],
+  "subjonctif_present": [
+   "merezca",
+   "merezcas",
+   "merezca",
+   "merezcamos",
+   "merezcáis",
+   "merezcan"
+  ]
+ },
+ {
+  "infinitive": "referir",
+  "display_infinitive": "referir",
+  "gloss": [
+   "refer"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 8773,
+  "present": [
+   "refiero",
+   "refieres",
+   "refiere",
+   "referimos",
+   "referís",
+   "refieren"
+  ],
+  "imparfait": [
+   "refería",
+   "referías",
+   "refería",
+   "referíamos",
+   "referíais",
+   "referían"
+  ],
+  "passe_compose": [
+   "he referido",
+   "has referido",
+   "ha referido",
+   "hemos referido",
+   "habéis referido",
+   "han referido"
+  ],
+  "futur_simple": [
+   "referiré",
+   "referirás",
+   "referirá",
+   "referiremos",
+   "referiréis",
+   "referirán"
+  ],
+  "subjonctif_present": [
+   "refiera",
+   "refieras",
+   "refiera",
+   "refiramos",
+   "refiráis",
+   "refieran"
+  ]
+ },
+ {
+  "infinitive": "desear",
+  "display_infinitive": "desear",
+  "gloss": [
+   "wish"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 8607,
+  "present": [
+   "deseo",
+   "deseas",
+   "desea",
+   "deseamos",
+   "deseáis",
+   "desean"
+  ],
+  "imparfait": [
+   "deseaba",
+   "deseabas",
+   "deseaba",
+   "deseábamos",
+   "deseabais",
+   "deseaban"
+  ],
+  "passe_compose": [
+   "he deseado",
+   "has deseado",
+   "ha deseado",
+   "hemos deseado",
+   "habéis deseado",
+   "han deseado"
+  ],
+  "futur_simple": [
+   "desearé",
+   "desearás",
+   "deseará",
+   "desearemos",
+   "desearéis",
+   "desearán"
+  ],
+  "subjonctif_present": [
+   "desee",
+   "desees",
+   "desee",
+   "deseemos",
+   "deseéis",
+   "deseen"
+  ]
+ },
+ {
+  "infinitive": "importar",
+  "display_infinitive": "importar",
+  "gloss": [
+   "import",
+   "matter",
+   "mind"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 8428,
+  "present": [
+   "importo",
+   "importas",
+   "importa",
+   "importamos",
+   "importáis",
+   "importan"
+  ],
+  "imparfait": [
+   "importaba",
+   "importabas",
+   "importaba",
+   "importábamos",
+   "importabais",
+   "importaban"
+  ],
+  "passe_compose": [
+   "he importado",
+   "has importado",
+   "ha importado",
+   "hemos importado",
+   "habéis importado",
+   "han importado"
+  ],
+  "futur_simple": [
+   "importaré",
+   "importarás",
+   "importará",
+   "importaremos",
+   "importaréis",
+   "importarán"
+  ],
+  "subjonctif_present": [
+   "importe",
+   "importes",
+   "importe",
+   "importemos",
+   "importéis",
+   "importen"
+  ]
+ },
+ {
+  "infinitive": "dormir",
+  "display_infinitive": "dormir",
+  "gloss": [
+   "sleep"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7880,
+  "present": [
+   "duermo",
+   "duermes",
+   "duerme",
+   "dormimos",
+   "dormís",
+   "duermen"
+  ],
+  "imparfait": [
+   "dormía",
+   "dormías",
+   "dormía",
+   "dormíamos",
+   "dormíais",
+   "dormían"
+  ],
+  "passe_compose": [
+   "he dormido",
+   "has dormido",
+   "ha dormido",
+   "hemos dormido",
+   "habéis dormido",
+   "han dormido"
+  ],
+  "futur_simple": [
+   "dormiré",
+   "dormirás",
+   "dormirá",
+   "dormiremos",
+   "dormiréis",
+   "dormirán"
+  ],
+  "subjonctif_present": [
+   "duerma",
+   "duermas",
+   "duerma",
+   "dormamos",
+   "dormáis",
+   "duerman"
+  ]
+ },
+ {
+  "infinitive": "comer",
+  "display_infinitive": "comer",
+  "gloss": [
+   "eat"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7841,
+  "present": [
+   "como",
+   "comes",
+   "come",
+   "comemos",
+   "coméis",
+   "comen"
+  ],
+  "imparfait": [
+   "comía",
+   "comías",
+   "comía",
+   "comíamos",
+   "comíais",
+   "comían"
+  ],
+  "passe_compose": [
+   "he comido",
+   "has comido",
+   "ha comido",
+   "hemos comido",
+   "habéis comido",
+   "han comido"
+  ],
+  "futur_simple": [
+   "comeré",
+   "comerás",
+   "comerá",
+   "comeremos",
+   "comeréis",
+   "comerán"
+  ],
+  "subjonctif_present": [
+   "coma",
+   "comas",
+   "coma",
+   "comamos",
+   "comáis",
+   "coman"
+  ]
+ },
+ {
+  "infinitive": "escuchar",
+  "display_infinitive": "escuchar",
+  "gloss": [
+   "listen"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7622,
+  "present": [
+   "escucho",
+   "escuchas",
+   "escucha",
+   "escuchamos",
+   "escucháis",
+   "escuchan"
+  ],
+  "imparfait": [
+   "escuchaba",
+   "escuchabas",
+   "escuchaba",
+   "escuchábamos",
+   "escuchabais",
+   "escuchaban"
+  ],
+  "passe_compose": [
+   "he escuchado",
+   "has escuchado",
+   "ha escuchado",
+   "hemos escuchado",
+   "habéis escuchado",
+   "han escuchado"
+  ],
+  "futur_simple": [
+   "escucharé",
+   "escucharás",
+   "escuchará",
+   "escucharemos",
+   "escucharéis",
+   "escucharán"
+  ],
+  "subjonctif_present": [
+   "escuche",
+   "escuches",
+   "escuche",
+   "escuchemos",
+   "escuchéis",
+   "escuchen"
+  ]
+ },
+ {
+  "infinitive": "tocar",
+  "display_infinitive": "tocar",
+  "gloss": [
+   "play",
+   "touch"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7385,
+  "present": [
+   "toco",
+   "tocas",
+   "toca",
+   "tocamos",
+   "tocáis",
+   "tocan"
+  ],
+  "imparfait": [
+   "tocaba",
+   "tocabas",
+   "tocaba",
+   "tocábamos",
+   "tocabais",
+   "tocaban"
+  ],
+  "passe_compose": [
+   "he tocado",
+   "has tocado",
+   "ha tocado",
+   "hemos tocado",
+   "habéis tocado",
+   "han tocado"
+  ],
+  "futur_simple": [
+   "tocaré",
+   "tocarás",
+   "tocará",
+   "tocaremos",
+   "tocaréis",
+   "tocarán"
+  ],
+  "subjonctif_present": [
+   "toque",
+   "toques",
+   "toque",
+   "toquemos",
+   "toquéis",
+   "toquen"
+  ]
+ },
+ {
+  "infinitive": "temer",
+  "display_infinitive": "temer",
+  "gloss": [
+   "fear",
+   "dread"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7381,
+  "present": [
+   "temo",
+   "temes",
+   "teme",
+   "tememos",
+   "teméis",
+   "temen"
+  ],
+  "imparfait": [
+   "temía",
+   "temías",
+   "temía",
+   "temíamos",
+   "temíais",
+   "temían"
+  ],
+  "passe_compose": [
+   "he temido",
+   "has temido",
+   "ha temido",
+   "hemos temido",
+   "habéis temido",
+   "han temido"
+  ],
+  "futur_simple": [
+   "temeré",
+   "temerás",
+   "temerá",
+   "temeremos",
+   "temeréis",
+   "temerán"
+  ],
+  "subjonctif_present": [
+   "tema",
+   "temas",
+   "tema",
+   "temamos",
+   "temáis",
+   "teman"
+  ]
+ },
+ {
+  "infinitive": "perder",
+  "display_infinitive": "perder",
+  "gloss": [
+   "lose",
+   "miss",
+   "spend"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7267,
+  "present": [
+   "pierdo",
+   "pierdes",
+   "pierde",
+   "perdemos",
+   "perdéis",
+   "pierden"
+  ],
+  "imparfait": [
+   "perdía",
+   "perdías",
+   "perdía",
+   "perdíamos",
+   "perdíais",
+   "perdían"
+  ],
+  "passe_compose": [
+   "he perdido",
+   "has perdido",
+   "ha perdido",
+   "hemos perdido",
+   "habéis perdido",
+   "han perdido"
+  ],
+  "futur_simple": [
+   "perderé",
+   "perderás",
+   "perderá",
+   "perderemos",
+   "perderéis",
+   "perderán"
+  ],
+  "subjonctif_present": [
+   "pierda",
+   "pierdas",
+   "pierda",
+   "perdamos",
+   "perdáis",
+   "pierdan"
+  ]
+ },
+ {
+  "infinitive": "contar",
+  "display_infinitive": "contar",
+  "gloss": [
+   "count",
+   "explain"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7260,
+  "present": [
+   "cuento",
+   "cuentas",
+   "cuenta",
+   "contamos",
+   "contáis",
+   "cuentan"
+  ],
+  "imparfait": [
+   "contaba",
+   "contabas",
+   "contaba",
+   "contábamos",
+   "contabais",
+   "contaban"
+  ],
+  "passe_compose": [
+   "he contado",
+   "has contado",
+   "ha contado",
+   "hemos contado",
+   "habéis contado",
+   "han contado"
+  ],
+  "futur_simple": [
+   "contaré",
+   "contarás",
+   "contará",
+   "contaremos",
+   "contaréis",
+   "contarán"
+  ],
+  "subjonctif_present": [
+   "cuente",
+   "cuentes",
+   "cuente",
+   "contemos",
+   "contéis",
+   "cuenten"
+  ]
+ },
+ {
+  "infinitive": "recibir",
+  "display_infinitive": "recibir",
+  "gloss": [
+   "receive"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 7172,
+  "present": [
+   "recibo",
+   "recibes",
+   "recibe",
+   "recibimos",
+   "recibís",
+   "reciben"
+  ],
+  "imparfait": [
+   "recibía",
+   "recibías",
+   "recibía",
+   "recibíamos",
+   "recibíais",
+   "recibían"
+  ],
+  "passe_compose": [
+   "he recibido",
+   "has recibido",
+   "ha recibido",
+   "hemos recibido",
+   "habéis recibido",
+   "han recibido"
+  ],
+  "futur_simple": [
+   "recibiré",
+   "recibirás",
+   "recibirá",
+   "recibiremos",
+   "recibiréis",
+   "recibirán"
+  ],
+  "subjonctif_present": [
+   "reciba",
+   "recibas",
+   "reciba",
+   "recibamos",
+   "recibáis",
+   "reciban"
+  ]
+ },
+ {
+  "infinitive": "imaginar",
+  "display_infinitive": "imaginar",
+  "gloss": [
+   "imagine"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6730,
+  "present": [
+   "imagino",
+   "imaginas",
+   "imagina",
+   "imaginamos",
+   "imagináis",
+   "imaginan"
+  ],
+  "imparfait": [
+   "imaginaba",
+   "imaginabas",
+   "imaginaba",
+   "imaginábamos",
+   "imaginabais",
+   "imaginaban"
+  ],
+  "passe_compose": [
+   "he imaginado",
+   "has imaginado",
+   "ha imaginado",
+   "hemos imaginado",
+   "habéis imaginado",
+   "han imaginado"
+  ],
+  "futur_simple": [
+   "imaginaré",
+   "imaginarás",
+   "imaginará",
+   "imaginaremos",
+   "imaginaréis",
+   "imaginarán"
+  ],
+  "subjonctif_present": [
+   "imagine",
+   "imagines",
+   "imagine",
+   "imaginemos",
+   "imaginéis",
+   "imaginen"
+  ]
+ },
+ {
+  "infinitive": "decidir",
+  "display_infinitive": "decidir",
+  "gloss": [
+   "decide"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6667,
+  "present": [
+   "decido",
+   "decides",
+   "decide",
+   "decidimos",
+   "decidís",
+   "deciden"
+  ],
+  "imparfait": [
+   "decidía",
+   "decidías",
+   "decidía",
+   "decidíamos",
+   "decidíais",
+   "decidían"
+  ],
+  "passe_compose": [
+   "he decidido",
+   "has decidido",
+   "ha decidido",
+   "hemos decidido",
+   "habéis decidido",
+   "han decidido"
+  ],
+  "futur_simple": [
+   "decidiré",
+   "decidirás",
+   "decidirá",
+   "decidiremos",
+   "decidiréis",
+   "decidirán"
+  ],
+  "subjonctif_present": [
+   "decida",
+   "decidas",
+   "decida",
+   "decidamos",
+   "decidáis",
+   "decidan"
+  ]
+ },
+ {
+  "infinitive": "matar",
+  "display_infinitive": "matar",
+  "gloss": [
+   "kill"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6547,
+  "present": [
+   "mato",
+   "matas",
+   "mata",
+   "matamos",
+   "matáis",
+   "matan"
+  ],
+  "imparfait": [
+   "mataba",
+   "matabas",
+   "mataba",
+   "matábamos",
+   "matabais",
+   "mataban"
+  ],
+  "passe_compose": [
+   "he matado",
+   "has matado",
+   "ha matado",
+   "hemos matado",
+   "habéis matado",
+   "han matado"
+  ],
+  "futur_simple": [
+   "mataré",
+   "matarás",
+   "matará",
+   "mataremos",
+   "mataréis",
+   "matarán"
+  ],
+  "subjonctif_present": [
+   "mate",
+   "mates",
+   "mate",
+   "matemos",
+   "matéis",
+   "maten"
+  ]
+ },
+ {
+  "infinitive": "lograr",
+  "display_infinitive": "lograr",
+  "gloss": [
+   "attain"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6471,
+  "present": [
+   "logro",
+   "logras",
+   "logra",
+   "logramos",
+   "lográis",
+   "logran"
+  ],
+  "imparfait": [
+   "lograba",
+   "lograbas",
+   "lograba",
+   "lográbamos",
+   "lograbais",
+   "lograban"
+  ],
+  "passe_compose": [
+   "he logrado",
+   "has logrado",
+   "ha logrado",
+   "hemos logrado",
+   "habéis logrado",
+   "han logrado"
+  ],
+  "futur_simple": [
+   "lograré",
+   "lograrás",
+   "logrará",
+   "lograremos",
+   "lograréis",
+   "lograrán"
+  ],
+  "subjonctif_present": [
+   "logre",
+   "logres",
+   "logre",
+   "logremos",
+   "logréis",
+   "logren"
+  ]
+ },
+ {
+  "infinitive": "comenzar",
+  "display_infinitive": "comenzar",
+  "gloss": [
+   "begin"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6423,
+  "present": [
+   "comienzo",
+   "comienzas",
+   "comienza",
+   "comenzamos",
+   "comenzáis",
+   "comienzan"
+  ],
+  "imparfait": [
+   "comenzaba",
+   "comenzabas",
+   "comenzaba",
+   "comenzábamos",
+   "comenzabais",
+   "comenzaban"
+  ],
+  "passe_compose": [
+   "he comenzado",
+   "has comenzado",
+   "ha comenzado",
+   "hemos comenzado",
+   "habéis comenzado",
+   "han comenzado"
+  ],
+  "futur_simple": [
+   "comenzaré",
+   "comenzarás",
+   "comenzará",
+   "comenzaremos",
+   "comenzaréis",
+   "comenzarán"
+  ],
+  "subjonctif_present": [
+   "comience",
+   "comiences",
+   "comience",
+   "comencemos",
+   "comencéis",
+   "comiencen"
+  ]
+ },
+ {
+  "infinitive": "pagar",
+  "display_infinitive": "pagar",
+  "gloss": [
+   "pay"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6402,
+  "present": [
+   "pago",
+   "pagas",
+   "paga",
+   "pagamos",
+   "pagáis",
+   "pagan"
+  ],
+  "imparfait": [
+   "pagaba",
+   "pagabas",
+   "pagaba",
+   "pagábamos",
+   "pagabais",
+   "pagaban"
+  ],
+  "passe_compose": [
+   "he pagado",
+   "has pagado",
+   "ha pagado",
+   "hemos pagado",
+   "habéis pagado",
+   "han pagado"
+  ],
+  "futur_simple": [
+   "pagaré",
+   "pagarás",
+   "pagará",
+   "pagaremos",
+   "pagaréis",
+   "pagarán"
+  ],
+  "subjonctif_present": [
+   "pague",
+   "pagues",
+   "pague",
+   "paguemos",
+   "paguéis",
+   "paguen"
+  ]
+ },
+ {
+  "infinitive": "traer",
+  "display_infinitive": "traer",
+  "gloss": [
+   "bring"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6233,
+  "present": [
+   "traigo",
+   "traes",
+   "trae",
+   "traemos",
+   "traéis",
+   "traen"
+  ],
+  "imparfait": [
+   "traía",
+   "traías",
+   "traía",
+   "traíamos",
+   "traíais",
+   "traían"
+  ],
+  "passe_compose": [
+   "he traido",
+   "has traido",
+   "ha traido",
+   "hemos traido",
+   "habéis traido",
+   "han traido"
+  ],
+  "futur_simple": [
+   "traeré",
+   "traerás",
+   "traerá",
+   "traeremos",
+   "traeréis",
+   "traerán"
+  ],
+  "subjonctif_present": [
+   "traiga",
+   "traigas",
+   "traiga",
+   "traigamos",
+   "traigáis",
+   "traigan"
+  ]
+ },
+ {
+  "infinitive": "morir",
+  "display_infinitive": "morir",
+  "gloss": [
+   "die"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 6122,
+  "present": [
+   "muero",
+   "mueres",
+   "muere",
+   "morimos",
+   "morís",
+   "mueren"
+  ],
+  "imparfait": [
+   "moría",
+   "morías",
+   "moría",
+   "moríamos",
+   "moríais",
+   "morían"
+  ],
+  "passe_compose": [
+   "he muerto",
+   "has muerto",
+   "ha muerto",
+   "hemos muerto",
+   "habéis muerto",
+   "han muerto"
+  ],
+  "futur_simple": [
+   "moriré",
+   "morirás",
+   "morirá",
+   "moriremos",
+   "moriréis",
+   "morirán"
+  ],
+  "subjonctif_present": [
+   "muera",
+   "mueras",
+   "muera",
+   "moramos",
+   "moráis",
+   "mueran"
+  ]
+ },
+ {
+  "infinitive": "andar",
+  "display_infinitive": "andar",
+  "gloss": [
+   "walk"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5933,
+  "present": [
+   "ando",
+   "andas",
+   "anda",
+   "andamos",
+   "andáis",
+   "andan"
+  ],
+  "imparfait": [
+   "andaba",
+   "andabas",
+   "andaba",
+   "andábamos",
+   "andabais",
+   "andaban"
+  ],
+  "passe_compose": [
+   "he andado",
+   "has andado",
+   "ha andado",
+   "hemos andado",
+   "habéis andado",
+   "han andado"
+  ],
+  "futur_simple": [
+   "andaré",
+   "andarás",
+   "andará",
+   "andaremos",
+   "andaréis",
+   "andarán"
+  ],
+  "subjonctif_present": [
+   "ande",
+   "andes",
+   "ande",
+   "andemos",
+   "andéis",
+   "anden"
+  ]
+ },
+ {
+  "infinitive": "dirigir",
+  "display_infinitive": "dirigir",
+  "gloss": [
+   "direct"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5887,
+  "present": [
+   "dirijo",
+   "diriges",
+   "dirige",
+   "dirigimos",
+   "dirigís",
+   "dirigen"
+  ],
+  "imparfait": [
+   "dirigía",
+   "dirigías",
+   "dirigía",
+   "dirigíamos",
+   "dirigíais",
+   "dirigían"
+  ],
+  "passe_compose": [
+   "he dirigido",
+   "has dirigido",
+   "ha dirigido",
+   "hemos dirigido",
+   "habéis dirigido",
+   "han dirigido"
+  ],
+  "futur_simple": [
+   "dirigiré",
+   "dirigirás",
+   "dirigirá",
+   "dirigiremos",
+   "dirigiréis",
+   "dirigirán"
+  ],
+  "subjonctif_present": [
+   "dirija",
+   "dirijas",
+   "dirija",
+   "dirijamos",
+   "dirijáis",
+   "dirijan"
+  ]
+ },
+ {
+  "infinitive": "preocupar",
+  "display_infinitive": "preocupar",
+  "gloss": [
+   "concern"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5634,
+  "present": [
+   "preocupo",
+   "preocupas",
+   "preocupa",
+   "preocupamos",
+   "preocupáis",
+   "preocupan"
+  ],
+  "imparfait": [
+   "preocupaba",
+   "preocupabas",
+   "preocupaba",
+   "preocupábamos",
+   "preocupabais",
+   "preocupaban"
+  ],
+  "passe_compose": [
+   "he preocupado",
+   "has preocupado",
+   "ha preocupado",
+   "hemos preocupado",
+   "habéis preocupado",
+   "han preocupado"
+  ],
+  "futur_simple": [
+   "preocuparé",
+   "preocuparás",
+   "preocupará",
+   "preocuparemos",
+   "preocuparéis",
+   "preocuparán"
+  ],
+  "subjonctif_present": [
+   "preocupe",
+   "preocupes",
+   "preocupe",
+   "preocupemos",
+   "preocupéis",
+   "preocupen"
+  ]
+ },
+ {
+  "infinitive": "comprar",
+  "display_infinitive": "comprar",
+  "gloss": [
+   "buy"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5526,
+  "present": [
+   "compro",
+   "compras",
+   "compra",
+   "compramos",
+   "compráis",
+   "compran"
+  ],
+  "imparfait": [
+   "compraba",
+   "comprabas",
+   "compraba",
+   "comprábamos",
+   "comprabais",
+   "compraban"
+  ],
+  "passe_compose": [
+   "he comprado",
+   "has comprado",
+   "ha comprado",
+   "hemos comprado",
+   "habéis comprado",
+   "han comprado"
+  ],
+  "futur_simple": [
+   "compraré",
+   "comprarás",
+   "comprará",
+   "compraremos",
+   "compraréis",
+   "comprarán"
+  ],
+  "subjonctif_present": [
+   "compre",
+   "compres",
+   "compre",
+   "compremos",
+   "compréis",
+   "compren"
+  ]
+ },
+ {
+  "infinitive": "olvidar",
+  "display_infinitive": "olvidar",
+  "gloss": [
+   "forget"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5424,
+  "present": [
+   "olvido",
+   "olvidas",
+   "olvida",
+   "olvidamos",
+   "olvidáis",
+   "olvidan"
+  ],
+  "imparfait": [
+   "olvidaba",
+   "olvidabas",
+   "olvidaba",
+   "olvidábamos",
+   "olvidabais",
+   "olvidaban"
+  ],
+  "passe_compose": [
+   "he olvidado",
+   "has olvidado",
+   "ha olvidado",
+   "hemos olvidado",
+   "habéis olvidado",
+   "han olvidado"
+  ],
+  "futur_simple": [
+   "olvidaré",
+   "olvidarás",
+   "olvidará",
+   "olvidaremos",
+   "olvidaréis",
+   "olvidarán"
+  ],
+  "subjonctif_present": [
+   "olvide",
+   "olvides",
+   "olvide",
+   "olvidemos",
+   "olvidéis",
+   "olviden"
+  ]
+ },
+ {
+  "infinitive": "acordar",
+  "display_infinitive": "acordar",
+  "gloss": [
+   "agree",
+   "remember",
+   "remind"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5408,
+  "present": [
+   "acuerdo",
+   "acuerdas",
+   "acuerda",
+   "acordamos",
+   "acordáis",
+   "acuerdan"
+  ],
+  "imparfait": [
+   "acordaba",
+   "acordabas",
+   "acordaba",
+   "acordábamos",
+   "acordabais",
+   "acordaban"
+  ],
+  "passe_compose": [
+   "he acordado",
+   "has acordado",
+   "ha acordado",
+   "hemos acordado",
+   "habéis acordado",
+   "han acordado"
+  ],
+  "futur_simple": [
+   "acordaré",
+   "acordarás",
+   "acordará",
+   "acordaremos",
+   "acordaréis",
+   "acordarán"
+  ],
+  "subjonctif_present": [
+   "acuerde",
+   "acuerdes",
+   "acuerde",
+   "acordemos",
+   "acordéis",
+   "acuerden"
+  ]
+ },
+ {
+  "infinitive": "compartir",
+  "display_infinitive": "compartir",
+  "gloss": [
+   "share"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5352,
+  "present": [
+   "comparto",
+   "compartes",
+   "comparte",
+   "compartimos",
+   "compartís",
+   "comparten"
+  ],
+  "imparfait": [
+   "compartía",
+   "compartías",
+   "compartía",
+   "compartíamos",
+   "compartíais",
+   "compartían"
+  ],
+  "passe_compose": [
+   "he compartido",
+   "has compartido",
+   "ha compartido",
+   "hemos compartido",
+   "habéis compartido",
+   "han compartido"
+  ],
+  "futur_simple": [
+   "compartiré",
+   "compartirás",
+   "compartirá",
+   "compartiremos",
+   "compartiréis",
+   "compartirán"
+  ],
+  "subjonctif_present": [
+   "comparta",
+   "compartas",
+   "comparta",
+   "compartamos",
+   "compartáis",
+   "compartan"
+  ]
+ },
+ {
+  "infinitive": "recordar",
+  "display_infinitive": "recordar",
+  "gloss": [
+   "remember",
+   "remind"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5350,
+  "present": [
+   "recuerdo",
+   "recuerdas",
+   "recuerda",
+   "recordamos",
+   "recordáis",
+   "recuerdan"
+  ],
+  "imparfait": [
+   "recordaba",
+   "recordabas",
+   "recordaba",
+   "recordábamos",
+   "recordabais",
+   "recordaban"
+  ],
+  "passe_compose": [
+   "he recordado",
+   "has recordado",
+   "ha recordado",
+   "hemos recordado",
+   "habéis recordado",
+   "han recordado"
+  ],
+  "futur_simple": [
+   "recordaré",
+   "recordarás",
+   "recordará",
+   "recordaremos",
+   "recordaréis",
+   "recordarán"
+  ],
+  "subjonctif_present": [
+   "recuerde",
+   "recuerdes",
+   "recuerde",
+   "recordemos",
+   "recordéis",
+   "recuerden"
+  ]
+ },
+ {
+  "infinitive": "sentar",
+  "display_infinitive": "sentar",
+  "gloss": [
+   "seat"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5340,
+  "present": [
+   "siento",
+   "sientas",
+   "sienta",
+   "sentamos",
+   "sentáis",
+   "sientan"
+  ],
+  "imparfait": [
+   "sentaba",
+   "sentabas",
+   "sentaba",
+   "sentábamos",
+   "sentabais",
+   "sentaban"
+  ],
+  "passe_compose": [
+   "he sentado",
+   "has sentado",
+   "ha sentado",
+   "hemos sentado",
+   "habéis sentado",
+   "han sentado"
+  ],
+  "futur_simple": [
+   "sentaré",
+   "sentarás",
+   "sentará",
+   "sentaremos",
+   "sentaréis",
+   "sentarán"
+  ],
+  "subjonctif_present": [
+   "siente",
+   "sientes",
+   "siente",
+   "sentemos",
+   "sentéis",
+   "sienten"
+  ]
+ },
+ {
+  "infinitive": "echar",
+  "display_infinitive": "echar",
+  "gloss": [
+   "throw"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5272,
+  "present": [
+   "echo",
+   "echas",
+   "echa",
+   "echamos",
+   "echáis",
+   "echan"
+  ],
+  "imparfait": [
+   "echaba",
+   "echabas",
+   "echaba",
+   "echábamos",
+   "echabais",
+   "echaban"
+  ],
+  "passe_compose": [
+   "he echado",
+   "has echado",
+   "ha echado",
+   "hemos echado",
+   "habéis echado",
+   "han echado"
+  ],
+  "futur_simple": [
+   "echaré",
+   "echarás",
+   "echará",
+   "echaremos",
+   "echaréis",
+   "echarán"
+  ],
+  "subjonctif_present": [
+   "eche",
+   "eches",
+   "eche",
+   "echemos",
+   "echéis",
+   "echen"
+  ]
+ },
+ {
+  "infinitive": "vender",
+  "display_infinitive": "vender",
+  "gloss": [
+   "sell"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5196,
+  "present": [
+   "vendo",
+   "vendes",
+   "vende",
+   "vendemos",
+   "vendéis",
+   "venden"
+  ],
+  "imparfait": [
+   "vendía",
+   "vendías",
+   "vendía",
+   "vendíamos",
+   "vendíais",
+   "vendían"
+  ],
+  "passe_compose": [
+   "he vendido",
+   "has vendido",
+   "ha vendido",
+   "hemos vendido",
+   "habéis vendido",
+   "han vendido"
+  ],
+  "futur_simple": [
+   "venderé",
+   "venderás",
+   "venderá",
+   "venderemos",
+   "venderéis",
+   "venderán"
+  ],
+  "subjonctif_present": [
+   "venda",
+   "vendas",
+   "venda",
+   "vendamos",
+   "vendáis",
+   "vendan"
+  ]
+ },
+ {
+  "infinitive": "mantener",
+  "display_infinitive": "mantener",
+  "gloss": [
+   "keep",
+   "maintain"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5170,
+  "present": [
+   "mantengo",
+   "mantienes",
+   "mantiene",
+   "mantenemos",
+   "mantenéis",
+   "mantienen"
+  ],
+  "imparfait": [
+   "mantenía",
+   "mantenías",
+   "mantenía",
+   "manteníamos",
+   "manteníais",
+   "mantenían"
+  ],
+  "passe_compose": [
+   "he mantenido",
+   "has mantenido",
+   "ha mantenido",
+   "hemos mantenido",
+   "habéis mantenido",
+   "han mantenido"
+  ],
+  "futur_simple": [
+   "mantendré",
+   "mantendrás",
+   "mantendrá",
+   "mantendremos",
+   "mantendréis",
+   "mantendrán"
+  ],
+  "subjonctif_present": [
+   "mantenga",
+   "mantengas",
+   "mantenga",
+   "mantengamos",
+   "mantengáis",
+   "mantengan"
+  ]
+ },
+ {
+  "infinitive": "existir",
+  "display_infinitive": "existir",
+  "gloss": [
+   "exist"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5153,
+  "present": [
+   "existo",
+   "existes",
+   "existe",
+   "existimos",
+   "existís",
+   "existen"
+  ],
+  "imparfait": [
+   "existía",
+   "existías",
+   "existía",
+   "existíamos",
+   "existíais",
+   "existían"
+  ],
+  "passe_compose": [
+   "he existido",
+   "has existido",
+   "ha existido",
+   "hemos existido",
+   "habéis existido",
+   "han existido"
+  ],
+  "futur_simple": [
+   "existiré",
+   "existirás",
+   "existirá",
+   "existiremos",
+   "existiréis",
+   "existirán"
+  ],
+  "subjonctif_present": [
+   "exista",
+   "existas",
+   "exista",
+   "existamos",
+   "existáis",
+   "existan"
+  ]
+ },
+ {
+  "infinitive": "confiar",
+  "display_infinitive": "confiar",
+  "gloss": [
+   "trust"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5130,
+  "present": [
+   "confío",
+   "confías",
+   "confía",
+   "confiamos",
+   "confiáis",
+   "confían"
+  ],
+  "imparfait": [
+   "confiaba",
+   "confiabas",
+   "confiaba",
+   "confiábamos",
+   "confiabais",
+   "confiaban"
+  ],
+  "passe_compose": [
+   "he confiado",
+   "has confiado",
+   "ha confiado",
+   "hemos confiado",
+   "habéis confiado",
+   "han confiado"
+  ],
+  "futur_simple": [
+   "confiaré",
+   "confiarás",
+   "confiará",
+   "confiaremos",
+   "confiaréis",
+   "confiarán"
+  ],
+  "subjonctif_present": [
+   "confíe",
+   "confíes",
+   "confíe",
+   "confiemos",
+   "confiéis",
+   "confíen"
+  ]
+ },
+ {
+  "infinitive": "significar",
+  "display_infinitive": "significar",
+  "gloss": [
+   "mean"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5062,
+  "present": [
+   "significo",
+   "significas",
+   "significa",
+   "significamos",
+   "significáis",
+   "significan"
+  ],
+  "imparfait": [
+   "significaba",
+   "significabas",
+   "significaba",
+   "significábamos",
+   "significabais",
+   "significaban"
+  ],
+  "passe_compose": [
+   "he significado",
+   "has significado",
+   "ha significado",
+   "hemos significado",
+   "habéis significado",
+   "han significado"
+  ],
+  "futur_simple": [
+   "significaré",
+   "significarás",
+   "significará",
+   "significaremos",
+   "significaréis",
+   "significarán"
+  ],
+  "subjonctif_present": [
+   "signifique",
+   "signifiques",
+   "signifique",
+   "signifiquemos",
+   "signifiquéis",
+   "signifiquen"
+  ]
+ },
+ {
+  "infinitive": "encantar",
+  "display_infinitive": "encantar",
+  "gloss": [
+   "love"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5050,
+  "present": [
+   "encanto",
+   "encantas",
+   "encanta",
+   "encantamos",
+   "encantáis",
+   "encantan"
+  ],
+  "imparfait": [
+   "encantaba",
+   "encantabas",
+   "encantaba",
+   "encantábamos",
+   "encantabais",
+   "encantaban"
+  ],
+  "passe_compose": [
+   "he encantado",
+   "has encantado",
+   "ha encantado",
+   "hemos encantado",
+   "habéis encantado",
+   "han encantado"
+  ],
+  "futur_simple": [
+   "encantaré",
+   "encantarás",
+   "encantará",
+   "encantaremos",
+   "encantaréis",
+   "encantarán"
+  ],
+  "subjonctif_present": [
+   "encante",
+   "encantes",
+   "encante",
+   "encantemos",
+   "encantéis",
+   "encanten"
+  ]
+ },
+ {
+  "infinitive": "regresar",
+  "display_infinitive": "regresar",
+  "gloss": [
+   "return"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5030,
+  "present": [
+   "regreso",
+   "regresas",
+   "regresa",
+   "regresamos",
+   "regresáis",
+   "regresan"
+  ],
+  "imparfait": [
+   "regresaba",
+   "regresabas",
+   "regresaba",
+   "regresábamos",
+   "regresabais",
+   "regresaban"
+  ],
+  "passe_compose": [
+   "he regresado",
+   "has regresado",
+   "ha regresado",
+   "hemos regresado",
+   "habéis regresado",
+   "han regresado"
+  ],
+  "futur_simple": [
+   "regresaré",
+   "regresarás",
+   "regresará",
+   "regresaremos",
+   "regresaréis",
+   "regresarán"
+  ],
+  "subjonctif_present": [
+   "regrese",
+   "regreses",
+   "regrese",
+   "regresemos",
+   "regreséis",
+   "regresen"
+  ]
+ },
+ {
+  "infinitive": "pertenecer",
+  "display_infinitive": "pertenecer",
+  "gloss": [
+   "belong"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 5028,
+  "present": [
+   "pertenezco",
+   "perteneces",
+   "pertenece",
+   "pertenecemos",
+   "pertenecéis",
+   "pertenecen"
+  ],
+  "imparfait": [
+   "pertenecía",
+   "pertenecías",
+   "pertenecía",
+   "pertenecíamos",
+   "pertenecíais",
+   "pertenecían"
+  ],
+  "passe_compose": [
+   "he pertenecido",
+   "has pertenecido",
+   "ha pertenecido",
+   "hemos pertenecido",
+   "habéis pertenecido",
+   "han pertenecido"
+  ],
+  "futur_simple": [
+   "perteneceré",
+   "pertenecerás",
+   "pertenecerá",
+   "perteneceremos",
+   "perteneceréis",
+   "pertenecerán"
+  ],
+  "subjonctif_present": [
+   "pertenezca",
+   "pertenezcas",
+   "pertenezca",
+   "pertenezcamos",
+   "pertenezcáis",
+   "pertenezcan"
+  ]
+ },
+ {
+  "infinitive": "parar",
+  "display_infinitive": "parar",
+  "gloss": [
+   "stop"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4848,
+  "present": [
+   "paro",
+   "paras",
+   "para",
+   "paramos",
+   "paráis",
+   "paran"
+  ],
+  "imparfait": [
+   "paraba",
+   "parabas",
+   "paraba",
+   "parábamos",
+   "parabais",
+   "paraban"
+  ],
+  "passe_compose": [
+   "he parado",
+   "has parado",
+   "ha parado",
+   "hemos parado",
+   "habéis parado",
+   "han parado"
+  ],
+  "futur_simple": [
+   "pararé",
+   "pararás",
+   "parará",
+   "pararemos",
+   "pararéis",
+   "pararán"
+  ],
+  "subjonctif_present": [
+   "pare",
+   "pares",
+   "pare",
+   "paremos",
+   "paréis",
+   "paren"
+  ]
+ },
+ {
+  "infinitive": "ayudar",
+  "display_infinitive": "ayudar",
+  "gloss": [
+   "help"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4835,
+  "present": [
+   "ayudo",
+   "ayudas",
+   "ayuda",
+   "ayudamos",
+   "ayudáis",
+   "ayudan"
+  ],
+  "imparfait": [
+   "ayudaba",
+   "ayudabas",
+   "ayudaba",
+   "ayudábamos",
+   "ayudabais",
+   "ayudaban"
+  ],
+  "passe_compose": [
+   "he ayudado",
+   "has ayudado",
+   "ha ayudado",
+   "hemos ayudado",
+   "habéis ayudado",
+   "han ayudado"
+  ],
+  "futur_simple": [
+   "ayudaré",
+   "ayudarás",
+   "ayudará",
+   "ayudaremos",
+   "ayudaréis",
+   "ayudarán"
+  ],
+  "subjonctif_present": [
+   "ayude",
+   "ayudes",
+   "ayude",
+   "ayudemos",
+   "ayudéis",
+   "ayuden"
+  ]
+ },
+ {
+  "infinitive": "casar",
+  "display_infinitive": "casar",
+  "gloss": [
+   "marry"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4828,
+  "present": [
+   "caso",
+   "casas",
+   "casa",
+   "casamos",
+   "casáis",
+   "casan"
+  ],
+  "imparfait": [
+   "casaba",
+   "casabas",
+   "casaba",
+   "casábamos",
+   "casabais",
+   "casaban"
+  ],
+  "passe_compose": [
+   "he casado",
+   "has casado",
+   "ha casado",
+   "hemos casado",
+   "habéis casado",
+   "han casado"
+  ],
+  "futur_simple": [
+   "casaré",
+   "casarás",
+   "casará",
+   "casaremos",
+   "casaréis",
+   "casarán"
+  ],
+  "subjonctif_present": [
+   "case",
+   "cases",
+   "case",
+   "casemos",
+   "caséis",
+   "casen"
+  ]
+ },
+ {
+  "infinitive": "cantar",
+  "display_infinitive": "cantar",
+  "gloss": [
+   "sing"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4804,
+  "present": [
+   "canto",
+   "cantas",
+   "canta",
+   "cantamos",
+   "cantáis",
+   "cantan"
+  ],
+  "imparfait": [
+   "cantaba",
+   "cantabas",
+   "cantaba",
+   "cantábamos",
+   "cantabais",
+   "cantaban"
+  ],
+  "passe_compose": [
+   "he cantado",
+   "has cantado",
+   "ha cantado",
+   "hemos cantado",
+   "habéis cantado",
+   "han cantado"
+  ],
+  "futur_simple": [
+   "cantaré",
+   "cantarás",
+   "cantará",
+   "cantaremos",
+   "cantaréis",
+   "cantarán"
+  ],
+  "subjonctif_present": [
+   "cante",
+   "cantes",
+   "cante",
+   "cantemos",
+   "cantéis",
+   "canten"
+  ]
+ },
+ {
+  "infinitive": "planear",
+  "display_infinitive": "planear",
+  "gloss": [
+   "plan",
+   "mastermind"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4801,
+  "present": [
+   "planeo",
+   "planeas",
+   "planea",
+   "planeamos",
+   "planeáis",
+   "planean"
+  ],
+  "imparfait": [
+   "planeaba",
+   "planeabas",
+   "planeaba",
+   "planeábamos",
+   "planeabais",
+   "planeaban"
+  ],
+  "passe_compose": [
+   "he planeado",
+   "has planeado",
+   "ha planeado",
+   "hemos planeado",
+   "habéis planeado",
+   "han planeado"
+  ],
+  "futur_simple": [
+   "planearé",
+   "planearás",
+   "planeará",
+   "planearemos",
+   "planearéis",
+   "planearán"
+  ],
+  "subjonctif_present": [
+   "planee",
+   "planees",
+   "planee",
+   "planeemos",
+   "planeéis",
+   "planeen"
+  ]
+ },
+ {
+  "infinitive": "correr",
+  "display_infinitive": "correr",
+  "gloss": [
+   "run"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4764,
+  "present": [
+   "corro",
+   "corres",
+   "corre",
+   "corremos",
+   "corréis",
+   "corren"
+  ],
+  "imparfait": [
+   "corría",
+   "corrías",
+   "corría",
+   "corríamos",
+   "corríais",
+   "corrían"
+  ],
+  "passe_compose": [
+   "he corrido",
+   "has corrido",
+   "ha corrido",
+   "hemos corrido",
+   "habéis corrido",
+   "han corrido"
+  ],
+  "futur_simple": [
+   "correré",
+   "correrás",
+   "correrá",
+   "correremos",
+   "correréis",
+   "correrán"
+  ],
+  "subjonctif_present": [
+   "corra",
+   "corras",
+   "corra",
+   "corramos",
+   "corráis",
+   "corran"
+  ]
+ },
+ {
+  "infinitive": "enviar",
+  "display_infinitive": "enviar",
+  "gloss": [
+   "send"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4636,
+  "present": [
+   "envío",
+   "envías",
+   "envía",
+   "enviamos",
+   "enviáis",
+   "envían"
+  ],
+  "imparfait": [
+   "enviaba",
+   "enviabas",
+   "enviaba",
+   "enviábamos",
+   "enviabais",
+   "enviaban"
+  ],
+  "passe_compose": [
+   "he enviado",
+   "has enviado",
+   "ha enviado",
+   "hemos enviado",
+   "habéis enviado",
+   "han enviado"
+  ],
+  "futur_simple": [
+   "enviaré",
+   "enviarás",
+   "enviará",
+   "enviaremos",
+   "enviaréis",
+   "enviarán"
+  ],
+  "subjonctif_present": [
+   "envíe",
+   "envíes",
+   "envíe",
+   "enviemos",
+   "enviéis",
+   "envíen"
+  ]
+ },
+ {
+  "infinitive": "sonar",
+  "display_infinitive": "sonar",
+  "gloss": [
+   "sound"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4623,
+  "present": [
+   "sueno",
+   "suenas",
+   "suena",
+   "sonamos",
+   "sonáis",
+   "suenan"
+  ],
+  "imparfait": [
+   "sonaba",
+   "sonabas",
+   "sonaba",
+   "sonábamos",
+   "sonabais",
+   "sonaban"
+  ],
+  "passe_compose": [
+   "he sonado",
+   "has sonado",
+   "ha sonado",
+   "hemos sonado",
+   "habéis sonado",
+   "han sonado"
+  ],
+  "futur_simple": [
+   "sonaré",
+   "sonarás",
+   "sonará",
+   "sonaremos",
+   "sonaréis",
+   "sonarán"
+  ],
+  "subjonctif_present": [
+   "suene",
+   "suenes",
+   "suene",
+   "sonemos",
+   "sonéis",
+   "suenen"
+  ]
+ },
+ {
+  "infinitive": "pelear",
+  "display_infinitive": "pelear",
+  "gloss": [
+   "litigate"
+  ],
+  "gloss_source": "apertium",
+  "true_frequency": 4603,
+  "present": [
+   "peleo",
+   "peleas",
+   "pelea",
+   "peleamos",
+   "peleáis",
+   "pelean"
+  ],
+  "imparfait": [
+   "peleaba",
+   "peleabas",
+   "peleaba",
+   "peleábamos",
+   "peleabais",
+   "peleaban"
+  ],
+  "passe_compose": [
+   "he peleado",
+   "has peleado",
+   "ha peleado",
+   "hemos peleado",
+   "habéis peleado",
+   "han peleado"
+  ],
+  "futur_simple": [
+   "pelearé",
+   "pelearás",
+   "peleará",
+   "pelearemos",
+   "pelearéis",
+   "pelearán"
+  ],
+  "subjonctif_present": [
+   "pelee",
+   "pelees",
+   "pelee",
+   "peleemos",
+   "peleéis",
+   "peleen"
+  ]
+ }
+]
