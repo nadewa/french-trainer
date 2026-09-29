@@ -1122,6 +1122,31 @@ button:disabled { opacity: 0.5; cursor: default; }
   border-top-color: var(--red);
 }
 
+.reward-image-wrap {
+  max-width: 480px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.reward-image {
+  max-width: 160px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  display: block;
+  margin: 0 auto 4px;
+  object-fit: cover;
+}
+
+.reward-image-credit {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--fg-soft);
+  text-decoration: none;
+}
+
 .completion-content {
   max-width: 480px;
   margin: 0 auto 10px;

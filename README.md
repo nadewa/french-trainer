@@ -86,6 +86,10 @@ and conjugation tables came from, what was manually verified, and known gaps.
 - **Optional account + cloud sync**: create an account under 👤 Account to
   sync progress across devices (see "Cloud sync setup" below). Entirely
   optional — the app is fully functional without it.
+- **Optional reward image**: on a clean-correct vocabulary answer, briefly
+  shows a relevant photo from Unsplash with photographer credit (see "Image
+  reward setup" below). Entirely optional — the app works exactly the same
+  without it, just without the image.
 
 ## Running locally
 
@@ -163,6 +167,35 @@ the user from the Supabase dashboard if you get locked out), and no way to
 delete your own account from within the app (do it from the Supabase
 dashboard's Authentication tab).
 
+## Image reward setup
+
+Optional. Without this, the app works exactly as before, just without the
+reward image on a correct vocab answer. Uses [Unsplash](https://unsplash.com/developers)'s
+free API (free "Demo" tier: 50 requests/hour, no cost).
+
+1. Create a free account at [unsplash.com/developers](https://unsplash.com/developers)
+   and register a new application (the "Demo" tier is fine — no approval
+   process needed for personal use).
+2. Copy your **Access Key** from the application's page.
+3. Edit `js/image-config.js` and paste it in:
+   ```js
+   export const UNSPLASH_ACCESS_KEY = "your-access-key-here";
+   ```
+4. Commit and push. Redeploy as usual (see "Redeploying after edits").
+
+**A real trade-off, not a secret**: unlike the Supabase key, this one isn't
+protected by any server-side rule — it's a plain request key that anyone
+who opens their browser's devtools can read out of a network request and
+use against your quota. Unsplash's free Demo tier is explicitly meant for
+this kind of client-side use, so the practical downside is small: worst
+case, someone exhausts your 50/hour quota and the reward image silently
+stops appearing until it resets — not a billing or security incident,
+since there's no paid tier being charged. If that trade-off isn't
+acceptable to you, leave the key blank.
+
+**Attribution**: every image shown credits the photographer and links to
+Unsplash, per Unsplash's API guidelines.
+
 ## Editing the data
 
 `data/vocab.json` and `data/verbs.json` are plain JSON — hand-edit them if you
@@ -182,6 +215,8 @@ js/srs.js            # SM-2 scheduler
 js/fuzzy.js          # typo/accent-tolerant answer checking
 js/cloud.js          # optional Supabase auth + progress sync
 js/supabase-config.js # your Supabase project URL/anon key (see Cloud sync setup)
+js/images.js         # optional Unsplash reward-image fetch (graceful no-op if unconfigured)
+js/image-config.js   # your Unsplash access key (see Image reward setup)
 data/vocab.json      # 4,900 vocabulary words + English gloss(es)
 data/verbs.json       # 100 verbs with full conjugation tables
 data/examples.json   # example sentences for the lesson-intro screen (phase 1 coverage)

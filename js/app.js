@@ -4,6 +4,7 @@ import { buildItemBank, buildIntroRanks, TENSES, PRONOUNS, pronounFor } from "./
 import { buildConcepts, groupByLesson } from "./lessons.js";
 import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
+import * as images from "./images.js";
 
 const STATE_KEY = "ft_state_v1";
 const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all", answerMode: "type" };
@@ -723,6 +724,7 @@ function renderCookingPanel(justCelebrated) {
 // and can hear the French form (whichever direction they were quizzed in)
 // before moving on.
 let hideBannerTimer = null;
+let rewardImageGen = 0; // guards a late-arriving fetch against a card the user already moved past
 
 function showCompletionBanner(verdict, correctText) {
   const banner = el("completion-banner");
@@ -734,6 +736,28 @@ function showCompletionBanner(verdict, correctText) {
   const speakBtn = el("banner-speak-btn");
   speakBtn.classList.toggle("hidden", !audioText);
   if (audioText) speakBtn.onclick = () => speakFrench(audioText);
+
+  rewardImageGen += 1;
+  const thisGen = rewardImageGen;
+  const rewardWrap = el("reward-image-wrap");
+  rewardWrap.classList.add("hidden");
+  el("reward-image").src = "";
+  // A brief relevant image on a correct vocab answer -- a reward moment,
+  // not something the review flow depends on. Silently does nothing when
+  // no Unsplash key is configured (see js/image-config.js), the request
+  // fails, or the answer wasn't a clean correct (per spec, only "CORRECT
+  // answer" triggers it, not a close-match self-confirm).
+  if (verdict === "exact" && current.type === "vocab" && images.isConfigured()) {
+    images.fetchRewardImage(current.gloss[0]).then((img) => {
+      if (!img || thisGen !== rewardImageGen) return;
+      el("reward-image").src = img.url;
+      el("reward-image").alt = current.gloss[0];
+      const credit = el("reward-image-credit");
+      credit.textContent = `Photo by ${img.photographerName} on Unsplash`;
+      credit.href = img.photoUrl;
+      rewardWrap.classList.remove("hidden");
+    });
+  }
 
   // a fast-following show (e.g. answering again right after Continue) must
   // not let an earlier hide's delayed classList.add("hidden") land after
