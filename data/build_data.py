@@ -161,6 +161,35 @@ MANUAL_GLOSS_OVERRIDE = {
     "regarder": ["watch", "look at", "concern"],
     "retourner": ["return", "go back", "turn over"],
     "allier": ["ally", "combine", "join"],
+    # found via a manual review of the top-400-frequency words after a user
+    # report ("petit" showed "kid" as its multiple-choice answer instead of
+    # "small"); the two most surprising cases (car, super) and one outright
+    # wrong sense (frère listing "sister") were confirmed via web search
+    # rather than taken on recollection alone -- see DATA_SOURCES.md #6.
+    "petit": ["small", "little", "young", "kid"],
+    "car": ["because", "for", "coach", "long-distance bus"],  # false friend: never means the vehicle ("voiture")
+    "super": ["great", "awesome", "super"],  # sourced data had only "sip", which is simply wrong
+    "amis": ["friends"],  # sourced data had only "Amis" (the Taiwanese ethnic group), not the plural of "ami"
+    "docteur": ["doctor", "Ph.D."],
+    "frère": ["brother"],  # sourced data incorrectly included "sister"; frère never means sister
+    "merci": ["thank you", "thanks", "mercy"],
+    "argent": ["money", "silver"],
+    "truc": ["thing", "stuff", "gadget", "doodad"],
+    "vieux": ["old", "aged", "elderly", "decrepit"],
+    "mort": ["dead", "death"],
+    "nom": ["name", "noun"],
+    "raison": ["reason", "because of", "due to"],
+    "toutes": ["all", "both"],
+    "désolé": ["sorry", "desolate"],
+    "bon": ["good", "kind", "generous"],
+    "sûr": ["sure", "certain"],
+    "vrai": ["true", "real", "genuine"],
+    "entendu": ["heard", "agreed", "understood"],
+    "fort": ["strong", "loud", "fort"],
+    "police": ["police", "font"],
+    "personne": ["person", "nobody", "no one"],
+    "pourquoi": ["why", "how come", "what for"],
+    "comme": ["as", "like", "since"],
 }
 for w, g in MANUAL_GLOSS_OVERRIDE.items():
     gloss[w] = g

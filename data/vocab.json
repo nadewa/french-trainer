@@ -385,13 +385,11 @@
  {
   "word": "comme",
   "gloss": [
-   "almost",
-   "alright",
    "as",
-   "as in",
-   "exactly like"
+   "like",
+   "since"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 864987
  },
  {
@@ -442,13 +440,11 @@
  {
   "word": "pourquoi",
   "gloss": [
-   "how come",
-   "the reason why",
-   "what for",
    "why",
-   "whys"
+   "how come",
+   "what for"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 657070
  },
  {
@@ -567,23 +563,21 @@
  {
   "word": "bon",
   "gloss": [
-   "benevolent",
-   "generous",
    "good",
-   "Bn",
-   "good guy"
+   "kind",
+   "generous"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 483364
  },
  {
   "word": "merci",
   "gloss": [
-   "mercy",
+   "thank you",
    "thanks",
-   "thank you"
+   "mercy"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 471415
  },
  {
@@ -901,13 +895,10 @@
  {
   "word": "sûr",
   "gloss": [
-   "benign",
-   "certain",
-   "dependable",
-   "faithful",
-   "harmless"
+   "sure",
+   "certain"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 271047
  },
  {
@@ -923,13 +914,11 @@
  {
   "word": "personne",
   "gloss": [
-   "nobody",
-   "no one",
    "person",
-   "somebody",
-   "someone"
+   "nobody",
+   "no one"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 260005
  },
  {
@@ -1004,13 +993,11 @@
  {
   "word": "vrai",
   "gloss": [
-   "correct",
-   "genuine",
-   "legitimate",
+   "true",
    "real",
-   "right"
+   "genuine"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 233001
  },
  {
@@ -1097,13 +1084,10 @@
  {
   "word": "mort",
   "gloss": [
-   "beat",
    "dead",
-   "death",
-   "Death",
-   "dummy"
+   "death"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 208796
  },
  {
@@ -1159,10 +1143,10 @@
  {
   "word": "désolé",
   "gloss": [
-   "desolate",
-   "sorry"
+   "sorry",
+   "desolate"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 191841
  },
  {
@@ -1184,13 +1168,12 @@
  {
   "word": "petit",
   "gloss": [
-   "kid",
-   "little",
    "small",
+   "little",
    "young",
-   "Small"
+   "kid"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 186600
  },
  {
@@ -1283,18 +1266,19 @@
  {
   "word": "nom",
   "gloss": [
+   "name",
    "noun"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 160549
  },
  {
   "word": "argent",
   "gloss": [
-   "silver",
-   "money"
+   "money",
+   "silver"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 159413
  },
  {
@@ -1318,12 +1302,11 @@
  {
   "word": "raison",
   "gloss": [
+   "reason",
    "because of",
-   "due to",
-   "logical reasoning",
-   "reason"
+   "due to"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 153137
  },
  {
@@ -1455,9 +1438,10 @@
  {
   "word": "toutes",
   "gloss": [
+   "all",
    "both"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 131387
  },
  {
@@ -1628,13 +1612,12 @@
  {
   "word": "truc",
   "gloss": [
-   "doodad",
-   "flat car",
-   "flatcar",
+   "thing",
+   "stuff",
    "gadget",
-   "stuff"
+   "doodad"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 114959
  },
  {
@@ -1673,9 +1656,11 @@
  {
   "word": "super",
   "gloss": [
-   "sip"
+   "great",
+   "awesome",
+   "super"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 108980
  },
  {
@@ -1715,10 +1700,11 @@
  {
   "word": "entendu",
   "gloss": [
-   "knowledgeable",
-   "heard"
+   "heard",
+   "agreed",
+   "understood"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 107777
  },
  {
@@ -1783,9 +1769,9 @@
  {
   "word": "amis",
   "gloss": [
-   "Amis"
+   "friends"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 99948
  },
  {
@@ -1862,23 +1848,21 @@
  {
   "word": "police",
   "gloss": [
-   "cop",
-   "filth",
-   "font",
-   "fuzz",
-   "military police"
+   "police",
+   "font"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 95229
  },
  {
   "word": "car",
   "gloss": [
-   "car",
+   "because",
+   "for",
    "coach",
    "long-distance bus"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 94921
  },
  {
@@ -1892,10 +1876,9 @@
  {
   "word": "frère",
   "gloss": [
-   "sister",
    "brother"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 94005
  },
  {
@@ -2150,13 +2133,12 @@
  {
   "word": "vieux",
   "gloss": [
+   "old",
    "aged",
-   "decayed",
-   "decrepit",
-   "dilapidated",
-   "lapsed"
+   "elderly",
+   "decrepit"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 78652
  },
  {
@@ -2488,9 +2470,10 @@
  {
   "word": "docteur",
   "gloss": [
+   "doctor",
    "Ph.D."
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 67286
  },
  {
@@ -2705,11 +2688,11 @@
  {
   "word": "fort",
   "gloss": [
-   "good",
    "strong",
+   "loud",
    "fort"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 59357
  },
  {

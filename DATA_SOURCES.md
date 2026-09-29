@@ -98,9 +98,23 @@ for full reproducibility).
   `build_data.py` (`MANUAL_GLOSS_OVERRIDE`, ~19 entries: mostly function words
   — de/je/pas/le/que/la/vous/tu/à/et/il/ne/on/pour/dans/elle/si/non — plus a
   handful of top verbs — être/avoir/savoir/devoir/croire/regarder/retourner/
-  allier) fixes the highest-impact cases. This was NOT done exhaustively across
-  all ~5000 words — assume some entries further down the frequency list may
-  show a secondary sense first, and cross-check anything that looks off.
+  allier) fixes the highest-impact cases. **Update**: after a user reported
+  "petit" showing "kid" instead of "small" in multiple-choice, every one of
+  the top 400 words by frequency was manually reviewed for this same issue,
+  turning up 24 total (bringing the override list to 43 entries) — including
+  three outright data errors, not just ordering, caught by the review and
+  confirmed via web search rather than taken on recollection alone: "car"
+  had "car" (the vehicle) as its first gloss, which is a false friend — French
+  "car" is a conjunction meaning "because/for", never the English word for an
+  automobile (that's "voiture"); "super" had only the single, simply wrong
+  gloss "sip" (it means "great/awesome", identical to the English slang
+  usage); "amis" had only "Amis" (a Taiwanese indigenous ethnic group,
+  evidently a Wiktionary extraction mixing up a capitalized proper noun),
+  not "friends"; and "frère" incorrectly included "sister" as a sense — it
+  never means sister, only "brother". **This still was not done exhaustively
+  across all ~5000 words** (400 of ~4,900 reviewed) — the same class of issue
+  likely exists further down the frequency list; report anything that looks
+  off.
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
