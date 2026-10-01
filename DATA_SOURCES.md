@@ -170,8 +170,21 @@ for full reproducibility).
   "Sofia", a different name; "remonter" included a typo ("strech")
   among unrelated words; "king" was glossed with an ancient Chinese
   chime-instrument term ("bianqing"); "réaliser" was missing its very
-  common colloquial "realize" sense entirely. **Ranks 1600–4900
-  (~3,300 words) are still unreviewed.**
+  common colloquial "realize" sense entirely. **Sixth update**:
+  continued into ranks 1600–1900 (50 more fixes, override list now 353
+  entries). Two **false friends** stand out from this batch, worth
+  flagging on their own since they're the kind of error a learner would
+  never catch without a native-level check: "sensible" in French means
+  "sensitive", never the English "sensible" (reasonable) — the sourced
+  gloss led with "feeling" and buried "sensitive" fourth; "large" in
+  French means "wide/broad", never the English "large" (big) — the
+  sourced gloss led with "abundant" and listed "broad" last. Also
+  outright wrong, confirmed via web search for the slang case: "robin"
+  was glossed with Chinese characters (罗宾) instead of the name
+  "Robin"; "cigarette" was glossed as "smoke"/"whiff" instead of
+  "cigarette" itself; "loyer" (rent) wrongly included "salary"/"wage",
+  which belong to the unrelated word "salaire". **Ranks 1900–4900
+  (~3,000 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

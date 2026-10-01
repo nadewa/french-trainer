@@ -430,6 +430,67 @@ MANUAL_GLOSS_OVERRIDE = {
     "pêche": ["fishing", "peach", "punch (slang)"],
     "engager": ["hire", "engage", "commit", "start"],
     "colle": ["glue", "adhesive", "detention"],
+    # Continuing the exhaustive review (ranks 1600-1900 of ~4900). Two
+    # false friends caught here are worth flagging on their own:
+    # "sensible" in French means "sensitive", never the English
+    # "sensible" (reasonable) -- the sourced gloss buried "sensitive"
+    # 4th and led with "feeling"; "large" in French means "wide/broad",
+    # never the English "large" (big) -- the sourced gloss led with
+    # "abundant" and listed "broad" last. Also outright wrong: "robin"
+    # was glossed with Chinese characters (罗宾); "cigarette" was
+    # glossed as "smoke"/"whiff" instead of "cigarette" itself; "loyer"
+    # (rent) included "salary"/"wage", which belong to the unrelated
+    # word "salaire".
+    "rayon": ["shelf", "department", "ray", "radius", "honeycomb"],
+    "gâcher": ["waste", "spoil", "ruin", "botch", "bungle"],
+    "min": ["min. (minute)", "min. (minimum)"],
+    "lentement": ["slowly", "leisurely"],
+    "cigarette": ["cigarette"],
+    "bouffe": ["food", "grub"],
+    "volant": ["steering wheel", "shuttlecock", "flying"],
+    "pile": ["battery", "stack", "pile", "exactly", "heads (coin toss)"],
+    "japonais": ["Japanese", "Japanese language"],
+    "avouer": ["confess", "admit", "avow"],
+    "conduite": ["behavior", "conduct", "driving"],
+    "robin": ["Robin"],
+    "jaune": ["yellow", "scab (strikebreaker)"],
+    "dames": ["ladies", "checkers", "draughts"],
+    "aube": ["dawn", "alb (vestment)", "blade (turbine)"],
+    "lumières": ["lights", "Enlightenment"],
+    "vampire": ["vampire", "vampire bat"],
+    "échec": ["failure", "check (chess)", "chess"],
+    "partage": ["sharing", "division", "apportionment"],
+    "nu": ["naked", "nude", "bare"],
+    "poissons": ["fish", "Pisces"],
+    "cochon": ["pig", "hog", "pork"],
+    "invite": ["invitation", "invite"],
+    "pensée": ["thought", "thinking", "pansy (flower)"],
+    "psy": ["shrink", "psychiatrist", "psychologist"],
+    "balance": ["scale", "balance", "Libra", "snitch (slang)"],
+    "raisonnable": ["reasonable", "sensible", "appropriate"],
+    "sensible": ["sensitive", "touchy", "noticeable"],
+    "déposer": ["deposit", "put down", "drop off", "file"],
+    "matière": ["subject", "matter", "material"],
+    "bagarre": ["fight", "brawl", "scuffle"],
+    "pigé": ["got it", "understood"],
+    "large": ["wide", "broad", "ample"],
+    "donnée": ["data", "given (fact)"],
+    "jo": ["Jo (name)"],
+    "brave": ["brave", "gallant", "stalwart"],
+    "portefeuille": ["wallet", "portfolio", "briefcase"],
+    "tours": ["turns", "towers", "tricks", "Tours (city)"],
+    "supérieur": ["superior", "higher", "above"],
+    "précieux": ["precious", "valuable", "affected (literary)"],
+    "panne": ["breakdown", "fault"],
+    "renvoyer": ["send back", "fire", "dismiss", "refer"],
+    "loyer": ["rent", "rental"],
+    "humour": ["humor", "humour"],
+    "trafic": ["traffic", "trade"],
+    "do": ["C (musical note)"],
+    "remise": ["discount", "shed", "delivery"],
+    "participer": ["participate", "take part", "contribute"],
+    "coucou": ["cuckoo", "hiya! (greeting)", "cuckoo clock"],
+    "pouls": ["pulse", "beat", "pulsation"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

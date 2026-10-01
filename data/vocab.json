@@ -15497,13 +15497,13 @@
  {
   "word": "rayon",
   "gloss": [
-   "cell",
+   "shelf",
    "department",
-   "honeycomb",
+   "ray",
    "radius",
-   "ray"
+   "honeycomb"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6851
  },
  {
@@ -15518,13 +15518,13 @@
  {
   "word": "gâcher",
   "gloss": [
-   "blow",
-   "blunder",
+   "waste",
+   "spoil",
+   "ruin",
    "botch",
-   "bungle",
-   "flub"
+   "bungle"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6843
  },
  {
@@ -15550,9 +15550,10 @@
  {
   "word": "min",
   "gloss": [
-   "Min"
+   "min. (minute)",
+   "min. (minimum)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6836
  },
  {
@@ -15648,11 +15649,10 @@
  {
   "word": "lentement",
   "gloss": [
-   "leasurely",
    "slowly",
-   "tardily"
+   "leisurely"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6785
  },
  {
@@ -15808,18 +15808,18 @@
  {
   "word": "cigarette",
   "gloss": [
-   "smoke",
-   "whiff"
+   "cigarette"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6712
  },
  {
   "word": "bouffe",
   "gloss": [
+   "food",
    "grub"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6707
  },
  {
@@ -15888,12 +15888,11 @@
  {
   "word": "volant",
   "gloss": [
-   "flying",
+   "steering wheel",
    "shuttlecock",
-   "shuttle",
-   "steering wheel"
+   "flying"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6682
  },
  {
@@ -15961,23 +15960,22 @@
  {
   "word": "pile",
   "gloss": [
-   "exactly",
    "battery",
-   "cell",
+   "stack",
    "pile",
-   "stack"
+   "exactly",
+   "heads (coin toss)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6635
  },
  {
   "word": "japonais",
   "gloss": [
    "Japanese",
-   "harlequin rabbit",
    "Japanese language"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6635
  },
  {
@@ -16036,11 +16034,11 @@
  {
   "word": "avouer",
   "gloss": [
-   "approve",
-   "avow",
-   "confess"
+   "confess",
+   "admit",
+   "avow"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6598
  },
  {
@@ -16056,17 +16054,19 @@
  {
   "word": "conduite",
   "gloss": [
-   "conduct"
+   "behavior",
+   "conduct",
+   "driving"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6596
  },
  {
   "word": "robin",
   "gloss": [
-   "罗宾"
+   "Robin"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6590
  },
  {
@@ -16123,20 +16123,19 @@
   "word": "jaune",
   "gloss": [
    "yellow",
-   "blackleg",
-   "scab",
-   "strikebreaker"
+   "scab (strikebreaker)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6546
  },
  {
   "word": "dames",
   "gloss": [
+   "ladies",
    "checkers",
    "draughts"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6541
  },
  {
@@ -16202,13 +16201,11 @@
  {
   "word": "aube",
   "gloss": [
-   "alba",
-   "alb",
-   "Aube",
-   "blade",
-   "dawn"
+   "dawn",
+   "alb (vestment)",
+   "blade (turbine)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6494
  },
  {
@@ -16226,9 +16223,10 @@
  {
   "word": "lumières",
   "gloss": [
+   "lights",
    "Enlightenment"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6477
  },
  {
@@ -16246,23 +16244,20 @@
  {
   "word": "vampire",
   "gloss": [
-   "oupire",
-   "vampire bat",
-   "vampire"
+   "vampire",
+   "vampire bat"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6460
  },
  {
   "word": "échec",
   "gloss": [
-   "check",
-   "chesspiece",
-   "chess",
-   "chess set",
-   "failure"
+   "failure",
+   "check (chess)",
+   "chess"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6455
  },
  {
@@ -16372,9 +16367,11 @@
  {
   "word": "partage",
   "gloss": [
+   "sharing",
+   "division",
    "apportionment"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6383
  },
  {
@@ -16407,13 +16404,11 @@
  {
   "word": "nu",
   "gloss": [
-   "bare",
    "naked",
    "nude",
-   "stark",
-   "nu"
+   "bare"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6365
  },
  {
@@ -16427,10 +16422,10 @@
  {
   "word": "poissons",
   "gloss": [
-   "Fishes",
+   "fish",
    "Pisces"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6357
  },
  {
@@ -16598,13 +16593,11 @@
  {
   "word": "cochon",
   "gloss": [
-   "Boar",
-   "hog",
    "pig",
-   "Pig",
+   "hog",
    "pork"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6282
  },
  {
@@ -16903,9 +16896,10 @@
  {
   "word": "invite",
   "gloss": [
-   "prompt"
+   "invitation",
+   "invite"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6153
  },
  {
@@ -16928,18 +16922,21 @@
  {
   "word": "pensée",
   "gloss": [
+   "thought",
    "thinking",
-   "thought"
+   "pansy (flower)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6143
  },
  {
   "word": "psy",
   "gloss": [
-   "shrink"
+   "shrink",
+   "psychiatrist",
+   "psychologist"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6133
  },
  {
@@ -16962,12 +16959,12 @@
  {
   "word": "balance",
   "gloss": [
+   "scale",
    "balance",
    "Libra",
-   "scale",
-   "weighing machine"
+   "snitch (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6110
  },
  {
@@ -17014,13 +17011,11 @@
  {
   "word": "raisonnable",
   "gloss": [
-   "appropriate",
-   "becoming",
-   "judicious",
-   "proper",
-   "prudent"
+   "reasonable",
+   "sensible",
+   "appropriate"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6073
  },
  {
@@ -17034,25 +17029,22 @@
  {
   "word": "sensible",
   "gloss": [
-   "feeling",
-   "noticeable",
-   "perceptible",
    "sensitive",
-   "striking"
+   "touchy",
+   "noticeable"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6067
  },
  {
   "word": "déposer",
   "gloss": [
-   "cable",
-   "depose",
    "deposit",
-   "dispatch",
+   "put down",
+   "drop off",
    "file"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6066
  },
  {
@@ -17112,20 +17104,21 @@
  {
   "word": "matière",
   "gloss": [
-   "matter"
+   "subject",
+   "matter",
+   "material"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6030
  },
  {
   "word": "bagarre",
   "gloss": [
-   "agitation",
-   "clamour",
-   "riot",
-   "tumult"
+   "fight",
+   "brawl",
+   "scuffle"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6011
  },
  {
@@ -17296,9 +17289,10 @@
  {
   "word": "pigé",
   "gloss": [
-   "capisce"
+   "got it",
+   "understood"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5935
  },
  {
@@ -17464,13 +17458,11 @@
  {
   "word": "large",
   "gloss": [
-   "abundant",
-   "affluent",
-   "ample",
-   "aplenty",
-   "broad"
+   "wide",
+   "broad",
+   "ample"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5880
  },
  {
@@ -17512,9 +17504,9 @@
   "word": "donnée",
   "gloss": [
    "data",
-   "setting"
+   "given (fact)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5866
  },
  {
@@ -17529,9 +17521,9 @@
  {
   "word": "jo",
   "gloss": [
-   "jō"
+   "Jo (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5854
  },
  {
@@ -17547,11 +17539,9 @@
   "gloss": [
    "brave",
    "gallant",
-   "good",
-   "honest",
-   "stallwart"
+   "stalwart"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5850
  },
  {
@@ -17620,13 +17610,11 @@
  {
   "word": "portefeuille",
   "gloss": [
-   "briefcase",
-   "file",
-   "folder",
+   "wallet",
    "portfolio",
-   "wallet"
+   "briefcase"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5825
  },
  {
@@ -17661,9 +17649,12 @@
  {
   "word": "tours",
   "gloss": [
-   "Tours"
+   "turns",
+   "towers",
+   "tricks",
+   "Tours (city)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5815
  },
  {
@@ -17717,25 +17708,21 @@
  {
   "word": "supérieur",
   "gloss": [
-   "above",
-   "ascendant",
-   "dominant",
-   "greater than or equal to",
-   "higher"
+   "superior",
+   "higher",
+   "above"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5774
  },
  {
   "word": "précieux",
   "gloss": [
-   "affected",
-   "artificial",
    "precious",
-   "prim",
-   "showy"
+   "valuable",
+   "affected (literary)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5774
  },
  {
@@ -17786,10 +17773,9 @@
   "word": "panne",
   "gloss": [
    "breakdown",
-   "fault",
-   "purlin"
+   "fault"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5749
  },
  {
@@ -17815,13 +17801,12 @@
  {
   "word": "renvoyer",
   "gloss": [
-   "adjourn",
-   "chase away",
-   "defer",
-   "delay",
-   "discharge"
+   "send back",
+   "fire",
+   "dismiss",
+   "refer"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5740
  },
  {
@@ -17843,12 +17828,10 @@
  {
   "word": "loyer",
   "gloss": [
-   "rental",
    "rent",
-   "salary",
-   "wage"
+   "rental"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5736
  },
  {
@@ -17872,10 +17855,10 @@
  {
   "word": "humour",
   "gloss": [
-   "dry humor",
-   "dry humour"
+   "humor",
+   "humour"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5731
  },
  {
@@ -17954,11 +17937,10 @@
  {
   "word": "trafic",
   "gloss": [
-   "game",
-   "trade",
-   "traffic"
+   "traffic",
+   "trade"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5674
  },
  {
@@ -17992,10 +17974,9 @@
  {
   "word": "do",
   "gloss": [
-   "C",
-   "do"
+   "C (musical note)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5664
  },
  {
@@ -18118,13 +18099,11 @@
  {
   "word": "remise",
   "gloss": [
-   "abatement",
-   "assignment",
-   "delivery",
    "discount",
-   "draw"
+   "shed",
+   "delivery"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5599
  },
  {
@@ -18198,11 +18177,11 @@
  {
   "word": "participer",
   "gloss": [
-   "donate",
    "participate",
-   "share"
+   "take part",
+   "contribute"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5561
  },
  {
@@ -18224,10 +18203,11 @@
  {
   "word": "coucou",
   "gloss": [
-   "cuckoo clock",
-   "cuckoo"
+   "cuckoo",
+   "hiya! (greeting)",
+   "cuckoo clock"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5555
  },
  {
@@ -18287,13 +18267,11 @@
  {
   "word": "pouls",
   "gloss": [
-   "beating",
+   "pulse",
    "beat",
-   "pulsating",
-   "pulsation",
-   "pulse"
+   "pulsation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5526
  },
  {
