@@ -161,6 +161,27 @@ for full reproducibility).
   to match the ungendered form the app itself drills and grades against).
   The other 70 verbs and the remaining ~4,800 vocabulary words still have no
   example sentence, and fall back to the isolated word/phrase prompt.
+- **Update**: a user reported "Le film a été incroyable" (être, passé
+  composé) as wrong — correctly: a simple past description/opinion like
+  "The movie was incredible" is what imparfait ("était") is for in French;
+  passé composé is for a specific, bounded, completed occurrence, not a
+  general assessment. The whole-word validation above only checks that the
+  drilled form appears in the sentence, not that the sentence is the most
+  natural choice for that tense, so this class of error isn't caught
+  automatically. Confirmed via web search and fixed (replaced with "Ça a
+  été rapide !" — a reaction to a specific just-finished event, the
+  textbook-natural use of passé composé). Re-reviewed all 30 passé composé
+  sentences added in the update above for the same risk and fixed two more
+  on inspection: "vouloir" (passé composé carries a "decided to/insisted
+  on" nuance, not simple "wanted," which is what the English gloss said —
+  fixed the gloss to "She decided to leave early"), and "rester" (added a
+  bounding phrase, "pendant les vacances," removing the ambiguity between a
+  specific stay and an ongoing arrangement). The other 27 were
+  judged, on this same re-review, to already be unambiguous (either
+  explicitly time-bounded by an adverb, or a completed-reaction question
+  like "Tu as aimé le spectacle ?" — the standard, natural way to ask that
+  in French) — but this was reasoning, not independent verification of
+  each one, so treat it as lower-confidence than the sourced data above.
 
 ## Reproducing / regenerating the data
 
