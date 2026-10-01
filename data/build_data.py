@@ -971,6 +971,63 @@ MANUAL_GLOSS_OVERRIDE = {
     "sécher": ["dry", "ditch/skip (class, slang)"],
     "ouf": ["phew! (interjection)", "crazy (verlan slang for fou)"],
     "réduction": ["discount", "reduction", "decrease"],
+    # Continuing the exhaustive review (ranks 4000-4300 of ~4900). Two
+    # more false friends, verified via web search: "librairie" means
+    # "bookstore", never "library" (that's "bibliothèque") -- the
+    # sourced gloss included the misleading "library" outright, one of
+    # the most commonly cited French/English false friends; "vicieux"
+    # primarily means "perverted/depraved/kinky", and does not reliably
+    # carry the English "vicious" (violent) sense the sourced gloss led
+    # with. Also outright wrong: "chaton" (kitten) was missing that
+    # core meaning entirely, listing only obscure botany/jewelry terms;
+    # "étendre" (to extend/stretch out) was glossed entirely with
+    # unrelated words ("adulterate", "aggrandize", "anoint"); "grouille"
+    # (a conjugated form of "grouiller") had leaked in as its own
+    # headword glossed as "girl Friday", unrelated.
+    "indic": ["informant (slang)", "snitch"],
+    "zoé": ["Zoe", "Zoé"],
+    "acquis": ["acquired", "gained", "rights/gains (les acquis sociaux)"],
+    "vanter": ["praise", "vaunt", "boast (se vanter)"],
+    "spa": ["spa", "whirlpool bath"],
+    "bénéfice": ["profit", "benefit", "gain"],
+    "more": ["more (English loanword)"],
+    "grouille": ["hurry up! (grouille-toi)", "swarms/teems"],
+    "commode": ["convenient", "handy", "chest of drawers (furniture)"],
+    "porteur": ["bearer", "porter", "carrier (disease)"],
+    "biscuit": ["biscuit", "cookie"],
+    "immédiat": ["immediate", "instant", "instantaneous"],
+    "griller": ["grill", "toast", "catch red-handed (slang)"],
+    "cote": ["rating", "odds", "quotation (stock)"],
+    "déception": ["disappointment", "disillusionment"],
+    "verser": ["pour", "pay/deposit (money)", "shed (tears)"],
+    "sentence": ["verdict (legal)", "maxim", "saying"],
+    "boucler": ["buckle", "fasten", "lock up (slang)", "wrap up/finish"],
+    "épais": ["thick"],
+    "brèche": ["breach", "gap"],
+    "chaton": ["kitten", "catkin (botany)", "gem setting (jewelry)"],
+    "tremblement": ["trembling", "shaking", "earthquake (tremblement de terre)"],
+    "saul": ["Saul (name)"],
+    "froc": ["pants (slang)", "frock (monk's robe)", "cowl"],
+    "presser": ["press", "squeeze", "hurry (se presser)"],
+    "indépendant": ["independent"],
+    "introduire": ["introduce", "insert", "bring in"],
+    "étendre": ["extend", "stretch out", "spread out", "hang (laundry)"],
+    "pitoyable": ["pitiful", "pathetic"],
+    "brune": ["brunette", "brown (feminine)"],
+    "librairie": ["bookstore", "bookshop", "bookseller"],
+    "soviétique": ["Soviet"],
+    "asiatique": ["Asian", "Asiatic"],
+    "craque": ["fib", "lie (slang)"],
+    "comble": ["peak", "height (figurative)", "last straw (c'est le comble!)", "attic (les combles)"],
+    "scie": ["saw (tool)"],
+    "sympathie": ["liking", "friendliness", "fellow-feeling"],
+    "achever": ["finish", "complete", "finish off (kill, e.g. wounded animal)"],
+    "disposer": ["arrange", "have at one's disposal"],
+    "bulle": ["bubble", "blister", "comic/speech bubble", "papal bull (document)"],
+    "cordon": ["cord", "string", "cordon (police)"],
+    "tailleur": ["tailor", "woman's suit (tailleur)"],
+    "saumon": ["salmon", "salmon pink"],
+    "vicieux": ["perverted", "depraved", "kinky", "sly/tricky"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

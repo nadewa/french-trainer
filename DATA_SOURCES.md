@@ -269,8 +269,21 @@ for full reproducibility).
   list as its own headword, glossed as the noun "eraser" (a different
   word, "gomme"); "boeuf" (the unaccented duplicate of "bœuf") was
   glossed as "Boeuf River", an obscure US place name, instead of
-  matching the correct "bœuf" entry (beef). **Ranks 4000–4900 (~900
-  words) are still unreviewed.**
+  matching the correct "bœuf" entry (beef). **Fourteenth update**:
+  continued into ranks 4000–4300 (44 more fixes, override list now
+  790 entries). Two more false friends, verified via web search:
+  "librairie" means "bookstore", never "library" (that's
+  "bibliothèque") — the sourced gloss included the misleading
+  "library" outright, one of the most commonly cited French/English
+  false friends; "vicieux" primarily means "perverted/depraved/kinky",
+  and does not reliably carry the English "vicious" (violent) sense
+  the sourced gloss led with. Also outright wrong: "chaton" (kitten)
+  was missing that core meaning entirely, listing only obscure
+  botany/jewelry terms; "étendre" (to extend/stretch out) was glossed
+  entirely with unrelated words ("adulterate", "aggrandize", "anoint");
+  "grouille" (a conjugated form of "grouiller") had leaked in as its
+  own headword glossed as "girl Friday", unrelated. **Ranks 4300–4900
+  (~600 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

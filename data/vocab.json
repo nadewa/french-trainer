@@ -37882,9 +37882,10 @@
  {
   "word": "indic",
   "gloss": [
-   "ear"
+   "informant (slang)",
+   "snitch"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1810
  },
  {
@@ -37922,13 +37923,10 @@
  {
   "word": "zoé",
   "gloss": [
-   "zoeae",
-   "zoea",
    "Zoe",
-   "Zoé",
-   "Zoë"
+   "Zoé"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1806
  },
  {
@@ -37966,9 +37964,11 @@
  {
   "word": "acquis",
   "gloss": [
-   "acquired"
+   "acquired",
+   "gained",
+   "rights/gains (les acquis sociaux)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1800
  },
  {
@@ -38048,11 +38048,11 @@
  {
   "word": "vanter",
   "gloss": [
-   "exalt",
    "praise",
-   "vaunt"
+   "vaunt",
+   "boast (se vanter)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1797
  },
  {
@@ -38068,11 +38068,9 @@
   "word": "spa",
   "gloss": [
    "spa",
-   "Spa",
-   "triple bar",
    "whirlpool bath"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1796
  },
  {
@@ -38171,13 +38169,11 @@
  {
   "word": "bénéfice",
   "gloss": [
-   "advantage",
-   "benefit",
-   "gain",
    "profit",
-   "proviso"
+   "benefit",
+   "gain"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1789
  },
  {
@@ -38192,9 +38188,9 @@
  {
   "word": "more",
   "gloss": [
-   "mora"
+   "more (English loanword)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1789
  },
  {
@@ -38299,9 +38295,10 @@
  {
   "word": "grouille",
   "gloss": [
-   "girl Friday"
+   "hurry up! (grouille-toi)",
+   "swarms/teems"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1779
  },
  {
@@ -38344,13 +38341,11 @@
  {
   "word": "commode",
   "gloss": [
-   "advantageous",
-   "comfortable",
    "convenient",
    "handy",
-   "opportune"
+   "chest of drawers (furniture)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1774
  },
  {
@@ -38459,9 +38454,10 @@
   "word": "porteur",
   "gloss": [
    "bearer",
-   "porter"
+   "porter",
+   "carrier (disease)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1769
  },
  {
@@ -38544,10 +38540,9 @@
   "word": "biscuit",
   "gloss": [
    "biscuit",
-   "bisque",
    "cookie"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1759
  },
  {
@@ -38598,13 +38593,11 @@
  {
   "word": "immédiat",
   "gloss": [
-   "direct",
    "immediate",
-   "independent",
-   "instantaneous",
-   "instant"
+   "instant",
+   "instantaneous"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1751
  },
  {
@@ -38646,10 +38639,11 @@
  {
   "word": "griller",
   "gloss": [
-   "roast",
-   "toast"
+   "grill",
+   "toast",
+   "catch red-handed (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1748
  },
  {
@@ -38693,11 +38687,11 @@
  {
   "word": "cote",
   "gloss": [
-   "code",
+   "rating",
    "odds",
-   "quote"
+   "quotation (stock)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1744
  },
  {
@@ -38729,11 +38723,10 @@
  {
   "word": "déception",
   "gloss": [
-   "awakening",
    "disappointment",
    "disillusionment"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1743
  },
  {
@@ -38902,13 +38895,11 @@
  {
   "word": "verser",
   "gloss": [
-   "dump",
-   "pour out",
    "pour",
-   "scatter",
-   "shed"
+   "pay/deposit (money)",
+   "shed (tears)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1729
  },
  {
@@ -38966,13 +38957,11 @@
  {
   "word": "sentence",
   "gloss": [
-   "adage",
-   "adjudication",
+   "verdict (legal)",
    "maxim",
-   "proverb",
    "saying"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1723
  },
  {
@@ -39007,10 +38996,11 @@
   "word": "boucler",
   "gloss": [
    "buckle",
-   "gird",
-   "zone"
+   "fasten",
+   "lock up (slang)",
+   "wrap up/finish"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1718
  },
  {
@@ -39046,10 +39036,9 @@
  {
   "word": "épais",
   "gloss": [
-   "heavily",
    "thick"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1716
  },
  {
@@ -39095,22 +39084,19 @@
   "word": "brèche",
   "gloss": [
    "breach",
-   "gap",
-   "Mullein Moth"
+   "gap"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1713
  },
  {
   "word": "chaton",
   "gloss": [
-   "American willow",
-   "beggar's velvet",
-   "bezel",
-   "catkin",
-   "collet"
+   "kitten",
+   "catkin (botany)",
+   "gem setting (jewelry)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1713
  },
  {
@@ -39201,19 +39187,19 @@
  {
   "word": "tremblement",
   "gloss": [
-   "buffeting"
+   "trembling",
+   "shaking",
+   "earthquake (tremblement de terre)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1706
  },
  {
   "word": "saul",
   "gloss": [
-   "sal",
-   "saul",
-   "shala"
+   "Saul (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1704
  },
  {
@@ -39289,10 +39275,11 @@
  {
   "word": "froc",
   "gloss": [
-   "cowl",
-   "frock"
+   "pants (slang)",
+   "frock (monk's robe)",
+   "cowl"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1698
  },
  {
@@ -39306,13 +39293,11 @@
  {
   "word": "presser",
   "gloss": [
-   "accelerate",
-   "advance",
-   "affirm",
-   "dwell",
-   "further"
+   "press",
+   "squeeze",
+   "hurry (se presser)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1697
  },
  {
@@ -39367,9 +39352,9 @@
  {
   "word": "indépendant",
   "gloss": [
-   "independant"
+   "independent"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1689
  },
  {
@@ -39433,25 +39418,22 @@
  {
   "word": "introduire",
   "gloss": [
-   "advertise",
-   "announce",
-   "enclose",
-   "enter",
-   "give notice of"
+   "introduce",
+   "insert",
+   "bring in"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1684
  },
  {
   "word": "étendre",
   "gloss": [
-   "adulterate",
-   "aggrandize",
-   "anoint",
-   "apply",
-   "augment"
+   "extend",
+   "stretch out",
+   "spread out",
+   "hang (laundry)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1684
  },
  {
@@ -39475,9 +39457,10 @@
  {
   "word": "pitoyable",
   "gloss": [
-   "piteous"
+   "pitiful",
+   "pathetic"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1681
  },
  {
@@ -39616,20 +39599,20 @@
  {
   "word": "brune",
   "gloss": [
-   "brown swiss"
+   "brunette",
+   "brown (feminine)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1671
  },
  {
   "word": "librairie",
   "gloss": [
-   "bookseller",
-   "bookshop",
    "bookstore",
-   "library"
+   "bookshop",
+   "bookseller"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1669
  },
  {
@@ -39684,10 +39667,9 @@
  {
   "word": "soviétique",
   "gloss": [
-   "Soviet",
-   "Soviеt"
+   "Soviet"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1665
  },
  {
@@ -39901,11 +39883,12 @@
  {
   "word": "vicieux",
   "gloss": [
-   "debauched",
-   "vice",
-   "vicious"
+   "perverted",
+   "depraved",
+   "kinky",
+   "sly/tricky"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1648
  },
  {
@@ -40089,27 +40072,29 @@
   "word": "asiatique",
   "gloss": [
    "Asian",
-   "Asiatic",
-   "asian",
-   "malayan"
+   "Asiatic"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1631
  },
  {
   "word": "craque",
   "gloss": [
-   "fib"
+   "fib",
+   "lie (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1630
  },
  {
   "word": "comble",
   "gloss": [
-   "peak"
+   "peak",
+   "height (figurative)",
+   "last straw (c'est le comble!)",
+   "attic (les combles)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1630
  },
  {
@@ -40161,10 +40146,9 @@
  {
   "word": "scie",
   "gloss": [
-   "sawfish",
-   "saw"
+   "saw (tool)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1626
  },
  {
@@ -40188,12 +40172,11 @@
  {
   "word": "sympathie",
   "gloss": [
-   "congeniality",
-   "fellow-feeling",
    "liking",
-   "sympathy"
+   "friendliness",
+   "fellow-feeling"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1625
  },
  {
@@ -40274,13 +40257,11 @@
  {
   "word": "achever",
   "gloss": [
+   "finish",
    "complete",
-   "end",
-   "finalize",
-   "finish off",
-   "finish"
+   "finish off (kill, e.g. wounded animal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1617
  },
  {
@@ -40295,11 +40276,9 @@
   "word": "disposer",
   "gloss": [
    "arrange",
-   "fix up",
-   "absorb",
    "have at one's disposal"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1617
  },
  {
@@ -40358,12 +40337,12 @@
  {
   "word": "bulle",
   "gloss": [
-   "blister",
    "bubble",
-   "bull",
-   "zero"
+   "blister",
+   "comic/speech bubble",
+   "papal bull (document)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1611
  },
  {
@@ -40388,12 +40367,11 @@
  {
   "word": "cordon",
   "gloss": [
-   "bead",
-   "cordon",
+   "cord",
    "string",
-   "weld"
+   "cordon (police)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1609
  },
  {
@@ -40415,9 +40393,10 @@
  {
   "word": "tailleur",
   "gloss": [
-   "tailor"
+   "tailor",
+   "woman's suit (tailleur)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1608
  },
  {
@@ -40491,10 +40470,9 @@
   "word": "saumon",
   "gloss": [
    "salmon",
-   "salmon pink",
-   "ingot"
+   "salmon pink"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1603
  },
  {
