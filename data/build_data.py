@@ -359,6 +359,77 @@ MANUAL_GLOSS_OVERRIDE = {
     "louis": ["Louis"],
     "go": ["go (interjection)", "go (board game)"],
     "vache": ["cow", "cowhide", "mean", "nasty"],
+    # Continuing the exhaustive review (ranks 1300-1600 of ~4900). Again
+    # several entries were outright wrong, not just misordered, confirmed
+    # via web search where the correct sense was non-obvious or slang:
+    # "fiancée" gave a moth species name ("Large Yellow Underwing")
+    # instead of "fiancée"/"betrothed"; "loup" (wolf) was missing its
+    # literal core meaning entirely, listing only secondary senses (sea
+    # bass, masquerade mask); "piscine" included "bathroom", which is
+    # simply wrong (that's "salle de bain"); "tien" gave "your" (the
+    # possessive adjective) instead of "yours" (the possessive pronoun
+    # "tien" actually is); "sophie" gave "Sofia", a different name;
+    # "remonter" included a typo ("strech") among unrelated words
+    # ("rack", "strain"); "king" was glossed with an ancient Chinese
+    # chime-instrument term ("bianqing"); "réaliser" was missing its
+    # very common colloquial "realize" sense entirely.
+    "vole": ["flies", "steals"],
+    "soutien": ["support", "backing", "advocacy"],
+    "sage": ["wise", "well-behaved", "good", "prudent"],
+    "puce": ["flea", "chip", "bullet point"],
+    "canon": ["cannon", "barrel", "gorgeous (slang)"],
+    "paroles": ["words", "lyrics", "speech"],
+    "essence": ["gasoline", "petrol", "essence"],
+    "côte": ["coast", "rib", "hill", "slope"],
+    "europe": ["Europe", "Europa"],
+    "vote": ["vote"],
+    "siècle": ["century"],
+    "piscine": ["swimming pool", "pool"],
+    "élevé": ["high", "raised", "well brought up"],
+    "bel": ["beautiful", "handsome"],
+    "tien": ["yours"],
+    "sucre": ["sugar", "Sucre"],
+    "trompe": ["trunk (elephant)", "horn", "tube"],
+    "tenue": ["clothing", "outfit", "bearing", "behavior"],
+    "chouette": ["owl", "cool", "nice", "sweet"],
+    "gaffe": ["blunder", "watch out (faire gaffe)", "gaffe"],
+    "jenny": ["Jenny"],
+    "jean": ["Jean (name)", "jeans", "John"],
+    "prêtre": ["priest", "clergyman"],
+    "somme": ["sum", "amount", "nap"],
+    "horreur": ["horror", "abhorrence", "abomination"],
+    "pis": ["worse", "udder"],
+    "discussion": ["discussion", "talk", "argument"],
+    "fiancée": ["fiancée", "betrothed"],
+    "remonter": ["climb back up", "go back", "cheer up", "date back to"],
+    "curieux": ["curious", "inquisitive", "agog"],
+    "ascenseur": ["elevator", "lift", "scrollbar"],
+    "marine": ["navy", "marine", "maritime"],
+    "cadavre": ["corpse", "cadaver", "carcass"],
+    "front": ["forehead", "front", "battlefront"],
+    "traîner": ["drag", "trail", "hang around", "loiter"],
+    "morgan": ["Morgan (name)"],
+    "réaliser": ["realize", "accomplish", "achieve", "carry out"],
+    "ménage": ["housework", "housecleaning", "household", "housekeeping"],
+    "bouton": ["button", "pimple", "bud", "knob"],
+    "juré": ["juror", "sworn"],
+    "lourd": ["heavy", "burdensome", "onerous"],
+    "soudain": ["sudden", "suddenly", "all of a sudden", "abrupt"],
+    "emmerde": ["trouble", "hassle", "bother"],
+    "chou": ["cabbage", "sweetie (term of endearment)"],
+    "inconnu": ["unknown", "stranger", "unfamiliar"],
+    "équipage": ["crew"],
+    "loup": ["wolf", "sea bass", "masquerade mask"],
+    "vengeance": ["revenge", "vengeance"],
+    "king": ["king"],
+    "casier": ["locker", "criminal record", "pigeonhole", "bin"],
+    "roman": ["novel", "Romanesque (architecture)", "Romance (language family)"],
+    "nana": ["girl", "chick", "gal"],
+    "sophie": ["Sophie"],
+    "fleur": ["flower", "bloom", "blossom", "favor"],
+    "pêche": ["fishing", "peach", "punch (slang)"],
+    "engager": ["hire", "engage", "commit", "start"],
+    "colle": ["glue", "adhesive", "detention"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

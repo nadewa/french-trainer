@@ -158,7 +158,20 @@ for full reproducibility).
   that verb at all; "titre" was missing "title" itself; "allo" simply
   repeated the French word back ("Allo") rather than translating it
   ("hello", on the phone); "louis" gave "Lewis" — a different name from
-  "Louis". **Ranks 1300–4900 (~3,600 words) are still unreviewed.**
+  "Louis". **Fifth update**: continued into ranks 1300–1600 (57 more
+  fixes, override list now 303 entries). Outright-wrong entries kept
+  turning up at a similar rate: "fiancée" was glossed with a moth
+  species name ("Large Yellow Underwing") instead of "fiancée"/
+  "betrothed"; "loup" (wolf) was missing its own literal core meaning
+  entirely, listing only secondary senses (sea bass, masquerade mask);
+  "piscine" included "bathroom", which is simply wrong (that's "salle
+  de bain"); "tien" gave "your" (a possessive adjective) instead of
+  "yours" (the possessive pronoun "tien" actually is); "sophie" gave
+  "Sofia", a different name; "remonter" included a typo ("strech")
+  among unrelated words; "king" was glossed with an ancient Chinese
+  chime-instrument term ("bianqing"); "réaliser" was missing its very
+  common colloquial "realize" sense entirely. **Ranks 1600–4900
+  (~3,300 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

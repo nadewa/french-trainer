@@ -12540,21 +12540,20 @@
  {
   "word": "vole",
   "gloss": [
-   "sweep"
+   "flies",
+   "steals"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8965
  },
  {
   "word": "soutien",
   "gloss": [
-   "advocacy",
+   "support",
    "backing",
-   "behalf",
-   "endorsement",
-   "espousal"
+   "advocacy"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8963
  },
  {
@@ -12633,13 +12632,12 @@
  {
   "word": "sage",
   "gloss": [
-   "farsighted",
+   "wise",
+   "well-behaved",
    "good",
-   "judicious",
-   "prudent",
-   "reasonable"
+   "prudent"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8900
  },
  {
@@ -12661,23 +12659,21 @@
  {
   "word": "puce",
   "gloss": [
-   "bullet",
+   "flea",
    "chip",
-   "flea"
+   "bullet point"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8886
  },
  {
   "word": "canon",
   "gloss": [
-   "barrel",
-   "cannon-bone",
    "cannon",
-   "canon",
-   "catch"
+   "barrel",
+   "gorgeous (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8877
  },
  {
@@ -12791,9 +12787,11 @@
  {
   "word": "paroles",
   "gloss": [
-   "lyrics"
+   "words",
+   "lyrics",
+   "speech"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8798
  },
  {
@@ -12840,21 +12838,21 @@
   "word": "essence",
   "gloss": [
    "gasoline",
-   "petrol"
+   "petrol",
+   "essence"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8741
  },
  {
   "word": "côte",
   "gloss": [
-   "acclivity",
-   "bank",
-   "brae",
-   "coast-line",
-   "coast"
+   "coast",
+   "rib",
+   "hill",
+   "slope"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8720
  },
  {
@@ -12895,10 +12893,10 @@
  {
   "word": "europe",
   "gloss": [
-   "Europa",
-   "Europe"
+   "Europe",
+   "Europa"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8665
  },
  {
@@ -12995,10 +12993,9 @@
  {
   "word": "vote",
   "gloss": [
-   "vote",
-   "Votic"
+   "vote"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8584
  },
  {
@@ -13041,10 +13038,9 @@
  {
   "word": "siècle",
   "gloss": [
-   "centennial",
    "century"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8538
  },
  {
@@ -13061,12 +13057,10 @@
  {
   "word": "piscine",
   "gloss": [
-   "bathroom",
-   "pool",
-   "swimming bath",
-   "swimming pool"
+   "swimming pool",
+   "pool"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8518
  },
  {
@@ -13106,10 +13100,11 @@
  {
   "word": "élevé",
   "gloss": [
-   "noble",
-   "well mannered"
+   "high",
+   "raised",
+   "well brought up"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 8477
  },
  {
@@ -13204,9 +13199,10 @@
  {
   "word": "bel",
   "gloss": [
-   "bel"
+   "beautiful",
+   "handsome"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8422
  },
  {
@@ -13258,9 +13254,9 @@
  {
   "word": "tien",
   "gloss": [
-   "your"
+   "yours"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 8401
  },
  {
@@ -13345,10 +13341,10 @@
  {
   "word": "sucre",
   "gloss": [
-   "Sucre",
-   "sugar"
+   "sugar",
+   "Sucre"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8330
  },
  {
@@ -13387,13 +13383,11 @@
  {
   "word": "trompe",
   "gloss": [
-   "proboscis",
-   "salpinx",
-   "snout",
-   "squinch",
-   "stigma"
+   "trunk (elephant)",
+   "horn",
+   "tube"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8264
  },
  {
@@ -13456,13 +13450,12 @@
  {
   "word": "tenue",
   "gloss": [
-   "bearing",
-   "behavior",
-   "care",
    "clothing",
-   "control"
+   "outfit",
+   "bearing",
+   "behavior"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8213
  },
  {
@@ -13478,13 +13471,12 @@
  {
   "word": "chouette",
   "gloss": [
+   "owl",
    "cool",
-   "cute",
    "nice",
-   "sweet",
-   "owl"
+   "sweet"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8206
  },
  {
@@ -13545,10 +13537,10 @@
   "word": "gaffe",
   "gloss": [
    "blunder",
-   "gaffe",
-   "lapse"
+   "watch out (faire gaffe)",
+   "gaffe"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8142
  },
  {
@@ -13582,9 +13574,9 @@
  {
   "word": "jenny",
   "gloss": [
-   "spinning jenny"
+   "Jenny"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8128
  },
  {
@@ -13623,13 +13615,11 @@
  {
   "word": "jean",
   "gloss": [
+   "Jean (name)",
    "jeans",
-   "John",
-   "Sean",
-   "Shane",
-   "Shawn"
+   "John"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8092
  },
  {
@@ -13677,13 +13667,10 @@
  {
   "word": "prêtre",
   "gloss": [
-   "clergyman",
-   "common sand smelt",
-   "minister",
    "priest",
-   "sand smelt"
+   "clergyman"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8057
  },
  {
@@ -13706,11 +13693,11 @@
  {
   "word": "somme",
   "gloss": [
-   "aggregate",
+   "sum",
    "amount",
-   "sum"
+   "nap"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 8024
  },
  {
@@ -13814,13 +13801,11 @@
  {
   "word": "horreur",
   "gloss": [
-   "abhorrence",
-   "abomination",
-   "atrocity",
    "horror",
-   "phi"
+   "abhorrence",
+   "abomination"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7959
  },
  {
@@ -13916,9 +13901,10 @@
  {
   "word": "pis",
   "gloss": [
+   "worse",
    "udder"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7893
  },
  {
@@ -14016,32 +14002,31 @@
  {
   "word": "discussion",
   "gloss": [
-   "account",
-   "description",
-   "reference",
-   "talk"
+   "discussion",
+   "talk",
+   "argument"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7794
  },
  {
   "word": "fiancée",
   "gloss": [
-   "Large Yellow Underwing"
+   "fiancée",
+   "betrothed"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7783
  },
  {
   "word": "remonter",
   "gloss": [
-   "climb",
+   "climb back up",
    "go back",
-   "rack",
-   "strain",
-   "strech"
+   "cheer up",
+   "date back to"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7778
  },
  {
@@ -14072,12 +14057,11 @@
  {
   "word": "curieux",
   "gloss": [
-   "agog",
    "curious",
    "inquisitive",
-   "rubbernecker"
+   "agog"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7711
  },
  {
@@ -14085,11 +14069,9 @@
   "gloss": [
    "elevator",
    "lift",
-   "oh, hell",
-   "scroll bar",
-   "scroll"
+   "scrollbar"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7708
  },
  {
@@ -14136,34 +14118,31 @@
  {
   "word": "marine",
   "gloss": [
-   "marine art",
+   "navy",
    "marine",
-   "maritime art"
+   "maritime"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7664
  },
  {
   "word": "cadavre",
   "gloss": [
-   "cadaver",
-   "carcass",
    "corpse",
-   "dead soldier"
+   "cadaver",
+   "carcass"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7663
  },
  {
   "word": "front",
   "gloss": [
-   "battlefront",
-   "effrontery",
    "forehead",
-   "frontage",
-   "front"
+   "front",
+   "battlefront"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7654
  },
  {
@@ -14180,13 +14159,12 @@
  {
   "word": "traîner",
   "gloss": [
-   "drag along",
    "drag",
-   "pull",
-   "tow",
-   "trail"
+   "trail",
+   "hang around",
+   "loiter"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7646
  },
  {
@@ -14223,11 +14201,9 @@
  {
   "word": "morgan",
   "gloss": [
-   "Morgan horse",
-   "morgan",
-   "Morgan"
+   "Morgan (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7625
  },
  {
@@ -14352,13 +14328,12 @@
  {
   "word": "réaliser",
   "gloss": [
+   "realize",
    "accomplish",
    "achieve",
-   "carry through",
-   "fulfil",
-   "produce"
+   "carry out"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7551
  },
  {
@@ -14410,25 +14385,23 @@
  {
   "word": "ménage",
   "gloss": [
-   "furnishings",
+   "housework",
    "housecleaning",
    "household",
-   "housekeeping",
-   "housework"
+   "housekeeping"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7518
  },
  {
   "word": "bouton",
   "gloss": [
-   "bud",
    "button",
-   "knob",
-   "lump",
-   "nipple"
+   "pimple",
+   "bud",
+   "knob"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7503
  },
  {
@@ -14454,11 +14427,10 @@
  {
   "word": "juré",
   "gloss": [
-   "sworn",
-   "jury",
-   "member"
+   "juror",
+   "sworn"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7482
  },
  {
@@ -14480,13 +14452,11 @@
  {
   "word": "lourd",
   "gloss": [
-   "burdensome",
    "heavy",
-   "onerous",
-   "stodgy",
-   "thunderous"
+   "burdensome",
+   "onerous"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7472
  },
  {
@@ -14501,13 +14471,12 @@
  {
   "word": "soudain",
   "gloss": [
-   "all of a sudden",
+   "sudden",
    "suddenly",
-   "abrupt",
-   "off-handed",
-   "off-hand"
+   "all of a sudden",
+   "abrupt"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7463
  },
  {
@@ -14540,13 +14509,11 @@
  {
   "word": "emmerde",
   "gloss": [
-   "aggro",
-   "bad news",
-   "bother",
-   "bovver",
-   "hot water"
+   "trouble",
+   "hassle",
+   "bother"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7428
  },
  {
@@ -14611,9 +14578,9 @@
   "word": "chou",
   "gloss": [
    "cabbage",
-   "cole"
+   "sweetie (term of endearment)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7397
  },
  {
@@ -14715,13 +14682,11 @@
  {
   "word": "inconnu",
   "gloss": [
-   "obscure",
-   "strange",
-   "unfamiliar",
    "unknown",
-   "stranger"
+   "stranger",
+   "unfamiliar"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7322
  },
  {
@@ -14786,10 +14751,9 @@
  {
   "word": "équipage",
   "gloss": [
-   "crew",
-   "equipment"
+   "crew"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7282
  },
  {
@@ -14818,13 +14782,11 @@
  {
   "word": "loup",
   "gloss": [
-   "bass",
-   "domino mask",
-   "it",
-   "Lupus",
-   "tag"
+   "wolf",
+   "sea bass",
+   "masquerade mask"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7247
  },
  {
@@ -14841,11 +14803,10 @@
  {
   "word": "vengeance",
   "gloss": [
-   "revanche",
    "revenge",
    "vengeance"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7229
  },
  {
@@ -14937,11 +14898,9 @@
  {
   "word": "king",
   "gloss": [
-   "bianqing",
-   "king",
-   "sounding stone"
+   "king"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7154
  },
  {
@@ -15053,25 +15012,22 @@
  {
   "word": "casier",
   "gloss": [
-   "bin",
-   "criminal record",
    "locker",
+   "criminal record",
    "pigeonhole",
-   "trap"
+   "bin"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7106
  },
  {
   "word": "roman",
   "gloss": [
-   "Romance",
-   "romanesque",
    "novel",
-   "Romance language",
-   "Romanesque art"
+   "Romanesque (architecture)",
+   "Romance (language family)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7101
  },
  {
@@ -15085,13 +15041,11 @@
  {
   "word": "nana",
   "gloss": [
-   "bird",
-   "broad",
+   "girl",
    "chick",
-   "dame",
    "gal"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7093
  },
  {
@@ -15106,9 +15060,9 @@
  {
   "word": "sophie",
   "gloss": [
-   "Sofia"
+   "Sophie"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 7089
  },
  {
@@ -15194,13 +15148,12 @@
  {
   "word": "fleur",
   "gloss": [
-   "angiosperm",
+   "flower",
    "bloom",
    "blossom",
-   "favor",
-   "flower"
+   "favor"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 7040
  },
  {
@@ -15283,13 +15236,11 @@
  {
   "word": "pêche",
   "gloss": [
-   "angling",
-   "catch",
    "fishing",
    "peach",
-   "punch"
+   "punch (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6989
  },
  {
@@ -15437,12 +15388,12 @@
  {
   "word": "engager",
   "gloss": [
-   "admonish",
+   "hire",
    "engage",
-   "exhort",
-   "tell off"
+   "commit",
+   "start"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6919
  },
  {
@@ -15459,13 +15410,11 @@
  {
   "word": "colle",
   "gloss": [
-   "adhesive",
-   "cement",
-   "detention",
    "glue",
-   "sticky"
+   "adhesive",
+   "detention"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 6904
  },
  {
