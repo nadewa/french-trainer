@@ -906,6 +906,71 @@ MANUAL_GLOSS_OVERRIDE = {
     "tanner": ["tan (leather)", "pester/bug (slang)"],
     "bac": ["baccalauréat (exam, informal)", "bin/tub", "tray"],
     "parages": ["vicinity", "area (dans les parages = in the area)"],
+    # Continuing the exhaustive review (ranks 3700-4000 of ~4900).
+    # "pâques" (Easter) wrongly included "Passover" as a direct
+    # synonym -- verified via web search that these are genuinely
+    # distinct in French: Pâques (no article) is specifically the
+    # Christian holiday, while Passover is "la Pâque" (feminine, with
+    # the article), a related but different word. Other outright
+    # errors: "mouton" (sheep) was missing the literal animal meaning
+    # entirely, listing only obscure synonyms for "dust bunny";
+    # "efface" (a conjugated form of "effacer", "erases") had leaked
+    # into the vocab list as its own headword, glossed as the noun
+    # "eraser" (a different word, "gomme"); "boeuf" (the unaccented
+    # duplicate of "bœuf") was glossed as "Boeuf River", an obscure US
+    # place name, instead of matching the correct "bœuf" entry (beef).
+    "défoncer": ["smash", "break down", "get high (slang)"],
+    "cardinal": ["cardinal"],
+    "prudence": ["caution", "care", "prudence"],
+    "noyé": ["drowned"],
+    "soulager": ["relieve", "ease", "alleviate"],
+    "mere": ["mother (likely mère)"],
+    "vase": ["vase (container)", "mud/silt (feminine noun)"],
+    "reins": ["kidneys", "lower back", "loin"],
+    "coupure": ["cut", "bill (banknote)", "power outage (coupure de courant)"],
+    "romain": ["Roman"],
+    "vilaine": ["nasty (feminine)", "wicked (feminine)", "Vilaine (river)"],
+    "définition": ["definition", "resolution (image)"],
+    "boeuf": ["beef", "ox", "bovine"],
+    "raccompagner": ["walk/drive (someone) home", "see off", "take back"],
+    "richesse": ["wealth", "richness", "affluence", "fortune"],
+    "bilan": ["balance sheet", "assessment (faire le bilan)"],
+    "pope": ["Orthodox priest", "priest"],
+    "réglo": ["fair", "honest", "trustworthy (slang)"],
+    "juive": ["Jewish (feminine)", "Jewish woman"],
+    "maternelle": ["kindergarten", "nursery school"],
+    "parvenir": ["achieve", "attain", "manage to", "arrive at"],
+    "clou": ["nail", "spike", "stud", "clove (clou de girofle)"],
+    "conséquent": ["consequent", "substantial/sizeable", "therefore (par conséquent)"],
+    "largement": ["largely", "widely", "easily/by far", "amply"],
+    "écarter": ["push aside", "spread apart", "rule out", "remove"],
+    "gâchette": ["trigger (gun)"],
+    "fosse": ["pit", "trench", "grave", "burial pit"],
+    "dexter": ["Dexter (name)"],
+    "cuisinier": ["cook", "chef"],
+    "marianne": ["Marianne (name/French national symbol)"],
+    "sonnette": ["doorbell", "bell"],
+    "cogner": ["knock", "bang", "hit"],
+    "flûte": ["flute (instrument)", "champagne flute (glass)", "thin baguette (bread)"],
+    "dentaire": ["dental"],
+    "mouton": ["sheep", "mutton", "dust bunny (colloquial)"],
+    "excès": ["excess", "overindulgence"],
+    "slip": ["briefs", "underwear", "panties"],
+    "pâques": ["Easter"],
+    "laid": ["ugly"],
+    "bouquet": ["bouquet (flowers)", "cluster"],
+    "majeur": ["of age (legal adult)", "major", "middle finger (anatomical)"],
+    "soutenu": ["sustained", "supported", "formal (style soutenu)"],
+    "cellulaire": ["cellular", "cell phone (Quebec French)"],
+    "bassin": ["basin (water/geographic)", "pelvis (anatomical)"],
+    "pleuvoir": ["to rain", "rain"],
+    "piloter": ["pilot (aircraft)", "drive", "steer"],
+    "efface": ["erases"],
+    "lavage": ["washing", "wash", "cleaning"],
+    "curé": ["parish priest", "clergyman", "parson"],
+    "sécher": ["dry", "ditch/skip (class, slang)"],
+    "ouf": ["phew! (interjection)", "crazy (verlan slang for fou)"],
+    "réduction": ["discount", "reduction", "decrease"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

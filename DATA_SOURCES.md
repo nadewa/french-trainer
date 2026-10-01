@@ -256,8 +256,21 @@ for full reproducibility).
   "robbery/heist", was glossed entirely with automotive steering
   terminology, missing the common sense completely; "bac", very
   commonly short for "baccalauréat" (the French high-school exit
-  exam), was glossed only with vague container words. **Ranks
-  3700–4900 (~1,200 words) are still unreviewed.**
+  exam), was glossed only with vague container words. **Thirteenth
+  update**: continued into ranks 3700–4000 (52 more fixes, override
+  list now 746 entries). "pâques" (Easter) wrongly included "Passover"
+  as a direct synonym — verified via web search that these are
+  genuinely distinct in French: Pâques (no article) is specifically
+  the Christian holiday, while Passover is "la Pâque" (feminine, with
+  the article), a related but different word. Other outright errors:
+  "mouton" (sheep) was missing the literal animal meaning entirely,
+  listing only obscure synonyms for "dust bunny"; "efface" (a
+  conjugated form of "effacer", "erases") had leaked into the vocab
+  list as its own headword, glossed as the noun "eraser" (a different
+  word, "gomme"); "boeuf" (the unaccented duplicate of "bœuf") was
+  glossed as "Boeuf River", an obscure US place name, instead of
+  matching the correct "bœuf" entry (beef). **Ranks 4000–4900 (~900
+  words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

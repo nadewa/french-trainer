@@ -35028,11 +35028,11 @@
  {
   "word": "défoncer",
   "gloss": [
-   "get high",
-   "knock off",
-   "knock over"
+   "smash",
+   "break down",
+   "get high (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2065
  },
  {
@@ -35059,11 +35059,9 @@
  {
   "word": "cardinal",
   "gloss": [
-   "cardinal",
-   "cardinal fritillary",
-   "Cardinal"
+   "cardinal"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2064
  },
  {
@@ -35116,11 +35114,10 @@
   "word": "prudence",
   "gloss": [
    "caution",
-   "discretion",
-   "generalship",
+   "care",
    "prudence"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2061
  },
  {
@@ -35135,9 +35132,9 @@
  {
   "word": "noyé",
   "gloss": [
-   "drown"
+   "drowned"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2058
  },
  {
@@ -35318,13 +35315,11 @@
  {
   "word": "soulager",
   "gloss": [
-   "allay",
-   "alleviate",
-   "cushion",
+   "relieve",
    "ease",
-   "facilitate"
+   "alleviate"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2038
  },
  {
@@ -35338,9 +35333,9 @@
  {
   "word": "mere",
   "gloss": [
-   "Merey"
+   "mother (likely mère)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2035
  },
  {
@@ -35368,12 +35363,10 @@
  {
   "word": "vase",
   "gloss": [
-   "drain",
-   "mud",
-   "silt",
-   "vase"
+   "vase (container)",
+   "mud/silt (feminine noun)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2032
  },
  {
@@ -35428,18 +35421,21 @@
  {
   "word": "reins",
   "gloss": [
+   "kidneys",
+   "lower back",
    "loin"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2022
  },
  {
   "word": "coupure",
   "gloss": [
-   "bill",
-   "cut"
+   "cut",
+   "bill (banknote)",
+   "power outage (coupure de courant)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2020
  },
  {
@@ -35556,10 +35552,9 @@
  {
   "word": "romain",
   "gloss": [
-   "Roman",
-   "runt pigeon"
+   "Roman"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2007
  },
  {
@@ -35653,9 +35648,11 @@
  {
   "word": "vilaine",
   "gloss": [
-   "Vilaine"
+   "nasty (feminine)",
+   "wicked (feminine)",
+   "Vilaine (river)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1996
  },
  {
@@ -35671,10 +35668,9 @@
   "word": "définition",
   "gloss": [
    "definition",
-   "resolution",
-   "scrolling"
+   "resolution (image)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1994
  },
  {
@@ -35725,9 +35721,11 @@
  {
   "word": "boeuf",
   "gloss": [
-   "Boeuf River"
+   "beef",
+   "ox",
+   "bovine"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1989
  },
  {
@@ -35790,21 +35788,22 @@
  {
   "word": "raccompagner",
   "gloss": [
+   "walk/drive (someone) home",
+   "see off",
    "take back"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1982
  },
  {
   "word": "richesse",
   "gloss": [
+   "wealth",
+   "richness",
    "affluence",
-   "fecundicity",
-   "fertility",
-   "fortune",
-   "luxury"
+   "fortune"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1982
  },
  {
@@ -35822,9 +35821,10 @@
  {
   "word": "bilan",
   "gloss": [
-   "balance sheet"
+   "balance sheet",
+   "assessment (faire le bilan)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1980
  },
  {
@@ -35900,9 +35900,10 @@
  {
   "word": "pope",
   "gloss": [
+   "Orthodox priest",
    "priest"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1971
  },
  {
@@ -35934,9 +35935,11 @@
  {
   "word": "réglo",
   "gloss": [
-   "fair"
+   "fair",
+   "honest",
+   "trustworthy (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1969
  },
  {
@@ -35950,9 +35953,10 @@
  {
   "word": "juive",
   "gloss": [
-   "Jewess"
+   "Jewish (feminine)",
+   "Jewish woman"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1968
  },
  {
@@ -36062,10 +36066,10 @@
  {
   "word": "maternelle",
   "gloss": [
-   "kindergarden",
+   "kindergarten",
    "nursery school"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1960
  },
  {
@@ -36169,13 +36173,12 @@
  {
   "word": "parvenir",
   "gloss": [
-   "accomplish",
    "achieve",
-   "arrive at",
    "attain",
-   "catch"
+   "manage to",
+   "arrive at"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1954
  },
  {
@@ -36293,13 +36296,12 @@
  {
   "word": "clou",
   "gloss": [
-   "button",
-   "clove",
    "nail",
    "spike",
-   "stud"
+   "stud",
+   "clove (clou de girofle)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1941
  },
  {
@@ -36384,12 +36386,11 @@
  {
   "word": "conséquent",
   "gloss": [
-   "consequence",
-   "consequential",
    "consequent",
-   "considerable"
+   "substantial/sizeable",
+   "therefore (par conséquent)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1933
  },
  {
@@ -36433,13 +36434,12 @@
  {
   "word": "largement",
   "gloss": [
-   "abundantly",
-   "amply",
-   "aplenty",
-   "broadly",
-   "richly"
+   "largely",
+   "widely",
+   "easily/by far",
+   "amply"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1927
  },
  {
@@ -36466,10 +36466,12 @@
  {
   "word": "écarter",
   "gloss": [
-   "lead astray",
+   "push aside",
+   "spread apart",
+   "rule out",
    "remove"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1922
  },
  {
@@ -36619,10 +36621,9 @@
  {
   "word": "gâchette",
   "gloss": [
-   "latch",
-   "trigger"
+   "trigger (gun)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1913
  },
  {
@@ -36637,13 +36638,12 @@
  {
   "word": "fosse",
   "gloss": [
-   "burial pit",
-   "fossa",
-   "grave",
    "pit",
-   "trench"
+   "trench",
+   "grave",
+   "burial pit"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1911
  },
  {
@@ -36711,9 +36711,9 @@
  {
   "word": "dexter",
   "gloss": [
-   "dexter cattle"
+   "Dexter (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1907
  },
  {
@@ -36728,12 +36728,10 @@
  {
   "word": "cuisinier",
   "gloss": [
-   "chef",
-   "chief",
-   "cookbook",
-   "cook"
+   "cook",
+   "chef"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1906
  },
  {
@@ -36899,9 +36897,9 @@
  {
   "word": "marianne",
   "gloss": [
-   "Marian"
+   "Marianne (name/French national symbol)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1896
  },
  {
@@ -36933,11 +36931,10 @@
  {
   "word": "sonnette",
   "gloss": [
-   "bell",
    "doorbell",
-   "pile driver"
+   "bell"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1890
  },
  {
@@ -37043,9 +37040,11 @@
  {
   "word": "cogner",
   "gloss": [
-   "conk"
+   "knock",
+   "bang",
+   "hit"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1885
  },
  {
@@ -37077,13 +37076,11 @@
  {
   "word": "flûte",
   "gloss": [
-   "flute",
-   "glass",
-   "loaf",
-   "streamer",
-   "tall"
+   "flute (instrument)",
+   "champagne flute (glass)",
+   "thin baguette (bread)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1883
  },
  {
@@ -37097,12 +37094,9 @@
  {
   "word": "dentaire",
   "gloss": [
-   "dental",
-   "dentary",
-   "bittercress",
-   "toothwort"
+   "dental"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1882
  },
  {
@@ -37188,13 +37182,11 @@
  {
   "word": "mouton",
   "gloss": [
-   "beggar's velvet",
-   "dust bunny",
-   "dust kitten",
-   "dust kitty",
-   "mutton"
+   "sheep",
+   "mutton",
+   "dust bunny (colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1875
  },
  {
@@ -37210,13 +37202,10 @@
  {
   "word": "excès",
   "gloss": [
-   "cornucopia",
-   "difference",
    "excess",
-   "superabundance",
-   "surfeit"
+   "overindulgence"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1872
  },
  {
@@ -37275,12 +37264,10 @@
   "word": "slip",
   "gloss": [
    "briefs",
-   "knickers",
-   "pants",
-   "panty",
-   "slipway"
+   "underwear",
+   "panties"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1866
  },
  {
@@ -37294,20 +37281,17 @@
  {
   "word": "pâques",
   "gloss": [
-   "Easter",
-   "Passover"
+   "Easter"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1864
  },
  {
   "word": "laid",
   "gloss": [
-   "mean",
-   "nasty",
    "ugly"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1863
  },
  {
@@ -37344,9 +37328,10 @@
  {
   "word": "bouquet",
   "gloss": [
+   "bouquet (flowers)",
    "cluster"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1858
  },
  {
@@ -37361,38 +37346,39 @@
  {
   "word": "majeur",
   "gloss": [
-   "adult",
-   "full-grown",
-   "grown-up",
+   "of age (legal adult)",
    "major",
-   "of age"
+   "middle finger (anatomical)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1857
  },
  {
   "word": "soutenu",
   "gloss": [
-   "formal"
+   "sustained",
+   "supported",
+   "formal (style soutenu)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1856
  },
  {
   "word": "cellulaire",
   "gloss": [
-   "cellular"
+   "cellular",
+   "cell phone (Quebec French)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1856
  },
  {
   "word": "bassin",
   "gloss": [
-   "depression",
-   "pelvis"
+   "basin (water/geographic)",
+   "pelvis (anatomical)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1856
  },
  {
@@ -37460,10 +37446,10 @@
  {
   "word": "pleuvoir",
   "gloss": [
-   "raining",
+   "to rain",
    "rain"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1850
  },
  {
@@ -37506,9 +37492,11 @@
  {
   "word": "piloter",
   "gloss": [
+   "pilot (aircraft)",
+   "drive",
    "steer"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1846
  },
  {
@@ -37578,20 +37566,19 @@
  {
   "word": "efface",
   "gloss": [
-   "eraser"
+   "erases"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1841
  },
  {
   "word": "lavage",
   "gloss": [
-   "cleaning",
-   "enema",
    "washing",
-   "wash"
+   "wash",
+   "cleaning"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1841
  },
  {
@@ -37637,13 +37624,11 @@
  {
   "word": "curé",
   "gloss": [
+   "parish priest",
    "clergyman",
-   "cure",
-   "incumbent",
-   "minister",
    "parson"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1839
  },
  {
@@ -37694,11 +37679,10 @@
  {
   "word": "sécher",
   "gloss": [
-   "ditch",
-   "play hookey",
-   "play truant"
+   "dry",
+   "ditch/skip (class, slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1834
  },
  {
@@ -37731,9 +37715,10 @@
  {
   "word": "ouf",
   "gloss": [
-   "crazy"
+   "phew! (interjection)",
+   "crazy (verlan slang for fou)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1829
  },
  {
@@ -37816,13 +37801,11 @@
  {
   "word": "réduction",
   "gloss": [
-   "abatement",
-   "curtailment",
-   "decrease",
-   "diminishment",
-   "discount"
+   "discount",
+   "reduction",
+   "decrease"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1818
  },
  {
