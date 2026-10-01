@@ -32306,13 +32306,11 @@
  {
   "word": "braquage",
   "gloss": [
-   "deflection",
-   "lock angle",
-   "lock",
-   "steering angle",
-   "steering"
+   "robbery",
+   "heist",
+   "steering (car)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2353
  },
  {
@@ -32597,24 +32595,21 @@
  {
   "word": "pince",
   "gloss": [
-   "claw",
+   "pliers",
+   "tongs",
    "clip",
-   "crease",
-   "grip",
-   "pennypincher"
+   "claw"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2321
  },
  {
   "word": "primaire",
   "gloss": [
-   "abecedarian",
-   "elemental",
-   "elementary",
-   "primary"
+   "primary",
+   "elementary"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2321
  },
  {
@@ -32640,11 +32635,9 @@
   "gloss": [
    "bay",
    "berry",
-   "cabinet",
-   "picture window",
-   "rack"
+   "picture window"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2318
  },
  {
@@ -32687,18 +32680,20 @@
  {
   "word": "deb",
   "gloss": [
-   "BED"
+   "Deb (name, short for Deborah)",
+   "debutante (informal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2314
  },
  {
   "word": "rappel",
   "gloss": [
-   "booster",
-   "reminder"
+   "reminder",
+   "booster (vaccine)",
+   "recall"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2314
  },
  {
@@ -32713,13 +32708,11 @@
  {
   "word": "office",
   "gloss": [
-   "attendance",
-   "capacity",
-   "facility",
-   "function",
-   "job"
+   "religious service",
+   "function/role",
+   "pantry (dated)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2312
  },
  {
@@ -32743,29 +32736,25 @@
  {
   "word": "mi",
   "gloss": [
-   "E",
-   "mi"
+   "mi (musical note, = E)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2309
  },
  {
   "word": "mental",
   "gloss": [
-   "lively",
-   "mental",
-   "witty"
+   "mental"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2308
  },
  {
   "word": "messager",
   "gloss": [
-   "advertiser",
    "messenger"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2308
  },
  {
@@ -32779,40 +32768,40 @@
  {
   "word": "souhait",
   "gloss": [
-   "ambition",
-   "aspiration",
-   "congratulation",
+   "wish",
    "desire",
-   "want"
+   "aspiration"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2305
  },
  {
   "word": "crochet",
   "gloss": [
-   "bracket",
    "hook",
-   "square bracket"
+   "bracket",
+   "crochet (knitting)",
+   "detour (faire un crochet)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2304
  },
  {
   "word": "naître",
   "gloss": [
-   "born"
+   "to be born",
+   "be born"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2304
  },
  {
   "word": "age",
   "gloss": [
-   "beam",
-   "draft-pole"
+   "age (likely âge)",
+   "draft-pole (archaic, rare)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2304
  },
  {
@@ -32826,9 +32815,11 @@
  {
   "word": "rude",
   "gloss": [
+   "harsh",
+   "tough",
    "rough"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2303
  },
  {
@@ -32902,13 +32893,11 @@
  {
   "word": "passager",
   "gloss": [
-   "ephemeral",
-   "fugacious",
+   "passenger",
    "passing",
-   "passing through",
-   "passenger"
+   "fleeting"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2293
  },
  {
@@ -32930,13 +32919,11 @@
  {
   "word": "raide",
   "gloss": [
-   "abrupt",
-   "off-handed",
-   "off-hand",
+   "stiff",
    "rigid",
    "steep"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2283
  },
  {
@@ -33060,11 +33047,9 @@
  {
   "word": "peintre",
   "gloss": [
-   "Easel",
-   "painter",
-   "Pictor"
+   "painter"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2272
  },
  {
@@ -33119,13 +33104,12 @@
  {
   "word": "rebelle",
   "gloss": [
-   "disobedient",
-   "insubordinate",
    "rebellious",
-   "recalicitrant",
-   "rogue"
+   "disobedient",
+   "recalcitrant",
+   "rebel (noun)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2268
  },
  {
@@ -33156,13 +33140,11 @@
  {
   "word": "montage",
   "gloss": [
-   "ascent",
-   "assembly",
-   "composing",
-   "erecting",
-   "fitting up"
+   "editing (film)",
+   "montage",
+   "assembly"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2267
  },
  {
@@ -33180,12 +33162,10 @@
  {
   "word": "rhume",
   "gloss": [
-   "catarrh",
-   "chill",
    "cold",
    "common cold"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2264
  },
  {
@@ -33243,13 +33223,11 @@
  {
   "word": "mat",
   "gloss": [
-   "flat",
    "matte",
-   "AB",
-   "check and mate",
-   "checkmate"
+   "checkmate",
+   "flat"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2257
  },
  {
@@ -33293,11 +33271,11 @@
  {
   "word": "assumer",
   "gloss": [
-   "assume",
    "take on",
-   "take"
+   "accept/own (responsibility)",
+   "come to terms with"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2253
  },
  {
@@ -33370,11 +33348,10 @@
  {
   "word": "régulièrement",
   "gloss": [
-   "equably",
-   "evenly",
-   "regularly"
+   "regularly",
+   "evenly"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2244
  },
  {
@@ -33396,13 +33373,11 @@
  {
   "word": "voisinage",
   "gloss": [
-   "close to",
-   "contiguity",
-   "nearness",
-   "neighbourhood",
-   "neighbours"
+   "neighborhood",
+   "vicinity",
+   "nearness"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2244
  },
  {
@@ -33460,32 +33435,32 @@
  {
   "word": "accordé",
   "gloss": [
-   "fiancé"
+   "granted",
+   "agreed",
+   "tuned",
+   "betrothed (archaic)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2239
  },
  {
   "word": "réclame",
   "gloss": [
-   "ad",
    "advertisement",
-   "advert",
-   "demand"
+   "ad"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2239
  },
  {
   "word": "canne",
   "gloss": [
-   "baton",
    "cane",
+   "walking stick",
    "fishing rod",
-   "leg",
    "reed"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2239
  },
  {
@@ -33508,13 +33483,11 @@
  {
   "word": "actuel",
   "gloss": [
-   "actual",
    "current",
-   "fashionable",
    "present-day",
    "present"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2237
  },
  {
@@ -33545,13 +33518,9 @@
  {
   "word": "garer",
   "gloss": [
-   "avoid",
-   "garage",
-   "park",
-   "stand aside",
-   "station"
+   "park (a vehicle)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2231
  },
  {
@@ -33582,13 +33551,11 @@
  {
   "word": "détente",
   "gloss": [
-   "amusement",
-   "detente",
-   "distraction",
-   "diversion",
-   "entertainment"
+   "relaxation",
+   "trigger (gun)",
+   "détente (diplomatic)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2226
  },
  {
@@ -33611,19 +33578,17 @@
  {
   "word": "limousine",
   "gloss": [
-   "limousin cattle",
-   "Limousin sheep"
+   "limousine (car)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2224
  },
  {
   "word": "duel",
   "gloss": [
-   "dual",
    "duel"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2223
  },
  {
@@ -33657,33 +33622,28 @@
  {
   "word": "néanmoins",
   "gloss": [
-   "nathless",
    "nevertheless",
    "nonetheless"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2213
  },
  {
   "word": "sixième",
   "gloss": [
    "sixth",
-   "grade 6",
-   "sixth grade"
+   "sixth grade (French school year)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2213
  },
  {
   "word": "carré",
   "gloss": [
    "square",
-   "square-shouldered",
-   "straightforward",
-   "carriage key",
-   "excavation plot"
+   "straightforward"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2213
  },
  {
@@ -33726,11 +33686,11 @@
  {
   "word": "agenda",
   "gloss": [
-   "appointment book",
    "diary",
-   "engagement book"
+   "planner",
+   "appointment book"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2210
  },
  {
@@ -33767,11 +33727,11 @@
  {
   "word": "culot",
   "gloss": [
-   "brashness",
    "nerve",
-   "seasoning"
+   "cheek",
+   "audacity"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2206
  },
  {
@@ -33785,11 +33745,11 @@
  {
   "word": "ressortir",
   "gloss": [
-   "follow",
-   "leave",
-   "stand out"
+   "stand out",
+   "go back out",
+   "emerge"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2204
  },
  {
@@ -33878,9 +33838,9 @@
  {
   "word": "gray",
   "gloss": [
-   "gray"
+   "Gray (name/place)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2191
  },
  {
@@ -33888,9 +33848,9 @@
   "gloss": [
    "disembark",
    "land",
-   "unload"
+   "show up (unannounced, colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2189
  },
  {
@@ -33945,13 +33905,12 @@
  {
   "word": "mousse",
   "gloss": [
-   "blunt",
-   "cabin boy",
    "foam",
-   "matey",
-   "moss"
+   "moss",
+   "mousse (dessert)",
+   "cabin boy"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2182
  },
  {
@@ -33980,9 +33939,9 @@
   "word": "stage",
   "gloss": [
    "internship",
-   "season"
+   "training course"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2182
  },
  {
@@ -34044,9 +34003,11 @@
  {
   "word": "comporter",
   "gloss": [
-   "include"
+   "include",
+   "comprise",
+   "behave (se comporter)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2176
  },
  {
@@ -34138,9 +34099,10 @@
  {
   "word": "permanence",
   "gloss": [
-   "permanence"
+   "permanence",
+   "study hall (school, la permanence)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2165
  },
  {
@@ -34174,10 +34136,12 @@
  {
   "word": "décrocher",
   "gloss": [
-   "pick up",
-   "unhook"
+   "pick up (phone)",
+   "unhook",
+   "land (a job)",
+   "drop out (school, colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2162
  },
  {
@@ -34256,9 +34220,10 @@
  {
   "word": "guise",
   "gloss": [
-   "guise"
+   "as one pleases (à sa guise)",
+   "by way of (en guise de)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2153
  },
  {
@@ -34305,12 +34270,9 @@
  {
   "word": "bouquin",
   "gloss": [
-   "book",
-   "buck-hare",
-   "buck-rabbit",
-   "buck"
+   "book (informal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2151
  },
  {
@@ -34428,34 +34390,33 @@
  {
   "word": "céder",
   "gloss": [
-   "accommodate",
-   "assign",
-   "cede",
+   "give in",
    "give way",
-   "grant"
+   "cede",
+   "yield"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2139
  },
  {
   "word": "rigoler",
   "gloss": [
+   "laugh",
+   "joke around",
    "kid",
    "tease"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2139
  },
  {
   "word": "minuscule",
   "gloss": [
-   "lower case",
-   "miniscule",
+   "tiny",
    "minuscule",
-   "minute",
-   "tiny"
+   "lower case (letter)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2138
  },
  {
@@ -34495,20 +34456,19 @@
  {
   "word": "internationale",
   "gloss": [
-   "The Internationale"
+   "international (feminine)",
+   "The Internationale (anthem)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2128
  },
  {
   "word": "fantasme",
   "gloss": [
    "fantasy",
-   "ghost",
-   "illusion",
-   "phantasm"
+   "illusion"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2126
  },
  {
@@ -34569,11 +34529,10 @@
  {
   "word": "conséquence",
   "gloss": [
-   "conclusion",
    "consequence",
-   "consequent"
+   "result"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2122
  },
  {
@@ -34766,9 +34725,10 @@
   "word": "express",
   "gloss": [
    "express",
+   "espresso (coffee)",
    "express train"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2097
  },
  {
@@ -34791,24 +34751,21 @@
  {
   "word": "volume",
   "gloss": [
+   "volume",
    "capacity",
-   "loundness",
-   "sound",
-   "volume"
+   "loudness"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2096
  },
  {
   "word": "enthousiasme",
   "gloss": [
-   "alacrity",
    "enthusiasm",
-   "morale",
-   "Theolepsy",
-   "zest"
+   "zest",
+   "alacrity"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2095
  },
  {
@@ -34842,9 +34799,10 @@
  {
   "word": "tanner",
   "gloss": [
-   "tan"
+   "tan (leather)",
+   "pester/bug (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2092
  },
  {
@@ -34919,13 +34877,11 @@
  {
   "word": "bac",
   "gloss": [
-   "bottle",
-   "box",
-   "bucket",
-   "can",
-   "case"
+   "baccalauréat (exam, informal)",
+   "bin/tub",
+   "tray"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2083
  },
  {
@@ -35001,12 +34957,10 @@
  {
   "word": "parages",
   "gloss": [
-   "about",
-   "round",
-   "around",
-   "towards"
+   "vicinity",
+   "area (dans les parages = in the area)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2075
  },
  {

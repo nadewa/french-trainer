@@ -832,6 +832,80 @@ MANUAL_GLOSS_OVERRIDE = {
     "alimentation": ["food", "nutrition", "power supply (electrical)"],
     "rex": ["Rex (name/pet name)", "rex rabbit"],
     "outre": ["beyond", "furthermore (en outre)", "besides"],
+    # Continuing the exhaustive review (ranks 3400-3700 of ~4900).
+    # Three more false friends, verified via web search: "actuel"
+    # means "current/present-day", never "actual" (that's "réel") --
+    # the sourced gloss led with the wrong "actual"; "stage" means
+    # "internship/training course", never a performance platform (that
+    # IS "scène") -- the sourced gloss included the equally wrong
+    # "season" (that's "saison"); "assumer" means "to take on/accept
+    # responsibility for", never "to assume" (that's "présumer"/
+    # "supposer") -- the sourced gloss led with the wrong "assume".
+    # Also outright wrong: "braquage" (a very common crime-slang word
+    # for "robbery/heist") was glossed entirely with automotive
+    # steering terminology, missing the common sense completely; "bac"
+    # (very commonly short for "baccalauréat", the French high-school
+    # exit exam) was glossed only with vague container words.
+    "braquage": ["robbery", "heist", "steering (car)"],
+    "pince": ["pliers", "tongs", "clip", "claw"],
+    "primaire": ["primary", "elementary"],
+    "baie": ["bay", "berry", "picture window"],
+    "deb": ["Deb (name, short for Deborah)", "debutante (informal)"],
+    "rappel": ["reminder", "booster (vaccine)", "recall"],
+    "office": ["religious service", "function/role", "pantry (dated)"],
+    "mi": ["mi (musical note, = E)"],
+    "mental": ["mental"],
+    "messager": ["messenger"],
+    "souhait": ["wish", "desire", "aspiration"],
+    "crochet": ["hook", "bracket", "crochet (knitting)", "detour (faire un crochet)"],
+    "naître": ["to be born", "be born"],
+    "age": ["age (likely âge)", "draft-pole (archaic, rare)"],
+    "rude": ["harsh", "tough", "rough"],
+    "passager": ["passenger", "passing", "fleeting"],
+    "raide": ["stiff", "rigid", "steep"],
+    "peintre": ["painter"],
+    "rebelle": ["rebellious", "disobedient", "recalcitrant", "rebel (noun)"],
+    "montage": ["editing (film)", "montage", "assembly"],
+    "rhume": ["cold", "common cold"],
+    "mat": ["matte", "checkmate", "flat"],
+    "assumer": ["take on", "accept/own (responsibility)", "come to terms with"],
+    "régulièrement": ["regularly", "evenly"],
+    "voisinage": ["neighborhood", "vicinity", "nearness"],
+    "accordé": ["granted", "agreed", "tuned", "betrothed (archaic)"],
+    "réclame": ["advertisement", "ad"],
+    "canne": ["cane", "walking stick", "fishing rod", "reed"],
+    "actuel": ["current", "present-day", "present"],
+    "garer": ["park (a vehicle)"],
+    "détente": ["relaxation", "trigger (gun)", "détente (diplomatic)"],
+    "limousine": ["limousine (car)"],
+    "duel": ["duel"],
+    "néanmoins": ["nevertheless", "nonetheless"],
+    "sixième": ["sixth", "sixth grade (French school year)"],
+    "carré": ["square", "straightforward"],
+    "agenda": ["diary", "planner", "appointment book"],
+    "culot": ["nerve", "cheek", "audacity"],
+    "ressortir": ["stand out", "go back out", "emerge"],
+    "gray": ["Gray (name/place)"],
+    "débarquer": ["disembark", "land", "show up (unannounced, colloquial)"],
+    "mousse": ["foam", "moss", "mousse (dessert)", "cabin boy"],
+    "stage": ["internship", "training course"],
+    "comporter": ["include", "comprise", "behave (se comporter)"],
+    "permanence": ["permanence", "study hall (school, la permanence)"],
+    "décrocher": ["pick up (phone)", "unhook", "land (a job)", "drop out (school, colloquial)"],
+    "guise": ["as one pleases (à sa guise)", "by way of (en guise de)"],
+    "bouquin": ["book (informal)"],
+    "céder": ["give in", "give way", "cede", "yield"],
+    "rigoler": ["laugh", "joke around", "kid", "tease"],
+    "minuscule": ["tiny", "minuscule", "lower case (letter)"],
+    "internationale": ["international (feminine)", "The Internationale (anthem)"],
+    "fantasme": ["fantasy", "illusion"],
+    "conséquence": ["consequence", "result"],
+    "express": ["express", "espresso (coffee)", "express train"],
+    "volume": ["volume", "capacity", "loudness"],
+    "enthousiasme": ["enthusiasm", "zest", "alacrity"],
+    "tanner": ["tan (leather)", "pester/bug (slang)"],
+    "bac": ["baccalauréat (exam, informal)", "bin/tub", "tray"],
+    "parages": ["vicinity", "area (dans les parages = in the area)"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

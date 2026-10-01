@@ -242,8 +242,22 @@ for full reproducibility).
   word); "isabelle" (the name) included a moth species name ("Spanish
   moon moth") — yet another lepidoptera contamination in this dataset,
   joining the butterfly-species names already found and removed from
-  "souci", "citron", and "chiffre" in earlier rounds. **Ranks
-  3400–4900 (~1,500 words) are still unreviewed.**
+  "souci", "citron", and "chiffre" in earlier rounds. **Twelfth
+  update**: continued into ranks 3400–3700 (60 more fixes, override
+  list now 694 entries). Three more false friends, verified via web
+  search: "actuel" means "current/present-day", never "actual" (that's
+  "réel") — the sourced gloss led with the wrong "actual"; "stage"
+  means "internship/training course", never a performance platform
+  (that's "scène") — the sourced gloss included the equally wrong
+  "season" ("saison"); "assumer" means "to take on/accept
+  responsibility for", never "to assume" (that's "présumer"/
+  "supposer") — the sourced gloss led with the wrong "assume". Also
+  outright wrong: "braquage", a very common crime-slang word for
+  "robbery/heist", was glossed entirely with automotive steering
+  terminology, missing the common sense completely; "bac", very
+  commonly short for "baccalauréat" (the French high-school exit
+  exam), was glossed only with vague container words. **Ranks
+  3700–4900 (~1,200 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
