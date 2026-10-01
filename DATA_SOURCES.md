@@ -129,6 +129,24 @@ for full reproducibility).
   grading outright, not just confused multiple-choice. Given this hit rate,
   **a similarly thorough pass over the remaining ~4,500 unreviewed vocab
   words is now a real candidate for follow-up**, not just a theoretical risk.
+  **Third update**: per an explicit user request to review everything
+  rather than sample it, the vocab review was continued past rank 400:
+  ranks 400–700 (45 fixes) and 700–1000 (39 fixes), bringing the override
+  list to 183 entries. The hit rate held steady at 13–15%, similar to the
+  first 400. As before, most fixes were re-ordering a secondary sense
+  ahead of the primary one, but several were outright wrong entries, not
+  just misordered, and were confirmed via web search rather than taken on
+  recollection: "église" wrongly included "mosque" and "synagogue" as
+  senses — église specifically means a Christian church, never a mosque or
+  synagogue; "rose" listed "blue" before "pink", which is simply incorrect
+  (rose never means blue); "chère" — the exact word a user had separately
+  flagged confusion over — was missing its common adjective sense
+  ("dear"/"expensive") entirely, showing only an archaic noun sense
+  ("fare/food"); "gagne" (a conjugated form of the verb "gagner", "wins")
+  had leaked into the vocabulary list as its own headword with an entirely
+  unrelated gloss ("go"); and "claire" showed only "oyster bed" (obscure
+  aquaculture jargon) instead of its common meaning "clear/light/bright".
+  **Ranks 1000–4900 (~3,900 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
@@ -182,6 +200,13 @@ for full reproducibility).
   like "Tu as aimé le spectacle ?" — the standard, natural way to ask that
   in French) — but this was reasoning, not independent verification of
   each one, so treat it as lower-confidence than the sourced data above.
+- **Full review of all 321 example sentences**: per the same "review
+  everything" request above, every example sentence (not a sample) was
+  read through end to end. Only one further issue turned up: "verb:manger"'s
+  English gloss read "We're eating together this noon," an awkward literal
+  phrasing — fixed to "We're eating together at lunch today." The French
+  sentence itself ("Nous mangeons ensemble ce midi.") was already correct
+  and unchanged.
 
 ## Reproducing / regenerating the data
 
