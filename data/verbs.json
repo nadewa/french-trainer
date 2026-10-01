@@ -347,12 +347,12 @@
   "frequency_rank_basis": 416300,
   "true_frequency": 1546852,
   "gloss": [
-   "will",
-   "be willing to",
    "want",
-   "wish"
+   "wish",
+   "be willing to",
+   "will"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "faire",
@@ -518,12 +518,12 @@
   "frequency_rank_basis": 315044,
   "true_frequency": 1854211,
   "gloss": [
-   "power",
-   "be able to",
    "can",
-   "may"
+   "be able to",
+   "may",
+   "power"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "savoir",
@@ -1140,12 +1140,12 @@
   "frequency_rank_basis": 117830,
   "true_frequency": 369472,
   "gloss": [
-   "await",
-   "expect",
    "wait for",
-   "wait"
+   "wait",
+   "expect",
+   "await"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "croire",
@@ -1583,12 +1583,12 @@
   "frequency_rank_basis": 70761,
   "true_frequency": 480440,
   "gloss": [
-   "appreciate",
-   "enjoy",
    "like",
-   "love"
+   "love",
+   "enjoy",
+   "appreciate"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "trouver",
@@ -1673,11 +1673,10 @@
   "frequency_rank_basis": 66054,
   "true_frequency": 308737,
   "gloss": [
-   "be",
    "find",
    "like"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "laisser",
@@ -1762,12 +1761,12 @@
   "frequency_rank_basis": 64003,
   "true_frequency": 269294,
   "gloss": [
-   "allow",
    "leave",
    "let",
+   "allow",
    "release"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "connaître",
@@ -1939,13 +1938,11 @@
   "frequency_rank_basis": 60676,
   "true_frequency": 272724,
   "gloss": [
-   "abate",
-   "apprehend",
+   "stop",
    "arrest",
-   "bar",
    "detain"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "rester",
@@ -2030,13 +2027,11 @@
   "frequency_rank_basis": 59712,
   "true_frequency": 336294,
   "gloss": [
-   "abide",
-   "keep",
+   "stay",
    "remain",
-   "rest",
-   "stay over"
+   "keep"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "appeler",
@@ -2209,12 +2204,12 @@
   "frequency_rank_basis": 49487,
   "true_frequency": 303428,
   "gloss": [
-   "bring out",
-   "come out",
    "go out",
+   "come out",
+   "bring out",
    "take out"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "passer",
@@ -2299,12 +2294,12 @@
   "frequency_rank_basis": 47667,
   "true_frequency": 325901,
   "gloss": [
-   "go",
    "pass",
+   "go",
    "put on",
    "transfer"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "falloir",
@@ -2382,11 +2377,11 @@
   "frequency_rank_basis": 47356,
   "true_frequency": 391810,
   "gloss": [
-   "We need something",
-   "You have to",
-   "It is necessary that"
+   "be necessary",
+   "have to",
+   "need"
   ],
-  "gloss_source": "freedict"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "partir",
@@ -2471,13 +2466,11 @@
   "frequency_rank_basis": 47243,
   "true_frequency": 354243,
   "gloss": [
-   "absent onself from",
-   "absent onself",
+   "leave",
    "depart",
-   "discharge",
-   "drive away"
+   "go away"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "arriver",
@@ -2653,13 +2646,10 @@
   "frequency_rank_basis": 44571,
   "true_frequency": 129125,
   "gloss": [
-   "assay",
-   "attempt",
-   "pilot",
-   "prove",
-   "sample"
+   "try",
+   "attempt"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "écouter",
@@ -2923,13 +2913,12 @@
   "frequency_rank_basis": 41007,
   "true_frequency": 185895,
   "gloss": [
-   "hang onto",
-   "have",
    "hold",
    "keep",
-   "maintain"
+   "maintain",
+   "hang onto"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "revenir",
@@ -3102,10 +3091,10 @@
   "frequency_rank_basis": 38676,
   "true_frequency": 223348,
   "gloss": [
-   "donate",
-   "give"
+   "give",
+   "donate"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "mettre",
@@ -3190,12 +3179,12 @@
   "frequency_rank_basis": 34551,
   "true_frequency": 283792,
   "gloss": [
-   "begin",
-   "put on",
    "put",
-   "wear"
+   "put on",
+   "wear",
+   "begin"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "chercher",
@@ -3280,13 +3269,11 @@
   "frequency_rank_basis": 34290,
   "true_frequency": 189366,
   "gloss": [
-   "be after",
-   "go after",
    "look for",
-   "pick up",
-   "search for"
+   "search for",
+   "go after"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "comprendre",
@@ -3371,10 +3358,10 @@
   "frequency_rank_basis": 32271,
   "true_frequency": 291811,
   "gloss": [
-   "include",
-   "understand"
+   "understand",
+   "include"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "travailler",
@@ -3459,10 +3446,10 @@
   "frequency_rank_basis": 29603,
   "true_frequency": 143631,
   "gloss": [
-   "labour",
-   "work"
+   "work",
+   "labour"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "entrer",
@@ -3547,13 +3534,11 @@
   "frequency_rank_basis": 29481,
   "true_frequency": 230616,
   "gloss": [
-   "come into",
    "enter",
-   "go in",
-   "penetrate",
-   "pierce"
+   "come into",
+   "go in"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "oublier",
@@ -3726,12 +3711,10 @@
   "true_frequency": 96410,
   "gloss": [
    "continue",
-   "endure",
    "go on",
-   "keep on",
-   "keep"
+   "keep on"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "vivre",
@@ -3816,10 +3799,10 @@
   "frequency_rank_basis": 25053,
   "true_frequency": 150484,
   "gloss": [
-   "alive",
-   "live"
+   "live",
+   "alive"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "jouer",
@@ -3904,12 +3887,11 @@
   "frequency_rank_basis": 24935,
   "true_frequency": 147804,
   "gloss": [
+   "play",
    "act",
-   "enact",
-   "perform",
-   "play"
+   "perform"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "sentir",
@@ -3995,12 +3977,9 @@
   "true_frequency": 193300,
   "gloss": [
    "feel",
-   "finger",
-   "give off an odour",
-   "grope",
-   "reek"
+   "smell"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "rentrer",
@@ -4085,10 +4064,11 @@
   "frequency_rank_basis": 23833,
   "true_frequency": 122611,
   "gloss": [
-   "gather in",
-   "re-enter"
+   "come home",
+   "re-enter",
+   "gather in"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "aider",
@@ -4173,13 +4153,11 @@
   "frequency_rank_basis": 22517,
   "true_frequency": 281656,
   "gloss": [
-   "accommodate",
-   "advance",
+   "help",
    "aid",
-   "assist",
-   "attend to"
+   "assist"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "tuer",
@@ -4353,11 +4331,11 @@
   "frequency_rank_basis": 22276,
   "true_frequency": 118651,
   "gloss": [
+   "start",
    "begin",
-   "commence",
-   "start"
+   "commence"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "espérer",
@@ -4529,11 +4507,12 @@
   "frequency_rank_basis": 21487,
   "true_frequency": 186402,
   "gloss": [
-   "bear",
    "carry",
-   "support"
+   "bear",
+   "support",
+   "wear"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "entendre",
@@ -4705,13 +4684,11 @@
   "frequency_rank_basis": 19745,
   "true_frequency": 140135,
   "gloss": [
-   "guard",
    "keep",
-   "maintain",
-   "preserve",
-   "safeguard"
+   "guard",
+   "maintain"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "ouvrir",
@@ -4796,13 +4773,9 @@
   "frequency_rank_basis": 19603,
   "true_frequency": 77893,
   "gloss": [
-   "clear",
-   "open up",
-   "open",
-   "switch on",
-   "turn on"
+   "open"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "rendre",
@@ -4974,13 +4947,11 @@
   "frequency_rank_basis": 18709,
   "true_frequency": 88779,
   "gloss": [
-   "act",
+   "seem",
    "appear",
-   "look like",
-   "look",
-   "seem"
+   "look like"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "envoyer",
@@ -5152,13 +5123,11 @@
   "frequency_rank_basis": 16620,
   "true_frequency": 80996,
   "gloss": [
-   "drag",
+   "pull",
    "draw",
-   "extract",
-   "fire",
-   "pull"
+   "fire"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "ignorer",
@@ -5243,13 +5212,10 @@
   "frequency_rank_basis": 16037,
   "true_frequency": 52970,
   "gloss": [
-   "disregard",
-   "ignorant",
-   "ignore",
-   "know",
-   "leave out of account"
+   "not know",
+   "ignore"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "mourir",
@@ -5511,11 +5477,11 @@
   "frequency_rank_basis": 15904,
   "true_frequency": 1364166,
   "gloss": [
-   "come after",
    "follow",
+   "come after",
    "trail"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "bouger",
@@ -5872,13 +5838,10 @@
   "frequency_rank_basis": 14687,
   "true_frequency": 111808,
   "gloss": [
-   "ambulate",
-   "follow",
-   "march",
-   "run",
-   "step"
+   "walk",
+   "work"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "finir",
@@ -5963,13 +5926,11 @@
   "frequency_rank_basis": 14132,
   "true_frequency": 70365,
   "gloss": [
-   "come to an end",
-   "conclude",
-   "end up",
-   "expire",
-   "finish"
+   "finish",
+   "end",
+   "conclude"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "changer",
@@ -6054,13 +6015,10 @@
   "frequency_rank_basis": 13834,
   "true_frequency": 98574,
   "gloss": [
-   "alter",
-   "amend",
    "change",
-   "convert",
-   "shift"
+   "alter"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "perdre",
@@ -6409,13 +6367,11 @@
   "frequency_rank_basis": 13297,
   "true_frequency": 92336,
   "gloss": [
-   "engage",
-   "figure out",
+   "occupy",
    "fill",
-   "hold",
-   "inhabit"
+   "take up"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "boire",
@@ -6676,13 +6632,10 @@
   "frequency_rank_basis": 12697,
   "true_frequency": 60734,
   "gloss": [
-   "conceive",
-   "fancy",
    "imagine",
-   "picture",
-   "visualize"
+   "picture"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "dormir",
@@ -6767,10 +6720,10 @@
   "frequency_rank_basis": 12415,
   "true_frequency": 76910,
   "gloss": [
-   "be asleep",
-   "sleep"
+   "sleep",
+   "be asleep"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "manquer",
@@ -7034,13 +6987,10 @@
   "frequency_rank_basis": 12152,
   "true_frequency": 116123,
   "gloss": [
-   "account",
-   "add up",
-   "calculate",
    "count",
-   "figure"
+   "calculate"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "rappeler",
@@ -7125,12 +7075,11 @@
   "frequency_rank_basis": 12149,
   "true_frequency": 73486,
   "gloss": [
-   "call",
+   "call back",
    "recall",
-   "remember",
    "remind"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "devenir",
@@ -7215,12 +7164,11 @@
   "frequency_rank_basis": 12052,
   "true_frequency": 93859,
   "gloss": [
-   "arise",
    "become",
    "get",
    "grow"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "toucher",
@@ -7305,13 +7253,10 @@
   "frequency_rank_basis": 11479,
   "true_frequency": 58052,
   "gloss": [
-   "feeling",
-   "feel",
    "touch",
-   "abut",
-   "adjoin"
+   "feel"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "relater",
@@ -7484,13 +7429,11 @@
   "frequency_rank_basis": 11078,
   "true_frequency": 51016,
   "gloss": [
-   "accord",
-   "admit",
    "allow",
-   "let",
-   "permit"
+   "permit",
+   "let"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "retrouver",
@@ -7575,11 +7518,11 @@
   "frequency_rank_basis": 11041,
   "true_frequency": 65508,
   "gloss": [
+   "find again",
    "recover",
-   "rediscover",
-   "refind"
+   "rediscover"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "apprendre",
@@ -7664,13 +7607,11 @@
   "frequency_rank_basis": 11001,
   "true_frequency": 106778,
   "gloss": [
-   "come to know",
-   "figure out",
-   "instruct",
    "learn",
-   "teach"
+   "teach",
+   "find out"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "quitter",
@@ -7755,13 +7696,10 @@
   "frequency_rank_basis": 10647,
   "true_frequency": 58802,
   "gloss": [
-   "abandon",
-   "desert",
-   "forsake",
    "leave",
    "quit"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "montrer",
@@ -7846,13 +7784,11 @@
   "frequency_rank_basis": 10566,
   "true_frequency": 90613,
   "gloss": [
+   "show",
    "demonstrate",
-   "display",
-   "indicate",
-   "manifest",
-   "point out"
+   "display"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "poser",
@@ -7937,13 +7873,11 @@
   "frequency_rank_basis": 10228,
   "true_frequency": 60956,
   "gloss": [
-   "ask",
+   "place",
    "lay down",
-   "lay",
-   "locate",
-   "place"
+   "ask"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "emmener",
@@ -8028,13 +7962,10 @@
   "frequency_rank_basis": 9914,
   "true_frequency": 53342,
   "gloss": [
-   "bring from",
-   "convene",
    "take along",
-   "take away",
-   "take someone somewhere"
+   "take away"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "reculer",
@@ -8210,13 +8141,10 @@
   "frequency_rank_basis": 9786,
   "true_frequency": 44208,
   "gloss": [
-   "cast",
-   "pitch",
-   "spit up",
-   "spit",
-   "throw"
+   "throw",
+   "cast"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "allier",
@@ -8392,11 +8320,9 @@
   "gloss": [
    "excuse",
    "forgive",
-   "justify",
-   "make excuses",
    "pardon"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "revoir",
@@ -8481,10 +8407,11 @@
   "frequency_rank_basis": 9428,
   "true_frequency": 102141,
   "gloss": [
+   "see again",
    "review",
    "revise"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "ressembler",
@@ -8743,13 +8670,11 @@
   "frequency_rank_basis": 9064,
   "true_frequency": 29006,
   "gloss": [
-   "disengage",
+   "clear",
    "free",
-   "fuck off",
-   "isolate",
-   "piss off"
+   "disengage"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  },
  {
   "infinitive": "servir",
@@ -8921,12 +8846,12 @@
   "frequency_rank_basis": 8938,
   "true_frequency": 61071,
   "gloss": [
+   "beat",
    "applaud",
    "bang",
-   "beat",
    "break",
    "clap"
   ],
-  "gloss_source": "wiktionary"
+  "gloss_source": "model-override"
  }
 ]

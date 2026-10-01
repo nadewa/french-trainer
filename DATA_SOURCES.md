@@ -115,6 +115,20 @@ for full reproducibility).
   across all ~5000 words** (400 of ~4,900 reviewed) — the same class of issue
   likely exists further down the frequency list; report anything that looks
   off.
+  **Second update**: a separate user report ("pouvoir" showing "power"
+  instead of "can"/"be able to") prompted a full review of all 100 verbs'
+  gloss[0] — not a frequency-ordered sample this time, every single one,
+  since verbs are drilled far more than any individual vocab word. **56 of
+  the 100 verbs needed a fix** (bringing the override list to 99 entries) —
+  a much higher hit rate than the vocab review, apparently because verb
+  entries collided more often with a noun/adjective sense of the same
+  written form (e.g. "pouvoir" the noun "power" vs. "pouvoir" the modal
+  verb). One, "falloir", wasn't just misordered: its sourced glosses were
+  garbled sentence fragments ("We need something", "You have to") rather
+  than word-level translations, which would have broken typed-answer
+  grading outright, not just confused multiple-choice. Given this hit rate,
+  **a similarly thorough pass over the remaining ~4,500 unreviewed vocab
+  words is now a real candidate for follow-up**, not just a theoretical risk.
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
