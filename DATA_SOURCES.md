@@ -217,8 +217,20 @@ for full reproducibility).
   than a translation mistake: "montée" (climb/ascent) was glossed as
   "branche" — a different French word (branch); "tache" (stain)
   included "dent" — again a different French word (tooth); "prêter"
-  (to lend) included "borrow", the opposite verb ("emprunter"). **Ranks
-  2800–4900 (~2,100 words) are still unreviewed.**
+  (to lend) included "borrow", the opposite verb ("emprunter").
+  **Tenth update**: continued into ranks 2800–3100 (58 more fixes,
+  override list now 576 entries). "licence" is a factual academic-
+  level error worth flagging on its own, verified via web search: in
+  the French university system a licence is a Bachelor's-equivalent
+  degree (3 years), never a doctorate — the sourced gloss included
+  "doctorate" outright. Also outright wrong: "citron" (lemon) included
+  a butterfly species name ("Common Brimstone") and "lime" (lime is
+  "citron vert" in French, a different compound word); "chiffre"
+  (number) included yet another butterfly species name ("Niobe
+  Fritillary" — the fourth butterfly-name contamination found so far
+  in this review); "coiffure" (hairstyle) included "coiffeur", a
+  different word (the hairdresser, a person, not the hairstyle).
+  **Ranks 3100–4900 (~1,800 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

@@ -26784,13 +26784,11 @@
  {
   "word": "règne",
   "gloss": [
-   "ascendance",
-   "ascendancy",
-   "control",
-   "governance",
-   "kingdom"
+   "reign",
+   "kingdom",
+   "rule"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3145
  },
  {
@@ -26816,9 +26814,10 @@
  {
   "word": "sou",
   "gloss": [
-   "Sou"
+   "penny (old coin)",
+   "cent"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3142
  },
  {
@@ -26834,13 +26833,11 @@
  {
   "word": "coller",
   "gloss": [
+   "stick",
    "glue",
-   "paste up",
-   "paste",
-   "placard",
-   "post up"
+   "fail (school slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3139
  },
  {
@@ -26864,9 +26861,11 @@
  {
   "word": "fouille",
   "gloss": [
+   "search",
+   "frisking",
    "excavation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3139
  },
  {
@@ -27001,13 +27000,12 @@
  {
   "word": "reporter",
   "gloss": [
-   "reporter",
+   "reporter (noun)",
    "postpone",
    "put off",
-   "ship",
-   "transport"
+   "carry over"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3114
  },
  {
@@ -27030,12 +27028,10 @@
  {
   "word": "développement",
   "gloss": [
-   "accession",
-   "accretion",
    "development",
    "growth"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3110
  },
  {
@@ -27071,20 +27067,20 @@
  {
   "word": "han",
   "gloss": [
-   "Han",
-   "Han River"
+   "ugh! (interjection)",
+   "Han (name/ethnicity)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3094
  },
  {
   "word": "descente",
   "gloss": [
-   "drainpipe",
-   "raid",
-   "visit"
+   "descent",
+   "going down",
+   "police raid"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3092
  },
  {
@@ -27175,10 +27171,11 @@
  {
   "word": "plomb",
   "gloss": [
-   "lead",
+   "lead (metal)",
+   "fuse (electrical)",
    "sinker"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3075
  },
  {
@@ -27220,9 +27217,11 @@
  {
   "word": "décharge",
   "gloss": [
-   "landfill"
+   "landfill",
+   "discharge",
+   "waiver (legal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3070
  },
  {
@@ -27248,22 +27247,22 @@
  {
   "word": "attacher",
   "gloss": [
-   "affix",
-   "appoint",
-   "associate",
    "attach",
+   "tie",
+   "fasten",
    "bind"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3059
  },
  {
   "word": "taupe",
   "gloss": [
-   "taupe",
-   "mole"
+   "mole (animal)",
+   "taupe (color)",
+   "mole (spy, slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3058
  },
  {
@@ -27305,9 +27304,10 @@
  {
   "word": "inspiration",
   "gloss": [
+   "inspiration",
    "inhalation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3052
  },
  {
@@ -27322,9 +27322,11 @@
  {
   "word": "coco",
   "gloss": [
-   "coco"
+   "coconut (informal)",
+   "dear/sweetie (term of endearment)",
+   "commie (dated slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3046
  },
  {
@@ -27358,9 +27360,11 @@
  {
   "word": "jacques",
   "gloss": [
-   "James"
+   "Jacques (name)",
+   "James",
+   "Jack"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3034
  },
  {
@@ -27407,9 +27411,10 @@
  {
   "word": "extra",
   "gloss": [
-   "extra"
+   "extra",
+   "great (colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3030
  },
  {
@@ -27513,20 +27518,18 @@
  {
   "word": "ci",
   "gloss": [
-   "here"
+   "here (as in ci-dessus, celui-ci)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3017
  },
  {
   "word": "sirène",
   "gloss": [
-   "alarm",
-   "mermaid",
-   "siren",
-   "vixen"
+   "siren (alarm)",
+   "mermaid"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3016
  },
  {
@@ -27540,9 +27543,10 @@
  {
   "word": "jalousie",
   "gloss": [
-   "jealousy"
+   "jealousy",
+   "venetian blind (window)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3013
  },
  {
@@ -27627,13 +27631,12 @@
  {
   "word": "statut",
   "gloss": [
-   "article",
+   "status",
    "by-law",
-   "regulation",
-   "rule",
-   "status"
+   "article",
+   "regulation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3003
  },
  {
@@ -27661,34 +27664,29 @@
  {
   "word": "requête",
   "gloss": [
-   "advance",
-   "approach",
-   "attempt",
-   "effort",
-   "endeavour"
+   "request",
+   "query (computing)",
+   "petition"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 3000
  },
  {
   "word": "planter",
   "gloss": [
-   "drive",
-   "dump",
    "plant",
-   "stick"
+   "stick",
+   "crash/fail (se planter)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2998
  },
  {
   "word": "citron",
   "gloss": [
-   "Common Brimstone",
-   "lemon",
-   "lime"
+   "lemon"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2998
  },
  {
@@ -27702,10 +27700,9 @@
  {
   "word": "impressionner",
   "gloss": [
-   "impress",
-   "print"
+   "impress"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2997
  },
  {
@@ -27792,13 +27789,11 @@
  {
   "word": "spécialité",
   "gloss": [
-   "branch",
-   "compartment",
-   "department",
-   "division",
-   "pigeonhole"
+   "specialty",
+   "field of expertise",
+   "culinary specialty"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2986
  },
  {
@@ -27836,9 +27831,10 @@
  {
   "word": "arraché",
   "gloss": [
-   "snatch"
+   "torn out",
+   "snatch (weightlifting)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2983
  },
  {
@@ -27933,11 +27929,11 @@
  {
   "word": "croisé",
   "gloss": [
-   "crossbred",
+   "crossed",
    "crusader",
-   "mixed-blood"
+   "crossbred"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2971
  },
  {
@@ -27977,12 +27973,12 @@
  {
   "word": "sensé",
   "gloss": [
-   "sagacious",
-   "sage",
+   "sensible",
+   "reasonable",
    "sane",
    "wise"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2964
  },
  {
@@ -28029,9 +28025,10 @@
  {
   "word": "flipper",
   "gloss": [
-   "pinball"
+   "pinball (machine)",
+   "freak out (slang verb)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2955
  },
  {
@@ -28102,22 +28099,22 @@
  {
   "word": "banc",
   "gloss": [
-   "bank",
-   "bench"
+   "bench",
+   "sandbank",
+   "school (of fish)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2941
  },
  {
   "word": "engin",
   "gloss": [
-   "apparatus",
-   "contraption",
-   "equipement",
-   "gizmo",
-   "tool"
+   "device",
+   "machine",
+   "vehicle (engin spatial, etc.)",
+   "gizmo"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2941
  },
  {
@@ -28160,9 +28157,10 @@
  {
   "word": "peste",
   "gloss": [
-   "plague"
+   "plague",
+   "pest (annoying person, colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2937
  },
  {
@@ -28185,9 +28183,9 @@
   "word": "académie",
   "gloss": [
    "academy",
-   "college"
+   "regional school district (French admin)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2930
  },
  {
@@ -28275,24 +28273,21 @@
  {
   "word": "pompe",
   "gloss": [
-   "cheat sheet",
-   "display",
-   "grandeur",
-   "parade",
-   "pomp"
+   "pump",
+   "pomp",
+   "shoe (slang, plural: pompes)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2916
  },
  {
   "word": "présentation",
   "gloss": [
-   "accession",
-   "adherence",
-   "adhesion",
-   "entry"
+   "presentation",
+   "introduction",
+   "appearance"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2915
  },
  {
@@ -28356,13 +28351,12 @@
  {
   "word": "chiffre",
   "gloss": [
-   "cipher",
+   "number",
    "digit",
    "figure",
-   "Niobe Fritillary",
-   "numeral"
+   "cipher"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2909
  },
  {
@@ -28376,13 +28370,12 @@
  {
   "word": "hurler",
   "gloss": [
-   "bawl",
-   "bellow",
-   "bleat",
-   "bray",
-   "cry"
+   "howl",
+   "scream",
+   "yell",
+   "bellow"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2907
  },
  {
@@ -28456,10 +28449,9 @@
  {
   "word": "brosse",
   "gloss": [
-   "brush",
-   "eraser"
+   "brush"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2896
  },
  {
@@ -28503,10 +28495,9 @@
   "word": "flèche",
   "gloss": [
    "arrow",
-   "Sagitta",
    "spire"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2892
  },
  {
@@ -28520,13 +28511,11 @@
  {
   "word": "ordonnance",
   "gloss": [
-   "fine",
+   "prescription",
    "order",
-   "orders",
-   "ordinance",
-   "prescription"
+   "ordinance"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2891
  },
  {
@@ -28589,10 +28578,9 @@
  {
   "word": "consulter",
   "gloss": [
-   "consult",
-   "reference"
+   "consult"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2884
  },
  {
@@ -28607,9 +28595,11 @@
  {
   "word": "bêtise",
   "gloss": [
-   "silliness"
+   "silliness",
+   "stupid thing/blunder",
+   "foolishness"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2881
  },
  {
@@ -28627,11 +28617,11 @@
  {
   "word": "inconscient",
   "gloss": [
-   "unconscionable",
    "unconscious",
-   "unscrupulous"
+   "reckless",
+   "thoughtless"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2878
  },
  {
@@ -28646,9 +28636,11 @@
  {
   "word": "poussée",
   "gloss": [
-   "push"
+   "push",
+   "surge (e.g. fever)",
+   "thrust"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2878
  },
  {
@@ -28859,13 +28851,11 @@
  {
   "word": "coiffure",
   "gloss": [
-   "coiffeur",
-   "hairdo",
    "hairstyle",
-   "headdress",
-   "headgear"
+   "hairdo",
+   "headdress"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2835
  },
  {
@@ -28879,9 +28869,10 @@
  {
   "word": "botte",
   "gloss": [
-   "boot"
+   "boot",
+   "bunch/bundle (vegetables)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2830
  },
  {
@@ -28944,9 +28935,11 @@
  {
   "word": "ras",
   "gloss": [
-   "nothing"
+   "close-cropped",
+   "fed up (ras-le-bol)",
+   "level with (au ras de)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2819
  },
  {
@@ -28962,13 +28955,11 @@
  {
   "word": "halte",
   "gloss": [
-   "baiting-place",
-   "halting-place",
+   "stop",
    "halt",
-   "pull-up",
-   "stage"
+   "break (during travel)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2812
  },
  {
@@ -29023,13 +29014,11 @@
  {
   "word": "licence",
   "gloss": [
-   "authorization",
-   "dispensation",
-   "doctorate",
-   "leave",
-   "licence"
+   "license",
+   "bachelor's degree (French university)",
+   "authorization"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2802
  },
  {
@@ -29133,9 +29122,11 @@
  {
   "word": "maîtrise",
   "gloss": [
-   "mastery"
+   "mastery",
+   "control",
+   "command (of a skill)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2788
  },
  {
@@ -29191,42 +29182,38 @@
   "gloss": [
    "factor",
    "mailman",
-   "manufacturer",
    "postman"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2782
  },
  {
   "word": "claque",
   "gloss": [
-   "brothel",
-   "claque",
-   "opera hat",
-   "slap"
+   "slap",
+   "claque (paid applauders)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2781
  },
  {
   "word": "sabre",
   "gloss": [
-   "cutlassfish",
-   "cut-throat razor",
    "saber",
-   "sabre"
+   "sabre",
+   "cut-throat razor"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2781
  },
  {
   "word": "filet",
   "gloss": [
-   "let",
    "net",
+   "fillet (meat/fish)",
    "thread"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2781
  },
  {
@@ -29309,13 +29296,12 @@
  {
   "word": "fixer",
   "gloss": [
-   "affix",
-   "allot",
-   "appoint",
-   "attach",
+   "set",
+   "fix",
+   "stare at",
    "define"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2771
  },
  {
@@ -29375,10 +29361,10 @@
  {
   "word": "correspondance",
   "gloss": [
-   "piece of mail",
-   "responsibility"
+   "correspondence (mail)",
+   "connection (transit transfer)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2761
  },
  {
@@ -29469,12 +29455,10 @@
  {
   "word": "chanteur",
   "gloss": [
-   "singing",
-   "blackmailer",
    "singer",
    "vocalist"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2749
  },
  {
@@ -29509,10 +29493,9 @@
   "word": "automatique",
   "gloss": [
    "automatic",
-   "default",
-   "control theory"
+   "default"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2737
  },
  {

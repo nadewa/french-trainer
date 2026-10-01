@@ -692,6 +692,76 @@ MANUAL_GLOSS_OVERRIDE = {
     "came": ["drugs (slang)", "dope"],
     "disputer": ["contest", "dispute", "argue (se disputer)"],
     "are": ["are (unit of area, 100 m²)"],
+    # Continuing the exhaustive review (ranks 2800-3100 of ~4900).
+    # "licence" is a factual/academic-level error worth flagging on its
+    # own, verified via web search: in the French university system a
+    # licence is a Bachelor's-equivalent degree (3 years), never a
+    # doctorate -- the sourced gloss included "doctorate" outright.
+    # Also outright wrong: "citron" (lemon) included a butterfly
+    # species name ("Common Brimstone") and "lime" (lime is "citron
+    # vert" in French, a different compound word); "chiffre" (number)
+    # included yet another butterfly species name ("Niobe Fritillary");
+    # "coiffure" (hairstyle) included "coiffeur", a different word
+    # (the hairdresser, a person, not the hairstyle); "correspondance"
+    # included "responsibility" (that's "responsabilité", unrelated).
+    "règne": ["reign", "kingdom", "rule"],
+    "sou": ["penny (old coin)", "cent"],
+    "coller": ["stick", "glue", "fail (school slang)"],
+    "fouille": ["search", "frisking", "excavation"],
+    "reporter": ["reporter (noun)", "postpone", "put off", "carry over"],
+    "développement": ["development", "growth"],
+    "han": ["ugh! (interjection)", "Han (name/ethnicity)"],
+    "descente": ["descent", "going down", "police raid"],
+    "plomb": ["lead (metal)", "fuse (electrical)", "sinker"],
+    "décharge": ["landfill", "discharge", "waiver (legal)"],
+    "attacher": ["attach", "tie", "fasten", "bind"],
+    "taupe": ["mole (animal)", "taupe (color)", "mole (spy, slang)"],
+    "inspiration": ["inspiration", "inhalation"],
+    "coco": ["coconut (informal)", "dear/sweetie (term of endearment)", "commie (dated slang)"],
+    "jacques": ["Jacques (name)", "James", "Jack"],
+    "extra": ["extra", "great (colloquial)"],
+    "ci": ["here (as in ci-dessus, celui-ci)"],
+    "sirène": ["siren (alarm)", "mermaid"],
+    "jalousie": ["jealousy", "venetian blind (window)"],
+    "statut": ["status", "by-law", "article", "regulation"],
+    "requête": ["request", "query (computing)", "petition"],
+    "planter": ["plant", "stick", "crash/fail (se planter)"],
+    "citron": ["lemon"],
+    "impressionner": ["impress"],
+    "spécialité": ["specialty", "field of expertise", "culinary specialty"],
+    "arraché": ["torn out", "snatch (weightlifting)"],
+    "croisé": ["crossed", "crusader", "crossbred"],
+    "sensé": ["sensible", "reasonable", "sane", "wise"],
+    "flipper": ["pinball (machine)", "freak out (slang verb)"],
+    "banc": ["bench", "sandbank", "school (of fish)"],
+    "engin": ["device", "machine", "vehicle (engin spatial, etc.)", "gizmo"],
+    "peste": ["plague", "pest (annoying person, colloquial)"],
+    "académie": ["academy", "regional school district (French admin)"],
+    "pompe": ["pump", "pomp", "shoe (slang, plural: pompes)"],
+    "présentation": ["presentation", "introduction", "appearance"],
+    "chiffre": ["number", "digit", "figure", "cipher"],
+    "hurler": ["howl", "scream", "yell", "bellow"],
+    "brosse": ["brush"],
+    "flèche": ["arrow", "spire"],
+    "ordonnance": ["prescription", "order", "ordinance"],
+    "consulter": ["consult"],
+    "bêtise": ["silliness", "stupid thing/blunder", "foolishness"],
+    "inconscient": ["unconscious", "reckless", "thoughtless"],
+    "poussée": ["push", "surge (e.g. fever)", "thrust"],
+    "coiffure": ["hairstyle", "hairdo", "headdress"],
+    "botte": ["boot", "bunch/bundle (vegetables)"],
+    "ras": ["close-cropped", "fed up (ras-le-bol)", "level with (au ras de)"],
+    "halte": ["stop", "halt", "break (during travel)"],
+    "licence": ["license", "bachelor's degree (French university)", "authorization"],
+    "facteur": ["factor", "mailman", "postman"],
+    "claque": ["slap", "claque (paid applauders)"],
+    "sabre": ["saber", "sabre", "cut-throat razor"],
+    "filet": ["net", "fillet (meat/fish)", "thread"],
+    "fixer": ["set", "fix", "stare at", "define"],
+    "correspondance": ["correspondence (mail)", "connection (transit transfer)"],
+    "chanteur": ["singer", "vocalist"],
+    "automatique": ["automatic", "default"],
+    "maîtrise": ["mastery", "control", "command (of a skill)"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but
