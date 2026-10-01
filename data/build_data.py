@@ -630,6 +630,68 @@ MANUAL_GLOSS_OVERRIDE = {
     "bouffer": ["eat (informal)", "scoff down"],
     "avertir": ["warn", "alert", "caution"],
     "nicole": ["Nicole"],
+    # Continuing the exhaustive review (ranks 2500-2800 of ~4900).
+    # "prétendre" is a well-documented false friend, verified via web
+    # search: it means "to claim/assert", never "to pretend" (that's
+    # "faire semblant") -- the sourced gloss actively included the
+    # wrong "pretend" and never stated the real meaning at all. Also
+    # outright wrong: "prêter" (to lend) included "borrow", which is
+    # the opposite verb ("emprunter"); "montée" (climb/ascent) was
+    # glossed as "branche" -- a different French word entirely, most
+    # likely a row-alignment error in the source data; "tache" (stain)
+    # included "dent" -- again a different French word (tooth).
+    "élu": ["elected", "elected official"],
+    "serrer": ["squeeze", "tighten", "hold tight", "shake (hands)"],
+    "trouble": ["trouble", "disorder", "unease", "blurred/murky (adjective)"],
+    "rapporter": ["bring back", "report", "yield (profit)", "tattle (slang)"],
+    "sourd": ["deaf", "muted", "dull", "blunt"],
+    "suicider": ["commit suicide", "kill oneself"],
+    "chant": ["song", "singing", "chant"],
+    "nid": ["nest", "den", "lair"],
+    "atelier": ["workshop", "studio", "atelier"],
+    "déplacé": ["displaced", "displaced person", "inappropriate (remark)"],
+    "quelconque": ["any", "some kind of", "mediocre (pejorative)"],
+    "fillette": ["little girl"],
+    "quête": ["quest", "search", "collection (fundraising)"],
+    "grève": ["strike (labor)", "shore", "bank (river)"],
+    "culotte": ["underwear", "panties", "briefs", "culottes"],
+    "suisse": ["Swiss", "Switzerland"],
+    "signaler": ["report", "point out", "flag", "alert"],
+    "pendu": ["hanged (person)", "hangman (game)"],
+    "prêter": ["lend", "loan", "advance"],
+    "buter": ["kill (slang)", "stumble", "trip (over)"],
+    "soupir": ["sigh", "quarter rest (music)"],
+    "horloge": ["clock"],
+    "pétrin": ["mess", "hot water", "jam", "kneading trough"],
+    "vedette": ["star (celebrity)", "speedboat", "spotlight", "top billing"],
+    "prétendre": ["claim", "allege", "assert"],
+    "marteau": ["hammer", "door knocker", "gavel", "crazy/nuts (slang)"],
+    "saisi": ["seized", "grabbed", "caught"],
+    "déterminer": ["determine", "decide", "cause", "fix"],
+    "montée": ["climb", "ascent", "rise", "uphill"],
+    "tache": ["stain", "spot", "blot", "blemish"],
+    "cinquième": ["fifth", "seventh grade (French school year)"],
+    "coke": ["coke (cocaine, slang)", "Coke (cola)", "coke (fuel)"],
+    "aperçu": ["overview", "glimpse", "insight"],
+    "réussite": ["success", "solitaire (card game: patience)"],
+    "plaie": ["wound", "sore", "nuisance (figurative: quelle plaie!)"],
+    "relever": ["pick up (again)", "raise", "point out", "relieve"],
+    "exposé": ["presentation", "talk", "report (school)"],
+    "assaut": ["assault", "attack", "charge", "aggression"],
+    "recherché": ["wanted", "sought-after", "refined (style)"],
+    "çà": ["here and there (çà et là)"],
+    "mouche": ["fly (insect)", "beauty spot", "soul patch"],
+    "grillé": ["grilled", "toasted"],
+    "baignoire": ["bathtub", "bath", "theater box (ground floor)"],
+    "coincer": ["jam", "stick", "wedge", "corner/catch (someone)"],
+    "révélé": ["revealed"],
+    "saleté": ["dirt", "filth", "dirty trick (colloquial)"],
+    "plaisanterie": ["joke", "jest", "prank"],
+    "thème": ["theme", "subject", "topic"],
+    "ennui": ["boredom", "trouble/problem", "ennui"],
+    "came": ["drugs (slang)", "dope"],
+    "disputer": ["contest", "dispute", "argue (se disputer)"],
+    "are": ["are (unit of area, 100 m²)"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

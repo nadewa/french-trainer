@@ -207,8 +207,18 @@ for full reproducibility).
   is simply wrong — "rape" in French is "viol", a completely different
   word already correctly present elsewhere in this same list. Verified
   via web search before removing it, given the severity of leaving a
-  wrong gloss like that in place. **Ranks 2500–4900 (~2,400 words) are
-  still unreviewed.**
+  wrong gloss like that in place. **Ninth update**: continued into
+  ranks 2500–2800 (52 more fixes, override list now 518 entries).
+  "prétendre" is another well-documented French/English false friend,
+  verified via web search: it means "to claim/assert", never "to
+  pretend" (that's "faire semblant") — the sourced gloss actively
+  included the wrong "pretend" and never stated the real meaning at
+  all. Also outright wrong, and likely a row-alignment error rather
+  than a translation mistake: "montée" (climb/ascent) was glossed as
+  "branche" — a different French word (branch); "tache" (stain)
+  included "dent" — again a different French word (tooth); "prêter"
+  (to lend) included "borrow", the opposite verb ("emprunter"). **Ranks
+  2800–4900 (~2,100 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
