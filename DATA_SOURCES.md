@@ -146,7 +146,19 @@ for full reproducibility).
   had leaked into the vocabulary list as its own headword with an entirely
   unrelated gloss ("go"); and "claire" showed only "oyster bed" (obscure
   aquaculture jargon) instead of its common meaning "clear/light/bright".
-  **Ranks 1000–4900 (~3,900 words) are still unreviewed.**
+  **Fourth update**: continued into ranks 1000–1300 (63 more fixes,
+  override list now 246 entries), each cross-checked against a
+  dictionary source via web search rather than taken on recollection.
+  Several were outright wrong, not misordered: "apporter" listed "take"
+  as a sense, but apporter never means take away, only bring something
+  to a place; "vache" (cow) and "queue" (tail) were both missing their
+  core literal meanings entirely, jumping straight to idiomatic/slang
+  senses ("mean person", "line/queue"); "abandonner" included
+  "accommodate" and "assign", which are not standard translations of
+  that verb at all; "titre" was missing "title" itself; "allo" simply
+  repeated the French word back ("Allo") rather than translating it
+  ("hello", on the phone); "louis" gave "Lewis" — a different name from
+  "Louis". **Ranks 1300–4900 (~3,600 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
