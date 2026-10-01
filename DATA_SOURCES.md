@@ -282,8 +282,19 @@ for full reproducibility).
   botany/jewelry terms; "étendre" (to extend/stretch out) was glossed
   entirely with unrelated words ("adulterate", "aggrandize", "anoint");
   "grouille" (a conjugated form of "grouiller") had leaked in as its
-  own headword glossed as "girl Friday", unrelated. **Ranks 4300–4900
-  (~600 words) are still unreviewed.**
+  own headword glossed as "girl Friday", unrelated. **Fifteenth
+  update**: continued into ranks 4300–4600 (45 more fixes, override
+  list now 835 entries). "résumé" is another verified false friend: in
+  French it means "summary", never the English "résumé"/"resume" (a
+  job-application CV, which in French is just "CV") — the sourced
+  gloss directly conflated the two by including "curriculum vita"/
+  "resume"/"vita". Also outright wrong, including one case where the
+  sourced gloss gave the literal opposite meaning: "malchance" (bad
+  luck) included "good luck" as a synonym; "homard" (lobster) included
+  "scallop", a different shellfish entirely; "gratte" (a conjugated
+  verb form, "scratches") had leaked in as its own headword glossed as
+  "axe"/"blade", unrelated. **Ranks 4600–4900 (~300 words) are still
+  unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

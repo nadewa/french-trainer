@@ -40618,9 +40618,10 @@
  {
   "word": "permanente",
   "gloss": [
-   "permanent"
+   "permanent",
+   "perm (hairstyle)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1595
  },
  {
@@ -40723,10 +40724,10 @@
  {
   "word": "gonzesse",
   "gloss": [
-   "bird",
-   "chick"
+   "chick (slang)",
+   "girl"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1587
  },
  {
@@ -40748,13 +40749,11 @@
  {
   "word": "détourner",
   "gloss": [
-   "avert",
-   "deflect",
-   "dissuade",
    "divert",
+   "hijack (a plane)",
    "embezzle"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1585
  },
  {
@@ -40804,25 +40803,21 @@
  {
   "word": "précaution",
   "gloss": [
-   "caution",
-   "discretion",
-   "generalship",
    "precaution",
-   "prudence"
+   "caution",
+   "care"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1581
  },
  {
   "word": "graine",
   "gloss": [
-   "grain",
-   "granule",
-   "pip",
    "seed",
-   "semen"
+   "grain",
+   "pip"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1581
  },
  {
@@ -40862,9 +40857,10 @@
   "word": "maniaque",
   "gloss": [
    "maniacal",
-   "maniac"
+   "maniac",
+   "neat freak (fussy, colloquial)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1578
  },
  {
@@ -40943,19 +40939,19 @@
  {
   "word": "fondu",
   "gloss": [
-   "fade"
+   "melted",
+   "fade (film editing)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1571
  },
  {
   "word": "devise",
   "gloss": [
    "currency",
-   "devise",
    "motto"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1571
  },
  {
@@ -40970,12 +40966,10 @@
  {
   "word": "pâté",
   "gloss": [
-   "block",
-   "pasty",
-   "pate",
-   "pie"
+   "pâté (food)",
+   "block (pâté de maisons)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1570
  },
  {
@@ -41047,11 +41041,11 @@
  {
   "word": "méfier",
   "gloss": [
-   "distrust",
-   "suspicious",
+   "distrust (se méfier)",
+   "be wary of",
    "watch out"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1568
  },
  {
@@ -41083,29 +41077,29 @@
  {
   "word": "globe",
   "gloss": [
+   "globe",
    "ball",
-   "ball-bearing",
-   "globe"
+   "eyeball (globe oculaire)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1566
  },
  {
   "word": "lente",
   "gloss": [
-   "nit"
+   "slow (feminine)",
+   "nit (louse egg)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1565
  },
  {
   "word": "arche",
   "gloss": [
    "arch",
-   "ark clam",
-   "ark"
+   "ark (Noah's)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1565
  },
  {
@@ -41253,10 +41247,9 @@
  {
   "word": "alaska",
   "gloss": [
-   "Alaska rabbit",
    "Alaska"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1556
  },
  {
@@ -41404,10 +41397,11 @@
  {
   "word": "prétendu",
   "gloss": [
-   "supposed",
-   "intended"
+   "so-called",
+   "alleged",
+   "supposed"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1548
  },
  {
@@ -41423,9 +41417,10 @@
  {
   "word": "ignoré",
   "gloss": [
+   "ignored",
    "unknown"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1546
  },
  {
@@ -41525,12 +41520,9 @@
  {
   "word": "résumé",
   "gloss": [
-   "curriculum vita",
-   "resume",
-   "summary",
-   "vita"
+   "summary"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1541
  },
  {
@@ -41666,23 +41658,21 @@
  {
   "word": "contourner",
   "gloss": [
-   "circumnavigate",
    "go around",
-   "orbit"
+   "bypass",
+   "circumvent (a law/rule)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1534
  },
  {
   "word": "lecteur",
   "gloss": [
-   "drive",
-   "lector",
-   "lecturer",
-   "player",
-   "proofreader"
+   "reader (of books)",
+   "player (CD/DVD)",
+   "drive (disk)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1533
  },
  {
@@ -41742,9 +41732,10 @@
  {
   "word": "dément",
   "gloss": [
-   "demented"
+   "demented",
+   "awesome! (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1529
  },
  {
@@ -41761,13 +41752,11 @@
  {
   "word": "permanent",
   "gloss": [
-   "abiding",
+   "permanent",
    "constant",
-   "continual",
-   "continuous",
    "enduring"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1529
  },
  {
@@ -41816,27 +41805,27 @@
  {
   "word": "léon",
   "gloss": [
+   "Leon (name)",
    "Leo"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1526
  },
  {
   "word": "homard",
   "gloss": [
-   "lobster",
-   "scallop"
+   "lobster"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1526
  },
  {
   "word": "terminale",
   "gloss": [
-   "grade 12",
-   "twelfth grade"
+   "twelfth grade (French school year)",
+   "senior year"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1526
  },
  {
@@ -41862,22 +41851,19 @@
  {
   "word": "poney",
   "gloss": [
-   "nag",
    "pony"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1524
  },
  {
   "word": "malchance",
   "gloss": [
-   "adversity",
-   "good luck",
-   "ill-luck",
-   "mischance",
-   "misfortune"
+   "bad luck",
+   "misfortune",
+   "ill-luck"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1522
  },
  {
@@ -41973,21 +41959,20 @@
  {
   "word": "grade",
   "gloss": [
-   "class",
-   "degree",
-   "gon",
+   "rank (military/professional)",
    "grade",
-   "gradian"
+   "degree"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1517
  },
  {
   "word": "gorille",
   "gloss": [
-   "gorilla"
+   "gorilla",
+   "bodyguard (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1516
  },
  {
@@ -42002,12 +41987,11 @@
  {
   "word": "atteinte",
   "gloss": [
-   "attainment",
-   "catch",
-   "effect",
-   "reach"
+   "infringement",
+   "violation",
+   "harm (porter atteinte à)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1516
  },
  {
@@ -42050,20 +42034,19 @@
   "word": "abandon",
   "gloss": [
    "abandonment",
-   "debt forgiveness",
-   "derelict",
    "desertion",
-   "make over"
+   "debt forgiveness (legal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1514
  },
  {
   "word": "déguisement",
   "gloss": [
-   "disguise"
+   "disguise",
+   "costume"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1513
  },
  {
@@ -42123,11 +42106,10 @@
  {
   "word": "veau",
   "gloss": [
-   "calfflesh",
-   "calf",
-   "veal"
+   "calf (animal)",
+   "veal (meat)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1506
  },
  {
@@ -42195,10 +42177,9 @@
   "word": "polonais",
   "gloss": [
    "Polish",
-   "Pole",
-   "Polish rabbit"
+   "Pole"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1502
  },
  {
@@ -42333,12 +42314,11 @@
  {
   "word": "fréquenter",
   "gloss": [
+   "frequent (a place)",
    "attend",
-   "frequent",
-   "interact",
-   "interrelate"
+   "date/see (someone romantically)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1495
  },
  {
@@ -42368,13 +42348,11 @@
  {
   "word": "correspondant",
   "gloss": [
-   "accountable",
-   "compatible",
-   "congruent",
    "corresponding",
+   "correspondent (news/pen pal)",
    "counterpart"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1491
  },
  {
@@ -42555,9 +42533,10 @@
  {
   "word": "sourde",
   "gloss": [
-   "voiceless consonant"
+   "deaf (feminine)",
+   "voiceless consonant (linguistics)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1476
  },
  {
@@ -42587,10 +42566,9 @@
  {
   "word": "détour",
   "gloss": [
-   "detour",
-   "resort"
+   "detour"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1475
  },
  {
@@ -42648,29 +42626,29 @@
   "gloss": [
    "claim",
    "demand",
-   "object",
-   "require"
+   "ask for"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1471
  },
  {
   "word": "pieu",
   "gloss": [
    "post",
-   "stake"
+   "stake",
+   "bed (slang: le pieu)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1471
  },
  {
   "word": "schéma",
   "gloss": [
-   "model",
-   "pattern",
-   "scheme"
+   "diagram",
+   "sketch",
+   "pattern"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1470
  },
  {
@@ -42765,10 +42743,10 @@
  {
   "word": "gratte",
   "gloss": [
-   "axe",
-   "blade"
+   "scratches (il/elle gratte)",
+   "scraper (tool)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1466
  },
  {
@@ -43013,13 +42991,11 @@
  {
   "word": "remuer",
   "gloss": [
-   "actuate",
-   "affect",
    "move",
-   "shift",
-   "stir"
+   "stir",
+   "shift"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1452
  },
  {
@@ -43171,12 +43147,11 @@
  {
   "word": "gratter",
   "gloss": [
-   "itch",
-   "scrape",
    "scratch",
-   "squawk"
+   "scrape",
+   "itch"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1441
  },
  {
@@ -43229,18 +43204,19 @@
  {
   "word": "satané",
   "gloss": [
-   "devilish",
-   "satanic"
+   "damn/blasted (colloquial)",
+   "devilish"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1439
  },
  {
   "word": "cafard",
   "gloss": [
-   "cockroach"
+   "cockroach",
+   "the blues (avoir le cafard)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1439
  },
  {

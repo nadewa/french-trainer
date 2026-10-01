@@ -1028,6 +1028,62 @@ MANUAL_GLOSS_OVERRIDE = {
     "tailleur": ["tailor", "woman's suit (tailleur)"],
     "saumon": ["salmon", "salmon pink"],
     "vicieux": ["perverted", "depraved", "kinky", "sly/tricky"],
+    # Continuing the exhaustive review (ranks 4300-4600 of ~4900).
+    # "résumé" is another verified false friend: in French it means
+    # "summary", never the English "résumé"/"resume" (a job-application
+    # CV, which in French is just "CV") -- the sourced gloss directly
+    # conflated the two by including "curriculum vita"/"resume"/"vita".
+    # Also outright wrong, including one case where the sourced gloss
+    # gave the literal opposite meaning: "malchance" (bad luck)
+    # included "good luck" as a synonym; "homard" (lobster) included
+    # "scallop", a different shellfish entirely; "gratte" (a conjugated
+    # form of "grattir", "scratches") had leaked in as its own headword
+    # glossed as "axe"/"blade", unrelated.
+    "permanente": ["permanent", "perm (hairstyle)"],
+    "gonzesse": ["chick (slang)", "girl"],
+    "détourner": ["divert", "hijack (a plane)", "embezzle"],
+    "précaution": ["precaution", "caution", "care"],
+    "graine": ["seed", "grain", "pip"],
+    "maniaque": ["maniacal", "maniac", "neat freak (fussy, colloquial)"],
+    "fondu": ["melted", "fade (film editing)"],
+    "devise": ["currency", "motto"],
+    "pâté": ["pâté (food)", "block (pâté de maisons)"],
+    "méfier": ["distrust (se méfier)", "be wary of", "watch out"],
+    "globe": ["globe", "ball", "eyeball (globe oculaire)"],
+    "lente": ["slow (feminine)", "nit (louse egg)"],
+    "arche": ["arch", "ark (Noah's)"],
+    "alaska": ["Alaska"],
+    "prétendu": ["so-called", "alleged", "supposed"],
+    "ignoré": ["ignored", "unknown"],
+    "résumé": ["summary"],
+    "contourner": ["go around", "bypass", "circumvent (a law/rule)"],
+    "lecteur": ["reader (of books)", "player (CD/DVD)", "drive (disk)"],
+    "dément": ["demented", "awesome! (slang)"],
+    "permanent": ["permanent", "constant", "enduring"],
+    "léon": ["Leon (name)", "Leo"],
+    "homard": ["lobster"],
+    "terminale": ["twelfth grade (French school year)", "senior year"],
+    "poney": ["pony"],
+    "malchance": ["bad luck", "misfortune", "ill-luck"],
+    "grade": ["rank (military/professional)", "grade", "degree"],
+    "gorille": ["gorilla", "bodyguard (slang)"],
+    "atteinte": ["infringement", "violation", "harm (porter atteinte à)"],
+    "abandon": ["abandonment", "desertion", "debt forgiveness (legal)"],
+    "déguisement": ["disguise", "costume"],
+    "veau": ["calf (animal)", "veal (meat)"],
+    "polonais": ["Polish", "Pole"],
+    "fréquenter": ["frequent (a place)", "attend", "date/see (someone romantically)"],
+    "correspondant": ["corresponding", "correspondent (news/pen pal)", "counterpart"],
+    "sourde": ["deaf (feminine)", "voiceless consonant (linguistics)"],
+    "détour": ["detour"],
+    "réclamer": ["claim", "demand", "ask for"],
+    "pieu": ["post", "stake", "bed (slang: le pieu)"],
+    "schéma": ["diagram", "sketch", "pattern"],
+    "gratte": ["scratches (il/elle gratte)", "scraper (tool)"],
+    "remuer": ["move", "stir", "shift"],
+    "satané": ["damn/blasted (colloquial)", "devilish"],
+    "cafard": ["cockroach", "the blues (avoir le cafard)"],
+    "gratter": ["scratch", "scrape", "itch"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but
