@@ -293,8 +293,43 @@ for full reproducibility).
   luck) included "good luck" as a synonym; "homard" (lobster) included
   "scallop", a different shellfish entirely; "gratte" (a conjugated
   verb form, "scratches") had leaked in as its own headword glossed as
-  "axe"/"blade", unrelated. **Ranks 4600–4900 (~300 words) are still
-  unreviewed.**
+  "axe"/"blade", unrelated. **Sixteenth update — review complete**:
+  finished the final batch, ranks 4600–4900 (51 more fixes, override
+  list now 885 entries). The most serious error in this last batch:
+  "compagne" (feminine of "compagnon") was missing its extremely
+  common, basic meaning ("companion"/"partner" — girlfriend or wife)
+  entirely, replaced only by "chaperon"/"duenna" (an archaic
+  Spanish-cultural concept, a woman who supervises unmarried women) —
+  about as far from the real everyday meaning as a gloss in this
+  dataset gets. Also outright wrong: "dizaine" ("about ten") was
+  glossed as "decade" (a ten-*year* period, "décennie") and "dozen"
+  (exactly twelve, "douzaine") — neither is what the word means;
+  "recommandation" (recommendation) was missing its own basic meaning
+  entirely, glossed only with indirect words like "caveat"/
+  "enrollment".
+
+  **This closes out the full word-by-word review of all ~4,900 words
+  in the vocabulary list**, done in sixteen batches over this session
+  at the user's explicit request to review everything rather than
+  sample it. Total: 885 manual gloss overrides (up from the ~19 the
+  pipeline started with), spanning three recurring categories of
+  error: (1) dictionary-extraction noise — obscure technical/
+  biological/heraldic terms, butterfly- and moth-species names (at
+  least five separate instances), and conjugated verb forms that
+  leaked in as their own vocabulary headwords; (2) outright wrong
+  entries unrelated to the headword's meaning, several severe enough
+  to flip the sense entirely (e.g. "malchance" including "good luck",
+  "enlèvement" including "rape"); and (3) roughly a dozen genuine
+  French/English false friends (décevoir, sympathique, actuel, stage,
+  assumer, librairie, vicieux, résumé, caution, définitivement,
+  prétendre, collège, sensible, large — among others), each verified
+  against a dictionary source via web search rather than taken on
+  recollection. No claim of 100% correctness is made for the
+  remaining un-overridden ~4,000 entries — this was a systematic
+  read-through at the stated effort level, not an exhaustive
+  linguistic audit — but every entry was read and judged, and anything
+  that looked wrong, misleading, or misordered was corrected and
+  documented here.
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

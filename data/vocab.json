@@ -43451,9 +43451,10 @@
  {
   "word": "gueules",
   "gloss": [
-   "gules"
+   "mouths/faces (plural of gueule)",
+   "gules (heraldry)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1422
  },
  {
@@ -43501,24 +43502,17 @@
   "word": "brique",
   "gloss": [
    "brick",
-   "cake",
-   "gable top carton",
-   "ingot",
-   "rock"
+   "carton (brique de lait)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1419
  },
  {
   "word": "recommandation",
   "gloss": [
-   "advocacy",
-   "alert",
-   "caution",
-   "caveat",
-   "enrollment"
+   "recommendation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1419
  },
  {
@@ -43541,9 +43535,10 @@
  {
   "word": "peluche",
   "gloss": [
-   "plush"
+   "stuffed animal (toy)",
+   "plush (fabric)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1417
  },
  {
@@ -43583,10 +43578,9 @@
  {
   "word": "évêque",
   "gloss": [
-   "royal purple",
    "bishop"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1411
  },
  {
@@ -43636,13 +43630,12 @@
  {
   "word": "procédé",
   "gloss": [
-   "behavior",
-   "behaviour",
-   "conduct",
-   "deportment",
-   "procedure"
+   "process",
+   "method",
+   "procedure",
+   "conduct (dated)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1407
  },
  {
@@ -43686,13 +43679,12 @@
  {
   "word": "noyau",
   "gloss": [
+   "pit (fruit)",
    "core",
-   "gist",
-   "heart",
    "kernel",
-   "newel"
+   "nucleus"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1405
  },
  {
@@ -43746,9 +43738,10 @@
  {
   "word": "dalton",
   "gloss": [
-   "dalton"
+   "Dalton (name)",
+   "dalton (atomic mass unit)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1403
  },
  {
@@ -43826,9 +43819,10 @@
  {
   "word": "faculté",
   "gloss": [
-   "faculty"
+   "faculty (university)",
+   "ability/capacity"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1397
  },
  {
@@ -43858,11 +43852,11 @@
  {
   "word": "battant",
   "gloss": [
-   "beating",
-   "clapper",
-   "winner"
+   "fighter (figurative)",
+   "clapper (bell)",
+   "door leaf"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1396
  },
  {
@@ -43894,13 +43888,10 @@
  {
   "word": "amer",
   "gloss": [
-   "acrimonious",
    "bitter",
-   "bile",
-   "gall",
-   "landmark"
+   "acrimonious"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1394
  },
  {
@@ -43930,13 +43921,11 @@
  {
   "word": "bouchon",
   "gloss": [
-   "cap",
    "cork",
-   "electric plug",
-   "float",
-   "pile"
+   "cap",
+   "traffic jam"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1392
  },
  {
@@ -43968,21 +43957,19 @@
   "word": "affecter",
   "gloss": [
    "affect",
-   "move",
-   "stir",
-   "agitate"
+   "move (emotionally)",
+   "allocate/assign"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1390
  },
  {
   "word": "fournisseur",
   "gloss": [
-   "procurer",
-   "provider",
-   "supplier"
+   "supplier",
+   "provider"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1390
  },
  {
@@ -44004,11 +43991,11 @@
  {
   "word": "activer",
   "gloss": [
-   "kindle",
-   "rekindle",
-   "speed up"
+   "activate",
+   "speed up",
+   "kindle"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1388
  },
  {
@@ -44045,10 +44032,9 @@
  {
   "word": "mara",
   "gloss": [
-   "Mara",
-   "mra"
+   "Mara (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1386
  },
  {
@@ -44088,9 +44074,11 @@
  {
   "word": "voiles",
   "gloss": [
-   "Vela"
+   "sails",
+   "veils",
+   "Vela (constellation)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1384
  },
  {
@@ -44123,10 +44111,12 @@
  {
   "word": "dominer",
   "gloss": [
+   "dominate",
+   "control",
    "exceed",
    "surpass"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 1377
  },
  {
@@ -44159,9 +44149,10 @@
  {
   "word": "gonflé",
   "gloss": [
-   "swollen"
+   "swollen",
+   "ballsy/daring (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1374
  },
  {
@@ -44272,10 +44263,11 @@
  {
   "word": "blouse",
   "gloss": [
-   "coat",
-   "overall"
+   "smock/work coat",
+   "overall",
+   "blouse (shirt)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1367
  },
  {
@@ -44300,13 +44292,11 @@
  {
   "word": "régulier",
   "gloss": [
-   "accurate",
+   "regular",
    "constant",
-   "even",
-   "on time",
-   "prompt"
+   "steady"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1365
  },
  {
@@ -44330,9 +44320,9 @@
  {
   "word": "bi",
   "gloss": [
-   "bee"
+   "bi (bisexual, informal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1364
  },
  {
@@ -44389,10 +44379,10 @@
  {
   "word": "dizaine",
   "gloss": [
-   "decade",
-   "dozen"
+   "about ten",
+   "ten or so"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1361
  },
  {
@@ -44570,10 +44560,10 @@
  {
   "word": "compagne",
   "gloss": [
-   "chaperon",
-   "duenna"
+   "companion",
+   "partner (girlfriend/wife)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1352
  },
  {
@@ -44588,10 +44578,9 @@
  {
   "word": "tiffany",
   "gloss": [
-   "Asian longhair",
-   "Asian semi-longhair"
+   "Tiffany (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1351
  },
  {
@@ -44656,7 +44645,7 @@
    "dinner jacket",
    "tuxedo"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1347
  },
  {
@@ -44692,28 +44681,29 @@
  {
   "word": "tuteur",
   "gloss": [
-   "caretaker"
+   "guardian (legal)",
+   "tutor/mentor",
+   "plant stake"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1342
  },
  {
   "word": "compteur",
   "gloss": [
-   "counter",
-   "measure word",
    "meter",
-   "metre"
+   "counter",
+   "speedometer (compteur de vitesse)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1342
  },
  {
   "word": "verse",
   "gloss": [
-   "lodging"
+   "pours (il/elle verse)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1342
  },
  {
@@ -44728,18 +44718,20 @@
  {
   "word": "gel",
   "gloss": [
-   "freezing cold",
-   "frost"
+   "gel (hair/shower)",
+   "frost",
+   "freeze"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1341
  },
  {
   "word": "fritz",
   "gloss": [
-   "Kraut"
+   "Fritz (name)",
+   "Kraut (dated WWII slang for German)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1340
  },
  {
@@ -44823,17 +44815,20 @@
  {
   "word": "ascension",
   "gloss": [
-   "Ascension"
+   "ascent",
+   "climb",
+   "Ascension (religious holiday)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1337
  },
  {
   "word": "axe",
   "gloss": [
-   "axis"
+   "axis",
+   "main road (axe routier)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1337
  },
  {
@@ -44921,9 +44916,10 @@
  {
   "word": "moniteur",
   "gloss": [
-   "monitor"
+   "monitor (screen)",
+   "instructor (ski, swimming, etc.)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1330
  },
  {
@@ -44937,13 +44933,12 @@
  {
   "word": "gigantesque",
   "gloss": [
-   "astronomical",
-   "giant",
    "gigantic",
-   "Himalayan",
-   "huge"
+   "giant",
+   "huge",
+   "astronomical (figurative)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1330
  },
  {
@@ -44966,9 +44961,11 @@
  {
   "word": "chantant",
   "gloss": [
-   "chanting"
+   "singing",
+   "melodious",
+   "singsong"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1328
  },
  {
@@ -44985,9 +44982,10 @@
  {
   "word": "madeleine",
   "gloss": [
-   "Magdalene"
+   "madeleine (cake)",
+   "Magdalene (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1327
  },
  {
@@ -45031,9 +45029,9 @@
  {
   "word": "hold-up",
   "gloss": [
-   "hold-up"
+   "robbery/heist (hold-up)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1323
  },
  {
@@ -45106,11 +45104,11 @@
  {
   "word": "étroit",
   "gloss": [
-   "closed",
-   "close",
-   "narrow"
+   "narrow",
+   "tight",
+   "close (relationship)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1321
  },
  {
@@ -45253,24 +45251,19 @@
  {
   "word": "débattre",
   "gloss": [
-   "agitate",
-   "arouse",
-   "discuss",
-   "incite",
-   "stir up"
+   "debate",
+   "discuss"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1309
  },
  {
   "word": "console",
   "gloss": [
-   "bracket",
-   "bragger",
-   "console",
-   "tassel"
+   "console (gaming)",
+   "bracket (architectural support)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1309
  },
  {
@@ -45284,13 +45277,11 @@
  {
   "word": "consommation",
   "gloss": [
-   "beverage",
-   "consummation",
    "consumption",
-   "drink",
+   "drink (café/bar)",
    "intake"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1309
  },
  {
@@ -45391,12 +45382,11 @@
  {
   "word": "défiler",
   "gloss": [
-   "march past",
    "march",
    "parade",
-   "string"
+   "scroll (modern tech)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1302
  },
  {
@@ -45441,9 +45431,9 @@
  {
   "word": "kerry",
   "gloss": [
-   "kerry"
+   "Kerry (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1299
  },
  {
@@ -45583,9 +45573,10 @@
  {
   "word": "galère",
   "gloss": [
-   "galley"
+   "hassle/ordeal (colloquial)",
+   "galley (ship)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1293
  },
  {
@@ -45763,9 +45754,10 @@
  {
   "word": "embarquement",
   "gloss": [
-   "embarcation"
+   "embarkation",
+   "boarding"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1282
  },
  {
@@ -45813,13 +45805,11 @@
  {
   "word": "entente",
   "gloss": [
+   "agreement",
    "accord",
-   "alliance",
-   "concord",
-   "double entendre",
-   "entente"
+   "understanding"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1281
  },
  {
@@ -45834,11 +45824,11 @@
  {
   "word": "réalisation",
   "gloss": [
-   "making",
-   "realisation",
-   "realization"
+   "realization",
+   "achievement",
+   "film (director's work)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1279
  },
  {
@@ -45870,13 +45860,10 @@
  {
   "word": "corbeau",
   "gloss": [
-   "bracket-corbel",
-   "corvus",
-   "Corvus",
    "crow",
-   "harpago"
+   "bracket-corbel (architecture)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1278
  },
  {
@@ -45937,13 +45924,11 @@
  {
   "word": "coquille",
   "gloss": [
-   "athletic protector",
-   "Coquille",
-   "eggshell",
-   "jockstrap",
-   "nutshell"
+   "seashell",
+   "typo (printing error)",
+   "athletic cup/jockstrap"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1272
  },
  {
@@ -45979,9 +45964,12 @@
  {
   "word": "global",
   "gloss": [
+   "overall",
+   "comprehensive",
+   "global",
    "total"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 1269
  },
  {

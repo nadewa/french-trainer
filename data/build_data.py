@@ -1084,6 +1084,70 @@ MANUAL_GLOSS_OVERRIDE = {
     "satané": ["damn/blasted (colloquial)", "devilish"],
     "cafard": ["cockroach", "the blues (avoir le cafard)"],
     "gratter": ["scratch", "scrape", "itch"],
+    # Final batch of the exhaustive review (ranks 4600-4900 of ~4900).
+    # This completes the full word-by-word pass through every entry in
+    # the ~4,900-word vocabulary list. The most serious error in this
+    # last batch: "compagne" (feminine of "compagnon") was missing its
+    # extremely common, basic meaning ("companion"/"partner" --
+    # girlfriend or wife) entirely, replaced only by "chaperon"/
+    # "duenna" (an archaic Spanish-cultural concept, a woman who
+    # supervises unmarried women) -- about as far from the real
+    # everyday meaning as a gloss in this dataset gets. Also outright
+    # wrong: "dizaine" ("about ten") was glossed as "decade" (a ten-
+    # YEAR period, "décennie") and "dozen" (exactly twelve,
+    # "douzaine") -- neither is what the word means; "recommandation"
+    # (recommendation) was missing its own basic meaning entirely,
+    # glossed only with indirect words like "caveat"/"enrollment".
+    "gueules": ["mouths/faces (plural of gueule)", "gules (heraldry)"],
+    "brique": ["brick", "carton (brique de lait)"],
+    "recommandation": ["recommendation"],
+    "peluche": ["stuffed animal (toy)", "plush (fabric)"],
+    "évêque": ["bishop"],
+    "procédé": ["process", "method", "procedure", "conduct (dated)"],
+    "noyau": ["pit (fruit)", "core", "kernel", "nucleus"],
+    "dalton": ["Dalton (name)", "dalton (atomic mass unit)"],
+    "faculté": ["faculty (university)", "ability/capacity"],
+    "battant": ["fighter (figurative)", "clapper (bell)", "door leaf"],
+    "amer": ["bitter", "acrimonious"],
+    "bouchon": ["cork", "cap", "traffic jam"],
+    "affecter": ["affect", "move (emotionally)", "allocate/assign"],
+    "fournisseur": ["supplier", "provider"],
+    "activer": ["activate", "speed up", "kindle"],
+    "mara": ["Mara (name)"],
+    "voiles": ["sails", "veils", "Vela (constellation)"],
+    "dominer": ["dominate", "control", "exceed", "surpass"],
+    "gonflé": ["swollen", "ballsy/daring (slang)"],
+    "blouse": ["smock/work coat", "overall", "blouse (shirt)"],
+    "régulier": ["regular", "constant", "steady"],
+    "bi": ["bi (bisexual, informal)"],
+    "dizaine": ["about ten", "ten or so"],
+    "compagne": ["companion", "partner (girlfriend/wife)"],
+    "tiffany": ["Tiffany (name)"],
+    "tuteur": ["guardian (legal)", "tutor/mentor", "plant stake"],
+    "compteur": ["meter", "counter", "speedometer (compteur de vitesse)"],
+    "verse": ["pours (il/elle verse)"],
+    "gel": ["gel (hair/shower)", "frost", "freeze"],
+    "fritz": ["Fritz (name)", "Kraut (dated WWII slang for German)"],
+    "ascension": ["ascent", "climb", "Ascension (religious holiday)"],
+    "axe": ["axis", "main road (axe routier)"],
+    "moniteur": ["monitor (screen)", "instructor (ski, swimming, etc.)"],
+    "gigantesque": ["gigantic", "giant", "huge", "astronomical (figurative)"],
+    "chantant": ["singing", "melodious", "singsong"],
+    "madeleine": ["madeleine (cake)", "Magdalene (name)"],
+    "hold-up": ["robbery/heist (hold-up)"],
+    "étroit": ["narrow", "tight", "close (relationship)"],
+    "débattre": ["debate", "discuss"],
+    "console": ["console (gaming)", "bracket (architectural support)"],
+    "consommation": ["consumption", "drink (café/bar)", "intake"],
+    "défiler": ["march", "parade", "scroll (modern tech)"],
+    "kerry": ["Kerry (name)"],
+    "galère": ["hassle/ordeal (colloquial)", "galley (ship)"],
+    "embarquement": ["embarkation", "boarding"],
+    "entente": ["agreement", "accord", "understanding"],
+    "réalisation": ["realization", "achievement", "film (director's work)"],
+    "corbeau": ["crow", "bracket-corbel (architecture)"],
+    "coquille": ["seashell", "typo (printing error)", "athletic cup/jockstrap"],
+    "global": ["overall", "comprehensive", "global", "total"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but
