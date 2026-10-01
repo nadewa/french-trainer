@@ -560,6 +560,76 @@ MANUAL_GLOSS_OVERRIDE = {
     "tester": ["test", "try out", "make a will (legal)"],
     "creuser": ["dig"],
     "masse": ["mass", "crowd", "heap", "ground (electrical)"],
+    # Continuing the exhaustive review (ranks 2200-2500 of ~4900). The
+    # standout here is "collège", one of the most commonly cited
+    # French/English false friends (verified via web search): it means
+    # "middle school" (ages 11-15), never "high school" or "college" --
+    # the sourced gloss offered only "high school"/"gymnasium"/
+    # "grammar-school", none of them correct. Also fixed something more
+    # serious than a stylistic gap: "enlèvement" (abduction/kidnapping)
+    # included "rape" as a gloss, which is simply wrong -- "rape" in
+    # French is "viol", a completely different word (already correctly
+    # present elsewhere in this list). Verified via web search before
+    # removing it, given the severity of leaving a wrong gloss like that
+    # in place. Other outright-wrong entries: "lincoln" was glossed with
+    # an obscure sheep-breed name; "nicole" gave "Nicoll", a different
+    # surname; "bouffer" (informal "to eat") was glossed as "puff".
+    "collège": ["middle school", "junior high"],
+    "dent": ["tooth", "teeth", "cog", "prong"],
+    "pétrole": ["oil", "petroleum", "kerosene"],
+    "solitaire": ["solitary", "lonely", "solitaire (card game)"],
+    "arracher": ["pull out", "tear out", "rip out", "eradicate"],
+    "tendre": ["tender", "soft", "stretch out", "hold out"],
+    "issue": ["exit", "way out", "outlet", "egress"],
+    "débrouiller": ["sort out", "manage (se débrouiller)", "figure out"],
+    "timide": ["shy", "timid", "bashful"],
+    "chevalier": ["knight"],
+    "précisément": ["precisely", "exactly", "accurately"],
+    "ordures": ["garbage", "trash", "rubbish"],
+    "vomir": ["puke", "throw up", "vomit"],
+    "christine": ["Christine", "Christina"],
+    "résistance": ["resistance", "resistor", "stand"],
+    "moyenne": ["average", "mean"],
+    "net": ["clean", "clear", "net (profit)", "sharp"],
+    "conducteur": ["driver", "conductor", "leading"],
+    "maintenir": ["maintain", "keep", "uphold", "continue"],
+    "abattre": ["shoot down", "kill", "fell (a tree)", "knock down"],
+    "jules": ["Jules (name)", "boyfriend (dated slang)"],
+    "combinaison": ["combination", "jumpsuit", "overall"],
+    "lincoln": ["Lincoln (name)"],
+    "four": ["oven", "furnace", "kiln"],
+    "ordure": ["garbage", "filth", "scum (insult)", "bastard (insult)"],
+    "marin": ["sailor", "marine", "maritime"],
+    "revanche": ["revenge", "rematch", "retribution"],
+    "franc": ["frank", "honest", "franc (former currency)"],
+    "piqué": ["stung", "pricked", "annoyed", "dive (aviation)"],
+    "casque": ["helmet", "headphones"],
+    "prime": ["bonus", "premium", "bounty"],
+    "chatte": ["she-cat", "pussy (vulgar slang)"],
+    "mordu": ["bitten", "buff (enthusiast)", "fan"],
+    "délire": ["delirium", "madness (colloquial)", "craziness"],
+    "trente": ["thirty"],
+    "pension": ["pension", "boarding house", "guesthouse"],
+    "crève": ["cold (illness)", "chill"],
+    "enquêter": ["investigate", "look into"],
+    "asile": ["asylum", "sanctuary"],
+    "allumer": ["light", "turn on", "ignite", "kindle"],
+    "tarder": ["delay", "take long", "be late"],
+    "hop": ["hup! (interjection)", "there we go!"],
+    "blé": ["wheat", "dough (money slang)"],
+    "entrain": ["enthusiasm", "liveliness", "drive"],
+    "accéder": ["access", "reach", "agree to (a request)"],
+    "manche": ["sleeve", "handle", "English Channel", "round (in a game)"],
+    "dalle": ["slab", "flagstone", "hunger (slang: avoir la dalle)"],
+    "enlèvement": ["abduction", "kidnapping", "removal"],
+    "historique": ["historical", "historic", "history", "log (computing)"],
+    "piquer": ["pierce", "prick", "sting", "steal (slang)"],
+    "énerver": ["annoy", "irritate", "get on someone's nerves"],
+    "he": ["hey! (interjection)", "he (English loanword)"],
+    "faiblesse": ["weakness", "frailty", "faintness"],
+    "bouffer": ["eat (informal)", "scoff down"],
+    "avertir": ["warn", "alert", "caution"],
+    "nicole": ["Nicole"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

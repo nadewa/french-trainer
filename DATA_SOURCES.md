@@ -196,8 +196,19 @@ for full reproducibility).
   (gloves) was glossed as just "Gants", not a translation at all;
   "diane" (the name) was glossed with a butterfly species name
   ("Southern Festoon"); "chirurgien" (surgeon) included the unrelated
-  "surgeonfish". **Ranks 2200–4900 (~2,700 words) are still
-  unreviewed.**
+  "surgeonfish". **Eighth update**: continued into ranks 2200–2500 (56
+  more fixes, override list now 466 entries). The standout this round
+  is "collège", one of the most commonly cited French/English false
+  friends (verified via web search): it means "middle school" (ages
+  11–15), never "high school" or "college" — the sourced gloss offered
+  only "high school"/"gymnasium"/"grammar-school", none of them
+  correct. Also fixed something more serious than a stylistic gap:
+  "enlèvement" (abduction/kidnapping) included "rape" as a gloss, which
+  is simply wrong — "rape" in French is "viol", a completely different
+  word already correctly present elsewhere in this same list. Verified
+  via web search before removing it, given the severity of leaving a
+  wrong gloss like that in place. **Ranks 2500–4900 (~2,400 words) are
+  still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
