@@ -1,12 +1,17 @@
 import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
-import { buildItemBank, buildIntroRanks, TENSES, PRONOUNS, pronounFor } from "./items.js";
+import { buildItemBank, buildIntroRanks, pronounFor } from "./items.js";
 import { buildConcepts, groupByLesson } from "./lessons.js";
 import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
 import * as images from "./images.js";
+import { LANGUAGES, DEFAULT_LANGUAGE, getLanguage } from "./languages.js";
 
-const STATE_KEY = "ft_state_v1";
+const LANG_KEY = "ft_lang";
+// Progress is tracked per language -- French and Spanish vocab/verbs are
+// entirely different item sets, so they get entirely separate SRS state.
+let currentLang = getLanguage(localStorage.getItem(LANG_KEY) || DEFAULT_LANGUAGE);
+const STATE_KEY = `ft_state_v1_${currentLang.code}`;
 const DEFAULT_SETTINGS = { dirWeight: 0.7, newPerDay: 15, practiceMode: "all", answerMode: "type" };
 
 function todayStr(d = new Date()) {
@@ -226,21 +231,22 @@ if ("speechSynthesis" in window) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 
-function bestFrenchVoice() {
-  const frVoices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("fr"));
-  if (!frVoices.length) return null;
+function bestVoiceForLang() {
+  const prefix = currentLang.code;
+  const voices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith(prefix));
+  if (!voices.length) return null;
   // On-device ("local") voices are almost always the higher-quality,
   // more natural-sounding ones -- the flat/"robotic" voice users sometimes
   // hear is typically a low-quality fallback voice, or (on some phones) a
   // remote/network voice that can also fail silently when offline.
-  return frVoices.find((v) => v.localService) || frVoices[0];
+  return voices.find((v) => v.localService) || voices[0];
 }
 
 // Surfaces exactly which voice(s) the browser reports, in Settings, so a
 // "still sounds robotic" report can be diagnosed instead of guessed at --
-// e.g. distinguishing "no French voice detected at all" from "a French
-// voice is used, but it's not the one the OS's Accessibility settings
-// suggest should be available to web pages."
+// e.g. distinguishing "no voice detected at all" from "a voice is used,
+// but it's not the one the OS's Accessibility settings suggest should be
+// available to web pages."
 function describeVoices() {
   const debugEl = document.getElementById("voice-debug");
   if (!debugEl) return;
@@ -248,24 +254,24 @@ function describeVoices() {
     debugEl.textContent = "Voices: this browser doesn't support text-to-speech.";
     return;
   }
-  const frVoices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith("fr"));
-  if (!frVoices.length) {
-    debugEl.textContent = "Voices: no French voice reported by this browser yet.";
+  const voices = cachedVoices.filter((v) => v.lang && v.lang.toLowerCase().startsWith(currentLang.code));
+  if (!voices.length) {
+    debugEl.textContent = `Voices: no ${currentLang.englishName} voice reported by this browser yet.`;
     return;
   }
-  const chosen = bestFrenchVoice();
-  const list = frVoices
+  const chosen = bestVoiceForLang();
+  const list = voices
     .map((v) => `${v.name} (${v.lang}, ${v.localService ? "on-device" : "remote"})`)
     .join("; ");
-  debugEl.textContent = `Voices: using "${chosen.name}". All French voices reported: ${list}`;
+  debugEl.textContent = `Voices: using "${chosen.name}". All ${currentLang.englishName} voices reported: ${list}`;
 }
 
 function speakFrench(text, { slow = false } = {}) {
   if (!("speechSynthesis" in window) || !text) return;
   const synth = window.speechSynthesis;
   const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = "fr-FR";
-  const voice = bestFrenchVoice();
+  utter.lang = currentLang.ttsLang;
+  const voice = bestVoiceForLang();
   if (voice) utter.voice = voice;
   utter.rate = slow ? 0.6 : 0.95;
   // Safari (particularly iOS) can silently drop a speak() call made right
@@ -296,7 +302,7 @@ function audioTextFor(item) {
 // covers all 100 verbs across the 5 drilled tenses.
 const EN_PRONOUNS = ["I", "you", "he/she", "we", "you", "they"];
 
-const ENGLISH_VERBS = {
+const ENGLISH_VERBS_FR = {
   aller: "go", vouloir: "want", faire: "do", savoir: "know", dire: "say",
   penser: "think", voir: "see", venir: "come", attendre: "wait for",
   croire: "believe", parler: "speak", prendre: "take", regarder: "watch",
@@ -323,6 +329,40 @@ const ENGLISH_VERBS = {
   dégager: "clear", servir: "serve", battre: "beat",
 };
 
+// Spanish infinitive -> English base verb, same purpose/standard as
+// ENGLISH_VERBS_FR above: ordinary translation (not sourced data), mostly
+// matching each verb's own gloss[0] from verbs_es.json but corrected where
+// that gloss isn't a clean templating base (e.g. "ser" -> "being" in the
+// sourced data, needs "be"; "pelear" -> "litigate" is simply too narrow a
+// sense, "fight" is the ordinary one).
+const ENGLISH_VERBS_ES = {
+  estar: "be", ir: "go", ser: "be", tener: "have", haber: "have",
+  poder: "can", querer: "want", saber: "know", necesitar: "need",
+  deber: "have to", hacer: "do", pensar: "think", ver: "see", decir: "say",
+  creer: "believe", esperar: "hope", hablar: "speak", conocer: "know",
+  encontrar: "find", llevar: "carry", parecer: "seem", sentir: "feel",
+  llamar: "call", vivir: "live", pasar: "happen", trabajar: "work",
+  dar: "give", llegar: "arrive", venir: "come", seguir: "follow",
+  gustar: "like", parir: "give birth", dejar: "leave", salir: "leave",
+  quedar: "remain", amar: "love", acabar: "finish", preguntar: "ask",
+  intentar: "try", tratar: "treat", empezar: "begin", tomar: "take",
+  suponer: "suppose", usar: "use", poner: "put", mirar: "look",
+  jugar: "play", terminar: "finish", conseguir: "get", entender: "understand",
+  ganar: "earn", pedir: "ask for", odiar: "hate", merecer: "deserve",
+  referir: "refer", desear: "wish", importar: "matter", dormir: "sleep",
+  comer: "eat", escuchar: "listen", tocar: "touch", temer: "fear",
+  perder: "lose", contar: "count", recibir: "receive", imaginar: "imagine",
+  decidir: "decide", matar: "kill", lograr: "achieve", comenzar: "begin",
+  pagar: "pay", traer: "bring", morir: "die", andar: "walk",
+  dirigir: "direct", preocupar: "worry", comprar: "buy", olvidar: "forget",
+  acordar: "agree", compartir: "share", recordar: "remember", sentar: "seat",
+  echar: "throw", vender: "sell", mantener: "keep", existir: "exist",
+  confiar: "trust", significar: "mean", encantar: "love", regresar: "return",
+  pertenecer: "belong", parar: "stop", ayudar: "help", casar: "marry",
+  cantar: "sing", planear: "plan", correr: "run", enviar: "send",
+  sonar: "sound", pelear: "fight",
+};
+
 const IRREGULAR_PP = {
   go: "gone", do: "done", say: "said", see: "seen", come: "come",
   speak: "spoken", take: "taken", find: "found", leave: "left", know: "known",
@@ -334,7 +374,8 @@ const IRREGULAR_PP = {
 const IRREGULAR_GERUND = { die: "dying", stop: "stopping", put: "putting" };
 
 function englishBase(item) {
-  const [base, ...rest] = (ENGLISH_VERBS[item.infinitive] || item.gloss[0]).split(" ");
+  const table = currentLang.code === "es" ? ENGLISH_VERBS_ES : ENGLISH_VERBS_FR;
+  const [base, ...rest] = (table[item.infinitive] || item.gloss[0]).split(" ");
   return { base, particle: rest.join(" ") };
 }
 function thirdPersonEn(base) {
@@ -357,11 +398,12 @@ function pastParticipleEn(base) {
   return base + "ed";
 }
 
-// être/avoir/pouvoir/devoir/falloir are too irregular for the template above
-// (be: am/is/are; have: has; can/must/be-necessary-to are modal, no -s form).
+// être/avoir/pouvoir/devoir/falloir (French) and ser/estar/tener/haber/
+// poder/deber (Spanish) are too irregular for the template above (be: am/
+// is/are; have: has; can/must/be-necessary-to are modal, no -s form).
 const AUX_BE = ["was", "were", "was", "were", "were", "were"];
 const AUX_HAVE = ["have", "have", "has", "have", "have", "have"];
-const SPECIAL_ENGLISH = {
+const SPECIAL_ENGLISH_FR = {
   "être:present": ["am", "are", "is", "are", "are", "are"],
   "être:imparfait": AUX_BE,
   "être:futur_simple": Array(6).fill("will be"),
@@ -389,9 +431,49 @@ const SPECIAL_ENGLISH = {
   "falloir:subjonctif_present": Array(6).fill("be necessary"),
 };
 
+const BE_TABLE = {
+  present: ["am", "are", "is", "are", "are", "are"],
+  imparfait: AUX_BE,
+  futur_simple: Array(6).fill("will be"),
+  passe_compose: AUX_HAVE.map((a) => `${a} been`),
+  subjonctif_present: Array(6).fill("be"),
+};
+const HAVE_TABLE = {
+  present: ["have", "have", "has", "have", "have", "have"],
+  imparfait: Array(6).fill("had"),
+  futur_simple: Array(6).fill("will have"),
+  passe_compose: AUX_HAVE.map((a) => `${a} had`),
+  subjonctif_present: Array(6).fill("have"),
+};
+const SPECIAL_ENGLISH_ES = {
+  "ser:present": BE_TABLE.present, "ser:imparfait": BE_TABLE.imparfait,
+  "ser:futur_simple": BE_TABLE.futur_simple, "ser:passe_compose": BE_TABLE.passe_compose,
+  "ser:subjonctif_present": BE_TABLE.subjonctif_present,
+  "estar:present": BE_TABLE.present, "estar:imparfait": BE_TABLE.imparfait,
+  "estar:futur_simple": BE_TABLE.futur_simple, "estar:passe_compose": BE_TABLE.passe_compose,
+  "estar:subjonctif_present": BE_TABLE.subjonctif_present,
+  "tener:present": HAVE_TABLE.present, "tener:imparfait": HAVE_TABLE.imparfait,
+  "tener:futur_simple": HAVE_TABLE.futur_simple, "tener:passe_compose": HAVE_TABLE.passe_compose,
+  "tener:subjonctif_present": HAVE_TABLE.subjonctif_present,
+  "haber:present": HAVE_TABLE.present, "haber:imparfait": HAVE_TABLE.imparfait,
+  "haber:futur_simple": HAVE_TABLE.futur_simple, "haber:passe_compose": HAVE_TABLE.passe_compose,
+  "haber:subjonctif_present": HAVE_TABLE.subjonctif_present,
+  "poder:present": Array(6).fill("can"),
+  "poder:imparfait": Array(6).fill("could"),
+  "poder:futur_simple": Array(6).fill("will be able to"),
+  "poder:passe_compose": AUX_HAVE.map((a) => `${a} been able to`),
+  "poder:subjonctif_present": Array(6).fill("can"),
+  "deber:present": ["have to", "have to", "has to", "have to", "have to", "have to"],
+  "deber:imparfait": Array(6).fill("had to"),
+  "deber:futur_simple": Array(6).fill("will have to"),
+  "deber:passe_compose": AUX_HAVE.map((a) => `${a} had to`),
+  "deber:subjonctif_present": Array(6).fill("have to"),
+};
+
 function englishPhraseFor(item) {
+  const specialTable = currentLang.code === "es" ? SPECIAL_ENGLISH_ES : SPECIAL_ENGLISH_FR;
   const key = `${item.infinitive}:${item.tenseKey}`;
-  if (SPECIAL_ENGLISH[key]) return SPECIAL_ENGLISH[key][item.personIdx];
+  if (specialTable[key]) return specialTable[key][item.personIdx];
   const { base, particle } = englishBase(item);
   const suffix = particle ? ` ${particle}` : "";
   switch (item.tenseKey) {
@@ -464,13 +546,13 @@ function promptTextFor(item, direction) {
       if (sentence) {
         return {
           prompt: sentence.blanked,
-          hint: "Type the missing French word.",
+          hint: `Type the missing ${currentLang.englishName} word.`,
           context: sentence.english,
           sentenceMode: true,
           fullSentenceFr: sentence.fr,
         };
       }
-      return { prompt: item.gloss.slice(0, 3).join(" / "), hint: "Type the French word.", context: "" };
+      return { prompt: item.gloss.slice(0, 3).join(" / "), hint: `Type the ${currentLang.englishName} word.`, context: "" };
     }
     return { prompt: item.word, hint: "Type the English meaning.", context: "" };
   }
@@ -651,7 +733,16 @@ function buildChoices(item, direction) {
     }
   } else {
     correct = item.expected;
-    pool = conjFormPool;
+    // Distractors from the SAME verb's other forms (any tense/person)
+    // first -- these actually test whether the learner knows which exact
+    // cell is correct. A distractor from an unrelated verb is trivially
+    // filterable on sight (it just doesn't "look like" it goes with this
+    // pronoun/tense), which made the choice obvious without really
+    // knowing the answer.
+    const sameVerbForms = bank
+      .filter((i) => i.type === "conj" && i.infinitive === item.infinitive && i.expected !== correct)
+      .map((i) => i.expected);
+    pool = sameVerbForms.length >= 3 ? sameVerbForms : conjFormPool;
   }
   const distractors = pickDistractors(pool, [correct], 3);
   const choices = shuffle([correct, ...distractors]);
@@ -1006,24 +1097,27 @@ function renderCategoryList() {
   });
 }
 
-// Regular -er/-ir present-tense endings, used only to detect (not assert)
-// whether a verb's present tense follows the standard pattern -- derived
-// from the verb's own sourced conjugation forms, not a separate claim.
-const REGULAR_ER_ENDINGS = ["e", "es", "e", "ons", "ez", "ent"];
-const REGULAR_IR_ENDINGS = ["is", "is", "it", "issons", "issez", "issent"];
+// Regular present-tense endings per language/infinitive ending, used only
+// to detect (not assert) whether a verb's present tense follows the
+// standard pattern -- derived from the verb's own sourced conjugation
+// forms, not a separate claim.
+const REGULAR_ENDINGS_FR = {
+  er: ["e", "es", "e", "ons", "ez", "ent"],
+  ir: ["is", "is", "it", "issons", "issez", "issent"],
+};
+const REGULAR_ENDINGS_ES = {
+  ar: ["o", "as", "a", "amos", "áis", "an"],
+  er: ["o", "es", "e", "emos", "éis", "en"],
+  ir: ["o", "es", "e", "imos", "ís", "en"],
+};
 
 function isRegularConjugation(verb) {
-  let stem = null;
-  let endings = null;
-  if (verb.infinitive.endsWith("er") && verb.infinitive !== "aller") {
-    stem = verb.infinitive.slice(0, -2);
-    endings = REGULAR_ER_ENDINGS;
-  } else if (verb.infinitive.endsWith("ir")) {
-    stem = verb.infinitive.slice(0, -2);
-    endings = REGULAR_IR_ENDINGS;
-  } else {
-    return false;
-  }
+  const table = currentLang.code === "es" ? REGULAR_ENDINGS_ES : REGULAR_ENDINGS_FR;
+  if (currentLang.code === "fr" && verb.infinitive === "aller") return false;
+  const ending = Object.keys(table).find((e) => verb.infinitive.endsWith(e));
+  if (!ending) return false;
+  const stem = verb.infinitive.slice(0, -ending.length);
+  const endings = table[ending];
   return verb.present.every((form, i) => form === `${stem}${endings[i]}`);
 }
 
@@ -1036,11 +1130,15 @@ function verbUsageNote(verb) {
   if (verb.pronominal) {
     parts.push("Pronominal (reflexive) verb — always paired with a reflexive pronoun.");
   }
-  parts.push(
-    verb.aux === "être"
-      ? "Takes être as its auxiliary in compound tenses."
-      : "Takes avoir as its auxiliary in compound tenses."
-  );
+  // Spanish always uses "haber" for compound tenses (no être/avoir-style
+  // split), so that fact isn't worth stating as a per-verb note there.
+  if (currentLang.code === "fr") {
+    parts.push(
+      verb.aux === "être"
+        ? "Takes être as its auxiliary in compound tenses."
+        : "Takes avoir as its auxiliary in compound tenses."
+    );
+  }
   parts.push(
     isRegularConjugation(verb)
       ? "Regular conjugation — follows the standard pattern for its infinitive ending."
@@ -1100,7 +1198,7 @@ function openVerbLesson(infinitive) {
 
   const tableBox = el("verb-lesson-table");
   tableBox.innerHTML = "";
-  TENSES.forEach((tense) => {
+  currentLang.tenses.forEach((tense) => {
     const forms = verb[tense.key];
     if (!forms) return;
     const block = document.createElement("div");
@@ -1110,10 +1208,10 @@ function openVerbLesson(infinitive) {
     block.appendChild(heading);
     const grid = document.createElement("div");
     grid.className = "verb-tense-grid";
-    PRONOUNS.forEach((_, i) => {
+    currentLang.pronouns.forEach((_, i) => {
       const cell = document.createElement("div");
       cell.className = "verb-tense-cell";
-      cell.innerHTML = `<span class="verb-tense-pronoun">${pronounFor(tense, i, verb)}</span> ${forms[i]}`;
+      cell.innerHTML = `<span class="verb-tense-pronoun">${pronounFor(tense, i, verb, currentLang)}</span> ${forms[i]}`;
       grid.appendChild(cell);
     });
     block.appendChild(grid);
@@ -1122,7 +1220,7 @@ function openVerbLesson(infinitive) {
 
   const tensesBox = el("verb-lesson-tenses");
   tensesBox.innerHTML = "";
-  TENSES.forEach((tense) => {
+  currentLang.tenses.forEach((tense) => {
     if (!verb[tense.key]) return;
     const btn = document.createElement("button");
     btn.className = "verb-tense-practice-btn";
@@ -1344,14 +1442,25 @@ function migrateUnlockedLessons() {
 }
 
 async function boot() {
+  document.title = `${currentLang.englishName} Reactivation Trainer`;
+  el("app-title").textContent = currentLang.name;
+  const langSelect = el("lang-select");
+  langSelect.value = currentLang.code;
+  langSelect.addEventListener("change", () => {
+    localStorage.setItem(LANG_KEY, langSelect.value);
+    location.reload();
+  });
+
   const [vocab, verbs, examples] = await Promise.all([
-    fetch("data/vocab.json").then((r) => r.json()),
-    fetch("data/verbs.json").then((r) => r.json()),
-    fetch("data/examples.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+    fetch(currentLang.vocabFile).then((r) => r.json()),
+    fetch(currentLang.verbsFile).then((r) => r.json()),
+    currentLang.examplesFile
+      ? fetch(currentLang.examplesFile).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
+      : Promise.resolve({}),
   ]);
   examplesData = examples;
 
-  bank = buildItemBank(vocab, verbs);
+  bank = buildItemBank(vocab, verbs, currentLang);
   itemsById = new Map(bank.map((i) => [i.id, i]));
 
   vocabWordPool = bank.filter((i) => i.type === "vocab").map((i) => i.word);

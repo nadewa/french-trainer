@@ -111,6 +111,18 @@ h1, h2, .prompt, .stat-pill b, button, .path-node {
   color: var(--green-dark);
 }
 
+.lang-select {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  box-shadow: none;
+}
+
 .stats {
   display: flex;
   gap: 8px;

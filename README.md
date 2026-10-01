@@ -1,19 +1,29 @@
-# French Reactivation Trainer
+# Language Reactivation Trainer
 
-A small self-contained web app for reactivating French vocabulary and verb
-conjugation: typed-answer review with typo/accent tolerance, spaced repetition,
-and no backend — everything runs in the browser and progress is stored in
-`localStorage`.
+A small self-contained web app for reactivating French or Spanish vocabulary
+and verb conjugation: typed-answer review with typo/accent tolerance, spaced
+repetition, and no backend — everything runs in the browser and progress is
+stored in `localStorage`.
 
-Built for intermediate/advanced reactivation, not beginners: 5,000 vocabulary
-items (top-frequency French words, sourced from real corpus data) plus full
-conjugation drilling for the 100 most common verbs.
+Built for intermediate/advanced reactivation, not beginners: ~5,000
+vocabulary items (top-frequency words, sourced from real corpus data) plus
+full conjugation drilling for the 100 most common verbs, **per language**.
+Switch languages with the 🇫🇷/🇪🇸 selector in the header — French and Spanish
+progress are tracked completely separately (different vocabularies, separate
+spaced-repetition state), so you can work on either or both.
 
-See **[DATA_SOURCES.md](./DATA_SOURCES.md)** for exactly where the word list
-and conjugation tables came from, what was manually verified, and known gaps.
+See **[DATA_SOURCES.md](./DATA_SOURCES.md)** (French) and
+**[DATA_SOURCES_ES.md](./DATA_SOURCES_ES.md)** (Spanish) for exactly where
+each word list and conjugation table came from, what was manually verified,
+and known gaps. The Spanish example-sentence/full-sentence-fill-in-blank
+feature below is not yet built — only French has it so far.
 
 ## Features
 
+- **French or Spanish**: pick a language from the 🇫🇷/🇪🇸 selector in the
+  header. Everything below — lessons, verbs mode, categories, multiple
+  choice, audio — works the same way in both; progress is tracked
+  completely separately per language.
 - **Lessons**: vocabulary and verbs are grouped into fixed-size lessons in
   real frequency order (so être/avoir/aller show up in Lesson 1, not after
   4,900 other words). Each lesson opens with a short "today we're learning"
@@ -198,9 +208,26 @@ Unsplash, per Unsplash's API guidelines.
 
 ## Editing the data
 
-`data/vocab.json` and `data/verbs.json` are plain JSON — hand-edit them if you
-spot something worth fixing, or re-run `data/build_data.py` (see
-DATA_SOURCES.md) to regenerate from scratch after tweaking the pipeline.
+`data/vocab.json`/`data/verbs.json` (French) and `data/vocab_es.json`/
+`data/verbs_es.json` (Spanish) are plain JSON — hand-edit them if you spot
+something worth fixing, or re-run the matching `data/build_data*.py` script
+(see DATA_SOURCES.md / DATA_SOURCES_ES.md) to regenerate from scratch after
+tweaking the pipeline.
+
+## Adding another language
+
+`js/languages.js` is the single place that defines a language: its data file
+paths, TTS locale, pronoun set, and tense labels. The internal tense *keys*
+(present/passe_compose/imparfait/futur_simple/subjonctif_present) are shared
+across every language on purpose — only the label/prefix shown to the user
+differs — so the rest of the app never branches on which language is active.
+Adding a third language means: building a `vocab_xx.json`/`verbs_xx.json`
+pair in the same shape (see either DATA_SOURCES file for the standard this
+project holds data to), adding an entry to `LANGUAGES` in `languages.js`,
+and adding its infinitive→English-base-verb table in `js/app.js`
+(`ENGLISH_VERBS_FR`/`ENGLISH_VERBS_ES` plus `SPECIAL_ENGLISH_FR`/
+`SPECIAL_ENGLISH_ES` show the pattern) for the tense-matched English context
+under conjugation drills.
 
 ## Project structure
 
@@ -209,6 +236,7 @@ index.html          # page shell
 css/style.css        # styling (light/dark aware)
 js/app.js            # session/queue orchestration, grading, UI wiring
 js/items.js          # builds the review-item bank from the data files
+js/languages.js      # per-language config: data files, TTS locale, pronouns, tense labels
 js/lessons.js        # groups items into lessons, in frequency order
 js/categories.js     # keyword-based thematic groupings for the 🗂 picker
 js/srs.js            # SM-2 scheduler
@@ -217,10 +245,15 @@ js/cloud.js          # optional Supabase auth + progress sync
 js/supabase-config.js # your Supabase project URL/anon key (see Cloud sync setup)
 js/images.js         # optional Unsplash reward-image fetch (graceful no-op if unconfigured)
 js/image-config.js   # your Unsplash access key (see Image reward setup)
-data/vocab.json      # 4,900 vocabulary words + English gloss(es)
-data/verbs.json       # 100 verbs with full conjugation tables
-data/examples.json   # example sentences for the lesson-intro screen (phase 1 coverage)
-data/build_data.py    # reproducible data-build pipeline (see DATA_SOURCES.md)
+data/vocab.json      # 4,900 French vocabulary words + English gloss(es)
+data/verbs.json       # 100 French verbs with full conjugation tables
+data/examples.json   # French example sentences for lesson-intro + sentence mode (phase 1 coverage)
+data/build_data.py    # reproducible French data-build pipeline (see DATA_SOURCES.md)
+data/vocab_es.json    # 4,900 Spanish vocabulary words + English gloss(es)
+data/verbs_es.json    # 100 Spanish verbs with full conjugation tables
+data/build_data_es.py # reproducible Spanish data-build pipeline (see DATA_SOURCES_ES.md)
+data/gen_es_conjugations.js # build-time step build_data_es.py depends on (see DATA_SOURCES_ES.md)
 data/schema.sql       # Supabase table + RLS policies for cloud sync
-DATA_SOURCES.md       # exact sources, licenses, manual verification, gaps
+DATA_SOURCES.md       # French: exact sources, licenses, manual verification, gaps
+DATA_SOURCES_ES.md    # Spanish: exact sources, licenses, manual verification, gaps
 ```

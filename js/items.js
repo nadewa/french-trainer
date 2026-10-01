@@ -1,20 +1,12 @@
-// Builds the full review-item bank from the sourced data files.
+// Builds the full review-item bank from the sourced data files. Generalized
+// to work for any language pack (see js/languages.js) -- PRONOUNS and TENSES
+// used to be French-only module constants; they're now passed in per call so
+// the same code drives both French and Spanish.
 
 import { lessonIndexForRank } from "./lessons.js";
 
-export const PRONOUNS = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
-
-export const TENSES = [
-  { key: "present", label: "présent", prefix: "" },
-  { key: "passe_compose", label: "passé composé", prefix: "" },
-  { key: "imparfait", label: "imparfait", prefix: "" },
-  { key: "futur_simple", label: "futur simple", prefix: "" },
-  { key: "subjonctif_present", label: "subjonctif présent", prefix: "que " },
-];
-
 // A handful of verbs have more than one commonly-accepted present-day form for
-// a given cell; the sourced Lefff/Lefff-derived data only records one. Documented
-// in DATA_SOURCES.md.
+// a given cell; the sourced data only records one. Documented in DATA_SOURCES.md.
 const ALTERNATES = {
   "pouvoir:present:0": ["peux"], // "je peux" (modern) alongside sourced "je puis" (formal)
 };
@@ -27,17 +19,17 @@ function withPrefix(prefix, word) {
   return `${prefix}${word}`;
 }
 
-export function pronounFor(tense, personIdx, verb) {
+export function pronounFor(tense, personIdx, verb, lang) {
   const base = verb.pronominal
-    ? `${PRONOUNS[personIdx]} ${verb.reflexive_pronouns[personIdx]}`
-    : PRONOUNS[personIdx];
+    ? `${lang.pronouns[personIdx]} ${verb.reflexive_pronouns[personIdx]}`
+    : lang.pronouns[personIdx];
   return withPrefix(tense.prefix, base);
 }
 
 // Both plain vocab words and verbs carry a real corpus-frequency number, so they
 // can be interleaved into a single "how common is this" order for introducing new
 // cards -- without this, all 100 verbs (many of them, like etre/avoir/aller, among
-// the most frequent words in French) would only be reached after all ~4900 plain
+// the most frequent words) would only be reached after all ~4900 plain
 // vocab words, which is backwards.
 export function buildIntroRanks(vocab, verbs) {
   const combined = [
@@ -50,7 +42,7 @@ export function buildIntroRanks(vocab, verbs) {
   return rankOf;
 }
 
-export function buildItemBank(vocab, verbs) {
+export function buildItemBank(vocab, verbs, lang) {
   const items = [];
   const introRank = buildIntroRanks(vocab, verbs);
 
@@ -64,7 +56,7 @@ export function buildItemBank(vocab, verbs) {
     });
   });
 
-  verbs.forEach((verb, vIdx) => {
+  verbs.forEach((verb) => {
     const verbRank = introRank.get(`verb:${verb.infinitive}`);
     // the verb's own meaning is a vocab item too
     items.push({
@@ -75,7 +67,7 @@ export function buildItemBank(vocab, verbs) {
       rank: verbRank,
     });
 
-    for (const tense of TENSES) {
+    for (const tense of lang.tenses) {
       const forms = verb[tense.key];
       if (!forms) continue;
       for (let p = 0; p < 6; p++) {
@@ -91,7 +83,7 @@ export function buildItemBank(vocab, verbs) {
           tenseKey: tense.key,
           tenseLabel: tense.label,
           personIdx: p,
-          pronounLabel: pronounFor(tense, p, verb),
+          pronounLabel: pronounFor(tense, p, verb, lang),
           expected,
           alternates: ALTERNATES[altKey] || [],
           rank: verbRank,
