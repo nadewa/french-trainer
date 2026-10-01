@@ -29527,10 +29527,9 @@
  {
   "word": "discipline",
   "gloss": [
-   "discipline",
-   "scourge"
+   "discipline"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2732
  },
  {
@@ -29571,11 +29570,11 @@
  {
   "word": "loge",
   "gloss": [
-   "lodge",
-   "loge",
-   "Loge"
+   "theater box",
+   "dressing room",
+   "lodge (Masonic/porter's)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2722
  },
  {
@@ -29626,11 +29625,10 @@
  {
   "word": "décevoir",
   "gloss": [
-   "deceive",
    "disappoint",
-   "underwhelm"
+   "let down"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2714
  },
  {
@@ -29645,18 +29643,20 @@
  {
   "word": "ado",
   "gloss": [
-   "youngster",
+   "teenager",
+   "teen",
    "youth"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2712
  },
  {
   "word": "traumatisme",
   "gloss": [
+   "trauma",
    "traumatism"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2710
  },
  {
@@ -29750,10 +29750,11 @@
  {
   "word": "céréales",
   "gloss": [
-   "muesli",
-   "musli"
+   "cereal",
+   "cereals",
+   "grain"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2696
  },
  {
@@ -29767,10 +29768,10 @@
  {
   "word": "georges",
   "gloss": [
-   "autopilot",
-   "George"
+   "George (name)",
+   "autopilot (aviation slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2690
  },
  {
@@ -29846,12 +29847,11 @@
  {
   "word": "arabe",
   "gloss": [
-   "Arabian",
-   "Arabic",
    "Arab",
-   "Greek"
+   "Arabic",
+   "Arabian"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2680
  },
  {
@@ -29881,13 +29881,10 @@
  {
   "word": "légèrement",
   "gloss": [
-   "ably",
-   "capably",
-   "cleverly",
    "lightly",
-   "skilfully"
+   "slightly"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2677
  },
  {
@@ -30025,12 +30022,10 @@
   "word": "allure",
   "gloss": [
    "appearance",
-   "aspect",
-   "countenance",
-   "guise",
-   "look"
+   "look",
+   "speed/pace"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2656
  },
  {
@@ -30073,13 +30068,11 @@
  {
   "word": "ressort",
   "gloss": [
-   "compressibility",
+   "spring (mechanical)",
    "energy",
-   "expertise",
-   "resource",
-   "shock absorber"
+   "drive/motivation"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2652
  },
  {
@@ -30135,9 +30128,10 @@
  {
   "word": "veine",
   "gloss": [
-   "vein"
+   "vein",
+   "luck (slang: avoir de la veine)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2646
  },
  {
@@ -30224,23 +30218,20 @@
  {
   "word": "pan",
   "gloss": [
-   "flap",
    "panel",
-   "Pan"
+   "flap",
+   "bang! (onomatopoeia)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2624
  },
  {
   "word": "fusée",
   "gloss": [
-   "fusil",
-   "fuze",
-   "grip",
    "rocket",
-   "sinus"
+   "fuze/fuse"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2624
  },
  {
@@ -30255,11 +30246,11 @@
  {
   "word": "caca",
   "gloss": [
-   "Caca",
    "poop",
-   "yuck"
+   "caca",
+   "yuck (interjection)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2620
  },
  {
@@ -30282,13 +30273,11 @@
  {
   "word": "marquer",
   "gloss": [
-   "check",
-   "denote",
    "mark",
-   "motion",
-   "score"
+   "score",
+   "denote"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2617
  },
  {
@@ -30314,13 +30303,11 @@
  {
   "word": "chèvre",
   "gloss": [
-   "goat cheese",
    "goat",
-   "Goat",
-   "nanny goat",
-   "Ram"
+   "goat cheese",
+   "nanny goat"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2612
  },
  {
@@ -30410,25 +30397,21 @@
  {
   "word": "gage",
   "gloss": [
-   "deposit",
-   "gage",
-   "guarantee",
    "pledge",
-   "security"
+   "deposit",
+   "forfeit/dare (party game)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2595
  },
  {
   "word": "précédent",
   "gloss": [
-   "advanced",
-   "advance",
-   "antecedent",
-   "anterior",
-   "earlier"
+   "precedent",
+   "previous",
+   "preceding"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2594
  },
  {
@@ -30485,13 +30468,11 @@
  {
   "word": "secondaire",
   "gloss": [
-   "accessory",
-   "adjunct",
-   "adventitious",
-   "ancillary",
-   "appurtenant"
+   "secondary",
+   "minor",
+   "accessory"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2588
  },
  {
@@ -30587,13 +30568,10 @@
  {
   "word": "surmonter",
   "gloss": [
-   "beat",
-   "cross",
-   "defeat",
-   "exceed",
-   "excel"
+   "overcome",
+   "surmount"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2569
  },
  {
@@ -30640,11 +30618,11 @@
  {
   "word": "raser",
   "gloss": [
-   "graze",
+   "shave",
    "raze",
-   "shave"
+   "bore (colloquial: ça me rase)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2555
  },
  {
@@ -30677,20 +30655,21 @@
  {
   "word": "observation",
   "gloss": [
-   "admonition",
-   "exhortation",
-   "notice",
-   "observation"
+   "observation",
+   "remark",
+   "notice"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2545
  },
  {
   "word": "grossier",
   "gloss": [
-   "crude"
+   "crude",
+   "rude",
+   "vulgar"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2544
  },
  {
@@ -30708,10 +30687,10 @@
  {
   "word": "môme",
   "gloss": [
-   "child",
-   "street"
+   "kid",
+   "child (informal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2542
  },
  {
@@ -30737,9 +30716,9 @@
  {
   "word": "randall",
   "gloss": [
-   "randall cattle"
+   "Randall (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2538
  },
  {
@@ -30828,11 +30807,12 @@
  {
   "word": "char",
   "gloss": [
-   "tank",
+   "tank (military)",
    "cart",
-   "chariot"
+   "chariot",
+   "car (Quebec French slang)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2528
  },
  {
@@ -30896,20 +30876,21 @@
  {
   "word": "prévoir",
   "gloss": [
+   "plan",
    "foresee",
-   "prepare for",
-   "require"
+   "anticipate",
+   "prepare for"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2518
  },
  {
   "word": "vachement",
   "gloss": [
-   "damned",
-   "hellish"
+   "really",
+   "very (slang intensifier)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2517
  },
  {
@@ -30937,20 +30918,19 @@
   "word": "marcel",
   "gloss": [
    "tank top",
-   "vest",
-   "wifebeater"
+   "undershirt",
+   "vest"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2512
  },
  {
   "word": "stand",
   "gloss": [
-   "barn",
-   "shed",
-   "stand"
+   "stand (exhibition booth)",
+   "stand (grandstand)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2512
  },
  {
@@ -31012,11 +30992,10 @@
   "word": "délai",
   "gloss": [
    "deadline",
-   "delay",
-   "extension",
-   "interval"
+   "time limit",
+   "delay"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2505
  },
  {
@@ -31034,9 +31013,9 @@
  {
   "word": "cassie",
   "gloss": [
-   "cassia"
+   "Cassie (name)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2503
  },
  {
@@ -31078,9 +31057,10 @@
   "word": "colonie",
   "gloss": [
    "colony",
-   "settlement"
+   "settlement",
+   "summer camp (colonie de vacances)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 2498
  },
  {
@@ -31206,11 +31186,10 @@
  {
   "word": "isabelle",
   "gloss": [
-   "isabeline",
-   "Isabel",
-   "Spanish moon moth"
+   "Isabelle",
+   "Isabel"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2483
  },
  {
@@ -31233,11 +31212,10 @@
  {
   "word": "colis",
   "gloss": [
-   "baggage",
-   "luggage",
-   "package"
+   "package",
+   "parcel"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2480
  },
  {
@@ -31293,13 +31271,11 @@
  {
   "word": "purée",
   "gloss": [
-   "gruel",
    "mashed potatoes",
-   "mess",
-   "mush",
-   "porridge"
+   "puree",
+   "mush"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2472
  },
  {
@@ -31436,12 +31412,11 @@
  {
   "word": "arc",
   "gloss": [
+   "bow (weapon)",
    "arch",
-   "arc",
-   "bow",
-   "edge"
+   "arc"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2458
  },
  {
@@ -31481,21 +31456,22 @@
  {
   "word": "banane",
   "gloss": [
-   "banana"
+   "banana",
+   "big smile (avoir la banane)",
+   "fanny pack (sac banane)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2452
  },
  {
   "word": "réplique",
   "gloss": [
-   "aftershock",
-   "answer",
-   "crackdown",
-   "cue",
-   "rebuttal"
+   "line/quote (film/theater)",
+   "reply",
+   "replica",
+   "aftershock"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2451
  },
  {
@@ -31582,10 +31558,9 @@
  {
   "word": "rein",
   "gloss": [
-   "kidney",
-   "rein"
+   "kidney"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2438
  },
  {
@@ -31603,11 +31578,11 @@
  {
   "word": "favori",
   "gloss": [
-   "favored",
    "favorite",
-   "prefered"
+   "favored",
+   "preferred"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2436
  },
  {
@@ -31688,12 +31663,11 @@
  {
   "word": "attentat",
   "gloss": [
-   "assault",
-   "attack",
-   "outrage",
-   "violation"
+   "attack (terrorist)",
+   "assassination attempt",
+   "assault"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2427
  },
  {
@@ -31717,13 +31691,12 @@
  {
   "word": "renverser",
   "gloss": [
-   "capsize",
-   "overthrow",
    "overturn",
-   "reverse",
-   "spill"
+   "spill",
+   "knock down (vehicle)",
+   "reverse"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2427
  },
  {
@@ -31738,10 +31711,11 @@
  {
   "word": "distributeur",
   "gloss": [
+   "vending machine",
    "distributor",
-   "vending machine"
+   "ATM (distributeur de billets)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2423
  },
  {
@@ -31817,18 +31791,22 @@
  {
   "word": "fumier",
   "gloss": [
+   "manure",
    "dung",
-   "manure"
+   "bastard (insult)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2410
  },
  {
   "word": "baraque",
   "gloss": [
-   "barrack"
+   "shack",
+   "hut",
+   "house (informal)",
+   "barrack (military)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2409
  },
  {
@@ -31859,9 +31837,10 @@
  {
   "word": "nage",
   "gloss": [
+   "swimming",
    "stroke"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2405
  },
  {
@@ -31894,23 +31873,21 @@
  {
   "word": "lessive",
   "gloss": [
-   "housecleaning",
    "laundry",
-   "lye",
+   "detergent",
    "washing powder"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2395
  },
  {
   "word": "urine",
   "gloss": [
-   "pee",
-   "piss",
    "urine",
-   "water"
+   "pee",
+   "piss"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2395
  },
  {
@@ -31992,13 +31969,11 @@
  {
   "word": "outre",
   "gloss": [
-   "across",
    "beyond",
-   "on the other side of",
-   "over",
-   "to the other side of"
+   "furthermore (en outre)",
+   "besides"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2391
  },
  {
@@ -32034,21 +32009,20 @@
   "word": "rasoir",
   "gloss": [
    "razor",
-   "sabrefish"
+   "boring (slang adjective)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2386
  },
  {
   "word": "sympathique",
   "gloss": [
-   "congenial",
-   "likable",
    "nice",
-   "sensitive",
-   "sympathetic"
+   "likable",
+   "friendly",
+   "congenial"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2386
  },
  {
@@ -32070,33 +32044,28 @@
  {
   "word": "formulaire",
   "gloss": [
-   "blank",
    "form",
-   "formula"
+   "blank (form)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2384
  },
  {
   "word": "répondeur",
   "gloss": [
-   "impertinent",
    "answering machine",
-   "transponder"
+   "voicemail"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2380
  },
  {
   "word": "mineur",
   "gloss": [
-   "insignificant",
-   "irrelevant",
    "minor",
-   "of no account",
-   "trifling"
+   "miner (mine worker)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2380
  },
  {
@@ -32119,12 +32088,11 @@
  {
   "word": "alimentation",
   "gloss": [
-   "feeding",
    "food",
-   "nourishment",
-   "nutrition"
+   "nutrition",
+   "power supply (electrical)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2379
  },
  {
@@ -32252,10 +32220,10 @@
  {
   "word": "rex",
   "gloss": [
-   "rex rabbit",
-   "rex"
+   "Rex (name/pet name)",
+   "rex rabbit"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 2366
  },
  {

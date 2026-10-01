@@ -230,7 +230,20 @@ for full reproducibility).
   Fritillary" — the fourth butterfly-name contamination found so far
   in this review); "coiffure" (hairstyle) included "coiffeur", a
   different word (the hairdresser, a person, not the hairstyle).
-  **Ranks 3100–4900 (~1,800 words) are still unreviewed.**
+  **Eleventh update**: continued into ranks 3100–3400 (58 more fixes,
+  override list now 634 entries). Two more false friends, verified via
+  web search: "décevoir" means "to disappoint", never "to deceive"
+  (that's "tromper") — the sourced gloss actively led with the wrong
+  "deceive"; "sympathique" means "nice/likable", never "sympathetic"
+  (that's "compatissant") — the sourced gloss included the misleading
+  "sympathetic" outright. Also outright wrong: "chèvre" (goat)
+  included "Ram" (that's Aries, unrelated); "rein" (kidney) included
+  the English homograph "rein" (a horse strap, a completely different
+  word); "isabelle" (the name) included a moth species name ("Spanish
+  moon moth") — yet another lepidoptera contamination in this dataset,
+  joining the butterfly-species names already found and removed from
+  "souci", "citron", and "chiffre" in earlier rounds. **Ranks
+  3400–4900 (~1,500 words) are still unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.

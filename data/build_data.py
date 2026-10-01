@@ -762,6 +762,76 @@ MANUAL_GLOSS_OVERRIDE = {
     "chanteur": ["singer", "vocalist"],
     "automatique": ["automatic", "default"],
     "maîtrise": ["mastery", "control", "command (of a skill)"],
+    # Continuing the exhaustive review (ranks 3100-3400 of ~4900).
+    # "décevoir" is another verified false friend: it means "to
+    # disappoint", never "to deceive" (that's "tromper") -- the sourced
+    # gloss actively led with the wrong "deceive". "sympathique" is a
+    # second false friend in this batch: it means "nice/likable",
+    # never "sympathetic" (that's "compatissant") -- the sourced gloss
+    # included the misleading "sympathetic" outright. Also outright
+    # wrong: "chèvre" (goat) included "Ram" (that's Aries, unrelated);
+    # "rein" (kidney) included the English homograph "rein" (a horse
+    # strap, a completely different word); "isabelle" (the name)
+    # included a moth species name ("Spanish moon moth") -- yet
+    # another lepidoptera contamination in this dataset.
+    "discipline": ["discipline"],
+    "loge": ["theater box", "dressing room", "lodge (Masonic/porter's)"],
+    "décevoir": ["disappoint", "let down"],
+    "ado": ["teenager", "teen", "youth"],
+    "traumatisme": ["trauma", "traumatism"],
+    "céréales": ["cereal", "cereals", "grain"],
+    "georges": ["George (name)", "autopilot (aviation slang)"],
+    "arabe": ["Arab", "Arabic", "Arabian"],
+    "légèrement": ["lightly", "slightly"],
+    "allure": ["appearance", "look", "speed/pace"],
+    "ressort": ["spring (mechanical)", "energy", "drive/motivation"],
+    "veine": ["vein", "luck (slang: avoir de la veine)"],
+    "pan": ["panel", "flap", "bang! (onomatopoeia)"],
+    "fusée": ["rocket", "fuze/fuse"],
+    "caca": ["poop", "caca", "yuck (interjection)"],
+    "marquer": ["mark", "score", "denote"],
+    "chèvre": ["goat", "goat cheese", "nanny goat"],
+    "gage": ["pledge", "deposit", "forfeit/dare (party game)"],
+    "précédent": ["precedent", "previous", "preceding"],
+    "secondaire": ["secondary", "minor", "accessory"],
+    "surmonter": ["overcome", "surmount"],
+    "raser": ["shave", "raze", "bore (colloquial: ça me rase)"],
+    "observation": ["observation", "remark", "notice"],
+    "grossier": ["crude", "rude", "vulgar"],
+    "môme": ["kid", "child (informal)"],
+    "randall": ["Randall (name)"],
+    "char": ["tank (military)", "cart", "chariot", "car (Quebec French slang)"],
+    "prévoir": ["plan", "foresee", "anticipate", "prepare for"],
+    "vachement": ["really", "very (slang intensifier)"],
+    "marcel": ["tank top", "undershirt", "vest"],
+    "stand": ["stand (exhibition booth)", "stand (grandstand)"],
+    "délai": ["deadline", "time limit", "delay"],
+    "cassie": ["Cassie (name)"],
+    "colonie": ["colony", "settlement", "summer camp (colonie de vacances)"],
+    "isabelle": ["Isabelle", "Isabel"],
+    "colis": ["package", "parcel"],
+    "purée": ["mashed potatoes", "puree", "mush"],
+    "arc": ["bow (weapon)", "arch", "arc"],
+    "banane": ["banana", "big smile (avoir la banane)", "fanny pack (sac banane)"],
+    "réplique": ["line/quote (film/theater)", "reply", "replica", "aftershock"],
+    "rein": ["kidney"],
+    "favori": ["favorite", "favored", "preferred"],
+    "attentat": ["attack (terrorist)", "assassination attempt", "assault"],
+    "renverser": ["overturn", "spill", "knock down (vehicle)", "reverse"],
+    "distributeur": ["vending machine", "distributor", "ATM (distributeur de billets)"],
+    "fumier": ["manure", "dung", "bastard (insult)"],
+    "baraque": ["shack", "hut", "house (informal)", "barrack (military)"],
+    "nage": ["swimming", "stroke"],
+    "lessive": ["laundry", "detergent", "washing powder"],
+    "urine": ["urine", "pee", "piss"],
+    "rasoir": ["razor", "boring (slang adjective)"],
+    "sympathique": ["nice", "likable", "friendly", "congenial"],
+    "formulaire": ["form", "blank (form)"],
+    "répondeur": ["answering machine", "voicemail"],
+    "mineur": ["minor", "miner (mine worker)"],
+    "alimentation": ["food", "nutrition", "power supply (electrical)"],
+    "rex": ["Rex (name/pet name)", "rex rabbit"],
+    "outre": ["beyond", "furthermore (en outre)", "besides"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but
