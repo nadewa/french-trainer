@@ -18299,13 +18299,12 @@
  {
   "word": "élever",
   "gloss": [
+   "raise",
+   "bring up",
    "breed",
-   "elevate",
-   "farm",
-   "heave",
-   "heighten"
+   "elevate"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5516
  },
  {
@@ -18380,10 +18379,11 @@
  {
   "word": "taule",
   "gloss": [
+   "prison (slang)",
    "crib",
    "pad"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5496
  },
  {
@@ -18523,13 +18523,12 @@
  {
   "word": "pur",
   "gloss": [
-   "absolute",
+   "pure",
    "clean",
-   "common",
-   "mere",
-   "pure"
+   "absolute",
+   "mere"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5439
  },
  {
@@ -18590,11 +18589,11 @@
  {
   "word": "culture",
   "gloss": [
+   "culture",
    "cultivation",
-   "tillage",
-   "culture"
+   "tillage"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 5401
  },
  {
@@ -18637,9 +18636,9 @@
  {
   "word": "gants",
   "gloss": [
-   "Gants"
+   "gloves"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5389
  },
  {
@@ -18676,13 +18675,11 @@
  {
   "word": "témoignage",
   "gloss": [
-   "certificate",
-   "certification",
-   "character",
-   "deposition",
-   "evidence"
+   "testimony",
+   "evidence",
+   "deposition"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5371
  },
  {
@@ -18721,9 +18718,9 @@
  {
   "word": "diane",
   "gloss": [
-   "Southern Festoon"
+   "Diane"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5364
  },
  {
@@ -18737,11 +18734,10 @@
  {
   "word": "pisser",
   "gloss": [
-   "peepee",
    "piss",
-   "underruff"
+   "pee"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5360
  },
  {
@@ -18785,10 +18781,9 @@
  {
   "word": "salade",
   "gloss": [
-   "salad",
-   "sallet"
+   "salad"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5335
  },
  {
@@ -18802,17 +18797,20 @@
  {
   "word": "flotte",
   "gloss": [
-   "fleet"
+   "fleet",
+   "water (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5330
  },
  {
   "word": "rage",
   "gloss": [
+   "rage",
+   "fury",
    "rabies"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5326
  },
  {
@@ -18889,11 +18887,10 @@
   "word": "chic",
   "gloss": [
    "chic",
-   "dinky",
-   "knack",
-   "peachiness"
+   "stylish",
+   "great! (interjection)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5295
  },
  {
@@ -19056,21 +19053,21 @@
  {
   "word": "rigole",
   "gloss": [
-   "drain"
+   "drain",
+   "gutter",
+   "ditch"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5198
  },
  {
   "word": "vague",
   "gloss": [
+   "wave",
    "vague",
-   "wishy-washy",
-   "vagueness",
-   "void",
-   "wave"
+   "vagueness"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5198
  },
  {
@@ -19085,13 +19082,12 @@
  {
   "word": "soutenir",
   "gloss": [
-   "abide",
+   "support",
    "bear",
-   "cope",
    "endure",
    "stand"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5182
  },
  {
@@ -19108,22 +19104,20 @@
  {
   "word": "floride",
   "gloss": [
-   "florid",
-   "Florida"
+   "Florida",
+   "florid"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5181
  },
  {
   "word": "charme",
   "gloss": [
    "charm",
-   "gracefulness",
    "grace",
-   "hornbeam",
    "spell"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5179
  },
  {
@@ -19196,13 +19190,11 @@
  {
   "word": "interne",
   "gloss": [
-   "endogenous",
-   "inland",
+   "internal",
    "inner",
-   "inside",
-   "interior"
+   "intern (medical trainee)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5165
  },
  {
@@ -19253,13 +19245,11 @@
  {
   "word": "sein",
   "gloss": [
-   "boob",
-   "bosom",
    "breast",
-   "breasts",
-   "chest"
+   "within (au sein de)",
+   "bosom"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5142
  },
  {
@@ -19313,25 +19303,22 @@
  {
   "word": "fichu",
   "gloss": [
-   "blasted",
-   "broke",
    "crappy",
    "darned",
-   "done for"
+   "done for",
+   "headscarf (noun)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5118
  },
  {
   "word": "parent",
   "gloss": [
-   "akin",
-   "related",
-   "forebearers",
-   "forefathers",
+   "parent",
+   "relative",
    "kin"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5109
  },
  {
@@ -19345,12 +19332,12 @@
  {
   "word": "gratuit",
   "gloss": [
-   "complimentary",
    "free",
-   "grievous",
+   "complimentary",
+   "gratuitous",
    "unfounded"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5105
  },
  {
@@ -19394,11 +19381,10 @@
  {
   "word": "étude",
   "gloss": [
-   "attention",
-   "etude",
-   "study"
+   "study",
+   "étude (music)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5087
  },
  {
@@ -19454,13 +19440,10 @@
  {
   "word": "bol",
   "gloss": [
-   "basin",
-   "bole",
-   "bolus",
    "bowl",
-   "pelvis"
+   "luck (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5078
  },
  {
@@ -19550,21 +19533,20 @@
   "word": "léger",
   "gloss": [
    "light",
-   "Leodegar"
+   "slight",
+   "mild"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5049
  },
  {
   "word": "cité",
   "gloss": [
-   "center",
-   "citizenship",
    "city",
-   "complex",
+   "complex (housing)",
    "district"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 5042
  },
  {
@@ -19691,13 +19673,11 @@
  {
   "word": "remède",
   "gloss": [
-   "agency",
-   "avenue",
-   "drug",
-   "expedience",
-   "expedient"
+   "remedy",
+   "cure",
+   "medicine"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4999
  },
  {
@@ -19713,21 +19693,21 @@
  {
   "word": "couler",
   "gloss": [
-   "sink"
+   "flow",
+   "sink",
+   "run (liquid)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4996
  },
  {
   "word": "emporter",
   "gloss": [
-   "bring from",
+   "take away",
    "carry away",
-   "dominate",
-   "drag away",
-   "flare up"
+   "lose one's temper (s'emporter)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4995
  },
  {
@@ -19780,11 +19760,11 @@
  {
   "word": "pratiquement",
   "gloss": [
+   "practically",
    "almost",
-   "as good as",
-   "handily"
+   "virtually"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4970
  },
  {
@@ -19815,11 +19795,11 @@
  {
   "word": "caution",
   "gloss": [
-   "caution",
-   "guarantee",
-   "guarantor"
+   "deposit (security)",
+   "bail",
+   "guarantee"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4958
  },
  {
@@ -19833,12 +19813,11 @@
  {
   "word": "rond",
   "gloss": [
-   "fat",
    "round",
    "circle",
    "ring"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4953
  },
  {
@@ -19866,12 +19845,11 @@
  {
   "word": "intelligence",
   "gloss": [
-   "aptitude",
-   "collusion",
    "intelligence",
-   "smarts"
+   "smarts",
+   "aptitude"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4946
  },
  {
@@ -19895,18 +19873,19 @@
  {
   "word": "plaindre",
   "gloss": [
-   "have compassion on",
-   "pity"
+   "pity",
+   "complain (se plaindre)"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 4934
  },
  {
   "word": "so",
   "gloss": [
-   "SW"
+   "so (interjection)",
+   "SW (compass)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4933
  },
  {
@@ -19953,10 +19932,9 @@
   "gloss": [
    "slave",
    "bondman",
-   "Slavey",
    "thrall"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4915
  },
  {
@@ -20038,11 +20016,9 @@
  {
   "word": "amant",
   "gloss": [
-   "amour",
-   "fan",
    "lover"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4885
  },
  {
@@ -20068,10 +20044,9 @@
  {
   "word": "chirurgien",
   "gloss": [
-   "surgeonfish",
    "surgeon"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4873
  },
  {
@@ -20133,10 +20108,10 @@
   "word": "crever",
   "gloss": [
    "burst",
-   "croak",
-   "kick the bucket"
+   "be exhausted (slang)",
+   "die (slang)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4852
  },
  {
@@ -20161,13 +20136,10 @@
  {
   "word": "grandir",
   "gloss": [
-   "accrue",
-   "aggrandize",
-   "grow up",
    "grow",
-   "mount"
+   "grow up"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4845
  },
  {
@@ -20181,9 +20153,10 @@
  {
   "word": "totale",
   "gloss": [
-   "summum"
+   "the whole works (slang)",
+   "total (feminine)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4837
  },
  {
@@ -20258,13 +20231,11 @@
  {
   "word": "reconnaissance",
   "gloss": [
-   "admission",
-   "gratitude",
-   "identification",
    "recognition",
-   "recognize"
+   "gratitude",
+   "identification"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4810
  },
  {
@@ -20308,13 +20279,12 @@
  {
   "word": "rouler",
   "gloss": [
-   "bilk",
-   "cheat",
-   "drive",
    "roll",
+   "drive",
+   "cheat",
    "take in"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4797
  },
  {
@@ -20336,9 +20306,11 @@
  {
   "word": "réveil",
   "gloss": [
-   "awakening"
+   "alarm clock",
+   "awakening",
+   "waking up"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4787
  },
  {
@@ -20442,10 +20414,11 @@
  {
   "word": "détendre",
   "gloss": [
-   "break camp",
-   "relax"
+   "relax",
+   "loosen",
+   "unwind"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4749
  },
  {
@@ -20505,10 +20478,11 @@
  {
   "word": "définitivement",
   "gloss": [
-   "conclusively",
+   "permanently",
+   "once and for all",
    "definitively"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4711
  },
  {
@@ -20557,13 +20531,12 @@
  {
   "word": "masse",
   "gloss": [
-   "accumulation",
-   "body",
+   "mass",
    "crowd",
-   "ground",
-   "heap"
+   "heap",
+   "ground (electrical)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4687
  },
  {
@@ -20599,10 +20572,10 @@
  {
   "word": "noix",
   "gloss": [
-   "bosshead",
-   "walnut"
+   "walnut",
+   "nut"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4665
  },
  {
@@ -20655,9 +20628,11 @@
  {
   "word": "lot",
   "gloss": [
-   "batch"
+   "batch",
+   "lot",
+   "prize (lottery)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4645
  },
  {
@@ -20740,10 +20715,10 @@
   "word": "serré",
   "gloss": [
    "tight",
-   "careful",
-   "cramped"
+   "cramped",
+   "close (competition)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4617
  },
  {
@@ -20820,11 +20795,10 @@
  {
   "word": "bail",
   "gloss": [
-   "farming lease",
-   "farm",
-   "lease"
+   "lease",
+   "it's been ages! (ça fait un bail)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4578
  },
  {
@@ -20880,22 +20854,19 @@
   "word": "héroïne",
   "gloss": [
    "heroine",
-   "heroin",
-   "hero"
+   "heroin"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4556
  },
  {
   "word": "opérer",
   "gloss": [
-   "act",
-   "affect",
-   "avail",
-   "impact",
-   "impinge"
+   "operate",
+   "carry out",
+   "act"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4556
  },
  {
@@ -20912,9 +20883,11 @@
  {
   "word": "rupture",
   "gloss": [
-   "interruption"
+   "breakup",
+   "rupture",
+   "break"
   ],
-  "gloss_source": "freedict",
+  "gloss_source": "model-override",
   "frequency": 4552
  },
  {
@@ -21039,10 +21012,11 @@
  {
   "word": "assuré",
   "gloss": [
-   "sure",
-   "unashamed"
+   "confident",
+   "assured",
+   "insured"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4527
  },
  {
@@ -21056,11 +21030,11 @@
  {
   "word": "tester",
   "gloss": [
-   "challenge",
    "test",
-   "will"
+   "try out",
+   "make a will (legal)"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4521
  },
  {
@@ -21094,11 +21068,9 @@
  {
   "word": "creuser",
   "gloss": [
-   "dig",
-   "grub",
-   "spade"
+   "dig"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 4515
  },
  {

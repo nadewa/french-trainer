@@ -491,6 +491,75 @@ MANUAL_GLOSS_OVERRIDE = {
     "participer": ["participate", "take part", "contribute"],
     "coucou": ["cuckoo", "hiya! (greeting)", "cuckoo clock"],
     "pouls": ["pulse", "beat", "pulsation"],
+    # Continuing the exhaustive review (ranks 1900-2200 of ~4900). Two
+    # more false friends, verified via web search: "caution" in French
+    # means "deposit/security/bail", never English "caution"
+    # (carefulness) -- the sourced gloss led with the false-friend word
+    # "caution" itself; "définitivement" means "permanently/once and
+    # for all", never English "definitely" -- the sourced gloss
+    # ("conclusively", "definitively") didn't actively mislead but
+    # also never stated the real meaning. Also outright wrong: "gants"
+    # (gloves) was glossed as just "Gants", not a translation at all;
+    # "diane" (the name) was glossed with a butterfly species name
+    # ("Southern Festoon"); "chirurgien" (surgeon) included the
+    # unrelated "surgeonfish".
+    "élever": ["raise", "bring up", "breed", "elevate"],
+    "taule": ["prison (slang)", "crib", "pad"],
+    "pur": ["pure", "clean", "absolute", "mere"],
+    "culture": ["culture", "cultivation", "tillage"],
+    "gants": ["gloves"],
+    "témoignage": ["testimony", "evidence", "deposition"],
+    "diane": ["Diane"],
+    "pisser": ["piss", "pee"],
+    "salade": ["salad"],
+    "flotte": ["fleet", "water (slang)"],
+    "rage": ["rage", "fury", "rabies"],
+    "chic": ["chic", "stylish", "great! (interjection)"],
+    "rigole": ["drain", "gutter", "ditch"],
+    "vague": ["wave", "vague", "vagueness"],
+    "soutenir": ["support", "bear", "endure", "stand"],
+    "floride": ["Florida", "florid"],
+    "charme": ["charm", "grace", "spell"],
+    "interne": ["internal", "inner", "intern (medical trainee)"],
+    "sein": ["breast", "within (au sein de)", "bosom"],
+    "fichu": ["crappy", "darned", "done for", "headscarf (noun)"],
+    "parent": ["parent", "relative", "kin"],
+    "gratuit": ["free", "complimentary", "gratuitous", "unfounded"],
+    "étude": ["study", "étude (music)"],
+    "bol": ["bowl", "luck (slang)"],
+    "léger": ["light", "slight", "mild"],
+    "cité": ["city", "complex (housing)", "district"],
+    "remède": ["remedy", "cure", "medicine"],
+    "couler": ["flow", "sink", "run (liquid)"],
+    "emporter": ["take away", "carry away", "lose one's temper (s'emporter)"],
+    "pratiquement": ["practically", "almost", "virtually"],
+    "caution": ["deposit (security)", "bail", "guarantee"],
+    "rond": ["round", "circle", "ring"],
+    "intelligence": ["intelligence", "smarts", "aptitude"],
+    "plaindre": ["pity", "complain (se plaindre)"],
+    "so": ["so (interjection)", "SW (compass)"],
+    "esclave": ["slave", "bondman", "thrall"],
+    "amant": ["lover"],
+    "chirurgien": ["surgeon"],
+    "crever": ["burst", "be exhausted (slang)", "die (slang)"],
+    "grandir": ["grow", "grow up"],
+    "totale": ["the whole works (slang)", "total (feminine)"],
+    "reconnaissance": ["recognition", "gratitude", "identification"],
+    "rouler": ["roll", "drive", "cheat", "take in"],
+    "réveil": ["alarm clock", "awakening", "waking up"],
+    "détendre": ["relax", "loosen", "unwind"],
+    "définitivement": ["permanently", "once and for all", "definitively"],
+    "noix": ["walnut", "nut"],
+    "lot": ["batch", "lot", "prize (lottery)"],
+    "serré": ["tight", "cramped", "close (competition)"],
+    "bail": ["lease", "it's been ages! (ça fait un bail)"],
+    "héroïne": ["heroine", "heroin"],
+    "opérer": ["operate", "carry out", "act"],
+    "rupture": ["breakup", "rupture", "break"],
+    "assuré": ["confident", "assured", "insured"],
+    "tester": ["test", "try out", "make a will (legal)"],
+    "creuser": ["dig"],
+    "masse": ["mass", "crowd", "heap", "ground (electrical)"],
     # Full review of all 100 verbs' gloss[0], triggered by a user report
     # that "pouvoir" showed "power" instead of "can"/"be able to" in
     # multiple choice -- the same root cause as the entries above, but

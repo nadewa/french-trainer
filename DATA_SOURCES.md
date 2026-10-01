@@ -183,8 +183,21 @@ for full reproducibility).
   was glossed with Chinese characters (罗宾) instead of the name
   "Robin"; "cigarette" was glossed as "smoke"/"whiff" instead of
   "cigarette" itself; "loyer" (rent) wrongly included "salary"/"wage",
-  which belong to the unrelated word "salaire". **Ranks 1900–4900
-  (~3,000 words) are still unreviewed.**
+  which belong to the unrelated word "salaire". **Seventh update**:
+  continued into ranks 1900–2200 (57 more fixes, override list now 410
+  entries). Two more false friends, verified via web search: "caution"
+  in French means "deposit/security/bail", never English "caution"
+  (carefulness) — the sourced gloss led with the false-friend word
+  "caution" itself, which actively misleads rather than just omitting
+  the real sense; "définitivement" means "permanently/once and for
+  all", never English "definitely" — the sourced gloss
+  ("conclusively", "definitively") didn't mislead outright but never
+  stated the real meaning either. Also outright wrong: "gants"
+  (gloves) was glossed as just "Gants", not a translation at all;
+  "diane" (the name) was glossed with a butterfly species name
+  ("Southern Festoon"); "chirurgien" (surgeon) included the unrelated
+  "surgeonfish". **Ranks 2200–4900 (~2,700 words) are still
+  unreviewed.**
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
