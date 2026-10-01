@@ -143,6 +143,11 @@ h1, h2, .prompt, .stat-pill b, button, .path-node {
   color: var(--fg);
 }
 
+.stat-pill.level {
+  background: var(--purple-bg);
+  color: var(--purple-dark);
+  border-color: color-mix(in srgb, var(--purple) 45%, transparent);
+}
 .stat-pill.streak {
   background: var(--orange-bg);
   color: var(--orange-dark);
@@ -563,6 +568,18 @@ button:disabled { opacity: 0.5; cursor: default; }
   margin-top: 10px;
 }
 
+.level-header {
+  margin: 14px 0 2px;
+  padding: 4px 2px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--purple-dark);
+  border-bottom: 2px solid color-mix(in srgb, var(--purple) 35%, transparent);
+}
+.level-header:first-child { margin-top: 0; }
+
 .lesson-row {
   display: flex;
   justify-content: space-between;
@@ -847,6 +864,25 @@ button:disabled { opacity: 0.5; cursor: default; }
   font-size: 0.75rem;
   color: var(--fg-soft);
   font-weight: 700;
+}
+
+.stat-tile-wide {
+  grid-column: 1 / -1;
+}
+.stat-tile-wide .stat-tile-value { font-size: 1.1rem; }
+
+.level-bar-track {
+  display: block;
+  margin-top: 8px;
+  background: var(--gray);
+  border-radius: 6px;
+  height: 10px;
+  overflow: hidden;
+}
+.level-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--purple);
 }
 
 .history-row {

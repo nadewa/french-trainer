@@ -1,7 +1,7 @@
 import { checkAnswer } from "./fuzzy.js";
 import { newCard, schedule, isDue } from "./srs.js";
 import { buildItemBank, buildIntroRanks, pronounFor } from "./items.js";
-import { buildConcepts, groupByLesson } from "./lessons.js";
+import { buildConcepts, groupByLesson, levelIndexForLesson, levelLabel, LEVEL_SIZE } from "./lessons.js";
 import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
 import * as images from "./images.js";
@@ -211,6 +211,7 @@ function renderStats() {
   el("stat-streak").textContent = String(computeStreak());
   el("stat-gems").textContent = String(computeTotals().correct);
   el("stat-hearts").textContent = String(computeHearts());
+  el("stat-level").textContent = String(currentLevelIndex() + 1);
 }
 
 // Browser built-in text-to-speech (no server, no API key, no cost). Voice
@@ -1023,6 +1024,18 @@ function currentPathIndex() {
   return Math.min(state.unlockedLessons, lessonsGrouped.length - 1);
 }
 
+// The level containing whichever lesson the user is actively progressing
+// through -- same "most recent unlocked lesson with something left to learn,
+// else the next one" logic as the lesson path, just viewed at a coarser
+// (100-words-per-level) grain.
+function currentLevelIndex() {
+  return levelIndexForLesson(currentPathIndex());
+}
+
+function totalLevels() {
+  return Math.max(1, Math.ceil(lessonsGrouped.length / LEVEL_SIZE));
+}
+
 function renderPath() {
   const path = el("path");
   path.innerHTML = "";
@@ -1063,6 +1076,12 @@ function renderLessonList() {
   const list = el("lesson-list");
   list.innerHTML = "";
   lessonsGrouped.forEach((concepts, index) => {
+    if (index % LEVEL_SIZE === 0) {
+      const header = document.createElement("div");
+      header.className = "level-header";
+      header.textContent = levelLabel(levelIndexForLesson(index));
+      list.appendChild(header);
+    }
     const unlocked = index < state.unlockedLessons;
     const row = document.createElement("div");
     row.className = "lesson-row" + (unlocked ? "" : " locked");
@@ -1255,6 +1274,20 @@ function renderStatsView() {
   const today = log[todayStr()] || { correct: 0, total: 0 };
   const todayAccuracy = today.total ? Math.round((today.correct / today.total) * 100) : 0;
   const learnedCount = Object.values(state.cards).filter((c) => c.repetitions >= 2).length;
+  const levelIndex = currentLevelIndex();
+  const levelStart = levelIndex * LEVEL_SIZE;
+  const levelEnd = Math.min(lessonsGrouped.length, levelStart + LEVEL_SIZE);
+  let levelConceptCount = 0;
+  let levelIntroducedCount = 0;
+  for (let i = levelStart; i < levelEnd; i++) {
+    levelConceptCount += (lessonsGrouped[i] || []).length;
+  }
+  for (const item of bank) {
+    if (item.lessonIndex >= levelStart && item.lessonIndex < levelEnd && state.cards[item.id]) {
+      levelIntroducedCount += 1;
+    }
+  }
+  const levelPct = levelConceptCount ? Math.round((levelIntroducedCount / levelConceptCount) * 100) : 0;
 
   el("stats-summary").innerHTML = `
     <div class="stat-tile"><div class="stat-tile-value">${computeStreak()}🔥</div><div class="stat-tile-label">Day streak</div></div>
@@ -1262,6 +1295,11 @@ function renderStatsView() {
     <div class="stat-tile"><div class="stat-tile-value">${overallAccuracy}%</div><div class="stat-tile-label">All-time accuracy (${totals.total} reviews)</div></div>
     <div class="stat-tile"><div class="stat-tile-value">${learnedCount}</div><div class="stat-tile-label">Items past initial learning</div></div>
     <div class="stat-tile"><div class="stat-tile-value">${state.piesBaked || 0}🥧</div><div class="stat-tile-label">Pies baked (5-in-a-row streaks)</div></div>
+    <div class="stat-tile stat-tile-wide">
+      <div class="stat-tile-value">Level ${levelIndex + 1} of ${totalLevels()}</div>
+      <div class="stat-tile-label">${levelLabel(levelIndex)} — ${levelIntroducedCount}/${levelConceptCount} introduced</div>
+      <span class="level-bar-track"><span class="level-bar-fill" style="width:${levelPct}%"></span></span>
+    </div>
   `;
 
   const history = el("stats-history");

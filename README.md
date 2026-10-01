@@ -35,6 +35,13 @@ feature below is not yet built — only French has it so far.
   to any lesson (locked or not) and study it directly instead of waiting.
   The picker shows a winding lesson path (done/current/locked nodes) for
   nearby lessons, with a "browse all 500" fallback list for jumping further.
+- **Levels**: a coarser difficulty band on top of lessons — 10 lessons (100
+  words) per level, so Level 1 is ranks 1–100, Level 2 is 101–200, and so on
+  up through ~Level 50. Your current level (wherever you are on the lesson
+  path) shows as a 🏆 pill in the top bar, and the 📊 Progress panel breaks
+  it down further (which level, how many of its 100 words are introduced so
+  far, with a progress bar). The "browse all lessons" list in the 📖 Lessons
+  picker is grouped under level headers for the same at-a-glance view.
 - **Gamified stats**: a streak flame, an all-time "gems" count (total correct
   answers), and a daily "hearts" counter (purely decorative — wrong answers
   never lock you out of practicing) in the header.
