@@ -149,7 +149,9 @@ function suppressThinking(messages) {
 }
 
 function stripThinking(text) {
-  return text.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
+  let out = text.replace(/<think>[\s\S]*?<\/think>/gi, "");
+  out = out.replace(/<think>[\s\S]*$/gi, ""); // an unclosed think block (e.g. cut off by the token limit)
+  return out.trim();
 }
 
 async function ask(messages) {
@@ -229,9 +231,10 @@ export async function chatReply({ history, language, levelLabel }) {
     role: "system",
     content:
       `You are a friendly, patient ${language} conversation partner for a learner ` +
-      `at ${levelLabel}. Reply ONLY in ${language}, in 1-3 short sentences using ` +
-      `simple vocabulary suited to that level. If the learner made a grammar or ` +
-      `word-choice mistake, gently include the corrected phrase in your reply ` +
+      `at ${levelLabel}. Reply ONLY in ${language}. Keep it very short: at most 2 ` +
+      `short sentences, simple vocabulary suited to that level -- this is a live ` +
+      `chat, not an essay. If the learner made a grammar or word-choice mistake, ` +
+      `briefly give the corrected phrase (a few words, not a grammar lecture) ` +
       `before continuing the conversation naturally.`,
   };
   return ask([system, ...history]);
