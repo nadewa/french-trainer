@@ -227,15 +227,20 @@ export async function generateHint({ word, gloss, language, promptText, level })
 // turns (role "user" | "assistant"); the system prompt is resent every call
 // since the in-browser engine does not persist sessions across page loads.
 export async function chatReply({ history, language, levelLabel }) {
+  // Short, numbered, imperative rules rather than one compound sentence --
+  // a 1.7B model follows a checklist far more reliably than prose, and
+  // rule 2 directly targets an observed failure mode (the model flatly
+  // saying "I don't correct" instead of correcting).
   const system = {
     role: "system",
     content:
-      `You are a friendly, patient ${language} conversation partner for a learner ` +
-      `at ${levelLabel}. Reply ONLY in ${language}. Keep it very short: at most 2 ` +
-      `short sentences, simple vocabulary suited to that level -- this is a live ` +
-      `chat, not an essay. If the learner made a grammar or word-choice mistake, ` +
-      `briefly give the corrected phrase (a few words, not a grammar lecture) ` +
-      `before continuing the conversation naturally.`,
+      `You are a friendly ${language} conversation partner for a learner at ${levelLabel}. Rules:\n` +
+      `1. Reply only in ${language}, simple vocabulary for that level.\n` +
+      `2. If the learner's last message has a grammar or word mistake, you MUST correct it: ` +
+      `give the corrected phrase (a few words) at the start of your reply. Never say you ` +
+      `don't correct mistakes -- you always do this.\n` +
+      `3. Then continue the conversation naturally in 1-2 more short sentences.\n` +
+      `4. Keep the whole reply short -- this is a live chat, not an essay.`,
   };
   return ask([system, ...history]);
 }
