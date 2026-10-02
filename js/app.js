@@ -5,6 +5,7 @@ import { buildConcepts, groupByLesson, levelIndexForLesson, levelLabel, LEVEL_SI
 import { buildCategoryGroups } from "./categories.js";
 import * as cloud from "./cloud.js";
 import * as images from "./images.js";
+import * as ai from "./ai.js";
 import { LANGUAGES, DEFAULT_LANGUAGE, getLanguage } from "./languages.js";
 
 const LANG_KEY = "ft_lang";
@@ -93,6 +94,8 @@ let readingData = null; // { tiers, passages } from data/reading.json, or null (
 let currentReadingTier = null;
 let currentReadingPassage = null;
 let readingAnswers = {}; // qIndex -> chosen choice index, for the passage currently open
+let hintLevel = 0; // 0 = no hint shown yet for the current card, 1..3 = escalating AI hints
+let chatHistory = []; // [{role, content}, ...] for the current conversation-practice session
 
 const el = (id) => document.getElementById(id);
 
@@ -627,10 +630,17 @@ function nextCard() {
   pendingSelfConfirm = null;
   hideCompletionBanner();
   el("self-confirm").classList.add("hidden");
+  el("self-confirm-ai-badge").classList.add("hidden");
   el("answer").value = "";
   el("answer").disabled = false;
   el("submit-btn").disabled = false;
   el("choices").innerHTML = "";
+  hintLevel = 0;
+  el("ai-hint-text").classList.add("hidden");
+  el("ai-checking").classList.add("hidden");
+  el("hint-btn").classList.toggle("hidden", !ai.isEnabled());
+  el("hint-btn").disabled = false;
+  el("hint-btn").textContent = "💡 Hint";
 
   if (queue.length === 0) {
     queue = buildQueue(bank);
@@ -691,11 +701,13 @@ function nextCard() {
     el("answer").classList.add("hidden");
     el("submit-btn").classList.add("hidden");
     el("choices").classList.remove("hidden");
+    el("hint-btn").classList.add("hidden"); // hints don't make sense when the answer is already on screen
     renderChoices();
   } else {
     el("answer").classList.remove("hidden");
     el("submit-btn").classList.remove("hidden");
     el("choices").classList.add("hidden");
+    el("hint-btn").classList.toggle("hidden", !ai.isEnabled());
     el("answer").focus();
   }
   renderStats();
@@ -920,7 +932,7 @@ function hideCompletionBanner() {
   }, 250);
 }
 
-function submitAnswer() {
+async function submitAnswer() {
   const typed = el("answer").value;
   if (!typed.trim()) return;
 
@@ -930,20 +942,47 @@ function submitAnswer() {
 
   el("answer").disabled = true;
   el("submit-btn").disabled = true;
+  el("hint-btn").disabled = true;
   sessionStats.total += 1;
 
   if (result.verdict === "exact") {
     sessionStats.correct += 1;
     gradeAndSchedule(5);
     showCompletionBanner("exact", result.target);
-  } else if (result.verdict === "close") {
+    return;
+  }
+  if (result.verdict === "close") {
     pendingSelfConfirm = result.target;
+    el("self-confirm-ai-badge").classList.add("hidden");
     el("self-confirm-answer").textContent = result.target;
     el("self-confirm").classList.remove("hidden");
-  } else {
-    gradeAndSchedule(1);
-    showCompletionBanner("wrong", result.target);
+    return;
   }
+
+  // Rule-based matching rejected it -- if AI Assist is on, give the model
+  // one extra chance to recognize a genuine paraphrase before calling it
+  // wrong. Never auto-accepts: an AI "accept" still routes through the
+  // same self-confirm honesty check as a close/accent-only match.
+  if (ai.isEnabled()) {
+    el("ai-checking").classList.remove("hidden");
+    const accepted = await ai.gradeParaphrase({
+      typed,
+      target: result.target,
+      language: currentLang.englishName,
+      promptText: el("prompt").textContent,
+    });
+    el("ai-checking").classList.add("hidden");
+    if (accepted) {
+      pendingSelfConfirm = result.target;
+      el("self-confirm-ai-badge").classList.remove("hidden");
+      el("self-confirm-answer").textContent = result.target;
+      el("self-confirm").classList.remove("hidden");
+      return;
+    }
+  }
+
+  gradeAndSchedule(1);
+  showCompletionBanner("wrong", result.target);
 }
 
 function confirmSelf(knewIt) {
@@ -951,6 +990,35 @@ function confirmSelf(knewIt) {
   el("self-confirm").classList.add("hidden");
   gradeAndSchedule(knewIt ? 4 : 2);
   showCompletionBanner(knewIt ? "exact" : "wrong", pendingSelfConfirm);
+}
+
+async function requestHint() {
+  if (hintLevel >= 3 || !ai.isEnabled() || !current) return;
+  hintLevel += 1;
+  const btn = el("hint-btn");
+  btn.disabled = true;
+  btn.textContent = "💡 Thinking…";
+  const word = current.type === "vocab" ? current.word : current.expected;
+  const gloss = current.gloss.slice(0, 2).join(", ");
+  const hintText = await ai.generateHint({
+    word,
+    gloss,
+    language: currentLang.englishName,
+    promptText: el("prompt").textContent,
+    level: hintLevel,
+  });
+  if (hintText) {
+    el("ai-hint-text").textContent = hintText;
+    el("ai-hint-text").classList.remove("hidden");
+    btn.disabled = hintLevel >= 3;
+    btn.textContent = hintLevel >= 3 ? "💡 No more hints" : `💡 Another hint (${hintLevel}/3 used)`;
+  } else {
+    hintLevel -= 1; // the call failed -- don't count it against the 3-hint budget
+    el("ai-hint-text").textContent = "Couldn't get a hint right now — try again in a moment.";
+    el("ai-hint-text").classList.remove("hidden");
+    btn.disabled = false;
+    btn.textContent = "💡 Hint";
+  }
 }
 
 function conceptLabel(concept) {
@@ -1566,6 +1634,139 @@ function initSettingsUI() {
   });
 }
 
+function initAiSettingsUI() {
+  const toggle = el("ai-enable-toggle");
+  const qualityRow = el("ai-quality-row");
+  const qualitySelect = el("ai-quality-select");
+  const status = el("ai-status");
+
+  const supported = ai.supportsWebGPU();
+  toggle.disabled = !supported;
+  toggle.checked = supported && ai.getConsent() === "granted";
+  qualityRow.classList.toggle("hidden", !toggle.checked);
+  qualitySelect.value = ai.getQuality();
+  status.textContent = !supported
+    ? "Not supported in this browser/device (needs WebGPU)."
+    : toggle.checked
+    ? "On — downloads on first use, then cached."
+    : "Off.";
+
+  ai.onProgress((p) => {
+    if (ai.getConsent() !== "granted") return;
+    status.textContent = !p.text || p.percent >= 100 ? "Ready." : `Downloading model… ${p.percent}%`;
+  });
+
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      ai.setConsent("granted");
+      qualityRow.classList.remove("hidden");
+      status.textContent = "Starting download…";
+      ai.preload().then((engine) => {
+        if (ai.getConsent() !== "granted") return;
+        status.textContent = engine ? "Ready." : "Couldn't load the AI model (check your connection) — try again.";
+      });
+    } else {
+      ai.setConsent("declined");
+      qualityRow.classList.add("hidden");
+      status.textContent = "Off.";
+    }
+    el("hint-btn").classList.toggle("hidden", !ai.isEnabled() || state.settings.answerMode === "choice");
+  });
+
+  qualitySelect.addEventListener("change", () => {
+    ai.setQuality(qualitySelect.value);
+    if (ai.isEnabled()) {
+      status.textContent = "Switching model — starting download…";
+      ai.preload().then((engine) => {
+        if (ai.getConsent() !== "granted") return;
+        status.textContent = engine ? "Ready." : "Couldn't load the AI model (check your connection) — try again.";
+      });
+    }
+  });
+}
+
+function appendChatMessage(role, text) {
+  const wrap = el("chat-messages");
+  const bubble = document.createElement("div");
+  bubble.className = `chat-msg ${role}`;
+  bubble.textContent = text;
+  wrap.appendChild(bubble);
+  wrap.scrollTop = wrap.scrollHeight;
+  return bubble;
+}
+
+function renderChatView() {
+  const unavailable = el("chat-unavailable");
+  const loading = el("chat-loading");
+  const active = el("chat-active");
+  unavailable.classList.add("hidden");
+  loading.classList.add("hidden");
+  active.classList.add("hidden");
+
+  if (!ai.isEnabled()) {
+    unavailable.classList.remove("hidden");
+    return;
+  }
+  loading.classList.remove("hidden");
+  el("chat-loading-text").textContent = "Loading AI model…";
+  el("chat-loading-bar").style.width = "0%";
+  const stopListening = ai.onProgress((p) => {
+    el("chat-loading-text").textContent = p.text || "Loading AI model…";
+    el("chat-loading-bar").style.width = `${p.percent}%`;
+  });
+  ai.preload().then((engine) => {
+    stopListening();
+    loading.classList.add("hidden");
+    if (!engine) {
+      unavailable.classList.remove("hidden");
+      el("chat-unavailable").querySelector("p").textContent =
+        "The AI model couldn't be loaded on this device right now — try again later.";
+      return;
+    }
+    active.classList.remove("hidden");
+    if (chatHistory.length === 0) {
+      el("chat-messages").innerHTML = "";
+      appendChatMessage(
+        "assistant",
+        currentLang.code === "fr" ? "Salut ! De quoi veux-tu parler aujourd'hui ?" : "¡Hola! ¿De qué quieres hablar hoy?"
+      );
+    }
+    el("chat-input").focus();
+  });
+}
+
+async function sendChatMessage() {
+  const input = el("chat-input");
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = "";
+  input.disabled = true;
+  el("chat-send-btn").disabled = true;
+
+  appendChatMessage("user", text);
+  chatHistory.push({ role: "user", content: text });
+  const pending = appendChatMessage("assistant pending", "…");
+
+  const reply = await ai.chatReply({
+    history: chatHistory,
+    language: currentLang.englishName,
+    levelLabel: levelLabel(currentLevelIndex()),
+  });
+
+  input.disabled = false;
+  el("chat-send-btn").disabled = false;
+  input.focus();
+
+  if (reply) {
+    pending.textContent = reply;
+    pending.className = "chat-msg assistant";
+    chatHistory.push({ role: "assistant", content: reply });
+  } else {
+    pending.textContent = "(couldn't get a reply just now — try again)";
+    pending.className = "chat-msg assistant pending";
+  }
+}
+
 function renderAccountUI() {
   const configured = cloud.isConfigured();
   el("account-not-configured").classList.toggle("hidden", configured);
@@ -1622,6 +1823,7 @@ function initAccountUI() {
     el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-account-btn").addEventListener("click", () => el("account-panel").classList.add("hidden"));
 
@@ -1725,8 +1927,10 @@ async function boot() {
 
   initSettingsUI();
   initAccountUI();
+  initAiSettingsUI();
 
   el("submit-btn").addEventListener("click", submitAnswer);
+  el("hint-btn").addEventListener("click", requestHint);
   el("answer").addEventListener("keydown", (e) => {
     if (e.key === "Enter") submitAnswer();
   });
@@ -1746,6 +1950,7 @@ async function boot() {
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
     if ("speechSynthesis" in window) {
       cachedVoices = window.speechSynthesis.getVoices();
     }
@@ -1768,6 +1973,7 @@ async function boot() {
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-picker-btn").addEventListener("click", () => {
     el("lesson-picker").classList.add("hidden");
@@ -1780,6 +1986,7 @@ async function boot() {
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-category-btn").addEventListener("click", () => {
     el("category-picker").classList.add("hidden");
@@ -1793,6 +2000,7 @@ async function boot() {
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-verb-picker-btn").addEventListener("click", () => {
     el("verb-picker").classList.add("hidden");
@@ -1813,6 +2021,7 @@ async function boot() {
     el("verb-picker").classList.add("hidden");
     el("account-panel").classList.add("hidden");
     el("reading-picker").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-stats-btn").addEventListener("click", () => {
     el("stats-view").classList.add("hidden");
@@ -1826,6 +2035,7 @@ async function boot() {
     el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("chat-panel").classList.add("hidden");
   });
   el("close-reading-btn").addEventListener("click", () => {
     el("reading-picker").classList.add("hidden");
@@ -1833,6 +2043,34 @@ async function boot() {
   el("reading-back-to-tiers-btn").addEventListener("click", showReadingTiers);
   el("reading-back-to-list-btn").addEventListener("click", () => showReadingPassageList(currentReadingTier));
   el("exit-focus-btn").addEventListener("click", exitFocus);
+
+  el("chat-toggle").addEventListener("click", () => {
+    const panel = el("chat-panel");
+    const opening = panel.classList.contains("hidden");
+    panel.classList.toggle("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
+    if (opening) renderChatView();
+  });
+  el("close-chat-btn").addEventListener("click", () => {
+    el("chat-panel").classList.add("hidden");
+  });
+  el("chat-enable-ai-btn").addEventListener("click", () => {
+    if (!ai.supportsWebGPU()) return;
+    ai.setConsent("granted");
+    el("ai-enable-toggle").checked = true;
+    el("ai-quality-row").classList.remove("hidden");
+    renderChatView();
+  });
+  el("chat-send-btn").addEventListener("click", sendChatMessage);
+  el("chat-input").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") sendChatMessage();
+  });
 
   renderCookingPanel(false);
 

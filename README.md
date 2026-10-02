@@ -98,6 +98,16 @@ feature below is not yet built — only French has it so far.
   an example sentence) shown above the main card — the same word all day,
   for everyone, picked deterministically from the date so it changes once
   every 24 hours without needing any server.
+- **AI Assist (experimental, off by default)**: an optional local AI model
+  (Qwen3, via [WebLLM](https://github.com/mlc-ai/web-llm) and WebGPU) that
+  runs entirely in your own browser — no server, no API key, nothing ever
+  sent anywhere. Powers three things once turned on in ⚙ Settings: a second,
+  smarter pass on answers the typo/accent checker rejected (to catch genuine
+  paraphrases), a 💡 hint button with up to 3 escalating AI-generated clues,
+  and a 💬 open-ended conversation-practice panel. Every AI feature fails
+  safely back to the app's existing non-AI behavior if the model can't load
+  or doesn't respond — see AI_ASSIST.md for the full explanation, including
+  the download size and why Qwen3 specifically was picked.
 - **Categories**: the 🗂 picker groups vocabulary into themes (House & Home,
   Family & People, Food & Drink, Animals, Body & Health, Clothing, Colors,
   Time & Calendar, Weather & Nature, Travel & Places, Work & School, Emotions
@@ -271,6 +281,7 @@ js/cloud.js          # optional Supabase auth + progress sync
 js/supabase-config.js # your Supabase project URL/anon key (see Cloud sync setup)
 js/images.js         # optional Unsplash reward-image fetch (graceful no-op if unconfigured)
 js/image-config.js   # your Unsplash access key (see Image reward setup)
+js/ai.js              # optional local AI assist (Qwen3 via WebLLM/WebGPU) -- see AI_ASSIST.md
 data/vocab.json      # 4,900 French vocabulary words + English gloss(es)
 data/verbs.json       # 100 French verbs with full conjugation tables
 data/examples.json   # French example sentences for lesson-intro + sentence mode (phase 1 coverage)
@@ -283,4 +294,5 @@ data/gen_es_conjugations.js # build-time step build_data_es.py depends on (see D
 data/schema.sql       # Supabase table + RLS policies for cloud sync
 DATA_SOURCES.md       # French: exact sources, licenses, manual verification, gaps
 DATA_SOURCES_ES.md    # Spanish: exact sources, licenses, manual verification, gaps
+AI_ASSIST.md           # what the optional local AI feature is, what it costs, how it fails safely
 ```
