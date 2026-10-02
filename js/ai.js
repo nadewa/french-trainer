@@ -106,7 +106,7 @@ function getEngine() {
         reportProgress({ text: "Finishing setup (first run only)…", percent: 100 });
         try {
           await withTimeout(
-            engine.chat.completions.create({ messages: [{ role: "user", content: "Bonjour" }], max_tokens: 4 }),
+            engine.chat.completions.create({ messages: [{ role: "user", content: "Bonjour /no_think" }], max_tokens: 4 }),
             WARMUP_TIMEOUT_MS
           );
         } catch (err) {
@@ -135,17 +135,38 @@ function withTimeout(promise, ms) {
   return Promise.race([promise, new Promise((resolve) => setTimeout(() => resolve(null), ms))]);
 }
 
+// Qwen3 is a "thinking" model: by default it prefixes its real answer with
+// a <think>...</think> reasoning block, which would otherwise show up
+// verbatim (in English, breaking immersion) in a learner-facing hint or
+// chat reply. "/no_think" is Qwen3's own documented per-turn switch to
+// suppress it -- a plain-text convention the model itself was trained to
+// respond to, so it works regardless of whether this in-browser runtime
+// passes through server-side params like chat_template_kwargs. The regex
+// strip below is a safety net for any thinking output that slips through
+// anyway (e.g. an older cached build, or the switch being ignored).
+function suppressThinking(messages) {
+  return messages.map((m, i) => (i === 0 && m.role === "system" ? { ...m, content: `${m.content} /no_think` } : m));
+}
+
+function stripThinking(text) {
+  return text.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
+}
+
 async function ask(messages) {
   if (!isEnabled()) return null;
   try {
     const engine = await getEngine();
     if (!engine) return null;
-    const reply = await withTimeout(engine.chat.completions.create({ messages, temperature: 0.4 }), CALL_TIMEOUT_MS);
+    const reply = await withTimeout(
+      engine.chat.completions.create({ messages: suppressThinking(messages), temperature: 0.4 }),
+      CALL_TIMEOUT_MS
+    );
     if (!reply) {
       console.warn(`AI Assist: request timed out after ${CALL_TIMEOUT_MS}ms`);
       return null;
     }
-    return reply.choices?.[0]?.message?.content?.trim() || null;
+    const raw = reply.choices?.[0]?.message?.content?.trim();
+    return raw ? stripThinking(raw) || null : null;
   } catch (err) {
     console.error("AI Assist: request failed", err);
     return null;
