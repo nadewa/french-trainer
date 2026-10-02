@@ -160,17 +160,6 @@ h1, h2, .prompt, .stat-pill b, button, .path-node {
   color: var(--orange-dark);
   border-color: color-mix(in srgb, var(--orange) 45%, transparent);
 }
-.stat-pill.gems {
-  background: var(--blue-bg);
-  color: var(--blue-dark);
-  border-color: color-mix(in srgb, var(--blue) 45%, transparent);
-}
-.stat-pill.hearts {
-  background: var(--red-bg);
-  color: var(--red-dark);
-  border-color: color-mix(in srgb, var(--red) 45%, transparent);
-}
-
 .stats-secondary {
   display: flex;
   gap: 10px;

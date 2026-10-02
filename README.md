@@ -48,9 +48,7 @@ feature below is not yet built — only French has it so far.
   it down further (which level, how many of its 100 words are introduced so
   far, with a progress bar). The "browse all lessons" list in the 📖 Lessons
   picker is grouped under level headers for the same at-a-glance view.
-- **Gamified stats**: a streak flame, an all-time "gems" count (total correct
-  answers), and a daily "hearts" counter (purely decorative — wrong answers
-  never lock you out of practicing) in the header.
+- **Streak**: a flame in the header counts consecutive days with a review.
 - **Practice filter**: in Settings, restrict review to vocabulary only, verb
   conjugation only, or both.
 - **Answer mode**: typed (accent/typo-tolerant, the default) or multiple

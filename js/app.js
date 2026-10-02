@@ -192,21 +192,14 @@ function computeStreak() {
   return streak;
 }
 
-// Gems and hearts are purely decorative flavor on top of the real SRS/stats
-// data -- gems = all-time correct answers (a number that only grows), hearts
-// = a playful "mistakes today" counter that never actually blocks practice.
+// All-time correct/total answers, used by the 📊 Progress view's overall
+// accuracy figure.
 function computeTotals() {
   const log = state.dailyLog;
   return Object.values(log).reduce(
     (acc, d) => ({ correct: acc.correct + d.correct, total: acc.total + d.total }),
     { correct: 0, total: 0 }
   );
-}
-
-function computeHearts() {
-  const today = state.dailyLog[todayStr()] || { correct: 0, total: 0 };
-  const wrongToday = today.total - today.correct;
-  return Math.max(0, 5 - wrongToday);
 }
 
 function renderStats() {
@@ -217,8 +210,6 @@ function renderStats() {
   el("stat-new").textContent = String(newLeft);
   el("stat-session").textContent = `${sessionStats.correct}/${sessionStats.total}`;
   el("stat-streak").textContent = String(computeStreak());
-  el("stat-gems").textContent = String(computeTotals().correct);
-  el("stat-hearts").textContent = String(computeHearts());
   el("stat-level").textContent = String(currentLevelIndex() + 1);
 }
 
