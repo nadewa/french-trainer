@@ -391,6 +391,42 @@ for full reproducibility).
   sentence itself ("Nous mangeons ensemble ce midi.") was already correct
   and unchanged.
 
+## 8. Reading passages — assistant-composed fiction (not corpus-sourced)
+
+- **File**: `data/reading.json`
+- Same honesty disclosure as section 7: these are short original fiction
+  pieces written directly by the assistant, not pulled from an open corpus
+  (the same unreachable-corpus situation documented there applies here too).
+  They were chosen as original fiction specifically — not adapted or
+  summarized from any existing copyrighted work.
+- **Coverage**: 2 passages per difficulty tier, 5 tiers (10 passages total,
+  30 comprehension questions) — a starting bank, not exhaustive. Tiers map
+  onto the app's Level system (see `js/lessons.js`): Tier 1 "Beginner" spans
+  Levels 1–10 (vocabulary ranks 1–1,000), Tier 2 "Elementary" Levels 11–20
+  (1,001–2,000), and so on through Tier 5 "Advanced" at Levels 41–50
+  (4,001–4,900+).
+- **Vocabulary-level matching is a best-effort judgment call, not a
+  programmatic check.** Unlike the conjugated forms in example sentences
+  (validated by exact whole-word search against the drilled form), passage
+  vocabulary was not checked word-by-word against the frequency-ranked list
+  each tier is supposed to correspond to — doing that for natural prose
+  would require either rewriting sentences around a strict word whitelist
+  (producing stilted, unnatural text) or extensive manual cross-checking of
+  every word. Lower tiers deliberately use simple grammar (mostly present
+  tense, short sentences) and everyday vocabulary; higher tiers progressively
+  allow more complex vocabulary and sentence structure. Treat the tier
+  labels as a reasonable difficulty ordering, not a guarantee that every
+  single word in a Tier 1 passage is actually within vocabulary ranks 1–1,000.
+- **No live generation.** Per explicit user decision, this app makes no
+  calls to any LLM API — reading passages are a fixed pre-written bank
+  rather than being generated per-request, which would require exposing an
+  API key client-side (this is a static site with no backend) and ongoing
+  per-use cost. More passages can be added the same way as everything else
+  in this file: written by hand, reviewed, and committed.
+- **Spanish has no reading passages yet** (`readingFile: null` in
+  `js/languages.js`) — the Reading picker shows a "not yet available"
+  message instead of an empty or broken screen.
+
 ## Reproducing / regenerating the data
 
 `data/build_data.py` expects the five raw source files (listed above, with

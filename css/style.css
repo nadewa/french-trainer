@@ -35,7 +35,14 @@
   --gray: #e5e5e5;
   --gray-dark: #afafaf;
 
-  --accent: var(--green);
+  /* Brand/accent is ultramarine blue -- --blue was already a close match
+     for it, so it does double duty as both. Correct/incorrect feedback
+     (the completion banner, choice highlighting) deliberately stays
+     green/red regardless of brand color -- that convention is about
+     reading an answer's correctness at a glance, not about branding. */
+  --accent: var(--blue);
+  --accent-dark: var(--blue-dark);
+  --accent-bg: var(--blue-bg);
   --wrong: var(--red);
   --close: var(--orange);
 }
@@ -108,7 +115,7 @@ h1, h2, .prompt, .stat-pill b, button, .path-node {
   font-size: 1.3rem;
   margin: 0;
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--accent-dark);
 }
 
 .lang-select {
@@ -305,16 +312,16 @@ button {
   padding: 12px 18px;
   border-radius: 14px;
   border: none;
-  background: var(--green);
+  background: var(--accent);
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 4px 0 var(--green-dark);
+  box-shadow: 0 4px 0 var(--accent-dark);
   transition: transform 0.05s, box-shadow 0.05s;
 }
 
 button:active:not(:disabled) {
   transform: translateY(3px);
-  box-shadow: 0 1px 0 var(--green-dark);
+  box-shadow: 0 1px 0 var(--accent-dark);
 }
 
 button:disabled { opacity: 0.5; cursor: default; }
@@ -382,7 +389,7 @@ button:disabled { opacity: 0.5; cursor: default; }
   margin: 0 0 4px;
   text-align: center;
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--accent-dark);
 }
 
 .lesson-subtitle {
@@ -444,7 +451,7 @@ button:disabled { opacity: 0.5; cursor: default; }
   margin: 0;
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--green-dark);
+  color: var(--accent-dark);
 }
 
 /* ---------- lesson path (Duolingo-style winding map) ---------- */
@@ -490,12 +497,12 @@ button:disabled { opacity: 0.5; cursor: default; }
 
 .path-node:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); }
 
-.path-node.done { background: var(--green); box-shadow: 0 6px 0 var(--green-dark); }
+.path-node.done { background: var(--accent); box-shadow: 0 6px 0 var(--accent-dark); }
 .path-node.current {
   background: #fff;
-  border: 4px solid var(--green);
-  color: var(--green);
-  box-shadow: 0 6px 0 var(--green-dark);
+  border: 4px solid var(--accent);
+  color: var(--accent);
+  box-shadow: 0 6px 0 var(--accent-dark);
   animation: bob 1.6s ease-in-out infinite;
 }
 .path-node.locked {
@@ -747,7 +754,7 @@ button:disabled { opacity: 0.5; cursor: default; }
 
 .verb-lesson h2 {
   margin: 0 0 2px;
-  color: var(--green-dark);
+  color: var(--accent-dark);
 }
 
 .verb-lesson-gloss {
@@ -840,6 +847,60 @@ button:disabled { opacity: 0.5; cursor: default; }
   color: #fff;
 }
 
+.word-of-day {
+  max-width: 480px;
+  margin: 12px auto 0;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  background: var(--accent-bg);
+}
+
+.wod-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--accent-dark);
+  margin-bottom: 2px;
+}
+
+.wod-word-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wod-word {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--fg);
+}
+
+.wod-word-row .speak-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.wod-gloss {
+  font-weight: 700;
+  color: var(--fg-soft);
+  margin-top: 1px;
+}
+
+.wod-example {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1.5px dashed color-mix(in srgb, var(--accent) 30%, transparent);
+  font-size: 0.85rem;
+}
+
+#wod-example-fr { font-weight: 700; }
+#wod-example-en { color: var(--fg-soft); }
+
 #stats-summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -885,6 +946,68 @@ button:disabled { opacity: 0.5; cursor: default; }
   background: var(--purple);
 }
 
+/* ---------- reading mode ---------- */
+
+#reading-passage-list {
+  max-height: 55vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+#reading-tier-title {
+  margin: 10px 0 4px;
+  color: var(--accent-dark);
+}
+
+.reading-predict,
+.reading-reflect {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--fg-soft);
+  font-style: italic;
+  margin: 6px 0;
+}
+
+.reading-speak-row {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+}
+
+.reading-body {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 1rem;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 6px 0;
+}
+
+.reading-question {
+  margin-top: 16px;
+}
+
+.reading-question-text {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.reading-score {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  background: var(--accent-bg);
+  color: var(--accent-dark);
+}
+
 .history-row {
   display: flex;
   align-items: center;
@@ -910,7 +1033,7 @@ button:disabled { opacity: 0.5; cursor: default; }
 
 .history-row .history-bar-fill {
   height: 100%;
-  background: var(--green);
+  background: var(--accent);
 }
 
 .history-row .history-count {

@@ -15,6 +15,7 @@ export const LANGUAGES = {
     vocabFile: "data/vocab.json",
     verbsFile: "data/verbs.json",
     examplesFile: "data/examples.json",
+    readingFile: "data/reading.json",
     pronouns: ["je", "tu", "il/elle", "nous", "vous", "ils/elles"],
     tenses: [
       { key: "present", label: "présent", prefix: "" },
@@ -33,6 +34,7 @@ export const LANGUAGES = {
     vocabFile: "data/vocab_es.json",
     verbsFile: "data/verbs_es.json",
     examplesFile: null, // no example-sentence data yet for Spanish -- sentence mode simply never triggers
+    readingFile: null, // no reading passages yet for Spanish -- the Reading picker shows a "coming soon" state
     pronouns: ["yo", "tú", "él/ella", "nosotros", "vosotros", "ellos/ellas"],
     tenses: [
       { key: "present", label: "presente", prefix: "" },

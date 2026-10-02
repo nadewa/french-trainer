@@ -12,6 +12,12 @@ Switch languages with the 🇫🇷/🇪🇸 selector in the header — French an
 progress are tracked completely separately (different vocabularies, separate
 spaced-repetition state), so you can work on either or both.
 
+The UI follows a Duolingo-style design language (chunky rounded buttons with
+a pressed "3D" bottom-shadow effect, pill-shaped stat badges, a winding
+skill path) in an ultramarine-blue brand color — correct/incorrect feedback
+stays green/red regardless, since that's a near-universal convention
+independent of brand color.
+
 See **[DATA_SOURCES.md](./DATA_SOURCES.md)** (French) and
 **[DATA_SOURCES_ES.md](./DATA_SOURCES_ES.md)** (Spanish) for exactly where
 each word list and conjugation table came from, what was manually verified,
@@ -79,6 +85,19 @@ feature below is not yet built — only French has it so far.
   example sentence where one exists, and its full conjugation table across
   all 5 drilled tenses — with a button per tense to practice just that tense's
   6 persons directly, independent of the main lesson path.
+- **Reading mode**: the 📰 picker has short original fictional stories, grouped
+  into 5 difficulty tiers (Beginner through Advanced, each spanning 10 levels
+  / 1,000 words of vocabulary). Each story shows a "before you read"
+  prediction prompt, the story itself (with a 🔊 listen button for the full
+  text), an ungraded "in your own words" reflection prompt, and 2–3 graded
+  multiple-choice comprehension questions. Like the example sentences, these
+  are assistant-composed fiction, not pulled from a corpus — see
+  DATA_SOURCES.md. French only for now (2 passages per tier to start,
+  expandable); Spanish shows a "not yet available" message in the picker.
+- **Word of the day**: a highlighted word (with gloss and, where available,
+  an example sentence) shown above the main card — the same word all day,
+  for everyone, picked deterministically from the date so it changes once
+  every 24 hours without needing any server.
 - **Categories**: the 🗂 picker groups vocabulary into themes (House & Home,
   Family & People, Food & Drink, Animals, Body & Health, Clothing, Colors,
   Time & Calendar, Weather & Nature, Travel & Places, Work & School, Emotions
@@ -244,7 +263,7 @@ css/style.css        # styling (light/dark aware)
 js/app.js            # session/queue orchestration, grading, UI wiring
 js/items.js          # builds the review-item bank from the data files
 js/languages.js      # per-language config: data files, TTS locale, pronouns, tense labels
-js/lessons.js        # groups items into lessons, in frequency order
+js/lessons.js        # groups items into lessons (and lessons into levels), in frequency order
 js/categories.js     # keyword-based thematic groupings for the 🗂 picker
 js/srs.js            # SM-2 scheduler
 js/fuzzy.js          # typo/accent-tolerant answer checking
@@ -255,6 +274,7 @@ js/image-config.js   # your Unsplash access key (see Image reward setup)
 data/vocab.json      # 4,900 French vocabulary words + English gloss(es)
 data/verbs.json       # 100 French verbs with full conjugation tables
 data/examples.json   # French example sentences for lesson-intro + sentence mode (phase 1 coverage)
+data/reading.json    # French reading-mode passages + comprehension questions (French only so far)
 data/build_data.py    # reproducible French data-build pipeline (see DATA_SOURCES.md)
 data/vocab_es.json    # 4,900 Spanish vocabulary words + English gloss(es)
 data/verbs_es.json    # 100 Spanish verbs with full conjugation tables

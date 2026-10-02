@@ -1,0 +1,152 @@
+{
+  "_note": "Reading passages here are composed by the assistant as short original fiction (not pulled from an external corpus), the same honesty disclosure as data/examples.json -- see DATA_SOURCES.md. Vocabulary difficulty is a best-effort match to each tier's word-frequency range, not programmatically validated word-by-word the way example-sentence conjugated forms are. Coverage: 2 passages per tier, 5 tiers (10 total) -- a starting bank, not exhaustive; more can be added the same way.",
+  "tiers": [
+    { "tier": 1, "label": "Beginner", "levelRange": [1, 10] },
+    { "tier": 2, "label": "Elementary", "levelRange": [11, 20] },
+    { "tier": 3, "label": "Intermediate", "levelRange": [21, 30] },
+    { "tier": 4, "label": "Upper-Intermediate", "levelRange": [31, 40] },
+    { "tier": 5, "label": "Advanced", "levelRange": [41, 50] }
+  ],
+  "passages": [
+    {
+      "id": "fr-t1-01",
+      "tier": 1,
+      "title": "Le chat et la boîte",
+      "titleEn": "The cat and the box",
+      "predict": "A cat sees a big box arrive at the door. What do you think it does?",
+      "body": "Un petit chat noir vit dans une maison avec une famille. Un jour, une grande boîte arrive devant la porte. Le chat regarde la boîte. Il a peur, mais il est aussi très curieux. Lentement, il s'approche et sent la boîte. Puis, d'un coup, il saute dedans ! La boîte est juste assez grande pour lui. Le chat reste dans la boîte toute la journée. Le soir, la petite fille de la famille rentre de l'école. Elle cherche son chat partout. Enfin, elle regarde dans la boîte et elle rit. « Te voilà ! » dit-elle. Le chat dort, content, dans sa nouvelle maison préférée.",
+      "reflect": "In your own words: what happens to the cat in this story?",
+      "questions": [
+        { "q": "What is the story mainly about?", "choices": ["A cat who learns to swim", "A cat who finds a new favorite spot to sleep", "A family moving to a new house", "A girl who loses her cat forever"], "correct": 1 },
+        { "q": "Where does the cat spend the day?", "choices": ["Under the bed", "In the garden", "Inside a box", "On the roof"], "correct": 2 },
+        { "q": "How does the girl react when she finds the cat?", "choices": ["She is angry", "She laughs", "She cries", "She calls the vet"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t1-02",
+      "tier": 1,
+      "title": "Une journée au marché",
+      "titleEn": "A day at the market",
+      "predict": "Paul finds a small bag someone dropped at the market. What should he do with it?",
+      "body": "Chaque samedi, Paul va au marché avec sa mère. Ils achètent des fruits, des légumes et du pain frais. Ce samedi, Paul marche devant un stand de fleurs. Il voit quelque chose par terre : un petit sac noir. Il le ramasse. À l'intérieur, il y a de l'argent et une photo d'une femme avec deux enfants. Paul montre le sac à sa mère. « Il faut trouver la personne qui a perdu ça, » dit-elle. Ils vont voir le vendeur de fleurs. Une dame arrive, elle pleure un peu. « Mon sac ! Merci, merci beaucoup ! » Elle donne une pomme rouge à Paul pour le remercier.",
+      "reflect": "In your own words: what did Paul find, and what did he do about it?",
+      "questions": [
+        { "q": "What does Paul find at the market?", "choices": ["A lost dog", "A black bag with money and a photo", "A broken phone", "A hundred euros in coins"], "correct": 1 },
+        { "q": "What does Paul's mother tell him to do?", "choices": ["Keep the money", "Give it to the flower seller to keep", "Find the person who lost it", "Throw it away"], "correct": 2 },
+        { "q": "How does the woman thank Paul?", "choices": ["She gives him money", "She gives him an apple", "She invites him to dinner", "She gives him flowers"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t2-01",
+      "tier": 2,
+      "title": "Le mystère du voisin",
+      "titleEn": "The mystery of the neighbor",
+      "predict": "A neighbor only goes out at night carrying a big black bag. What do you think he's doing?",
+      "body": "Depuis une semaine, Camille remarque que son voisin, Monsieur Lenoir, sort de chez lui seulement la nuit. Il porte toujours un grand sac noir et il revient juste avant le lever du soleil. Camille trouve ça étrange. Un soir, elle décide de le suivre discrètement. Elle le voit entrer dans le petit parc au coin de la rue. Là, elle comprend enfin : Monsieur Lenoir nourrit les chats perdus du quartier ! Dans son sac, il y a de la nourriture et de l'eau. Il ne voulait pas que les voisins le sachent, parce qu'il est très timide. Camille sourit et décide de l'aider, en secret, elle aussi.",
+      "reflect": "In your own words: what was the neighbor's secret, and why did he keep it?",
+      "questions": [
+        { "q": "What is the \"mystery\" in this story?", "choices": ["Why the neighbor disappears during the day", "Why the neighbor goes out only at night with a bag", "Why the neighbor never speaks to anyone", "Why the neighbor's house is always dark"], "correct": 1 },
+        { "q": "What does Camille discover about Monsieur Lenoir?", "choices": ["He is feeding stray cats", "He works a night job", "He is secretly a painter", "He is planning a surprise party"], "correct": 0 },
+        { "q": "Why did Monsieur Lenoir keep this a secret?", "choices": ["He was ashamed of being poor", "He is very shy", "The cats belonged to someone else", "It is against the rules"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t2-02",
+      "tier": 2,
+      "title": "Les vacances de Julie",
+      "titleEn": "Julie's vacation",
+      "predict": "Julie is bored at her grandmother's house with no internet. What might change her mind about the summer?",
+      "body": "Julie passe ses vacances d'été chez sa grand-mère, à la campagne. Elle s'ennuie un peu les premiers jours, car il n'y a pas d'internet et peu de voisins. Sa grand-mère lui propose alors de l'aider à construire un petit jardin. Au début, Julie trouve l'idée ennuyeuse, mais elle accepte pour faire plaisir à sa grand-mère. Chaque matin, elles plantent des légumes et des fleurs ensemble. Peu à peu, Julie commence à aimer ce travail. Elle apprend les noms des plantes et observe les insectes avec curiosité. À la fin de l'été, le jardin est magnifique. Julie est fière de ce qu'elles ont créé, et elle ne pense presque plus à son téléphone.",
+      "reflect": "In your own words: how does Julie's attitude change over the summer, and why?",
+      "questions": [
+        { "q": "What was Julie's attitude at the beginning of her vacation?", "choices": ["Excited and happy", "Bored, since there was no internet", "Angry at her grandmother", "Afraid of the countryside"], "correct": 1 },
+        { "q": "What activity does Julie end up enjoying?", "choices": ["Cooking with her grandmother", "Reading books all day", "Gardening", "Swimming in a lake"], "correct": 2 },
+        { "q": "How does Julie feel by the end of summer?", "choices": ["Still bored", "Proud of the garden she helped create", "Ready to go home immediately", "Worried about school"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t3-01",
+      "tier": 3,
+      "title": "La lettre perdue",
+      "titleEn": "The lost letter",
+      "predict": "Antoine finds an old, never-opened letter in his family's attic. What secret might it hold?",
+      "body": "Dans le grenier de la vieille maison familiale, Antoine cherchait de vieux albums photo pour sa grand-mère, malade et alitée depuis quelques semaines. Entre deux cartons poussiéreux, il découvrit une enveloppe jaunie, jamais ouverte, adressée à son arrière-grand-père. La lettre datait de plus de soixante-dix ans. Intrigué, Antoine l'ouvrit avec précaution. Elle avait été écrite par une femme nommée Hélène, qui racontait son amour secret pour l'arrière-grand-père d'Antoine, un amour que la guerre avait rendu impossible. Bouleversé, Antoine apporta la lettre à sa grand-mère. En la lisant, elle sourit tristement : « Je savais qu'il y avait eu quelqu'un d'autre avant moi, » dit-elle doucement, « mais je ne connaissais pas son nom. »",
+      "reflect": "In your own words: what did the letter reveal, and how did the grandmother react?",
+      "questions": [
+        { "q": "What is the main topic of this story?", "choices": ["A family discovering an old love letter", "A fire that destroyed an attic", "Antoine getting married", "A grandmother teaching Antoine to write"], "correct": 0 },
+        { "q": "What did the letter reveal?", "choices": ["A hidden inheritance", "A secret love from before the grandmother's marriage", "A family debt", "The location of a lost treasure"], "correct": 1 },
+        { "q": "How does the grandmother react to the letter?", "choices": ["She is furious and tears it up", "She already knew every detail", "She smiles sadly, having sensed something but not known the name", "She refuses to read it"], "correct": 2 }
+      ]
+    },
+    {
+      "id": "fr-t3-02",
+      "tier": 3,
+      "title": "Un rêve étrange",
+      "titleEn": "A strange dream",
+      "predict": "Léa keeps having the same dream about a forest and a blue light. What might explain that?",
+      "body": "Léa faisait souvent le même rêve étrange : elle marchait seule dans une forêt silencieuse, au milieu de la nuit, suivant une lumière bleue qui dansait entre les arbres. Chaque fois, elle se réveillait juste avant d'atteindre la source de cette lumière, le cœur battant. Un jour, en rangeant de vieux cahiers dans le bureau de son père, elle tomba sur un carnet qu'il avait écrit, enfant. Dedans, il décrivait exactement le même rêve : la même forêt, la même lumière bleue. Troublée, Léa montra le carnet à son père. Celui-ci devint pâle et lui raconta alors une histoire que sa propre grand-mère lui avait confiée autrefois, à propos d'un rêve qui se transmettait, disait-on, de génération en génération dans leur famille.",
+      "reflect": "In your own words: what did Léa discover, and what did her father explain?",
+      "questions": [
+        { "q": "What is the recurring dream about?", "choices": ["Falling from a great height", "Walking through a forest and following a blue light", "Being chased by an animal", "Flying over a city"], "correct": 1 },
+        { "q": "What does Léa find that surprises her?", "choices": ["A map to a hidden treasure", "Her father's old notebook describing the exact same dream", "A photo of her grandmother as a child", "A letter addressed to her"], "correct": 1 },
+        { "q": "According to the father's story, what is special about this dream?", "choices": ["It only happens once in a lifetime", "It supposedly passes down through generations of the family", "It predicts the weather", "It is caused by a local legend about the forest"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t4-01",
+      "tier": 4,
+      "title": "Le détective et la clé",
+      "titleEn": "The detective and the key",
+      "predict": "A small copper key is the only clue left at a burglary scene. Where might it lead?",
+      "body": "L'inspecteur Mercier contemplait la petite clé en cuivre posée sur son bureau, le seul indice laissé sur les lieux du cambriolage. Aucune empreinte, aucun témoin, rien que cet objet minuscule et une fenêtre forcée. Pendant des jours, il interrogea les habitants du quartier sans résultat probant, jusqu'à ce qu'une vieille horlogère, en examinant la clé, remarquât une gravure presque effacée : les initiales « R.D. ». Cela raviva un souvenir chez Mercier. Des années auparavant, il avait enquêté sur un certain Raymond Dubois, cambrioleur réputé pour sa discrétion, que l'on croyait pourtant mort en prison. Intrigué, l'inspecteur rouvrit le dossier archivé et découvrit, non sans stupeur, que la date de décès officielle de Dubois coïncidait étrangement avec celle d'une évasion jamais élucidée.",
+      "reflect": "In your own words: how did the key lead Mercier back to an old, unresolved case?",
+      "questions": [
+        { "q": "What is the central investigation about?", "choices": ["A missing person case with no leads", "A burglary whose only clue is a small key", "A murder in a watch shop", "A fire in an old building"], "correct": 1 },
+        { "q": "Who helps Mercier move the investigation forward?", "choices": ["A fellow police officer", "An elderly watchmaker who notices an engraving", "An anonymous letter", "A security camera recording"], "correct": 1 },
+        { "q": "What does Mercier discover when he reopens the old file?", "choices": ["Raymond Dubois was innocent all along", "Dubois's official death date lines up suspiciously with an unexplained prison escape", "The key belonged to someone else entirely", "There is no record of Raymond Dubois"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t4-02",
+      "tier": 4,
+      "title": "La vieille maison",
+      "titleEn": "The old house",
+      "predict": "Local children say an abandoned house is haunted. Nadia doesn't believe it and goes inside. What do you think she'll find?",
+      "body": "Personne n'avait habité la maison au bout de la rue depuis plus de vingt ans, et les enfants du quartier racontaient qu'elle était hantée. Nadia, nouvellement installée dans le village, refusait d'y croire et décida, un après-midi pluvieux, d'y pénétrer par curiosité. À l'intérieur, la poussière recouvrait des meubles anciens, mais rien d'effrayant ne semblait s'y cacher. Dans un tiroir du salon, elle découvrit cependant un journal intime appartenant à une certaine Marguerite, datant des années 1950. En le feuilletant, Nadia comprit que cette femme avait quitté précipitamment la maison après la mort tragique de son mari, sans jamais revenir la récupérer. L'histoire n'avait donc rien de surnaturel : seulement un chagrin trop lourd pour que quiconque ose y retourner.",
+      "reflect": "In your own words: what is the real explanation behind the \"haunted\" house?",
+      "questions": [
+        { "q": "What do the local children believe about the house?", "choices": ["That it is for sale", "That it is haunted", "That a famous writer once lived there", "That it will be demolished soon"], "correct": 1 },
+        { "q": "What does Nadia find inside the house?", "choices": ["A hidden treasure", "An old diary belonging to a woman named Marguerite", "A family still secretly living there", "Nothing at all — the house was empty of objects"], "correct": 1 },
+        { "q": "What is the real explanation behind the house being abandoned?", "choices": ["Supernatural forces drove the family out", "The owner's husband died tragically and grief kept her from returning", "The house was condemned by the city", "The family simply moved abroad for work"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t5-01",
+      "tier": 5,
+      "title": "L'énigme du peintre",
+      "titleEn": "The painter's enigma",
+      "predict": "A museum restorer examines an old painting under ultraviolet light and finds something unexpected. What might it be?",
+      "body": "Le tableau, attribué depuis des décennies à un peintre mineur du XIXe siècle, trônait sans grande gloire dans une salle secondaire du musée. Ce n'est qu'à l'occasion d'une restauration de routine qu'une conservatrice, en examinant la toile sous lumière ultraviolette, décela les contours d'une signature antérieure, dissimulée sous une couche de peinture postérieure. L'analyse approfondie révéla qu'il s'agissait en réalité d'une œuvre de jeunesse d'un maître bien plus célèbre, probablement repeinte par lui-même après un rejet au Salon, puis vendue sous un nom d'emprunt pour subsister. Cette découverte, loin d'être anecdotique, bouleversa la chronologie admise de l'évolution stylistique du peintre et suscita un vif débat parmi les historiens de l'art, certains réfutant catégoriquement cette attribution tardive.",
+      "reflect": "In your own words: what did the restorer find, and how did the art world react?",
+      "questions": [
+        { "q": "What triggers the discovery in this story?", "choices": ["A routine restoration under ultraviolet light revealing a hidden signature", "A letter found in the museum archives", "A visitor's casual observation", "A chemical analysis of the canvas fibers requested by a collector"], "correct": 0 },
+        { "q": "What does the discovery suggest about the painting's true origin?", "choices": ["It was a forgery created recently", "It was an early work by a much more famous painter, repainted and sold under another name", "It was painted by the museum's own conservator", "It was a collaborative work by several unknown artists"], "correct": 1 },
+        { "q": "How does the art history community react to this finding?", "choices": ["Everyone immediately accepts it without question", "It sparks a lively debate, with some historians rejecting the new attribution", "The museum removes the painting from display entirely", "No one takes much interest in the discovery"], "correct": 1 }
+      ]
+    },
+    {
+      "id": "fr-t5-02",
+      "tier": 5,
+      "title": "Le dernier train",
+      "titleEn": "The last train",
+      "predict": "An old man waits alone at a nearly empty station for a train to a town that officially no longer exists. What might his story be?",
+      "body": "À vingt-trois heures quarante-sept, la gare était presque déserte, à l'exception d'un homme âgé, assis seul sur un banc, son unique valise posée à ses pieds. Il attendait, disait-il au chef de gare inquiet, le dernier train pour une ville qui, officiellement, n'existait plus sur aucune carte depuis la fermeture de la ligne, quarante ans auparavant. Par compassion, et non sans une certaine curiosité, l'employé engagea la conversation. Peu à peu, l'homme lui confia qu'il revenait chaque année, à la même date, honorer une promesse faite à sa femme défunte : celle de la rejoindre, par la pensée, à l'endroit exact où ils s'étaient rencontrés pour la première fois, cinquante ans plus tôt, sur le quai d'une gare que le temps avait fini par effacer.",
+      "reflect": "In your own words: why does the old man keep coming back to this station?",
+      "questions": [
+        { "q": "What is unusual about the situation at the station?", "choices": ["An old man is waiting for a train to a destination that no longer officially exists", "The train station has been closed for renovations", "A group of passengers has missed the last train", "The stationmaster refuses to let anyone leave"], "correct": 0 },
+        { "q": "Why does the old man come back to this station every year?", "choices": ["To meet his estranged son", "To honor a promise made to his late wife", "To look for a lost item", "He works there part-time"], "correct": 1 },
+        { "q": "What does this date and place represent for the old man?", "choices": ["The anniversary of a terrible accident", "Where he first met his wife, fifty years earlier", "His own birthplace", "The location of his retirement home"], "correct": 1 }
+      ]
+    }
+  ]
+}

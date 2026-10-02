@@ -21,6 +21,7 @@
     <button id="lessons-toggle" class="icon-btn" aria-label="Lessons">📖</button>
     <button id="categories-toggle" class="icon-btn" aria-label="Categories">🗂</button>
     <button id="verbs-toggle" class="icon-btn" aria-label="Verbs">🗣</button>
+    <button id="reading-toggle" class="icon-btn" aria-label="Reading">📰</button>
     <button id="stats-toggle" class="icon-btn" aria-label="Progress">📊</button>
     <button id="account-toggle" class="icon-btn" aria-label="Account">👤</button>
     <button id="settings-toggle" class="icon-btn" aria-label="Settings">⚙</button>
@@ -131,10 +132,59 @@
   <div id="stats-history"></div>
 </section>
 
+<section id="reading-picker" class="settings-panel hidden">
+  <div class="picker-header">
+    <h2>Reading</h2>
+    <button id="close-reading-btn" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+
+  <div id="reading-tiers-view">
+    <p class="note">Short fictional stories, grouped by difficulty. Pick a level to see what's
+    there, read at your own pace, then answer a few questions about what happened.</p>
+    <div id="reading-tier-list" class="category-list"></div>
+    <p id="reading-unavailable" class="note hidden">No reading passages yet for this language —
+    this is a French-only feature for now.</p>
+  </div>
+
+  <div id="reading-passages-view" class="hidden">
+    <button id="reading-back-to-tiers-btn" class="verb-lesson-back">← Levels</button>
+    <h3 id="reading-tier-title"></h3>
+    <div id="reading-passage-list"></div>
+  </div>
+
+  <div id="reading-view" class="hidden">
+    <button id="reading-back-to-list-btn" class="verb-lesson-back">← Stories</button>
+    <h3 id="reading-title"></h3>
+    <p id="reading-predict" class="reading-predict"></p>
+    <div class="reading-speak-row">
+      <button id="reading-speak-btn" class="icon-btn speak-btn" aria-label="Listen">🔊</button>
+    </div>
+    <div id="reading-body" class="reading-body"></div>
+    <p id="reading-reflect" class="reading-reflect"></p>
+    <div id="reading-questions"></div>
+    <div id="reading-score" class="reading-score hidden"></div>
+  </div>
+</section>
+
 <div id="focus-banner" class="focus-banner hidden">
   <span>Studying <b id="focus-lesson-label"></b> directly.</span>
   <button id="exit-focus-btn">Back to normal review</button>
 </div>
+
+<section id="word-of-day" class="word-of-day hidden">
+  <div class="wod-label">📅 Word of the Day</div>
+  <div class="wod-main">
+    <div class="wod-word-row">
+      <span id="wod-word" class="wod-word"></span>
+      <button id="wod-speak-btn" class="icon-btn speak-btn" aria-label="Listen">🔊</button>
+    </div>
+    <div id="wod-gloss" class="wod-gloss"></div>
+    <div id="wod-example" class="wod-example hidden">
+      <div id="wod-example-fr"></div>
+      <div id="wod-example-en"></div>
+    </div>
+  </div>
+</section>
 
 <main>
   <div id="card" class="card">

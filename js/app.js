@@ -29,6 +29,7 @@ function normalizeState(raw) {
     raw.newToday = { date: todayStr(), count: 0 };
   }
   if (!raw.dailyLog) raw.dailyLog = {};
+  if (!raw.readingProgress) raw.readingProgress = {}; // passageId -> { bestScore, attempts }
   return raw;
 }
 
@@ -88,6 +89,10 @@ let sessionStats = { correct: 0, total: 0 };
 let pendingSelfConfirm = null;
 let focusLessonIndex = null; // set via the lesson picker to study one lesson directly
 let focusFilter = null; // set via the category picker: function(item) -> bool
+let readingData = null; // { tiers, passages } from data/reading.json, or null (no reading file / fetch failed)
+let currentReadingTier = null;
+let currentReadingPassage = null;
+let readingAnswers = {}; // qIndex -> chosen choice index, for the passage currently open
 
 const el = (id) => document.getElementById(id);
 
@@ -518,6 +523,44 @@ function findExamplesFor(item) {
   const direct = examplesData[item.id];
   if (direct) return direct;
   return examplesData[`verb:${item.id.slice(2)}`] || null;
+}
+
+// Cheap deterministic string hash (djb2) -- just needs to spread dates evenly
+// across the vocab pool, not be cryptographically sound.
+function hashStr(s) {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
+// Same word for everyone on a given calendar day, per language (so switching
+// languages doesn't change today's French word, and tomorrow picks a new
+// one). Prefers the subset of vocab that has a real example sentence, so the
+// widget usually has something more to show than a bare word + gloss --
+// French currently has ~100 such words; falls back to the full vocab pool
+// when none do (e.g. Spanish, which has no examples file yet).
+function renderWordOfDay() {
+  const vocabItems = bank.filter((i) => i.type === "vocab");
+  if (!vocabItems.length) return;
+  const withExamples = vocabItems.filter((i) => examplesData[i.id]);
+  const pool = withExamples.length ? withExamples : vocabItems;
+  const seed = hashStr(`${todayStr()}:${currentLang.code}`);
+  const item = pool[seed % pool.length];
+
+  el("wod-word").textContent = item.word;
+  el("wod-gloss").textContent = item.gloss.slice(0, 3).join(", ");
+  el("wod-speak-btn").onclick = () => speakFrench(item.word);
+
+  const examples = findExamplesFor(item);
+  const exampleBox = el("wod-example");
+  if (examples && examples.length) {
+    exampleBox.classList.remove("hidden");
+    el("wod-example-fr").textContent = examples[0].fr;
+    el("wod-example-en").textContent = examples[0].en;
+  } else {
+    exampleBox.classList.add("hidden");
+  }
+  el("word-of-day").classList.remove("hidden");
 }
 
 // Builds a full-sentence fill-in-the-blank prompt when `targetWord` (the
@@ -1116,6 +1159,167 @@ function renderCategoryList() {
   });
 }
 
+// ---------- Reading mode: level-selectable fictional passages + MC
+// comprehension questions, pre-baked (see data/reading.json / DATA_SOURCES.md)
+// rather than generated live -- this is a static site with no backend, so
+// there's no way to call an LLM per-request without exposing an API key in
+// the browser. Each passage carries a "predict" prompt shown before reading
+// and a "reflect" prompt shown after -- both just displayed text (free-text
+// self-reflection, ungraded, since grading open-ended writing also needs a
+// live model); the actual score comes from the multiple-choice questions.
+
+const READING_TIER_COLORS = ["green", "teal", "blue", "orange", "red"];
+const READING_TIER_ICONS = ["🌱", "🌿", "🌳", "🏔️", "🏆"];
+
+function readingPassagesForTier(tier) {
+  if (!readingData) return [];
+  return readingData.passages.filter((p) => p.tier === tier);
+}
+
+function showReadingTiers() {
+  currentReadingTier = null;
+  el("reading-view").classList.add("hidden");
+  el("reading-passages-view").classList.add("hidden");
+  el("reading-tiers-view").classList.remove("hidden");
+  renderReadingTierList();
+}
+
+function renderReadingTierList() {
+  const list = el("reading-tier-list");
+  const unavailable = el("reading-unavailable");
+  list.innerHTML = "";
+  if (!readingData || !readingData.tiers.length) {
+    unavailable.classList.remove("hidden");
+    return;
+  }
+  unavailable.classList.add("hidden");
+  readingData.tiers.forEach((t, i) => {
+    const passages = readingPassagesForTier(t.tier);
+    const doneCount = passages.filter((p) => state.readingProgress[p.id]).length;
+    const wordStart = (t.levelRange[0] - 1) * 100 + 1;
+    const wordEnd = t.levelRange[1] * 100;
+    const block = document.createElement("button");
+    block.className = `category-block category-${READING_TIER_COLORS[i % READING_TIER_COLORS.length]}`;
+    block.innerHTML = `
+      <span class="category-block-icon">${READING_TIER_ICONS[i % READING_TIER_ICONS.length]}</span>
+      <span class="category-block-name">${t.label}</span>
+      <span class="category-block-count">${doneCount}/${passages.length} read · words ${wordStart}–${wordEnd}</span>
+    `;
+    block.onclick = () => showReadingPassageList(t.tier);
+    list.appendChild(block);
+  });
+}
+
+function showReadingPassageList(tier) {
+  currentReadingTier = tier;
+  el("reading-view").classList.add("hidden");
+  el("reading-tiers-view").classList.add("hidden");
+  el("reading-passages-view").classList.remove("hidden");
+
+  const tierMeta = readingData.tiers.find((t) => t.tier === tier);
+  el("reading-tier-title").textContent = tierMeta ? tierMeta.label : `Level ${tier}`;
+
+  const list = el("reading-passage-list");
+  list.innerHTML = "";
+  readingPassagesForTier(tier).forEach((p) => {
+    const progress = state.readingProgress[p.id];
+    const row = document.createElement("div");
+    row.className = "lesson-row";
+    row.innerHTML = `
+      <div class="lesson-row-label">
+        <span class="lesson-row-num">${progress ? "✓ " : ""}${p.title}</span> — <span class="lesson-row-concepts">${p.titleEn}</span>
+      </div>
+    `;
+    const btn = document.createElement("button");
+    btn.textContent = progress ? `Read again (${progress.bestScore}/${p.questions.length})` : "Read";
+    btn.onclick = () => openReadingPassage(p.id);
+    row.appendChild(btn);
+    list.appendChild(row);
+  });
+}
+
+function openReadingPassage(id) {
+  const passage = readingData.passages.find((p) => p.id === id);
+  if (!passage) return;
+  currentReadingPassage = passage;
+  readingAnswers = {};
+
+  el("reading-tiers-view").classList.add("hidden");
+  el("reading-passages-view").classList.add("hidden");
+  el("reading-view").classList.remove("hidden");
+
+  el("reading-title").textContent = `${passage.title} (${passage.titleEn})`;
+  el("reading-predict").textContent = `🤔 Before you read: ${passage.predict}`;
+  el("reading-body").textContent = passage.body;
+  el("reading-reflect").textContent = `✍️ ${passage.reflect}`;
+  el("reading-speak-btn").onclick = () => speakFrench(passage.body);
+  el("reading-score").classList.add("hidden");
+
+  renderReadingQuestions();
+}
+
+function renderReadingQuestions() {
+  const box = el("reading-questions");
+  box.innerHTML = "";
+  currentReadingPassage.questions.forEach((q, qIndex) => {
+    const qWrap = document.createElement("div");
+    qWrap.className = "reading-question";
+
+    const qTitle = document.createElement("div");
+    qTitle.className = "reading-question-text";
+    qTitle.textContent = `${qIndex + 1}. ${q.q}`;
+    qWrap.appendChild(qTitle);
+
+    const choicesWrap = document.createElement("div");
+    choicesWrap.className = "choices";
+    const answered = readingAnswers[qIndex] !== undefined;
+    q.choices.forEach((choice, cIndex) => {
+      const btn = document.createElement("button");
+      btn.className = "choice-btn";
+      btn.textContent = choice;
+      if (answered) {
+        btn.disabled = true;
+        if (cIndex === q.correct) btn.classList.add("correct");
+        else if (cIndex === readingAnswers[qIndex]) btn.classList.add("incorrect");
+      }
+      btn.onclick = () => selectReadingAnswer(qIndex, cIndex);
+      choicesWrap.appendChild(btn);
+    });
+    qWrap.appendChild(choicesWrap);
+    box.appendChild(qWrap);
+  });
+}
+
+function selectReadingAnswer(qIndex, cIndex) {
+  if (readingAnswers[qIndex] !== undefined) return;
+  readingAnswers[qIndex] = cIndex;
+  renderReadingQuestions();
+
+  if (Object.keys(readingAnswers).length === currentReadingPassage.questions.length) {
+    finishReadingPassage();
+  }
+}
+
+function finishReadingPassage() {
+  const total = currentReadingPassage.questions.length;
+  let score = 0;
+  currentReadingPassage.questions.forEach((q, i) => {
+    if (readingAnswers[i] === q.correct) score += 1;
+  });
+
+  const id = currentReadingPassage.id;
+  const prev = state.readingProgress[id];
+  state.readingProgress[id] = {
+    bestScore: prev ? Math.max(prev.bestScore, score) : score,
+    attempts: (prev ? prev.attempts : 0) + 1,
+  };
+  saveState(state);
+
+  const box = el("reading-score");
+  box.classList.remove("hidden");
+  box.textContent = score === total ? `Perfect! ${score}/${total} 🎉` : `You got ${score}/${total} right.`;
+}
+
 // Regular present-tense endings per language/infinitive ending, used only
 // to detect (not assert) whether a verb's present tense follows the
 // standard pattern -- derived from the verb's own sourced conjugation
@@ -1417,6 +1621,7 @@ function initAccountUI() {
     el("category-picker").classList.add("hidden");
     el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
   });
   el("close-account-btn").addEventListener("click", () => el("account-panel").classList.add("hidden"));
 
@@ -1489,14 +1694,18 @@ async function boot() {
     location.reload();
   });
 
-  const [vocab, verbs, examples] = await Promise.all([
+  const [vocab, verbs, examples, reading] = await Promise.all([
     fetch(currentLang.vocabFile).then((r) => r.json()),
     fetch(currentLang.verbsFile).then((r) => r.json()),
     currentLang.examplesFile
       ? fetch(currentLang.examplesFile).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))
       : Promise.resolve({}),
+    currentLang.readingFile
+      ? fetch(currentLang.readingFile).then((r) => (r.ok ? r.json() : null)).catch(() => null)
+      : Promise.resolve(null),
   ]);
   examplesData = examples;
+  readingData = reading;
 
   bank = buildItemBank(vocab, verbs, currentLang);
   itemsById = new Map(bank.map((i) => [i.id, i]));
@@ -1512,6 +1721,7 @@ async function boot() {
   verbsData = [...verbs].sort((a, b) => b.true_frequency - a.true_frequency);
 
   migrateUnlockedLessons();
+  renderWordOfDay();
 
   initSettingsUI();
   initAccountUI();
@@ -1535,6 +1745,7 @@ async function boot() {
     el("verb-picker").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
     if ("speechSynthesis" in window) {
       cachedVoices = window.speechSynthesis.getVoices();
     }
@@ -1556,6 +1767,7 @@ async function boot() {
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
   });
   el("close-picker-btn").addEventListener("click", () => {
     el("lesson-picker").classList.add("hidden");
@@ -1567,6 +1779,7 @@ async function boot() {
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
   });
   el("close-category-btn").addEventListener("click", () => {
     el("category-picker").classList.add("hidden");
@@ -1579,6 +1792,7 @@ async function boot() {
     el("settings-panel").classList.add("hidden");
     el("stats-view").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
   });
   el("close-verb-picker-btn").addEventListener("click", () => {
     el("verb-picker").classList.add("hidden");
@@ -1598,10 +1812,26 @@ async function boot() {
     el("category-picker").classList.add("hidden");
     el("verb-picker").classList.add("hidden");
     el("account-panel").classList.add("hidden");
+    el("reading-picker").classList.add("hidden");
   });
   el("close-stats-btn").addEventListener("click", () => {
     el("stats-view").classList.add("hidden");
   });
+  el("reading-toggle").addEventListener("click", () => {
+    showReadingTiers();
+    el("reading-picker").classList.toggle("hidden");
+    el("settings-panel").classList.add("hidden");
+    el("lesson-picker").classList.add("hidden");
+    el("category-picker").classList.add("hidden");
+    el("verb-picker").classList.add("hidden");
+    el("stats-view").classList.add("hidden");
+    el("account-panel").classList.add("hidden");
+  });
+  el("close-reading-btn").addEventListener("click", () => {
+    el("reading-picker").classList.add("hidden");
+  });
+  el("reading-back-to-tiers-btn").addEventListener("click", showReadingTiers);
+  el("reading-back-to-list-btn").addEventListener("click", () => showReadingPassageList(currentReadingTier));
   el("exit-focus-btn").addEventListener("click", exitFocus);
 
   renderCookingPanel(false);
