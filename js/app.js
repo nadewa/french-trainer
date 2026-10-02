@@ -1735,11 +1735,13 @@ async function sendChatMessage() {
   el("chat-send-btn").disabled = true;
 
   appendChatMessage("user", text);
-  chatHistory.push({ role: "user", content: text });
   const pending = appendChatMessage("assistant pending", "…");
 
+  // Don't commit the user's turn to chatHistory until we know it got a
+  // reply -- otherwise a failed call leaves a dangling unanswered user
+  // turn, and the next attempt sends the model two user turns in a row.
   const reply = await ai.chatReply({
-    history: chatHistory,
+    history: [...chatHistory, { role: "user", content: text }],
     language: currentLang.englishName,
     levelLabel: levelLabel(currentLevelIndex()),
   });
@@ -1751,7 +1753,7 @@ async function sendChatMessage() {
   if (reply) {
     pending.textContent = reply;
     pending.className = "chat-msg assistant";
-    chatHistory.push({ role: "assistant", content: reply });
+    chatHistory.push({ role: "user", content: text }, { role: "assistant", content: reply });
   } else {
     pending.textContent = "(couldn't get a reply just now — try again)";
     pending.className = "chat-msg assistant pending";

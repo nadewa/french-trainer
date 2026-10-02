@@ -17,7 +17,11 @@ const MODELS = {
 };
 const CONSENT_KEY = "ft_ai_consent_v1";
 const QUALITY_KEY = "ft_ai_quality_v1";
-const CALL_TIMEOUT_MS = 20000;
+// Generous: on-device generation (especially on a phone GPU) is much slower
+// than a cloud API, and the first call after load also has to pay WebGPU's
+// one-time shader-compilation cost (see the warm-up step in getEngine()).
+const CALL_TIMEOUT_MS = 30000;
+const WARMUP_TIMEOUT_MS = 20000;
 
 let enginePromise = null;
 let webllmModulePromise = null;
@@ -93,9 +97,26 @@ function getEngine() {
             reportProgress({ text: p.text || "", percent: Math.round((p.progress || 0) * 100) }),
         })
       )
+      .then(async (engine) => {
+        // WebGPU compiles its shaders lazily on the first real generate
+        // call, which can add several extra seconds on top of normal
+        // generation time. Pay that cost here, while the loading screen is
+        // still up, instead of making the user's first real message (or
+        // the first hint/grading check) eat it as an apparent failure.
+        reportProgress({ text: "Finishing setup (first run only)…", percent: 100 });
+        try {
+          await withTimeout(
+            engine.chat.completions.create({ messages: [{ role: "user", content: "Bonjour" }], max_tokens: 4 }),
+            WARMUP_TIMEOUT_MS
+          );
+        } catch (err) {
+          console.warn("AI Assist: warm-up generation failed (continuing anyway)", err);
+        }
+        return engine;
+      })
       .catch((err) => {
         enginePromise = null; // allow retrying later instead of staying stuck on a dead promise
-        console.error("AI model load failed", err);
+        console.error("AI Assist: model load failed", err);
         throw err;
       });
   }
@@ -120,9 +141,13 @@ async function ask(messages) {
     const engine = await getEngine();
     if (!engine) return null;
     const reply = await withTimeout(engine.chat.completions.create({ messages, temperature: 0.4 }), CALL_TIMEOUT_MS);
-    if (!reply) return null;
+    if (!reply) {
+      console.warn(`AI Assist: request timed out after ${CALL_TIMEOUT_MS}ms`);
+      return null;
+    }
     return reply.choices?.[0]?.message?.content?.trim() || null;
-  } catch {
+  } catch (err) {
+    console.error("AI Assist: request failed", err);
     return null;
   }
 }
