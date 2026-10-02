@@ -2844,13 +2844,12 @@
  {
   "word": "pays",
   "gloss": [
-   "compatriot",
-   "countryman",
    "country",
    "countryside",
-   "fellow-countryman"
+   "compatriot",
+   "countryman"
   ],
-  "gloss_source": "wiktionary",
+  "gloss_source": "model-override",
   "frequency": 55567
  },
  {

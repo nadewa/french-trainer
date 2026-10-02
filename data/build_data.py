@@ -1213,6 +1213,12 @@ MANUAL_GLOSS_OVERRIDE = {
     "dégager": ["clear", "free", "disengage"],
     "aimer": ["like", "love", "enjoy", "appreciate"],
     "suivre": ["follow", "come after", "trail"],
+    # Live bug report (user spotted it in a multiple-choice question, not
+    # caught by any review batch above): "pays" had "country" buried third,
+    # behind "compatriot"/"countryman" -- so a 4-choice quiz could easily
+    # end up with no "country" option shown at all despite it being the
+    # word's overwhelmingly dominant, everyday sense.
+    "pays": ["country", "countryside", "compatriot", "countryman"],
 }
 for w, g in MANUAL_GLOSS_OVERRIDE.items():
     gloss[w] = g

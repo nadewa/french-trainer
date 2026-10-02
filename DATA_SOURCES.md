@@ -330,6 +330,19 @@ for full reproducibility).
   linguistic audit — but every entry was read and judged, and anything
   that looked wrong, misleading, or misordered was corrected and
   documented here.
+
+  **Post-review live bug report:** despite the review above, the user
+  caught one more error live in the app — a multiple-choice question for
+  "pays" offered "ally"/"compatriot"/"handmaiden"/"church" as choices,
+  with no "country" option at all. The underlying gloss was
+  `["compatriot", "countryman", "country", "countryside",
+  "fellow-countryman"]` — "country", by far the word's dominant,
+  everyday sense, was buried third. This word fell within the very
+  first review batch (ranks 1–400) from before this session's sixteen
+  batches, confirming that even a reviewed batch isn't guaranteed
+  error-free. Fixed (override list now 886 entries) and documented here
+  as a reminder that "review complete" means "read and judged," not
+  "infallible" — live reports remain valuable.
 - **Verb selection required a gloss.** 2 high-scoring verb lemmas ("ouvrer",
   "saurer" — both archaic/technical) were skipped because no gloss was found
   for them in either dictionary, so the next-ranked verb took their place.
